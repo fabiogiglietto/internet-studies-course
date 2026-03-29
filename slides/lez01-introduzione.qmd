@@ -61,6 +61,7 @@ Un video virale su TikTok mostra un **finto telegiornale TG5** — giornalista, 
 - Seguito da finte **interviste per strada** a donne con il velo
 - Basato su una proposta di legge reale (FdI sul velo integrale) — ma **distorta e amplificata**
 - **729+ commenti**, la maggior parte crede sia vero → centinaia di reazioni anti-islamiche
+- 🔗 [Agenda Digitale: "Interviste deepfake: il grande inganno anche in Italia"](https://www.agendadigitale.eu/cultura-digitale/interviste-deepfake-linganno-come-strumento-di-odio-online-come-funziona/)
 
 ::: {.notes}
 Questo caso è perfetto come apertura: tocca tutte le dimensioni del corso. Il video sfrutta le 4 affordance di Boyd (persistenza, visibilità, replicabilità, ricercabilità), usa le competenze della cultura partecipativa (Jenkins) per produrre propaganda, e dimostra il crollo dei costi di coordinamento (Shirky): un singolo individuo con un laptop può generare un intero telegiornale falso. È manipolazione reticolare (Marwick & Lewis) che sfrutta l'economia dell'attenzione (Boyd 2017). Fonte: Agenda Digitale, "Interviste deepfake: il grande inganno anche in Italia."
@@ -75,6 +76,7 @@ Questo caso è perfetto come apertura: tocca tutte le dimensioni del corso. Il v
 - Ma un'inchiesta di **IrpiMedia e Wired** rivela i legami con **Palazzo Chigi**
 - La compagna del **social media manager** di Meloni è tra i soci della società proprietaria
 - La rete di amplificazione include "Silenzi e Falsità" (1,5 milioni di follower), gestita dal fratello dell'ex capo ufficio stampa di Di Maio
+- 🔗 [IrpiMedia: "Chi c'è dietro gli 'influencer indipendenti' della destra sovranista"](https://irpimedia.irpi.eu/influencer-italiani-destra-sovranista-meloni/)
 
 ::: {.highlight-box}
 Sembra *grassroots*, è orchestrato dall'alto — la definizione stessa di ***astroturfing***.
@@ -94,6 +96,7 @@ Un fenomeno virale del 2026: **frutta e verdura antropomorfe** generate dall'IA 
 - Stereotipi di genere retrogradi, dinamiche tossiche, violenza normalizzata
 - TikTok ha lanciato **PineDrama** (gennaio 2026), un'app dedicata ai micro-drama
 - Il mercato dei micro-drama verticali: **1,3 miliardi di dollari** di ricavi negli USA nel 2025
+- 🔗 [Il Post: "I micro-drama con la frutta su TikTok"](https://www.ilpost.it/2026/03/27/micro-drama-tik-tok-frutta-intelligenza-artificiale/)
 
 ::: {.callout-note}
 ## Il concetto: *AI slop*
@@ -113,6 +116,7 @@ Questo caso mostra un aspetto diverso della manipolazione: non è disinformazion
 - **Giugno 2025:** prima protesta USA (#NoKingsDay), coordinata via TikTok, Reddit, X — **5 milioni** di partecipanti in 2.100 città
 - **Ottobre 2025:** seconda ondata, stesso modello decentralizzato
 - **28 marzo 2026:** Roma, oltre 700 organizzazioni aderenti
+- 🔗 [Il Post: "Le foto della grande manifestazione No Kings a Roma"](https://www.ilpost.it/2026/03/28/foto-manifestazione-no-kings-roma/)
 
 TikTok ha portato **milioni di visualizzazioni** ai post con #NoKings, permettendo un'organizzazione **spontanea e senza gerarchie**.
 
