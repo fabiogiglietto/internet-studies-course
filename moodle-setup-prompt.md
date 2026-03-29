@@ -243,7 +243,7 @@ Configura il corso con le date di inizio 31 marzo 2026 in modo che le settimane 
    - Descrizione: "Consegnate la bozza completa del saggio IMRAD (tutte e 4 le sezioni: Introduction, Methods, Results, Discussion) in formato PDF. La bozza sarà assegnata a un altro gruppo per la peer review. La bozza non deve essere perfetta ma deve essere **completa**."
    - Data apertura: giovedì 21 maggio 2026, 13:00
    - Data di consegna: venerdì 22 maggio 2026, 23:59
-   - Consegne in ritardo: Sì, con penalità (-1 punto/giorno)
+   - Consegne in ritardo: Sì, con penalità (-1 punto/ora, cutoff 24 ore dopo la scadenza)
    - Tipo di consegna: File (PDF)
    - Numero massimo di file: 1
    - Consegna per gruppi: Sì (un file per gruppo)
@@ -267,10 +267,10 @@ Configura il corso con le date di inizio 31 marzo 2026 in modo che le settimane 
    - [IL DOCENTE CARICHERÀ LA GRIGLIA DI PEER REVIEW]
 
 5. **Compito** — "Consegna definitiva del saggio IMRAD"
-   - Descrizione: "Consegnate la versione definitiva del saggio IMRAD (**4.000–6.000 parole**) in formato PDF. Insieme al saggio, ciascun membro del gruppo compila individualmente il modulo di peer evaluation intra-gruppo (link sotto). Penalità per ritardo: –1 punto/giorno, massimo 7 giorni (cutoff: 10 giugno 23:59)."
+   - Descrizione: "Consegnate la versione definitiva del saggio IMRAD (**4.000–6.000 parole**) in formato PDF. Insieme al saggio, ciascun membro del gruppo compila individualmente il modulo di peer evaluation intra-gruppo (link sotto). Penalità per ritardo: –1 punto/ora nelle prime 24 ore. Oltre le 24 ore dalla scadenza, la consegna non è accettata."
    - Data apertura: mercoledì 27 maggio 2026, 13:00
    - Data di consegna: mercoledì 3 giugno 2026, 23:59
-   - Consegne in ritardo: Sì, con penalità (-1 punto/giorno, cutoff: 10 giugno 23:59)
+   - Consegne in ritardo: Sì, con penalità (-1 punto/ora, cutoff 24 ore: 4 giugno 23:59)
    - Tipo di consegna: File (PDF)
    - Numero massimo di file: 1
    - Consegna per gruppi: Sì (un file per gruppo)

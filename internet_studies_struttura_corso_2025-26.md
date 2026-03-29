@@ -66,7 +66,7 @@ L'uso di strumenti di IA generativa (ChatGPT, Claude, Gemini, ecc.) è **consent
 
 ### Consegne in ritardo
 
-Le consegne in ritardo sono penalizzate con **–1 punto (su 30) per ogni giorno di ritardo**. Non saranno accettate consegne oltre 7 giorni dalla scadenza.
+Le consegne in ritardo sono penalizzate con **–1 punto (su 30) per ogni ora di ritardo** nelle prime 24 ore. Oltre le **24 ore** dalla scadenza, la consegna non è accettata.
 
 ### Integrità accademica
 

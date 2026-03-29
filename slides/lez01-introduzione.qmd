@@ -297,12 +297,11 @@ Questa policy è pragmatica: l'IA generativa è uno strumento reale che gli stud
 
 ## Consegne in ritardo
 
-- **–1 punto** (su 30) per ogni giorno di ritardo
-- **Limite massimo:** 7 giorni dalla scadenza
-- Oltre il limite, la consegna non è accettata
+- **–1 punto** (su 30) per ogni ora di ritardo nelle prime **24 ore**
+- Oltre le **24 ore**, la consegna **non è accettata**
 
 ::: {.notes}
-Questa regola vale per tutte le consegne: compito individuale, bozza del saggio, saggio definitivo.
+Questa regola vale per tutte le consegne: compito individuale, bozza del saggio, saggio definitivo. Il limite è tassativo: dopo 24 ore dalla scadenza non si accettano consegne.
 :::
 
 ## Spazio blended
