@@ -51,20 +51,74 @@ La lezione è divisa in due macro-blocchi: ~30 minuti di presentazione del corso
 Prima di entrare nella parte amministrativa, mostrare concretamente perché studiare i social media è rilevante. Proiettare 2-3 esempi di come le piattaforme influenzano il discorso pubblico. L'obiettivo è catturare l'attenzione e motivare il corso.
 :::
 
-## Un post virale, una notizia falsa
+## Un finto TG5 generato dall'IA
 
-<!-- PROIETTARE: screenshot di un post virale italiano con informazioni false o decontestualizzate (es. post su immigrazione/reddito di cittadinanza con dati manipolati, o equivalente recente). Il docente sceglie un esempio aggiornato al 2025-2026. Nell'edizione 2024-2025 si usavano post di Matteo Salvini sul reddito di cittadinanza con claim non verificati. -->
+<!-- PROIETTARE: screenshot del video TikTok deepfake con finto telegiornale TG5 che annuncia il divieto dell'hijab. Fonte: https://www.agendadigitale.eu/cultura-digitale/interviste-deepfake-linganno-come-strumento-di-odio-online-come-funziona/ -->
+
+Un video virale su TikTok mostra un **finto telegiornale TG5** — giornalista, logo, grafica, tutto generato con **OpenAI Sora**:
+
+- Annuncia il divieto dell'hijab in Italia dal 1° gennaio 2026
+- Seguito da finte **interviste per strada** a donne con il velo
+- Basato su una proposta di legge reale (FdI sul velo integrale) — ma **distorta e amplificata**
+- **729+ commenti**, la maggior parte crede sia vero → centinaia di reazioni anti-islamiche
+
+::: {.notes}
+Questo caso è perfetto come apertura: tocca tutte le dimensioni del corso. Il video sfrutta le 4 affordance di Boyd (persistenza, visibilità, replicabilità, ricercabilità), usa le competenze della cultura partecipativa (Jenkins) per produrre propaganda, e dimostra il crollo dei costi di coordinamento (Shirky): un singolo individuo con un laptop può generare un intero telegiornale falso. È manipolazione reticolare (Marwick & Lewis) che sfrutta l'economia dell'attenzione (Boyd 2017). Fonte: Agenda Digitale, "Interviste deepfake: il grande inganno anche in Italia."
+:::
+
+## Influencer "indipendenti" con regia politica
+
+<!-- PROIETTARE: screenshot della pagina TikTok/Instagram di Esperia Italia e schema delle connessioni con Palazzo Chigi (da inchiesta IrpiMedia/Wired Italia). -->
+
+**Esperia Italia** — 132.000 follower su Instagram, 1,6 milioni di like su TikTok — si presenta come "informazione indipendente e alternativa":
+
+- Ma un'inchiesta di **IrpiMedia e Wired** rivela i legami con **Palazzo Chigi**
+- La compagna del **social media manager** di Meloni è tra i soci della società proprietaria
+- La rete di amplificazione include "Silenzi e Falsità" (1,5 milioni di follower), gestita dal fratello dell'ex capo ufficio stampa di Di Maio
 
 ::: {.highlight-box}
-**Domande:**
-
-- Come ha fatto questo post a raggiungere **milioni di persone**?
-- Perché un contenuto falso genera **più engagement** di uno vero?
-- Chi lo ha creato? Con quale **strategia**?
+Sembra *grassroots*, è orchestrato dall'alto — la definizione stessa di ***astroturfing***.
 :::
 
 ::: {.notes}
-Non dare ancora le risposte — le costruiremo durante il corso. L'obiettivo è mostrare che queste domande non sono banali: richiedono concetti (affordance, cultura partecipativa, economia dell'attenzione, manipolazione) che svilupperemo nelle prossime 8 settimane.
+Il caso Esperia Italia è un esempio perfetto di astroturfing (Marwick & Lewis) in formato video: un canale che si presenta come giovani che fanno informazione indipendente, con tutte le caratteristiche della cultura partecipativa di Jenkins (basse barriere, format nativo delle piattaforme, connessione con la community), ma che è collegato al potere politico. Fonte: IrpiMedia, "Chi c'è dietro gli 'influencer indipendenti' della destra sovranista" (2025-2026); Il Foglio, "Il caso Esperia e la comunicazione 'grassroots' a destra in Italia" (febbraio 2026).
+:::
+
+## *AI slop*: i micro-drama della frutta su TikTok
+
+<!-- PROIETTARE: screenshot di video TikTok con frutta antropomorfa in scenari drammatici (es. pagine @fruits_island1, @crazyfruitstories). Fonte: https://www.ilpost.it/2026/03/27/micro-drama-tik-tok-frutta-intelligenza-artificiale/ -->
+
+Un fenomeno virale del 2026: **frutta e verdura antropomorfe** generate dall'IA coinvolte in storie sentimentali con milioni di visualizzazioni:
+
+- Dialoghi poveri, voci sintetiche con emozioni esagerate — tutto generato dall'IA
+- Stereotipi di genere retrogradi, dinamiche tossiche, violenza normalizzata
+- TikTok ha lanciato **PineDrama** (gennaio 2026), un'app dedicata ai micro-drama
+- Il mercato dei micro-drama verticali: **1,3 miliardi di dollari** di ricavi negli USA nel 2025
+
+::: {.callout-note}
+## Il concetto: *AI slop*
+Contenuti dozzinali prodotti massivamente con l'IA — "sbobba digitale" progettata per catturare attenzione e generare visualizzazioni, non per informare.
+:::
+
+::: {.notes}
+Questo caso mostra un aspetto diverso della manipolazione: non è disinformazione politica, ma sfruttamento dell'economia dell'attenzione (Boyd 2017) attraverso contenuti IA progettati per massimizzare l'engagement. I micro-drama della frutta sono "AI slop" — contenuti senza valore prodotti a costo quasi zero che inondano le piattaforme. Interessante per il corso perché: (1) la cultura partecipativa di Jenkins viene sostituita dalla produzione automatizzata — non c'è più nemmeno un fan che crea; (2) le affordance di Boyd (replicabilità, visibilità) vengono sfruttate industrialmente; (3) il crollo dei costi di Shirky è totale — il "pavimento di Coase" scompare. Fonte: Il Post, "I micro-drama con la frutta antropomorfa generati dall'intelligenza artificiale su TikTok" (27 marzo 2026).
+:::
+
+## Le domande del corso
+
+::: {.highlight-box}
+Quattro casi, una domanda comune:
+
+- **Come** fanno questi contenuti a raggiungere milioni di persone? → *affordance*
+- **Perché** funzionano? → *economia dell'attenzione*
+- **Chi** li crea e con quale strategia? → *cultura partecipativa strumentalizzata*
+- **Cosa** possiamo fare per capirli? → *metodi di ricerca*
+
+Questo corso fornisce gli **strumenti teorici e pratici** per rispondere.
+:::
+
+::: {.notes}
+Questa slide chiude la sezione di apertura collegando i 4 casi ai temi del corso. Non dare ancora le risposte complete — le costruiremo nelle 8 settimane del Blocco 1. L'obiettivo è mostrare che queste domande richiedono concetti (affordance, cultura partecipativa, economia dell'attenzione, manipolazione) e metodi (analisi del contenuto, analisi dell'engagement) che svilupperemo insieme.
 :::
 
 ## Da Greta Thunberg a Fridays for Future
