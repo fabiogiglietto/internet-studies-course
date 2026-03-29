@@ -59,6 +59,46 @@ Presentare gli obiettivi come guida alla lezione. Sottolineare che oggi si alter
 La lezione è divisa in due macro-blocchi: ~30 minuti di presentazione del corso e ~75 minuti dedicati al primo concetto teorico (Boyd, 2018). L'esercitazione conclude la lezione.
 :::
 
+## Social media e politica: perché questo corso? {background-color="#C5612E"}
+
+::: {.notes}
+Prima di entrare nella parte amministrativa, mostrare concretamente perché studiare i social media è rilevante. Proiettare 2-3 esempi di come le piattaforme influenzano il discorso pubblico. L'obiettivo è catturare l'attenzione e motivare il corso.
+:::
+
+## Un post virale, una notizia falsa
+
+<!-- PROIETTARE: screenshot di un post virale italiano con informazioni false o decontestualizzate (es. post su immigrazione/reddito di cittadinanza con dati manipolati, o equivalente recente). Il docente sceglie un esempio aggiornato al 2025-2026. Nell'edizione 2024-2025 si usavano post di Matteo Salvini sul reddito di cittadinanza con claim non verificati. -->
+
+::: {.highlight-box}
+**Domande:**
+
+- Come ha fatto questo post a raggiungere **milioni di persone**?
+- Perché un contenuto falso genera **più engagement** di uno vero?
+- Chi lo ha creato? Con quale **strategia**?
+:::
+
+::: {.notes}
+Non dare ancora le risposte — le costruiremo durante il corso. L'obiettivo è mostrare che queste domande non sono banali: richiedono concetti (affordance, cultura partecipativa, economia dell'attenzione, manipolazione) che svilupperemo nelle prossime 8 settimane.
+:::
+
+## Da Greta Thunberg a Fridays for Future
+
+<!-- PROIETTARE: collage di immagini del movimento Fridays for Future (proteste in diverse città) e copertine di riviste con Greta Thunberg (GQ, WIRED, TIME). Nell'edizione 2024-2025: collage di 9 città + 3 copertine. -->
+
+Un'adolescente svedese con un cartello diventa un **movimento globale**:
+
+- Da **1 persona** davanti al parlamento a **milioni** in piazza
+- Da follower zero a **3,6 milioni** su Instagram in un anno (+40.000%)
+- Da sconosciuta a **copertina** di TIME, GQ, WIRED
+
+::: {.highlight-box}
+Le stesse **proprietà delle piattaforme** che hanno reso possibile Fridays for Future rendono possibile anche la manipolazione mediatica. Questo corso spiega **perché**.
+:::
+
+::: {.notes}
+Greta Thunberg è un caso perfetto di networked publics in azione: persistenza (il primo post resta e ispira), visibilità (le piattaforme amplificano), replicabilità (il format "sciopero per il clima" viene copiato ovunque), ricercabilità (l'hashtag aggrega). Ma le stesse affordance che hanno permesso il movimento climatico permettono anche campagne di disinformazione. Dati EU Kids Online (Germania, 2019): l'83% dei 9-17enni aveva sentito parlare di FFF, il 39% aveva cercato informazioni online, il 14% aveva partecipato a manifestazioni. Questo è il potere dei networked publics.
+:::
+
 ## Il corso in sintesi {background-color="#C5612E"}
 
 ## Informazioni generali
@@ -403,6 +443,27 @@ Boyd: "Le lettere dei miei nonni erano persistenti. I messaggi sulla bacheca del
 
 ::: {.notes}
 Boyd: "A causa della differenza di età e di esperienza, adolescenti e adulti si concentrano su questioni diverse: gli adolescenti sul significato di essere in pubblico, gli adulti sull'essere online." Questa differenza di prospettiva è alla base di molte ansie e incomprensioni.
+:::
+
+## Un caso emblematico: lonelygirl15
+
+<!-- PROIETTARE: screenshot del video YouTube "My First Kiss" di lonelygirl15 (16 settembre 2006). -->
+
+Nel 2006, una ragazza di nome "Bree" inizia a pubblicare **video personali** su YouTube. Il canale diventa virale.
+
+- Milioni di spettatori credono sia una **ragazza vera** che condivide la sua vita
+- Si scopre che è un progetto di **fiction**: attori, sceneggiatori, produttori
+- Il pubblico si sente **tradito** — ma il caso rivela le affordance in azione:
+
+| Affordance | Nel caso lonelygirl15 |
+|------------|----------------------|
+| **Persistenza** | I video restano e accumulano visualizzazioni |
+| **Visibilità** | Milioni di spettatori, pubblici invisibili |
+| **Replicabilità** | Video condivisi e discussi ovunque |
+| **Ricercabilità** | Indagini online smascherano la finzione |
+
+::: {.notes}
+Il caso lonelygirl15 è perfetto per illustrare tutte e 4 le affordance e le 3 dinamiche sociali (pubblici invisibili: gli spettatori non sapevano chi altro guardava; collasso dei contesti: un progetto di finzione percepito come diario personale; confine pubblico/privato: l'intimità simulata rende il confine indistinguibile). Questo caso anticipa anche i temi della manipolazione: se si può simulare l'autenticità su YouTube nel 2006, cosa è possibile nel 2026 con l'IA generativa?
 :::
 
 ## Tecnologie: vecchie speranze, vecchie paure

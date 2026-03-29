@@ -184,6 +184,45 @@ Come fa un'idea nata su 4chan ad arrivare sulla prima pagina di un giornale nazi
 Ogni stadio amplifica il messaggio e lo legittima. Allo stadio 1, un'idea circola in una community di nicchia. Allo stadio 2, un influencer con una piattaforma più ampia la rilancia. Allo stadio 3, un politico la cita — e dato il suo status, diventa notiziabile. Allo stadio 4, i media mainstream la coprono — per smentirla, contestarla o semplicemente riportarla — ma la copertura in sé è il risultato cercato dai manipolatori.
 :::
 
+## Caso: Pizzagate — i quattro stadi in azione
+
+<!-- PROIETTARE: diagramma del flusso informativo di Pizzagate (ottobre 2016): email hackerate di Podesta → WikiLeaks → 4chan/pol/ + Social media + Media iper-partigiani → Media mainstream. -->
+
+Un esempio concreto del processo di mainstreaming:
+
+| Stadio | Pizzagate |
+|--------|-----------|
+| **1. Subcultural** | 4chan/pol/ interpreta le email hackerate di John Podesta come "codice" per un traffico di minori |
+| **2. Influencer** | Alex Jones (Infowars), Jack Posobiec e media iper-partigiani rilanciano |
+| **3. Politico** | Il figlio di Michael Flynn (consigliere di Trump) twitta sulla cospirazione |
+| **4. Mainstream** | CNN, NYT, Washington Post coprono per smentire — ma amplificano |
+
+**Esito:** un uomo armato entra nella pizzeria Comet Ping Pong di Washington per "indagare" (dicembre 2016).
+
+::: {.notes}
+Pizzagate è il caso più documentato di mainstreaming di una teoria cospirata. HBO ha prodotto il documentario "After Truth: Disinformation and the Cost of Fake News" (2020) che ricostruisce il percorso. Il caso mostra perfettamente il paradosso del debunking: la copertura mainstream (anche per smentire) ha fatto conoscere Pizzagate a milioni di persone che non ne avevano mai sentito parlare. L'esito (un uomo armato nella pizzeria) mostra le conseguenze reali della manipolazione online — "from the wires to the weeds" (dal web alla strada).
+:::
+
+## Il ciclo di vita della manipolazione mediatica (MMLC)
+
+Un modello in **5 fasi** per analizzare qualsiasi campagna di manipolazione:
+
+| Fase | Descrizione |
+|------|-------------|
+| **1. Pianificazione** | Origine della campagna e scelta delle tattiche |
+| **2. Semina** | Diffusione iniziale su piattaforme social e web |
+| **3. Reazioni** | Risposte di industria, attivisti, politici, giornalisti |
+| **4. Mitigazione** | Azioni di contenimento (fact-checking, rimozione, deplatforming) |
+| **5. Adattamento** | I manipolatori si adeguano al nuovo ambiente |
+
+::: {.highlight-box}
+Questo modello (Media Manipulation Life Cycle) sarà utile per l'**esercitazione di oggi** e per il **compito individuale**: analizzare un caso seguendo le 5 fasi.
+:::
+
+::: {.notes}
+Il MMLC viene dal Media Manipulation Casebook di Data & Society. È un framework analitico replicabile: per qualsiasi caso di manipolazione mediatica, si possono ricostruire le 5 fasi. La fase 5 (adattamento) è cruciale: dopo ogni ciclo di mitigazione, i manipolatori cambiano tattica, piattaforma o linguaggio. È un gioco del gatto col topo senza fine. Nel compito individuale, gli studenti useranno questo modello per analizzare il loro caso.
+:::
+
 ## Stadio 1: innovazione subcultural
 
 Le subculture online (4chan/pol/, 8chan) sviluppano tattiche e linguaggi propri [@marwick2017]:
@@ -260,6 +299,54 @@ Piantare una storia in un **piccolo outlet locale** (con poche risorse per il fa
 
 ::: {.notes}
 Il trading up the chain sfrutta la vulnerabilità del giornalismo locale: meno giornalisti = meno tempo per verificare. Una storia che appare su un giornale locale acquisisce una patina di credibilità ("l'ha scritto un giornale") che la rende più facile da riprendere per un outlet medio. L'outlet medio a sua volta legittima la storia per il media nazionale. A ogni passaggio, la storia viene "lavata" — perde la traccia della sua origine manipolativa.
+:::
+
+## Caso: le elezioni USA 2020 e la "Big Lie"
+
+La ricerca di Starbird, DiResta e DeButts (2023) documenta come il framework della "frode elettorale" sia stato **preparato prima del voto**:
+
+<!-- PROIETTARE: tweet di Trump del 22 giugno 2020: "RIGGED 2020 ELECTION: MILLIONS OF MAIL-IN BALLOTS WILL BE PRINTED BY FOREIGN COUNTRIES..." (91.7K RT, 286.5K Likes). -->
+
+- La **meta-narrativa** della frode elettorale diffusa e amplificata da media iper-partigiani e operatori politici **mesi prima** delle elezioni
+- **Disinformazione partecipativa**: non solo dall'alto, ma co-costruita dal basso (meme, video, "prove" crowdsourced)
+- I ricercatori che studiano il fenomeno (Starbird, DiResta) subiscono **minacce, cause legali, indagini del Congresso**
+
+::: {.callout-warning}
+## Le conseguenze reali
+La ricerca sulla manipolazione mediatica ha un costo: chi studia la disinformazione diventa bersaglio di campagne coordinate. La content moderation viene riformulata come "censura."
+:::
+
+::: {.notes}
+Il caso 2020 è l'evoluzione naturale di Pizzagate: non più una singola cospirazione, ma un intero framework narrativo ("le elezioni sono truccate") preparato mesi prima del voto e amplificato attraverso tutti e 4 gli stadi del mainstreaming. La ricerca di Starbird e colleghi (2023) è particolarmente importante perché documenta la "disinformazione partecipativa": non solo propaganda top-down, ma co-costruzione dal basso — esattamente il punto di Marwick & Lewis sulla manipolazione reticolare. Le conseguenze per i ricercatori (minacce, cause, indagini) mostrano che studiare la manipolazione è di per sé un atto politico.
+:::
+
+## Il panorama mediatico italiano
+
+<!-- PROIETTARE: grafici PCA (Analisi delle Componenti Principali) del posizionamento dei media italiani sullo spettro partigiano. Dalla ricerca LabCA - Università di Urbino. -->
+
+Anche l'Italia ha il suo **ecosistema mediatico partigiano**:
+
+::: {.columns}
+::: {.column width="50%"}
+### Media mainstream
+
+- Corriere, Repubblica, ANSA, Sole 24 Ore
+- Posizionamento relativamente **centrato**
+- Soggetti all'economia dell'attenzione
+:::
+
+::: {.column width="50%"}
+### Media iper-partigiani
+
+- Siti di "controinformazione"
+- Reti di pagine Facebook coordinate
+- Posizionamento **estremo** nello spettro
+- Funzionano come pipeline verso il mainstream
+:::
+:::
+
+::: {.notes}
+Mostrare i grafici PCA dalla ricerca del docente: l'analisi delle componenti principali del posizionamento dei media italiani mostra cluster di outlet raggruppati per orientamento politico. Il punto: anche in Italia esiste un ecosistema iper-partigiano che funziona come pipeline di amplificazione, con le stesse dinamiche descritte da Marwick & Lewis per il contesto americano. Collegamento con il laboratorio: il dataset MCL che analizzerete nel Blocco 2 proviene da questo ecosistema.
 :::
 
 ## Il punto chiave: la manipolazione è reticolare {background-color="#C5612E"}

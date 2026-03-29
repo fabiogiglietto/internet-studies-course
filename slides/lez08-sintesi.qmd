@@ -177,6 +177,27 @@ I movimenti per i diritti degli uomini usarono GamerGate per promuovere un'**age
 Il passaggio dal ludico al politico è completo. Le competenze acquisite in anni di trolling (progettare informazione virale, manipolare algoritmi, coordinare campagne decentralizzate, sfruttare le vulnerabilità dei media) vengono applicate alla politica. Boyd: "Una nuova forma di manipolazione dell'informazione si sta dispiegando davanti ai nostri occhi. È politica. È globale. Ed è populista per natura."
 :::
 
+## Fase 5? L'IA generativa (2022–oggi)
+
+Boyd scriveva nel 2017. Da allora, un nuovo strumento ha **amplificato** ulteriormente la manipolazione dell'attenzione:
+
+<!-- PROIETTARE: timeline dell'IA generativa: 30 nov 2022 (lancio ChatGPT) → 5 dic 2022 (NYT, Guardian) → feb 2023 (100M utenti) → deepfake Biden, Bezos su TikTok → Midjourney, Sora. -->
+
+| Data | Evento |
+|------|--------|
+| 30 nov 2022 | Lancio di **ChatGPT** |
+| Feb 2023 | **100 milioni** di utenti in 2 mesi (record assoluto) |
+| 2023–2025 | Deepfake audio/video: falsi discorsi di politici, voice cloning, video sintetici |
+| 2024–2025 | Generazione di **immagini e video** indistinguibili dalla realtà |
+
+::: {.highlight-box}
+Se nel 2006 servivano attori e sceneggiatori per creare lonelygirl15, oggi un singolo individuo con un laptop può generare **contenuti sintetici indistinguibili** dal reale. La "democratizzazione della manipolazione" (Boyd) ha fatto un salto di scala.
+:::
+
+::: {.notes}
+Questa "Fase 5" non è nel testo di Boyd (2017), ma è l'estensione naturale del suo argomento. L'IA generativa abbatte ulteriormente i costi di produzione: generare un articolo falso, un'immagine manipolata, un video deepfake costa quasi zero. Le competenze partecipative (Jenkins) necessarie per la manipolazione (Marwick & Lewis) si riducono ulteriormente (Shirky: crollo dei costi). Le affordance (Boyd 2018) restano le stesse: persistenza, visibilità, replicabilità, ricercabilità — ma con contenuti sintetici sempre più convincenti. Collegamento con la policy del corso sull'IA generativa: gli studenti stessi usano questi strumenti — è fondamentale che ne comprendano il potenziale manipolativo.
+:::
+
 ## La "democratizzazione della manipolazione" {background-color="#C5612E"}
 
 ## Non più solo stati e corporation
@@ -226,18 +247,18 @@ Dal film *Gas Light* (1944): abuso psicologico in cui la vittima dubita della pr
 Il gaslighting informativo funziona perché l'ecosistema mediale contemporaneo è intrinsecamente ambiguo: notizie vere, notizie false, satira, propaganda, opinione — tutto circola nello stesso spazio. In questo contesto, seminare dubbio è facilissimo: basta affermare che tutto è falso, che nessuno dice la verità, che "i media mentono." Se le persone dubitano di tutto, non possono agire informate. I regimi autocratici hanno imparato questa lezione. Collegamento con Marwick & Lewis: la crisi di fiducia nei media è sia una vulnerabilità sfruttata sia un risultato del gaslighting.
 :::
 
-## L'arco completo: dai Lolcats al populismo
+## L'arco completo: dai Lolcats all'IA generativa
 
 ```
-  2003            2006–2010          2010–2014          2014–2017
-  ┌──────┐       ┌──────────┐       ┌──────────┐       ┌──────────────┐
-  │Meme  │──────►│Trolling  │──────►│Anonymous │──────►│Manipolazione │
-  │Lulz  │       │dei media │       │GamerGate │       │politica      │
-  │4chan  │       │Attenzione│       │Doxing    │       │Populismo     │
-  └──────┘       └──────────┘       └──────────┘       └──────────────┘
+  2003          2006–2010       2010–2014       2014–2017        2022–oggi
+  ┌──────┐     ┌──────────┐   ┌──────────┐   ┌────────────┐   ┌───────────┐
+  │Meme  │────►│Trolling  │──►│Anonymous │──►│Manipolazione──►│Deepfake  │
+  │Lulz  │     │dei media │   │GamerGate │   │politica    │   │IA gener. │
+  │4chan  │     │Attenzione│   │Doxing    │   │Populismo   │   │Sintetici │
+  └──────┘     └──────────┘   └──────────┘   └────────────┘   └───────────┘
 
-  Divertimento    Sfida ai media    Danno reale        Acquisizione
-                                                        di potere
+  Divertimento  Sfida ai       Danno           Acquisizione    Automazione
+                media          reale           di potere       della manip.
 ```
 
 ::: {.highlight-box}
@@ -262,6 +283,26 @@ Boyd (2017) è la **chiave di volta** che collega i quattro autori precedenti:
 
 ::: {.notes}
 Questa tabella sintetizza il quadro teorico del corso. È la stessa tabella che gli studenti dovranno usare come struttura per l'Introduction del loro saggio IMRAD. Ogni testo offre una lente diversa: Boyd 2018 descrive l'ambiente, Jenkins le pratiche, Shirky il motore economico, Marwick & Lewis la patologia, Boyd 2017 la storia. Insieme, raccontano una trasformazione: le proprietà delle piattaforme abilitano pratiche partecipative che, grazie al crollo dei costi di coordinamento, scalano a livello di massa — e possono essere piegate alla manipolazione.
+:::
+
+## Un caso, cinque lenti
+
+Proviamo a leggere un **singolo caso** con tutti e cinque i testi:
+
+::: {.highlight-box}
+**Caso:** una campagna di disinformazione virale su Facebook durante le elezioni italiane — meme satirici con dati falsi condivisi da reti di pagine coordinate.
+:::
+
+| Testo | Cosa ci dice del caso |
+|-------|----------------------|
+| **Boyd (2018)** | La **replicabilità** rende i meme facili da condividere; la **ricercabilità** li fa apparire nelle ricerche |
+| **Jenkins (2008)** | Il formato meme è **espressività mediale** — stessa forma della partecipazione genuina |
+| **Shirky (2009)** | La coordinazione tra pagine costa quasi **zero** — sotto il pavimento di Coase |
+| **Marwick & Lewis (2017)** | Tattiche riconoscibili: ***meme warfare*** + ***astroturfing*** (pagine coordinate) |
+| **Boyd (2017)** | Evoluzione storica: dal trolling per i *lulz* alla **manipolazione elettorale** |
+
+::: {.notes}
+Questo esercizio mostra come i cinque testi funzionino come lenti complementari sullo stesso fenomeno. Ogni testo illumina un aspetto diverso: Boyd 2018 le proprietà strutturali, Jenkins la forma culturale, Shirky il meccanismo economico, Marwick & Lewis la tattica, Boyd 2017 la traiettoria storica. Nel saggio IMRAD, gli studenti dovranno fare esattamente questo: usare i testi per interpretare i propri risultati. La mappa concettuale che costruiranno tra poco è la versione visiva di questa tabella.
 :::
 
 ## Esercitazione: la mappa concettuale {background-color="#C5612E"}

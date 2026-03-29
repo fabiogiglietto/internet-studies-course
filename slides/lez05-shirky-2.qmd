@@ -191,6 +191,26 @@ Questo caso funziona come esempio positivo — il telefono viene restituito, la 
 Seconda parte della lezione (30 minuti). Passiamo dalla celebrazione alla critica. Se formare gruppi è così facile, perché non tutto funziona? E cosa significa partecipare quando il costo è quasi zero?
 :::
 
+## Caso: GameStop e r/WallStreetBets (2021)
+
+<!-- PROIETTARE: screenshot del subreddit r/wallstreetbets e grafico dell'andamento del titolo GameStop (GME) gennaio 2021. Documentario Netflix "EAT THE RICH: La saga GameStop". -->
+
+Una community di Reddit (**r/wallstreetbets**, 12 milioni di membri) coordina l'acquisto massiccio di azioni GameStop:
+
+- Il titolo sale del **1.700%** in pochi giorni
+- I fondi hedge che scommettevano al ribasso perdono **miliardi**
+- "Dumb Money" batte Wall Street al suo stesso gioco
+
+::: {.highlight-box}
+**La scala di Shirky in azione:**
+
+- **Condivisione** (meme, analisi amatoriali) → **Cooperazione** (strategia condivisa) → **Azione collettiva** (acquisto coordinato con conseguenze reali)
+:::
+
+::: {.notes}
+Il caso GameStop è perfetto per mostrare i tre livelli di Shirky in un unico evento: inizia come condivisione (utenti che postano meme e analisi ironiche sulle azioni), diventa cooperazione (la community sviluppa una strategia condivisa: "hold the line", "diamond hands"), e culmina in azione collettiva con conseguenze economiche reali. Ma è genuina azione collettiva o manipolazione di mercato? Il confine è la stessa zona grigia di cui parleremo tra poco. Documentari: "EAT THE RICH" (Netflix), "Dumb Money" (film 2023). NYT: "'Dumb Money' Is on GameStop, and It's Beating Wall Street at Its Own Game."
+:::
+
 ## Il paradosso dello *slacktivism*
 
 ::: {.orange-box}

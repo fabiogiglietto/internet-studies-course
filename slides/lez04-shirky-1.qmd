@@ -101,6 +101,29 @@ Struttura: 50 minuti di lezione frontale, 40 minuti di esercitazione a gruppi, 2
 Shirky parte da una domanda apparentemente ovvia. Se il mercato potrebbe coordinare tutto attraverso contratti tra individui, perché esistono le aziende, le istituzioni, le burocrazie? La risposta viene da Ronald Coase (1937): i costi di transazione.
 :::
 
+## La complessità cresce con il gruppo
+
+Perché coordinare le persone è così difficile? Perché le **connessioni** crescono molto più velocemente dei **membri**:
+
+```
+  5 persone         10 persone         15 persone
+  ●───●              ●───●              ●───●
+  │\ /│              │\ /│\ /│          │\ /│\ /│\ /│
+  ● ● ●              ● ● ● ● ●          ● ● ● ● ● ● ●
+                     │\ /│\ /│          │\ /│\ /│\ /│
+                      ● ● ● ●            ● ● ● ● ● ●
+
+  10 connessioni     45 connessioni     105 connessioni
+```
+
+::: {.highlight-box}
+Raddoppiare il gruppo non raddoppia la complessità — la **moltiplica**: la formula è n(n-1)/2.
+:::
+
+::: {.notes}
+Questo è il problema fondamentale dell'organizzazione umana. Con 5 persone, ci sono 10 possibili connessioni da gestire. Con 10 persone, 45. Con 150 (il "numero di Dunbar"), 11.175. Nessun individuo può gestire così tante relazioni — servono strutture organizzative. La gerarchia è stata la soluzione tradizionale: invece di tutti-con-tutti, si organizzano livelli. Ma la gerarchia ha un costo.
+:::
+
 ## Il problema dei costi di transazione
 
 Nel 1937, l'economista **Ronald Coase** si pose una domanda semplice: perché esistono le aziende? [@shirky2009]
@@ -368,6 +391,24 @@ Un esempio di condivisione come **resistenza** [@shirky2009]:
 
 ::: {.notes}
 Shirky: "I militari non riuscirono — forse non potevano — a bloccare l'intera popolazione." Questo caso anticipa un tema che tornerà con forza in Boyd (2017): la "democratizzazione" degli strumenti di manipolazione/resistenza. Se la censura diventa più difficile, anche il controllo della narrazione diventa più difficile — e questo vale sia per i regimi autoritari sia per chi vuole manipolare il dibattito pubblico.
+:::
+
+## Un esempio contemporaneo: OSINT e conflitti
+
+Gli esempi di Shirky risalgono al 2004–2006. Ma il principio vale più che mai:
+
+- **OSINT** (*Open Source Intelligence*): durante il conflitto in Ucraina (2022–), migliaia di volontari online analizzano immagini satellitari, geolocalizzano video, tracciano movimenti militari
+- Nessun servizio segreto potrebbe coordinare **migliaia di analisti non pagati** sparsi nel mondo
+- Strumenti: Bellingcat, Google Earth, social media, Telegram
+- Livello: **cooperazione** (sincronizzazione, identità di gruppo, decisioni collettive su cosa verificare)
+
+::: {.callout-note}
+## 20 anni dopo Flickr
+Il principio è lo stesso: il crollo dei costi di coordinamento rende possibili attività che nessuna istituzione potrebbe organizzare. Ma la scala e la sofisticazione sono enormemente cresciute.
+:::
+
+::: {.notes}
+L'OSINT (Open Source Intelligence) è forse l'esempio più potente del pavimento di Coase nel 2020s: comunità come Bellingcat coordinano migliaia di volontari che analizzano dati pubblici (immagini satellitari, video social, dati di volo) per documentare eventi bellici, crimini di guerra, disastri. Nessun servizio di intelligence potrebbe farlo a questa scala. Come Flickr nel 2004, ma con conseguenze geopolitiche. Collegamento: le stesse competenze di analisi collaborativa vengono usate sia per scopi positivi (documentare crimini di guerra) sia manipolativi (disinformazione coordinata).
 :::
 
 ## Esercitazione: il pavimento di Coase oggi {background-color="#C5612E"}
