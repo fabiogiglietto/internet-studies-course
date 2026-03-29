@@ -2,6 +2,8 @@
 
 Materiali didattici per il corso di **Internet Studies**, tenuto dal Prof. Fabio Giglietto presso l'[Universit&agrave; degli Studi di Urbino Carlo Bo](https://www.uniurb.it/), Dipartimento DISCUI.
 
+**Sito del corso:** [fabiogiglietto.github.io/internet-studies-course](https://fabiogiglietto.github.io/internet-studies-course/)
+
 **Programma ufficiale:** [uniurb.it/insegnamenti-e-programmi/268626](https://www.uniurb.it/insegnamenti-e-programmi/268626)
 
 ## Panoramica del corso
