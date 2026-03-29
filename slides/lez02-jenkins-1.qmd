@@ -115,22 +115,12 @@ Punto fondamentale: Jenkins rifiuta il determinismo tecnologico. Le persone hann
 
 <!-- PROIETTARE: diagramma a 2 assi della convergenza (adattato da Mimi Ito). Asse verticale: Consumatore ↔ Produttore. Asse orizzontale: Professionale ↔ Amatoriale. Quadranti: mass media (professionale/consumatore), comunicazione personale (amatoriale/consumatore), industria culturale (professionale/produttore), cultura partecipativa (amatoriale/produttore). -->
 
-La **cultura della convergenza** di Jenkins si colloca all'incrocio di due assi:
+La **cultura della convergenza** di Jenkins si colloca all'incrocio di due assi (adattato da Mimi Ito):
 
-```
-                    Produttore
-                        │
-     Industria          │         CULTURA
-     culturale          │       PARTECIPATIVA
-                        │       (fan, blogger,
-                        │        videogamers)
-  Professionale ────────┼──────── Amatoriale
-                        │
-     Mass media         │       Comunicazione
-     (TV, cinema)       │        personale
-                        │
-                    Consumatore
-```
+| | **Professionale** | **Amatoriale** |
+|---|---|---|
+| **Produttore** | Industria culturale | **CULTURA PARTECIPATIVA** (fan, blogger, videogamers) |
+| **Consumatore** | Mass media (TV, cinema) | Comunicazione personale |
 
 ::: {.notes}
 Questo diagramma (adattato da Mimi Ito) mostra dove si colloca la cultura partecipativa: nel quadrante amatoriale/produttore. È la zona dove i fan, i blogger e i videogamers operano — non sono professionisti dei media, ma non sono nemmeno consumatori passivi. Capire le culture partecipative nei media significa capire "il fermento sotto traccia che caratterizzerà i rapporti futuri fra istituzioni e cittadini, fra consumatori e mercato" [@jenkins2008].
