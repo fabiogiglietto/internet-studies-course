@@ -104,39 +104,37 @@ Contenuti dozzinali prodotti massivamente con l'IA — "sbobba digitale" progett
 Questo caso mostra un aspetto diverso della manipolazione: non è disinformazione politica, ma sfruttamento dell'economia dell'attenzione (Boyd 2017) attraverso contenuti IA progettati per massimizzare l'engagement. I micro-drama della frutta sono "AI slop" — contenuti senza valore prodotti a costo quasi zero che inondano le piattaforme. Interessante per il corso perché: (1) la cultura partecipativa di Jenkins viene sostituita dalla produzione automatizzata — non c'è più nemmeno un fan che crea; (2) le affordance di Boyd (replicabilità, visibilità) vengono sfruttate industrialmente; (3) il crollo dei costi di Shirky è totale — il "pavimento di Coase" scompare. Fonte: Il Post, "I micro-drama con la frutta antropomorfa generati dall'intelligenza artificiale su TikTok" (27 marzo 2026).
 :::
 
-## Le domande del corso
-
-::: {.highlight-box}
-Quattro casi, una domanda comune:
-
-- **Come** fanno questi contenuti a raggiungere milioni di persone? → *affordance*
-- **Perché** funzionano? → *economia dell'attenzione*
-- **Chi** li crea e con quale strategia? → *cultura partecipativa strumentalizzata*
-- **Cosa** possiamo fare per capirli? → *metodi di ricerca*
-
-Questo corso fornisce gli **strumenti teorici e pratici** per rispondere.
-:::
-
-::: {.notes}
-Questa slide chiude la sezione di apertura collegando i 4 casi ai temi del corso. Non dare ancora le risposte complete — le costruiremo nelle 8 settimane del Blocco 1. L'obiettivo è mostrare che queste domande richiedono concetti (affordance, cultura partecipativa, economia dell'attenzione, manipolazione) e metodi (analisi del contenuto, analisi dell'engagement) che svilupperemo insieme.
-:::
-
-## Da un hashtag a milioni in piazza: No Kings
+## Ma le piattaforme servono anche a questo
 
 <!-- PROIETTARE: foto della manifestazione No Kings a Roma del 28 marzo 2026 (corteo da piazza della Repubblica a piazzale del Verano). Fonte: https://www.ilpost.it/2026/03/28/foto-manifestazione-no-kings-roma/ -->
 
-Un movimento nato sui social media americani arriva **ieri** a Roma con centinaia di migliaia di persone:
+**Ieri a Roma, 300.000 persone** in piazza per il movimento **No Kings** — nato sui social media americani e arrivato in Europa in meno di un anno:
 
-- **Giugno 2025:** prima protesta negli USA (#NoKingsDay), coordinata via TikTok, Reddit, X — **5 milioni** di partecipanti in 2.100 città
-- **Ottobre 2025:** seconda ondata ("No Kings 2.0"), stesso modello decentralizzato
-- **28 marzo 2026:** il movimento arriva in Italia e in Europa — a Roma **300.000 persone** (stime organizzatori), oltre 700 organizzazioni aderenti
+- **Giugno 2025:** prima protesta USA (#NoKingsDay), coordinata via TikTok, Reddit, X — **5 milioni** di partecipanti in 2.100 città
+- **Ottobre 2025:** seconda ondata, stesso modello decentralizzato
+- **28 marzo 2026:** Roma, oltre 700 organizzazioni aderenti
+
+TikTok ha portato **milioni di visualizzazioni** ai post con #NoKings, permettendo un'organizzazione **spontanea e senza gerarchie**.
+
+::: {.notes}
+No Kings è il contrappunto positivo ai tre casi precedenti: le stesse piattaforme che permettono deepfake, astroturfing e AI slop permettono anche mobilitazione civica su scala globale. Il movimento nasce negli USA come reazione alle politiche di Trump, si coordina via TikTok (video con hashtag, localizzazione dei cortei, messaggi educativi), Reddit e X. Gli algoritmi amplificano i post, permettendo organizzazione decentralizzata senza struttura gerarchica. A Roma ha unito sindacati (CGIL), movimenti sociali, collettivi e partiti di opposizione contro "i re e le loro guerre." Ma anche qui la manipolazione si insinua: PolitiFact (ottobre 2025) ha smascherato un video AI che mostrava una finta protesta No Kings nel Regno Unito — le stesse piattaforme che organizzano il movimento vengono usate per produrre contenuti falsi su di esso.
+:::
+
+## Stesse piattaforme, usi opposti
+
+| Caso | Cosa | Come |
+|------|------|------|
+| **Finto TG5** | Disinformazione | Deepfake generato dall'IA, odio anti-islamico |
+| **Esperia Italia** | Astroturfing | Influencer "indipendenti" collegati al potere |
+| **Micro-drama frutta** | *AI slop* | Contenuti tossici prodotti in massa dall'IA per engagement |
+| **No Kings** | Mobilitazione civica | Coordinamento decentralizzato via TikTok, milioni in piazza |
 
 ::: {.highlight-box}
-L'organizzazione è avvenuta sulle piattaforme: TikTok ha portato **milioni di visualizzazioni** ai post con #NoKings, permettendo un'organizzazione **spontanea e decentralizzata**. Le stesse proprietà delle piattaforme che rendono possibile questa mobilitazione rendono possibile anche la manipolazione mediatica. Questo corso spiega **perché**.
+Le **stesse proprietà delle piattaforme** abilitano manipolazione e partecipazione genuina. Questo corso vi dà gli strumenti per **distinguere, analizzare e comprendere** entrambe.
 :::
 
 ::: {.notes}
-No Kings è un caso perfettamente attuale di networked publics in azione — la manifestazione di Roma è avvenuta ieri, 28 marzo 2026. Il movimento nasce negli USA come reazione alle politiche di Trump, con il nome che richiama gli ideali repubblicani americani ("nessun re"). La coordinazione è avvenuta in gran parte su TikTok (video con hashtag #NoKingsDay, localizzazione dei cortei, messaggi educativi sui diritti civili), Reddit e X. Gli algoritmi di TikTok hanno amplificato i post, permettendo un'organizzazione decentralizzata senza struttura gerarchica — esattamente il modello di Shirky. A Roma la manifestazione ha unito movimenti sociali, sindacati (CGIL), collettivi e partiti di opposizione contro "i re e le loro guerre." Collegamento con Boyd: persistenza (i video restano e ispirano), visibilità (gli algoritmi amplificano), replicabilità (il format viene copiato in ogni città), ricercabilità (l'hashtag aggrega). Ma le stesse affordance permettono anche la disinformazione — come il video deepfake che abbiamo appena visto. Un fact-check di PolitiFact (ottobre 2025) ha smascherato un video AI che mostrava una finta protesta No Kings nel Regno Unito: le stesse piattaforme che organizzano il movimento vengono usate per produrre contenuti falsi su di esso.
+Questa è la slide chiave dell'apertura: mostra che le piattaforme non sono "buone" o "cattive" — sono ambienti con proprietà strutturali (le affordance di Boyd) che abilitano usi opposti. Il corso fornirà i concetti (affordance, cultura partecipativa, economia dell'attenzione, manipolazione mediatica) e i metodi (analisi del contenuto, analisi dell'engagement) per capire perché certi contenuti funzionano, chi li produce e con quale strategia. Non dare ancora le risposte — le costruiremo nelle prossime 8 settimane.
 :::
 
 ## Il corso in sintesi {background-color="#C5612E"}
