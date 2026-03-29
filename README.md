@@ -1,23 +1,23 @@
 # Internet Studies — A.A. 2025/2026
 
-Course materials for **Internet Studies**, taught by Prof. Fabio Giglietto at [Universit&agrave; degli Studi di Urbino Carlo Bo](https://www.uniurb.it/), DISCUI Department.
+Materiali didattici per il corso di **Internet Studies**, tenuto dal Prof. Fabio Giglietto presso l'[Universit&agrave; degli Studi di Urbino Carlo Bo](https://www.uniurb.it/), Dipartimento DISCUI.
 
-**Official programme:** [uniurb.it/insegnamenti-e-programmi/268626](https://www.uniurb.it/insegnamenti-e-programmi/268626)
+**Programma ufficiale:** [uniurb.it/insegnamenti-e-programmi/268626](https://www.uniurb.it/insegnamenti-e-programmi/268626)
 
-## Course overview
+## Panoramica del corso
 
-The course introduces key Internet Studies concepts — **networked publics**, **participatory culture**, **collective action**, **media manipulation**, and the **attention economy** — and applies them through an empirical research project.
+Il corso introduce i concetti chiave degli Internet Studies — **networked publics**, **cultura partecipativa**, **azione collettiva**, **manipolazione mediatica** ed **economia dell'attenzione** — e li applica attraverso un progetto di ricerca empirica di gruppo.
 
-- **Duration:** 48 hours (24 lectures, 2 hours each)
-- **Schedule:** Tue 9:00–11:00, Wed 11:00–13:00, Thu 11:00–13:00
-- **Period:** March 31 – May 27, 2026
-- **Structure:**
-  - *Block 1 — Foundations* (lectures 1–12): theory, seminars, exercises
-  - *Block 2 — Research Lab* (lectures 13–24): supervised group work producing an IMRAD research paper
+- **Durata:** 48 ore (24 lezioni da 2 ore)
+- **Orario:** Mar 9:00–11:00, Mer 11:00–13:00, Gio 11:00–13:00
+- **Periodo:** 31 marzo – 27 maggio 2026
+- **Struttura:**
+  - *Blocco 1 — Fondamenti* (lezioni 1–12): lezioni frontali, seminari, esercitazioni
+  - *Blocco 2 — Laboratorio di ricerca* (lezioni 13–24): lavoro di gruppo supervisionato per la produzione di un saggio empirico in formato IMRAD
 
-## Readings
+## Materiali di studio
 
-The course draws on five core texts:
+Il corso si basa su cinque testi fondamentali:
 
 1. Boyd, D. (2018). *It's Complicated: La vita sociale degli adolescenti sul web*. Castelvecchi (pp. 29–43).
 2. Jenkins, H. (2008). *Fan, Blogger e Videogamers*. FrancoAngeli (pp. 7–22; 160–180; 219–229).
@@ -25,78 +25,78 @@ The course draws on five core texts:
 4. Marwick, A. & Lewis, R. (2017). *Media Manipulation and Disinformation Online*. Data & Society.
 5. Boyd, D. (2017). *Hacking the Attention Economy*. Data & Society: Points.
 
-Reading materials are not included in this repository (copyright).
+I testi non sono inclusi in questo repository (copyright).
 
-## Slides
+## Slide
 
-All 24 lecture slide decks are in `slides/` as [Quarto](https://quarto.org/) reveal.js presentations (`.qmd` files), using a custom DISCUI department theme.
+Tutte le 24 presentazioni si trovano in `slides/` come file [Quarto](https://quarto.org/) reveal.js (`.qmd`), con il tema personalizzato del Dipartimento DISCUI.
 
-### Block 1 — Foundations
+### Blocco 1 — Fondamenti
 
-| # | File | Topic |
-|---|------|-------|
-| 1 | `lez01-introduzione.qmd` | Course introduction & Networked Publics |
-| 2 | `lez02-jenkins-1.qmd` | Participatory Culture (I): Jenkins' model |
-| 3 | `lez03-jenkins-2.qmd` | Participatory Culture (II): Convergence & limits |
-| 4 | `lez04-shirky-1.qmd` | Collective Action (I): Shirky's model |
-| 5 | `lez05-shirky-2.qmd` | Collective Action (II): Slacktivism |
-| 6 | `lez06-manipulation-1.qmd` | Media Manipulation (I): Tactics |
-| 7 | `lez07-manipulation-2.qmd` | Media Manipulation (II): Mainstreaming |
-| 8 | `lez08-sintesi.qmd` | Synthesis: Hacking the Attention Economy |
-| 9 | `lez09-ricerca-piattaforme.qmd` | Platform research methods |
-| 10 | `lez10-dataset-mcl.qmd` | MCL dataset exploration (hands-on) |
-| 11 | `lez11-analisi-contenuto.qmd` | Content analysis, codebook & group formation |
-| 12 | `lez12-imrad-gruppi.qmd` | IMRAD format, RQs & codebook drafting |
+| # | File | Argomento |
+|---|------|-----------|
+| 1 | `lez01-introduzione.qmd` | Introduzione al corso e Networked Publics |
+| 2 | `lez02-jenkins-1.qmd` | Cultura partecipativa (I): il modello di Jenkins |
+| 3 | `lez03-jenkins-2.qmd` | Cultura partecipativa (II): convergenza e limiti |
+| 4 | `lez04-shirky-1.qmd` | Azione collettiva (I): il modello di Shirky |
+| 5 | `lez05-shirky-2.qmd` | Azione collettiva (II): limiti e slacktivism |
+| 6 | `lez06-manipulation-1.qmd` | Media manipulation e disinformazione (I) |
+| 7 | `lez07-manipulation-2.qmd` | Media manipulation e disinformazione (II) |
+| 8 | `lez08-sintesi.qmd` | Sintesi: hackerare l'economia dell'attenzione |
+| 9 | `lez09-ricerca-piattaforme.qmd` | Fare ricerca con i dati delle piattaforme |
+| 10 | `lez10-dataset-mcl.qmd` | Il dataset MCL: esplorazione guidata |
+| 11 | `lez11-analisi-contenuto.qmd` | Analisi del contenuto, codebook e formazione gruppi |
+| 12 | `lez12-imrad-gruppi.qmd` | Il formato IMRAD, le RQ e avvio codebook di gruppo |
 
-### Block 2 — Research Lab
+### Blocco 2 — Laboratorio di ricerca
 
-| # | File | Topic |
-|---|------|-------|
-| 13 | `lez13-campionamento.qmd` | Sampling & coding plan |
-| 14 | `lez14-codifica-1.qmd` | Content coding (I) |
-| 15 | `lez15-codifica-2.qmd` | Content coding (II) & inter-coder reliability |
-| 16 | `lez16-engagement.qmd` | Quantitative engagement analysis |
-| 17 | `lez17-integrazione.qmd` | Integrating qualitative & quantitative analysis |
-| 18 | `lez18-intro-methods.qmd` | Writing Introduction & Methods |
-| 19 | `lez19-results.qmd` | Writing Results |
-| 20 | `lez20-discussion.qmd` | Writing Discussion |
-| 21 | `lez21-revisione.qmd` | Internal revision (flex session) |
-| 22 | `lez22-consegna-bozza.qmd` | Final work & draft submission |
-| 23 | `lez23-peer-review.qmd` | Cross-group peer review |
-| 24 | `lez24-chiusura.qmd` | Final revision & presentations |
+| # | File | Argomento |
+|---|------|-----------|
+| 13 | `lez13-campionamento.qmd` | Campionamento e pianificazione della codifica |
+| 14 | `lez14-codifica-1.qmd` | Codifica del contenuto (I) |
+| 15 | `lez15-codifica-2.qmd` | Codifica del contenuto (II) e affidabilit&agrave; |
+| 16 | `lez16-engagement.qmd` | Analisi quantitativa dell'engagement |
+| 17 | `lez17-integrazione.qmd` | Integrazione analisi qualitativa e quantitativa |
+| 18 | `lez18-intro-methods.qmd` | Stesura Introduction e Methods |
+| 19 | `lez19-results.qmd` | Stesura Results |
+| 20 | `lez20-discussion.qmd` | Stesura Discussion |
+| 21 | `lez21-revisione.qmd` | Revisione interna e coerenza del saggio |
+| 22 | `lez22-consegna-bozza.qmd` | Sessione di lavoro finale e consegna bozza |
+| 23 | `lez23-peer-review.qmd` | Peer review incrociata |
+| 24 | `lez24-chiusura.qmd` | Revisione finale e presentazioni |
 
-## Building the slides
+## Generare le slide
 
-Requires [Quarto](https://quarto.org/) (>= 1.4).
+Requisiti: [Quarto](https://quarto.org/) (>= 1.4).
 
 ```bash
-# Render a single lecture
+# Generare una singola lezione
 quarto render slides/lez01-introduzione.qmd
 
-# Render all lectures
+# Generare tutte le lezioni
 quarto render
 
-# Live preview
+# Anteprima dal vivo
 quarto preview slides/lez01-introduzione.qmd
 ```
 
-## Repository structure
+## Struttura del repository
 
 ```
-├── CLAUDE.md                        # Slide generation instructions
-├── internet_studies_struttura_corso_2025-26.md  # Full course plan
-├── _quarto.yml                      # Shared Quarto config
-├── _extensions/uniurb/              # DISCUI orange theme (discui.scss)
-├── R/uniurb_theme.R                 # ggplot2 theme & color palettes
-├── assets/                          # University logos
-├── references.bib                   # Shared bibliography (APA 7th)
-├── apa.csl                          # Citation style
-├── slides/                          # All 24 .qmd lecture files
-├── readings/                        # Course readings (not tracked)
-├── img/                             # Slide images
-└── scripts/                         # Utility scripts
+├── CLAUDE.md                        # Istruzioni per la generazione delle slide
+├── internet_studies_struttura_corso_2025-26.md  # Piano dettagliato del corso
+├── _quarto.yml                      # Configurazione Quarto condivisa
+├── _extensions/uniurb/              # Tema DISCUI arancione (discui.scss)
+├── R/uniurb_theme.R                 # Tema ggplot2 e palette colori
+├── assets/                          # Loghi dell'Ateneo
+├── references.bib                   # Bibliografia condivisa (APA 7th)
+├── apa.csl                          # Stile citazionale
+├── slides/                          # 24 file .qmd delle lezioni
+├── readings/                        # Testi del corso (non tracciati)
+├── img/                             # Immagini per le slide
+└── scripts/                         # Script di utilit&agrave;
 ```
 
-## License
+## Licenza
 
-Slide content and course materials are copyright Fabio Giglietto / Universit&agrave; degli Studi di Urbino Carlo Bo. The Quarto theme and build configuration are available for reuse.
+I contenuti delle slide e i materiali del corso sono di propriet&agrave; di Fabio Giglietto / Universit&agrave; degli Studi di Urbino Carlo Bo. Il tema Quarto e la configurazione di build sono disponibili per il riuso.
