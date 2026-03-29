@@ -34,23 +34,9 @@ bibliography: ../references.bib
 csl: ../apa.csl
 ---
 
-## Obiettivi di apprendimento
-
-::: {.highlight-box}
-Al termine della lezione, sarete in grado di:
-
-1. Descrivere la **struttura del corso**, le modalità di valutazione e le policy
-2. Elencare e spiegare le **quattro proprietà strutturali** dei *networked publics*
-3. **Applicare** le proprietà a un caso concreto tratto dalla vostra esperienza sulle piattaforme
-:::
-
-::: {.notes}
-Presentare gli obiettivi come guida alla lezione. Sottolineare che oggi si alterneranno una parte amministrativa (prima mezz'ora) e una parte teorica con esercitazione.
-:::
-
 ## Roadmap della lezione
 
-- **Parte 1:** Il corso in sintesi — struttura, valutazione, politiche
+- **Parte 1:** Il corso in sintesi — struttura, valutazione, policy
 - **Parte 2:** I *networked publics* — le quattro proprietà strutturali
 - **Parte 3:** Esercitazione — analizzare un proprio post
 - **Chiusura:** Prossimi passi e letture

@@ -163,34 +163,10 @@ Fabio Giglietto
 
   <p class="date">31 marzo 2026</p>
 </section>
-<section id="obiettivi-di-apprendimento" class="slide level2">
-<h2>Obiettivi di apprendimento</h2>
-<div class="highlight-box">
-<p>Al termine della lezione, sarete in grado di:</p>
-<ol type="1">
-<li>Descrivere la <strong>struttura del corso</strong>, le modalità di valutazione e le policy</li>
-<li>Elencare e spiegare le <strong>quattro proprietà strutturali</strong> dei <em>networked publics</em></li>
-<li><strong>Applicare</strong> le proprietà a un caso concreto tratto dalla vostra esperienza sulle piattaforme</li>
-</ol>
-</div>
-<aside class="notes">
-<p>Presentare gli obiettivi come guida alla lezione. Sottolineare che oggi si alterneranno una parte amministrativa (prima mezz’ora) e una parte teorica con esercitazione.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="roadmap-della-lezione" class="slide level2">
 <h2>Roadmap della lezione</h2>
 <ul>
-<li><strong>Parte 1:</strong> Il corso in sintesi — struttura, valutazione, politiche</li>
+<li><strong>Parte 1:</strong> Il corso in sintesi — struttura, valutazione, policy</li>
 <li><strong>Parte 2:</strong> I <em>networked publics</em> — le quattro proprietà strutturali</li>
 <li><strong>Parte 3:</strong> Esercitazione — analizzare un proprio post</li>
 <li><strong>Chiusura:</strong> Prossimi passi e letture</li>
@@ -1359,6 +1335,75 @@ Boyd, D. (2018). <em>It’s Complicated: La Vita Sociale degli Adolescenti sul W
           RevealZoom
         ]
       });
+    </script>
+    <style>
+      .attendance-code {
+        font-weight: bold;
+        font-family: monospace;
+      }
+      @media print {
+        .attendance-code { display: none !important; }
+      }
+    </style>
+    <script>
+      (function() {
+        const SHEET_URL = 'https://docs.google.com/spreadsheets/d/1QZz9VSa32M2thXyAfg1bF42OXtOg9AA8CMkw3xMNiW0/gviz/tq?tqx=out:csv&range=A1';
+        const POLL_INTERVAL = 15000;
+        const FOOTER_BASE = 'Internet Studies \u00b7 A.A. 2025/2026';
+
+        var codeSpan = document.createElement('span');
+        codeSpan.className = 'attendance-code';
+
+        function getFooterEl() {
+          return document.querySelector('.footer.footer-default p');
+        }
+
+        var timerId = null;
+
+        function poll() {
+          fetch(SHEET_URL + '&_=' + Date.now())
+            .then(function(r) { return r.text(); })
+            .then(function(csv) {
+              var code = csv.trim().replace(/^"|"$/g, '').trim();
+              var footerP = getFooterEl();
+              if (!footerP) return;
+              if (code) {
+                codeSpan.textContent = code;
+                footerP.textContent = FOOTER_BASE + ' \u00b7 ';
+                footerP.appendChild(codeSpan);
+              } else {
+                footerP.textContent = FOOTER_BASE;
+              }
+            })
+            .catch(function() {
+              // silently ignore — keep last known state
+            });
+        }
+
+        function startPolling() {
+          if (!timerId) {
+            poll();
+            timerId = setInterval(poll, POLL_INTERVAL);
+          }
+        }
+
+        function stopPolling() {
+          if (timerId) {
+            clearInterval(timerId);
+            timerId = null;
+          }
+        }
+
+        document.addEventListener('visibilitychange', function() {
+          if (document.hidden) {
+            stopPolling();
+          } else {
+            startPolling();
+          }
+        });
+
+        startPolling();
+      })();
     </script>
     
     <script>
