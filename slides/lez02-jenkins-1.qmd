@@ -240,6 +240,16 @@ Riepilogo visivo. Sottolineare che queste cinque caratteristiche funzionano insi
 Passaggio dalle caratteristiche (cosa definisce una cultura partecipativa) alle forme (come si manifesta concretamente la partecipazione). Jenkins identifica quattro forme che emergono nelle pratiche mediali.
 :::
 
+## Henry Jenkins sulla cultura partecipativa
+
+{{< video https://www.youtube.com/watch?v=AFCLKa0XRlw width="100%" height="70%" >}}
+
+**TEDxNYED, 6 marzo 2010** — Jenkins su cultura partecipativa, nuove alfabetizzazioni mediali e partecipazione civica.
+
+::: {.notes}
+Video facoltativo: se c'è tempo, mostrare i primi 3-4 minuti in cui Jenkins introduce il concetto di cultura partecipativa e spiega perché le competenze partecipative sono essenziali per la cittadinanza nel XXI secolo. Il video completo dura circa 20 minuti — non mostrarlo per intero, ma segnalarlo agli studenti come risorsa disponibile su Moodle. Fonte: TEDxNYED 2010, YouTube.
+:::
+
 ## 1. Appartenenza mediale
 
 La partecipazione come **appartenenza** a community che si formano attorno a pratiche mediali condivise [@jenkins2008].
@@ -283,10 +293,29 @@ Ogni forma di espressività mediale implica una rielaborazione creativa del cont
 - Un musicista indipendente pubblica canzoni **gratuitamente** online
 - I fan creano **decine di video** — animazioni, live action, machinima
 - La canzone acquisisce vita propria, **oltre il controllo dell'autore**
-- Esempio italiano: **Trek IT!** su Amazon Prime Video — fandom di Star Trek in Italia
+- 🔗 Esempi fan-made: [machinima WoW (5M+ views)](https://wiki.jonathancoulton.com/Code_Monkey) · [Code Monkey Dance (400K+ views)](https://wiki.jonathancoulton.com/Code_Monkey_Dance) · [tutti i fan project](https://wiki.jonathancoulton.com/Fan_Projects)
 
 ::: {.notes}
-Jonathan Coulton è un caso perfetto di espressività mediale: un musicista che dà le sue canzoni "gambe" perché camminino per il mondo. I fan non si limitano ad ascoltare: producono video, animazioni, performance. Il prodotto culturale diventa un oggetto condiviso su cui la community lavora collettivamente. Trek IT! è un esempio italiano dello stesso fenomeno: fan di Star Trek che producono un documentario professionale sul fandom italiano, distribuito su Amazon Prime Video. Mostra che la cultura partecipativa non è solo un fenomeno americano.
+Jonathan Coulton è un caso perfetto di espressività mediale: un musicista che dà le sue canzoni "gambe" perché camminino per il mondo. I fan non si limitano ad ascoltare: producono video, animazioni, performance. Il prodotto culturale diventa un oggetto condiviso su cui la community lavora collettivamente. Il video machinima di Code Monkey (realizzato con World of Warcraft) ha superato i 5 milioni di visualizzazioni; il Code Monkey Dance di una fan è stato ripreso da NPR. La pagina Fan Projects della wiki di Coulton (JoCopedia) elenca decine di progetti fan-made.
+:::
+
+## Esempio italiano: Trek IT!
+
+<!-- PROIETTARE: trailer o screenshot del documentario Trek IT! da Amazon Prime Video. -->
+
+Un **documentario** nato dal fandom di Star Trek italiano, disponibile su [Amazon Prime Video](https://www.primevideo.com/detail/Trek-IT/0JX0VP5E9Q8NGTT6J6U4Z3V5XH):
+
+- Racconta la storia dello **STIC** (Star Trek Italian Club) e della community trekker italiana
+- Da un piccolo gruppo di amici a **convention con migliaia di partecipanti**, riviste, eventi
+- Prodotto dai fan stessi — non da un'emittente o una casa di produzione
+- Prima su **Rai 4**, poi in versione integrale su Prime Video (24 minuti di scene aggiunte)
+
+::: {.highlight-box}
+La cultura partecipativa **non è solo un fenomeno americano**. In Italia, i fan di Star Trek hanno costruito una community che ha prodotto convention, pubblicazioni e infine un documentario professionale — partendo dal basso.
+:::
+
+::: {.notes}
+Trek IT! (2021, IMDb 8.2) è un caso perfetto per Jenkins: mostra tutte e cinque le caratteristiche della cultura partecipativa applicate al contesto italiano. Basse barriere (chiunque poteva partecipare allo STIC), supporto alla condivisione (riviste, fanzine, poi il web), mentorship informale (gli appassionati più esperti guidavano i nuovi), credere che il proprio contributo conti (ogni trekker sentiva di far parte di qualcosa di più grande), connessione sociale (le convention come momento di incontro). Il documentario stesso è un atto di cultura partecipativa: fan che raccontano la propria storia, distribuita poi su una piattaforma globale. Link: https://www.primevideo.com/detail/Trek-IT/0JX0VP5E9Q8NGTT6J6U4Z3V5XH
 :::
 
 ## 3. *Problem-solving* collaborativo
