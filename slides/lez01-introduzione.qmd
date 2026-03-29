@@ -154,47 +154,46 @@ Cinque testi — tutti obbligatori, tutti disponibili su Moodle:
 Sottolineare che non ci sono fonti esterne da cercare: il quadro teorico del saggio si basa interamente su questi cinque testi. Questo è un vincolo deliberato — la qualità della literature review riflette la comprensione dei materiali, non la capacità di citare fonti mai lette.
 :::
 
-## Modalità di valutazione — Frequentanti
+## Modalità di valutazione per frequentanti
 
-::: {.highlight-box}
-**Requisiti:** Iscrizione entro la seconda settimana + almeno **18 presenze su 24** + compito individuale completato.
-:::
+È considerato frequentante chi risulta iscritto allo spazio blended entro la **seconda settimana**, partecipa ad almeno **¾ delle lezioni** (18 su 24) e al lavoro di gruppo
 
-| Componente | Peso | Dettaglio |
-|------------|------|-----------|
-| **Progetto di gruppo** | 75% | Saggio IMRAD (4.000–6.000 parole) |
-| **Partecipazione** | 10% | Presenza rilevata (codice + geolocalizzazione) |
-| **Esame orale** | 15% | Individuale, ~10 min, tutti e 5 i testi + progetto |
+- Il voto dell'attività di gruppo vale il **75%** della valutazione finale (max 22,5)
+- Il **10%** (max 3) dalla partecipazione dello studente (n. lezioni frequentate)
+- Il restante **15%** (max 4,5) dipende dalla valutazione del **colloquio orale**
+- Il colloquio consiste nella **discussione del progetto** di lavoro e dei **testi in programma**
+- Gli studenti non frequentanti sosterranno l'esame studiando i **testi indicati** nel [programma](https://www.uniurb.it/insegnamenti-e-programmi/268626)
 
 ::: {.notes}
-Il progetto di gruppo è il cuore della valutazione. Tutti i membri ricevono lo stesso voto base, ma una peer evaluation intra-gruppo può modulare il voto individualmente. L'esame orale verifica che ciascuno abbia compreso i testi, anche quelli non direttamente usati nel proprio saggio.
-:::
-
-## Modalità di valutazione — Non frequentanti
-
-Chi non raggiunge 18 presenze sostiene l'esame sui testi indicati nel **programma ufficiale** dell'insegnamento, sezione "non frequentanti":
-
-🔗 [uniurb.it/insegnamenti-e-programmi/268626](https://www.uniurb.it/insegnamenti-e-programmi/268626)
-
-::: {.notes}
-Per i dettagli completi sulla modalità non frequentanti, fare riferimento al programma ufficiale pubblicato sul sito di Ateneo. Motivare la frequenza: il percorso frequentanti è supportato dal lavoro collaborativo e dal feedback continuo del docente.
+Spiegare il sistema di valutazione nel dettaglio. Il progetto di gruppo è il cuore del corso: gli studenti analizzeranno contenuti da pagine Facebook usando la Meta Content Library. Valutazione collettiva per il gruppo, con possibilità di modulazione individuale tramite peer evaluation. L'esame orale verifica che ciascuno abbia compreso i testi, anche quelli non direttamente usati nel proprio saggio. Per i non frequentanti: studio dei testi in programma (sezione non frequentanti sul sito di Ateneo).
 :::
 
 ## Rilevazione delle presenze
 
-La presenza viene rilevata tramite **codice** + **geolocalizzazione**.
-
-- All'inizio di ogni lezione verrà comunicato un **codice alfanumerico**
-- Lo studente lo inserisce nell'apposita interfaccia, che verifica la posizione
-- **Ogni lezione oltre la soglia di 18** contribuisce alla componente partecipazione (max 3/30)
+- Aprire l'app **UniUrb Stud** (o [uniurb-pwa.app.cineca.it](https://uniurb-pwa.app.cineca.it))
+- Cliccare su **Rilevazione Frequenze** → **Marcatura**
+- Autorizzare la **geolocalizzazione** (la prima volta)
+- Inserire il **codice** visualizzato nel footer di queste slide
+- Verificare nello **Storico presenze**
 
 ::: {.callout-warning}
-## Giustificazione assenze
-Entro **2 giorni** dall'assenza, postare nel Forum dedicato su Moodle specificando i motivi.
+## Attenzione
+Il codice appare automaticamente **in basso** su queste slide durante la lezione. Si ricorda che una falsa attestazione di presenza potrà essere soggetta a provvedimenti.
 :::
 
 ::: {.notes}
-Spiegare brevemente la procedura tecnica. Se la geolocalizzazione non funziona (edifici vecchi, segnale debole), lo studente segnala al docente a fine lezione per la registrazione manuale.
+Sistema di rilevazione presenze tramite l'app Cineca (Modulo Rileva Frequenze). Il codice alfanumerico di 5 caratteri appare nel footer delle slide proiettate. La geolocalizzazione è obbligatoria: non è possibile registrare la presenza da remoto.
+:::
+
+## Policy per giustificare le assenze
+
+- La partecipazione (n. lezioni frequentate) è **parte integrante** del sistema di valutazione
+- Ogni lezione frequentata vale circa **0,13 punti**
+- Le assenze per validi motivi opportunamente giustificate sono considerate come **lezioni frequentate**
+- Per giustificarsi: postare, **entro 2 giorni dall'assenza**, nel "Forum per le giustificazioni" dello spazio blended giustificando l'assenza e specificando i motivi
+
+::: {.notes}
+Dettagli sulla policy delle assenze. Il calcolo: 3 punti totali per partecipazione / 24 lezioni ≈ 0,13 punti per lezione. Le giustificazioni vanno postate tempestivamente (entro 2 giorni) nel forum dedicato su Moodle. Motivi validi: malattia, esami, impegni istituzionali documentabili. Non verranno accettate giustificazioni retroattive oltre il termine dei 2 giorni.
 :::
 
 ## Policy sull'uso dell'IA generativa
@@ -224,19 +223,17 @@ Questa policy è pragmatica: l'IA generativa è uno strumento reale che gli stud
 Questa regola vale per tutte le consegne: compito individuale, bozza del saggio, saggio definitivo.
 :::
 
-## Spazio Moodle
+## Spazio blended
 
-<!-- Il docente inserirà qui il link e/o QR code allo spazio blended -->
+I materiali del corso (incluse queste slide), il forum per le giustificazioni e le consegne verranno resi disponibili sullo [**spazio blended del corso**](https://blended.uniurb.it/moodle/course/view.php?id=27098).
 
-Tutte le risorse del corso sono disponibili sullo spazio **Moodle** del corso:
-
-- Testi in programma (PDF e markdown)
-- Dataset e template Google Sheets
-- Forum per domande e giustificazione assenze
-- Consegne e feedback
+::: {.callout-tip}
+## Suggerimento
+Iscrivetevi allo spazio blended **entro la seconda settimana** per risultare frequentanti.
+:::
 
 ::: {.notes}
-Mostrare lo spazio Moodle proiettato, far vedere la struttura. Invitare gli studenti a iscriversi subito.
+Lo spazio blended (Moodle) è il punto di riferimento per tutti i materiali del corso. Gli studenti troveranno: slide delle lezioni, testi in programma, dataset e template Google Sheets, forum per le giustificazioni, consegne del progetto di gruppo e feedback. L'iscrizione entro la seconda settimana è requisito per lo status di frequentante.
 :::
 
 ## I *Networked Publics* {background-color="#C5612E"}
