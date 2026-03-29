@@ -1,0 +1,98 @@
+---
+title: "Internet Studies — A.A. 2025/2026"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+lang: it
+---
+
+## Informazioni sul corso
+
+| | |
+|---|---|
+| **Insegnamento** | Internet Studies |
+| **Docente** | Prof. Fabio Giglietto |
+| **Dipartimento** | DISCUI — Universit&agrave; degli Studi di Urbino Carlo Bo |
+| **Anno Accademico** | 2025/2026 — II semestre |
+| **Durata** | 48 ore (24 lezioni &times; 2 ore) |
+| **Periodo** | 31 marzo – 27 maggio 2026 |
+| **Programma ufficiale** | [uniurb.it/insegnamenti-e-programmi/268626](https://www.uniurb.it/insegnamenti-e-programmi/268626) |
+
+### Orario e aule
+
+| Giorno | Orario | Aula |
+|--------|--------|------|
+| Marted&igrave; | 9:00 – 11:00 | C1 |
+| Mercoled&igrave; | 11:00 – 13:00 | D3 |
+| Gioved&igrave; | 11:00 – 13:00 | C2 |
+
+## Struttura del corso
+
+Il corso &egrave; articolato in due blocchi:
+
+- **Blocco 1 — Fondamenti** (lezioni 1–12, 31 marzo – 29 aprile): lezioni frontali, seminari e esercitazioni sui concetti chiave degli Internet Studies.
+- **Blocco 2 — Laboratorio di ricerca** (lezioni 13–24, 30 aprile – 27 maggio): lavoro di gruppo supervisionato su un dataset dalla Meta Content Library, finalizzato alla produzione di un saggio empirico in formato IMRAD (4.000–6.000 parole).
+
+## Materiali di studio
+
+1. Boyd, D. (2018). *It's Complicated: La vita sociale degli adolescenti sul web*. Castelvecchi (pp. 29–43).
+2. Jenkins, H. (2008). *Fan, Blogger e Videogamers*. FrancoAngeli (pp. 7–22; 160–180; 219–229).
+3. Shirky, C. (2009). *Uno per Uno, Tutti per Tutti*. Codice (pp. 3–119).
+4. Marwick, A. & Lewis, R. (2017). *Media Manipulation and Disinformation Online*. Data & Society.
+5. Boyd, D. (2017). *Hacking the Attention Economy*. Data & Society: Points.
+
+## Slide delle lezioni
+
+### Blocco 1 — Fondamenti
+
+| # | Data | Argomento | Slide |
+|---|------|-----------|-------|
+| 1 | 31 mar | Introduzione al corso e *Networked Publics* | [Apri](slides/lez01-introduzione.html) |
+| 2 | 1 apr | Cultura partecipativa (I): il modello di Jenkins | [Apri](slides/lez02-jenkins-1.html) |
+| 3 | 2 apr | Cultura partecipativa (II): convergenza e limiti | [Apri](slides/lez03-jenkins-2.html) |
+| | *3–8 apr* | *Sospensione (ponte pasquale)* | |
+| 4 | 9 apr | Azione collettiva (I): il modello di Shirky | [Apri](slides/lez04-shirky-1.html) |
+| 5 | 14 apr | Azione collettiva (II): limiti e *slacktivism* | [Apri](slides/lez05-shirky-2.html) |
+| 6 | 15 apr | *Media manipulation* e disinformazione (I) | [Apri](slides/lez06-manipulation-1.html) |
+| 7 | 16 apr | *Media manipulation* e disinformazione (II) | [Apri](slides/lez07-manipulation-2.html) |
+| 8 | 21 apr | Sintesi: hackerare l'economia dell'attenzione | [Apri](slides/lez08-sintesi.html) |
+| 9 | 22 apr | Fare ricerca con i dati delle piattaforme | [Apri](slides/lez09-ricerca-piattaforme.html) |
+| 10 | 23 apr | Il dataset MCL: esplorazione guidata | [Apri](slides/lez10-dataset-mcl.html) |
+| 11 | 28 apr | Analisi del contenuto, codebook e formazione gruppi | [Apri](slides/lez11-analisi-contenuto.html) |
+| 12 | 29 apr | Il formato IMRAD, le RQ e avvio codebook di gruppo | [Apri](slides/lez12-imrad-gruppi.html) |
+
+### Blocco 2 — Laboratorio di ricerca
+
+| # | Data | Argomento | Slide |
+|---|------|-----------|-------|
+| 13 | 30 apr | Campionamento e pianificazione della codifica | [Apri](slides/lez13-campionamento.html) |
+| 14 | 5 mag | Codifica del contenuto (I) | [Apri](slides/lez14-codifica-1.html) |
+| 15 | 6 mag | Codifica del contenuto (II) e affidabilit&agrave; | [Apri](slides/lez15-codifica-2.html) |
+| 16 | 7 mag | Analisi quantitativa dell'engagement | [Apri](slides/lez16-engagement.html) |
+| 17 | 12 mag | Integrazione analisi qualitativa e quantitativa | [Apri](slides/lez17-integrazione.html) |
+| 18 | 13 mag | Stesura Introduction e Methods | [Apri](slides/lez18-intro-methods.html) |
+| 19 | 14 mag | Stesura Results | [Apri](slides/lez19-results.html) |
+| 20 | 19 mag | Stesura Discussion | [Apri](slides/lez20-discussion.html) |
+| 21 | 20 mag | Revisione interna e coerenza del saggio | [Apri](slides/lez21-revisione.html) |
+| 22 | 21 mag | Sessione di lavoro finale e consegna bozza | [Apri](slides/lez22-consegna-bozza.html) |
+| 23 | 26 mag | Peer review incrociata | [Apri](slides/lez23-peer-review.html) |
+| 24 | 27 mag | Revisione finale e presentazioni | [Apri](slides/lez24-chiusura.html) |
+
+## Scadenze
+
+| Scadenza | Data |
+|----------|------|
+| Compito individuale | 22 aprile 2026 |
+| Checkpoint 1 — Campione e codebook | 30 aprile 2026 |
+| Checkpoint 2 — Affidabilit&agrave; inter-codificatore | 6 maggio 2026 |
+| Checkpoint 3 — Risultati principali | 12 maggio 2026 |
+| Checkpoint 4 — Consegna bozza | 22 maggio 2026 |
+| Peer review incrociata | 26 maggio 2026 |
+| **Consegna definitiva del saggio** | **3 giugno 2026** |
+
+## Contatti
+
+- **Email:** fabio.giglietto@uniurb.it
+- **Spazio Moodle:** [blended.uniurb.it](https://blended.uniurb.it)
