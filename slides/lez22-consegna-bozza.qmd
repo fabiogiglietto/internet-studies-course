@@ -1,0 +1,124 @@
+---
+title: "Sessione di Lavoro Finale — Consegna Bozza"
+subtitle: "Internet Studies — Lezione 22"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "21 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Ultima sessione di lavoro in aula {background-color="#C5612E"}
+
+::: {.highlight-box}
+Oggi è l'ultimo giorno di lavoro di gruppo **in aula** prima della consegna della bozza.
+
+**Obiettivo:** completare la revisione, uniformare lo stile, verificare la bibliografia, controllare il conteggio parole.
+:::
+
+::: {.notes}
+Tutta la lezione (110 minuti) è dedicata al lavoro di gruppo. Nessun momento collettivo — solo lavoro e consultazioni con il docente. Gli ultimi 10 minuti sono per le istruzioni sulla consegna e la peer review.
+:::
+
+## Checklist pre-consegna
+
+::: {.orange-box}
+### Prima di consegnare, verificate
+
+- [ ] La **RQ** è formulata esplicitamente nell'Introduction
+- [ ] Tutti e **5 i testi** del corso sono citati nel quadro teorico
+- [ ] I **Methods** descrivono ciò che avete effettivamente fatto
+- [ ] Il **Kappa** è riportato nei Methods
+- [ ] Ogni **tabella e grafico** è introdotto e commentato nei Results
+- [ ] La **Discussion** torna al quadro teorico
+- [ ] I **limiti** sono discussi
+- [ ] Le **citazioni** sono in stile APA
+- [ ] Il saggio è tra **4.000 e 6.000 parole**
+- [ ] L'eventuale uso di **IA generativa** è dichiarato nei Methods
+:::
+
+::: {.notes}
+Proiettare la checklist e lasciarla visibile. Questa è una versione espansa della checklist della Lezione 21. I gruppi dovrebbero usarla come ultimo controllo prima della consegna.
+:::
+
+## Lavoro di gruppo: finalizzazione {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (100 minuti):**
+
+- Completare la **revisione**
+- Uniformare lo **stile** (voce, registro, terminologia)
+- Verificare la **bibliografia** (tutte le citazioni nel testo hanno un riferimento)
+- Formattare **tabelle e grafici** (titoli, etichette, note)
+- Controllare il **conteggio parole** (4.000–6.000)
+:::
+
+::: {.notes}
+Il docente è disponibile per consultazioni rapide. Questo è il momento per risolvere gli ultimi dubbi: "Questa tabella va bene?" "La Discussion è troppo corta?" "Devo citare tutti e 5 i testi nella Discussion?"
+:::
+
+## Istruzioni per la consegna e la peer review
+
+::: {.orange-box}
+### Consegna bozza
+
+- **Scadenza:** venerdì **22 maggio**, ore **23:59**
+- **Formato:** PDF, consegnato su Moodle
+- La bozza sarà assegnata a un altro gruppo per la peer review
+:::
+
+::: {.highlight-box}
+### Peer review (Lezione 23, martedì 26 maggio)
+
+- Ogni gruppo riceverà la bozza di un altro gruppo **nel weekend**
+- Avrete **~3 giorni** per leggerla e preparare il feedback
+- Martedì presenterete il feedback alla classe usando la **griglia di peer review**
+:::
+
+::: {.notes}
+Spiegare la logistica: le bozze vengono consegnate venerdì sera, il docente le assegna durante il weekend (ogni gruppo revisiona un altro gruppo), i gruppi hanno sabato-lunedì per leggere e preparare il feedback, martedì 26 maggio presentano. La griglia di peer review usa gli stessi criteri della griglia di valutazione — i gruppi sanno già cosa cercare.
+:::
+
+## Checkpoint 4
+
+::: {.callout-warning}
+## Bozza da consegnare entro domani sera
+
+- Venerdì **22 maggio**, ore **23:59**
+- Formato **PDF**, su **Moodle**
+- La bozza non deve essere perfetta — ma deve essere **completa** (tutte e 4 le sezioni IMRAD)
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Peer review incrociata — Mar 26 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

@@ -1,0 +1,121 @@
+---
+title: "Codifica del Contenuto (I)"
+subtitle: "Internet Studies — Lezione 14"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "5 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Momento collettivo: organizzare la codifica {background-color="#C5612E"}
+
+## Il foglio di codifica
+
+::: {.orange-box}
+### Struttura del foglio Google
+
+- **Una riga** per ciascun post del campione
+- **Colonne fisse:** ID del post, testo, tipo di contenuto, link al multimedia
+- **Colonne di codifica:** una per ciascuna categoria del codebook
+- **Colonna "Note":** per annotare i casi ambigui
+:::
+
+| ID | Testo | Tipo | Categoria assegnata | Note |
+|----|-------|------|---------------------|------|
+| 001 | "Testo del post..." | Foto | Meme warfare | Ironia evidente ma info non verificata |
+| 002 | "Altro post..." | Video | Contenuto neutro | |
+
+::: {.notes}
+Momento collettivo breve (15 min). Mostrare il template del foglio di codifica proiettato. Ogni gruppo ha il proprio foglio nel Google Sheet condiviso. Sottolineare: i casi ambigui vanno annotati, non forzati in una categoria. Saranno discussi in gruppo e useranno le regole di decisione del codebook.
+:::
+
+## Regole d'oro per la codifica
+
+::: {.highlight-box}
+1. **Prima il sottoinsieme comune** — tutti codificano gli stessi 20–30 post indipendentemente
+2. **Non consultarsi** durante la codifica del sottoinsieme — l'affidabilità misura l'accordo *indipendente*
+3. **Guardare tutto** — testo E contenuto multimediale (immagine/video)
+4. **Annotare** i casi ambigui — non forzare una classificazione
+5. **Seguire il codebook** — se la definizione non copre il caso, annotarlo per la revisione
+:::
+
+::: {.notes}
+Il punto 2 è fondamentale: se i codificatori si consultano durante la codifica del sottoinsieme comune, il Kappa è artificialmente alto e il codebook non viene testato davvero. La codifica del sottoinsieme deve essere indipendente. Dopo, si confrontano i risultati e si discutono le discrepanze.
+:::
+
+## Lavoro di gruppo: codifica {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (90 minuti):**
+
+1. Ogni membro codifica **indipendentemente** il **sottoinsieme comune** (20–30 post)
+2. Poi procede con i **post assegnati individualmente**
+3. La codifica include sia il **testo** sia il **contenuto multimediale**
+4. Il docente passa tra i gruppi per risolvere dubbi sulle categorie
+:::
+
+::: {.notes}
+La maggior parte della lezione è lavoro silenzioso e individuale. I membri del gruppo codificano indipendentemente — non discutono tra loro durante la codifica del sottoinsieme comune. Dopo aver completato il sottoinsieme, possono iniziare i post individuali e a quel punto possono confrontarsi su casi specifici. Passare tra i gruppi: verificare che stiano effettivamente guardando il contenuto multimediale (non solo il testo) e che annotino i casi ambigui.
+:::
+
+## Discussione intergruppo
+
+::: {.orange-box}
+### Ultimi 15 minuti
+
+Due gruppi che lavorano sulla **stessa RQ** confrontano brevemente i **casi più ambigui**:
+
+- Come li avete classificati?
+- Le vostre categorie coprono gli stessi fenomeni?
+- Ci sono differenze nelle definizioni?
+:::
+
+::: {.notes}
+Il confronto intergruppo serve a identificare problemi di codebook che il singolo gruppo potrebbe non notare. Se due gruppi sulla stessa RQ classificano lo stesso tipo di post in modo diverso, probabilmente le categorie non sono sufficientemente precise. Non è necessario uniformare — ma è utile sapere dove ci sono divergenze.
+:::
+
+## Prossimi passi
+
+**Prossima lezione:** Mercoledì 6 maggio, 11:00–13:00, Aula D3
+
+*Codifica del contenuto (II) + verifica dell'affidabilità — Checkpoint 2*
+
+::: {.callout-warning}
+## Per mercoledì
+Completate la codifica del **sottoinsieme comune** prima della prossima lezione. Mercoledì calcoleremo il Kappa e discuteremo le discrepanze.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Codifica (II) + affidabilità — Mer 6 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

@@ -1,0 +1,111 @@
+---
+title: "Revisione Interna e Coerenza del Saggio"
+subtitle: "Internet Studies — Lezione 21"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "20 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Sessione flessibile {background-color="#C5612E"}
+
+::: {.columns}
+::: {.column width="50%"}
+### Gruppi in pari
+
+Procedete con la **revisione interna**: ogni membro legge il saggio intero e segnala le incongruenze.
+:::
+
+::: {.column width="50%"}
+### Gruppi in ritardo
+
+Utilizzate il tempo per **completare** le sezioni mancanti. Il docente è disponibile per supporto intensivo.
+:::
+:::
+
+::: {.notes}
+Questa sessione è il buffer previsto nel piano del corso. Il docente valuta lo stato di ciascun gruppo all'inizio della lezione e suggerisce su cosa concentrarsi.
+:::
+
+## Momento collettivo: checklist per la revisione {background-color="#C5612E"}
+
+## La checklist
+
+::: {.orange-box}
+### Verificate punto per punto
+
+1. La **RQ** nell'Introduction è esattamente la stessa a cui si risponde nella Discussion?
+2. I **Methods** descrivono ciò che è stato **effettivamente** fatto? (non ciò che si intendeva fare)
+3. I **Results** presentano tutti e soli i dati **rilevanti** per la RQ?
+4. La **Discussion** torna ai concetti del **quadro teorico**?
+5. Le fonti sono citate correttamente in **stile APA** o equivalente?
+6. Il saggio è tra **4.000 e 6.000 parole**?
+:::
+
+::: {.notes}
+Proiettare la checklist e lasciarla visibile durante il lavoro. Ogni punto corrisponde a un errore comune: (1) RQ che cambia tra Introduction e Discussion; (2) Methods che descrivono il piano originale anziché ciò che è stato fatto (es. "abbiamo codificato 150 post" quando ne hanno codificati 120); (3) Results con tabelle irrilevanti per la RQ; (4) Discussion generica che non cita i testi; (5) citazioni inconsistenti; (6) saggio troppo corto o troppo lungo.
+:::
+
+## Lavoro di gruppo {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (90 minuti):**
+
+**Per chi revisiona:** ogni membro legge il saggio **intero** (non solo la sezione che ha scritto). Discutete le incongruenze e risolvetele.
+
+**Per chi completa:** finalizzate le sezioni mancanti. Priorità: se manca la Discussion, scrivetela ora.
+:::
+
+**Ultimi 15 minuti:** consultazione finale con il docente — ogni gruppo può porre un'ultima domanda.
+
+::: {.notes}
+L'indicazione di leggere il saggio intero è importante: spesso i membri hanno scritto ciascuno la propria sezione senza leggere le altre. Il risultato: incongruenze di stile, ripetizioni, contraddizioni. La lettura incrociata interna è l'unico modo per individuarle.
+:::
+
+## Prossimi passi
+
+**Prossima lezione:** Giovedì 21 maggio, 11:00–13:00, Aula C2
+
+*Sessione di lavoro finale — Consegna bozza*
+
+::: {.callout-warning}
+## Scadenza bozza
+La bozza va consegnata entro **venerdì 22 maggio, ore 23:59**.
+
+Sarà assegnata a un altro gruppo per la **peer review** del 26 maggio.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Consegna bozza — Gio 21 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

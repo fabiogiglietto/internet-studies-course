@@ -1,0 +1,118 @@
+---
+title: "Stesura Introduction e Methods"
+subtitle: "Internet Studies — Lezione 18"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "13 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Momento collettivo: scrivere Introduction e Methods {background-color="#C5612E"}
+
+## L'Introduction: struttura a imbuto
+
+::: {.columns}
+::: {.column width="50%"}
+### Dal generale al particolare
+
+1. **Tema ampio** — le piattaforme digitali e la manipolazione/partecipazione
+2. **Quadro teorico** — i 5 testi del corso, collegati tra loro
+3. **Lacuna/domanda** — cosa non sappiamo ancora
+4. **La vostra RQ** — formulata esplicitamente
+:::
+
+::: {.column width="50%"}
+### Come usare i 5 testi
+
+- **Boyd (2018)** → affordance come punto di partenza
+- **Jenkins** → le pratiche partecipative
+- **Shirky** → il meccanismo dei costi
+- **Marwick & Lewis** → la strumentalizzazione
+- **Boyd (2017)** → il filo storico che lega tutto
+:::
+:::
+
+::: {.highlight-box}
+**Non servono fonti esterne.** I cinque testi forniscono tutto il necessario per il quadro teorico.
+:::
+
+::: {.notes}
+Momento collettivo (25 min). Richiamare la mappa concettuale della Lezione 8: quella mappa è la struttura dell'Introduction. Non tutti i testi avranno lo stesso peso: per la RQ1, Marwick & Lewis e Boyd 2017 saranno centrali; per la RQ2, Jenkins e il suo rapporto con Marwick & Lewis saranno al centro. Ma tutti e cinque devono comparire.
+:::
+
+## I Methods: cosa descrivere
+
+| Elemento | Esempio di formulazione |
+|----------|------------------------|
+| **Dataset** | "Il dataset è stato estratto dalla Meta Content Library e comprende N post pubblicati da X pagine Facebook nel periodo Y–Z" |
+| **Campione** | "È stato estratto un campione stratificato di N post, proporzionale al numero di post per pagina" |
+| **Codebook** | "Le categorie di codifica sono state derivate dalla tassonomia di Marwick e Lewis (2017): [elenco]" |
+| **Procedura** | "Ciascun membro del gruppo ha codificato indipendentemente N post. Un sottoinsieme di N post è stato codificato da tutti per calcolare l'affidabilità" |
+| **Affidabilità** | "Il Kappa di Cohen è risultato pari a κ = 0.XX, indicando un accordo [buono/accettabile]" |
+| **Strumenti** | "L'analisi è stata condotta in Google Sheets utilizzando tabelle pivot e la funzione CERCA.VERT" |
+
+::: {.notes}
+Proiettare questa tabella come guida. I Methods devono essere sufficientemente dettagliati perché qualcuno possa replicare lo studio. Se il gruppo ha usato l'IA generativa (es. per generare formule), deve dichiararlo qui.
+:::
+
+## Lavoro di gruppo: scrittura {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (85 minuti):**
+
+Suddividetevi nel gruppo:
+
+- Alcuni scrivono l'**Introduction**
+- Altri scrivono i **Methods**
+
+Lavorate sul **documento condiviso** (Google Docs).
+
+Il docente è disponibile per **consultazioni**.
+:::
+
+**Status check** negli ultimi 10 minuti: ogni gruppo comunica lo stato di avanzamento.
+
+::: {.notes}
+La suddivisione è consigliata ma non obbligatoria — dipende dal gruppo. Alcuni preferiranno scrivere insieme, altri dividersi i compiti. L'importante è che alla fine della lezione ci sia almeno una bozza di entrambe le sezioni. Lo status check serve al docente per monitorare il progresso.
+:::
+
+## Prossimi passi
+
+**Prossima lezione:** Giovedì 14 maggio, 11:00–13:00, Aula C2
+
+*Stesura Results (tabelle e grafici)*
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Stesura Results — Gio 14 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

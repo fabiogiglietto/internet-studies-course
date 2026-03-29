@@ -1,0 +1,169 @@
+---
+title: "Campionamento e Pianificazione della Codifica"
+subtitle: "Internet Studies — Lezione 13"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "30 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Benvenuti nel Blocco 2 — Il laboratorio {background-color="#C5612E"}
+
+Da oggi, ogni lezione ha la stessa struttura:
+
+- **Momento collettivo** (15–30 min): mini-lezione del docente
+- **Lavoro di gruppo** (90–105 min): codifica, analisi, scrittura
+
+::: {.notes}
+Prima lezione del Blocco 2. Cambio di ritmo: meno lezione frontale, più lavoro di gruppo. Il docente è disponibile per consultazioni durante tutto il lavoro di gruppo. Oggi: Checkpoint 1 — campione estratto e codebook adattato.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Applicare strategie di **campionamento casuale** semplice e stratificato in Google Sheets
+2. **Finalizzare** il codebook del proprio gruppo
+3. **Pianificare** la suddivisione della codifica e il sottoinsieme per il test di affidabilità
+:::
+
+::: {.notes}
+Il Checkpoint 1 (fine lezione) richiede: campione estratto + codebook adattato, entrambi approvati dal docente.
+:::
+
+## Momento collettivo: strategie di campionamento {background-color="#C5612E"}
+
+## Quanto campionare?
+
+::: {.orange-box}
+### Regola pratica
+- Almeno **100–150 post** per un'analisi del contenuto di gruppo
+- Di cui **20–30 codificati da tutti** i membri per calcolare l'affidabilità inter-codificatore
+:::
+
+Il campione deve essere **rappresentativo** del dataset — non scelto a caso in senso colloquiale, ma estratto con un metodo sistematico.
+
+::: {.notes}
+100-150 post è un numero gestibile per un gruppo di 4-6 persone in 3 settimane. Il sottoinsieme comune (20-30 post) serve per calcolare il Kappa di Cohen: tutti i codificatori devono codificare gli stessi post indipendentemente. Il resto viene diviso tra i membri.
+:::
+
+## Due strategie di campionamento
+
+::: {.columns}
+::: {.column width="50%"}
+### Casuale semplice
+
+Ogni post ha la **stessa probabilità** di essere selezionato.
+
+**In Google Sheets:**
+
+1. Aggiungete una colonna "Casuale"
+2. Formula: `=CASUALE()` o `=RAND()`
+3. Ordinate per quella colonna
+4. Selezionate le prime N righe
+:::
+
+::: {.column width="50%"}
+### Stratificato
+
+Si campiona **proporzionalmente** da ciascun sottoinsieme (pagina, periodo, tipo).
+
+**In Google Sheets:**
+
+1. Filtrate per pagina/periodo
+2. Applicate `=CASUALE()` al sottoinsieme
+3. Selezionate le prime N righe da ciascuno
+4. Unite i sottocampioni
+:::
+:::
+
+::: {.notes}
+Il campionamento casuale semplice è il più semplice ma può produrre campioni sbilanciati (es. una pagina molto attiva domina il campione). Il campionamento stratificato garantisce rappresentatività: se il dataset ha 5 pagine, il campione include post da tutte e 5. Consigliare ai gruppi di usare il campionamento stratificato per pagina — a meno che il loro angolo specifico non giustifichi un altro approccio.
+:::
+
+## Pianificare la codifica
+
+| Elemento | Cosa decidere |
+|----------|--------------|
+| **Campione totale** | Quanti post? (100–150) |
+| **Sottoinsieme comune** | Quali 20–30 post codificano tutti? |
+| **Suddivisione** | Chi codifica quali post? |
+| **Ordine** | Prima il sottoinsieme comune, poi i post individuali |
+| **Gestione ambiguità** | Annotare i casi dubbi, non forzare |
+
+::: {.notes}
+L'ordine è importante: prima tutti codificano il sottoinsieme comune (per il Kappa), poi ciascuno codifica i propri post assegnati. Se il Kappa è basso, il gruppo rivede il codebook e ricodifica il sottoinsieme — quindi è meglio farlo subito.
+:::
+
+## Lavoro di gruppo {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Ogni gruppo (80 minuti):**
+
+1. **Finalizzare** il codebook — categorie, definizioni, esempi, regole per i casi ambigui
+2. **Estrarre** il campione dal dataset nel foglio Google condiviso
+3. **Suddividere** i post da codificare tra i membri
+4. **Identificare** il sottoinsieme comune per il test di affidabilità
+:::
+
+Il docente passa tra i gruppi per verificare e rispondere ai dubbi.
+
+::: {.notes}
+Passare tra i gruppi con attenzione al codebook: le categorie sono operazionalizzabili? Le definizioni sono precise? Ci sono esempi positivi e negativi? C'è una categoria residuale? Se un gruppo ha categorie troppo vaghe, aiutarlo a renderle più precise.
+:::
+
+## Checkpoint 1
+
+::: {.orange-box}
+### Consultazione rapida (3 minuti per gruppo)
+
+Ogni gruppo presenta al docente:
+
+1. Il **codebook** adattato (categorie + definizioni)
+2. Il **campione** estratto (dimensione + strategia)
+3. Il **piano** di codifica (suddivisione + sottoinsieme comune)
+
+Il docente **approva** o chiede modifiche.
+:::
+
+**Prossima lezione:** Martedì 5 maggio — *Codifica del contenuto (I)*
+
+::: {.notes}
+Il Checkpoint 1 non è un voto — è una verifica che il gruppo sia sulla strada giusta. Se il codebook non è pronto, il gruppo ha il weekend per finalizzarlo. Ma la codifica vera inizia martedì — il codebook deve essere pronto.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Codifica del contenuto (I) — Mar 5 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

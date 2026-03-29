@@ -1,0 +1,442 @@
+---
+title: "Sintesi: Hackerare l'Economia dell'Attenzione"
+subtitle: "Internet Studies — Lezione 8"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "21 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Dove siamo arrivati
+
+Nelle sette lezioni precedenti abbiamo costruito un percorso:
+
+| Autore | Concetto chiave | Lezioni |
+|--------|----------------|---------|
+| **Boyd** (2018) | Le affordance dei *networked publics* | 1 |
+| **Jenkins** (2008) | La cultura partecipativa e le sue forme | 2–3 |
+| **Shirky** (2009) | Il crollo dei costi di coordinamento | 4–5 |
+| **Marwick & Lewis** (2017) | La manipolazione mediatica reticolare | 6–7 |
+
+::: {.highlight-box}
+Oggi il quinto testo — **Boyd (2017)** — unisce tutto in un arco storico coerente.
+:::
+
+::: {.notes}
+Questa lezione è il punto di arrivo del Blocco 1 teorico. Boyd (2017) non introduce concetti radicalmente nuovi, ma li collega in una narrazione storica che mostra come siamo arrivati dal mondo di Jenkins a quello di Marwick e Lewis. Dopo oggi, le lezioni 9-12 preparano il laboratorio: metodi, dati, codebook, IMRAD.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Ricostruire l'**arco storico** dall'hacking ludico alla manipolazione politica dell'attenzione
+2. Costruire una **mappa concettuale** che colleghi i cinque testi del corso
+3. Utilizzare questa mappa come **ossatura** per il quadro teorico del saggio IMRAD
+:::
+
+::: {.notes}
+L'obiettivo 2 è l'esercitazione centrale della lezione: i gruppi costruiranno fisicamente una mappa concettuale con post-it colorati. L'obiettivo 3 è il collegamento con il Blocco 2: questa mappa diventerà la struttura della sezione Introduction del saggio.
+:::
+
+## Roadmap della lezione
+
+- **Boyd (2017):** l'arco dall'hacking ludico alla manipolazione politica
+- **La "democratizzazione della manipolazione"**
+- **Esercitazione:** costruire la mappa concettuale dei 5 testi
+- **Transizione:** dalla teoria alla ricerca empirica
+
+::: {.notes}
+Struttura: 40 minuti di lezione frontale su Boyd (2017), 60 minuti di esercitazione con mappa concettuale, 20 minuti di presentazione e chiusura. Ricordare la scadenza del compito individuale: domani 22 aprile, ore 23:59.
+:::
+
+## Boyd (2017): *Hacking the Attention Economy* {background-color="#C5612E"}
+
+::: {.notes}
+Questo testo breve (un articolo, non un libro) è stato pubblicato su Data & Society Points nel gennaio 2017 — lo stesso istituto di Marwick & Lewis. Boyd traccia un arco storico che connette la cultura hacker degli anni '90 alla manipolazione politica dell'attenzione nel 2016. È la chiave di volta del corso perché mostra la continuità tra pratiche ludiche e pratiche manipolative.
+:::
+
+## Cos'è un "hacker"?
+
+Boyd parte dalla **definizione originale** di hacker [@boyd2017]:
+
+> "Una persona che gode nell'apprendere i dettagli dei sistemi di programmazione e come estendere le loro capacità."
+
+> "Una persona che ama avere una comprensione intima del funzionamento interno di un sistema."
+
+::: {.highlight-box}
+**Il punto chiave:** violare la sicurezza **non è** l'obiettivo primario. L'obiettivo è **capire come funziona** un sistema — e poi **spingerlo oltre** i suoi limiti.
+:::
+
+::: {.notes}
+Boyd racconta la propria esperienza: negli anni '90, da adolescente, violava i sistemi informatici di grandi istituzioni "per dimostrare di poterlo fare." L'emozione era nel sentirsi più intelligente dei "potenti." Era "fun and games" — fino agli arresti. Questa definizione è importante perché mostra che l'hacking non è intrinsecamente malvagio: è una mentalità di comprensione profonda dei sistemi. La stessa mentalità, applicata all'ecosistema mediale, produce la manipolazione dell'attenzione.
+:::
+
+## Fase 1: i meme e il divertimento (2003–2008)
+
+**2003:** Chris Poole (15 anni) crea **4chan** per condividere anime e immagini [@boyd2017].
+
+Un problema tecnico diventa un'innovazione culturale:
+
+- Il server non può archiviare tutto → i contenuti vecchi vengono cancellati
+- Gli utenti **ripubblicano** con piccole modifiche → nascono i **meme**
+- **Lolcats**, **Rickrolling**, gaming della lista TIME 100
+
+::: {.callout-note}
+## Il meccanismo
+Ripubblicando con variazioni, gli utenti imparano a **progettare informazione perché si diffonda** attraverso i social media [@boyd2017].
+:::
+
+::: {.notes}
+I Lolcats ("I iz in yur computer stealing yur dataz") sono gatti con un font specifico e una grammatica volutamente sgrammaticata. Il Rickrolling è il trucco di linkare il video di Rick Astley "Never Gonna Give You Up" (1987) spacciandolo per altro. Il gaming della TIME 100 consiste nel manipolare la votazione online perché le iniziali dei 100 personaggi compongano un messaggio nascosto ("Marblecake also the game"). Tutto questo è ludico, non politico. Ma le competenze sviluppate — progettare informazione virale, giocare con gli algoritmi — saranno le stesse usate per la manipolazione.
+:::
+
+## Fase 2: attaccare l'economia dell'attenzione (2006–2010)
+
+La transizione: "Piuttosto che hackerare l'infrastruttura di sicurezza, volevano **attaccare l'emergente economia dell'attenzione**" [@boyd2017].
+
+Il contesto: i social media esplodono, YouTube sfida i media tradizionali, TIME nomina "You" Persona dell'Anno (2006).
+
+**Campagne di trolling ai media:**
+
+- Fanno dire a Oprah in diretta TV: "over 9,000 penises"
+- Il personaggio **Pedobear** sfrutta le ansie sulla pedofilia
+- Gaming della lista TIME 100
+
+::: {.notes}
+Boyd: "Partecipando a queste campagne, i partecipanti impararono a modellare l'informazione in un ecosistema interconnesso. Impararono a progettare informazione perché si diffondesse nei social media." Questo è il momento chiave: le competenze passano dall'hacking tecnico all'hacking mediale. Non si viola più un server — si viola l'ecosistema dell'attenzione. E funziona: i media mainstream abboccano, amplificano, reagiscono con scandalo — che è esattamente la reazione cercata.
+:::
+
+## Fase 3: la politicizzazione (2010–2014)
+
+Da **Anonymous** a **GamerGate** — il gioco diventa serio [@boyd2017]:
+
+::: {.columns}
+::: {.column width="50%"}
+### Anonymous
+
+- Nato da 4chan, inizialmente ludico
+- Si politicizza: campagna contro Scientology, WikiLeaks, Primavera Araba
+- Motivazioni divergenti: divertimento vs. giustizia vigilante
+:::
+
+::: {.column width="50%"}
+### GamerGate (2014)
+
+- Campagna di molestie contro donne nell'industria dei videogiochi
+- **Doxing** → **swatting** (false chiamate alla SWAT)
+- Le strategie per campagne "decentralizzate ma coordinate" usate per causare **danni reputazionali, psicologici, economici**
+:::
+:::
+
+::: {.notes}
+Gabriella Coleman (citata da Boyd): la tensione tra diverse motivazioni nella comunità Anonymous — alcuni sono lì per i "lulz", altri per la giustizia vigilante. GamerGate è il punto di svolta: le stesse tecniche usate per trollare Oprah vengono usate per molestare sistematicamente persone reali. Anche la community di /b/ (il board più anarchico di 4chan) trovò GamerGate eccessivo — segno che una linea etica era stata superata. Boyd: "Le strategie e le tattiche che erano state usate per consentire campagne decentralizzate ma coordinate venivano ora usate per causare seri danni reputazionali, psicologici, economici e sociali."
+:::
+
+## Fase 4: la manipolazione politica (2014–2017)
+
+I movimenti per i diritti degli uomini usarono GamerGate per promuovere un'**agenda politica** contro il femminismo [@boyd2017]:
+
+- La campagna viene riformulata come "dibattito serio" vs. "campagna d'odio"
+- I media applicano il frame "entrambe le parti" — trattandola come un dibattito anziché come molestia
+- Le stesse tecniche si estendono al **panorama politico** più ampio
+
+::: {.highlight-box}
+"Per molti di coloro che imparano queste tecniche, non si tratta più semplicemente di divertimento, e nemmeno dei *lulz*. Ora si tratta di **acquisire potere**" [@boyd2017].
+:::
+
+::: {.notes}
+Il passaggio dal ludico al politico è completo. Le competenze acquisite in anni di trolling (progettare informazione virale, manipolare algoritmi, coordinare campagne decentralizzate, sfruttare le vulnerabilità dei media) vengono applicate alla politica. Boyd: "Una nuova forma di manipolazione dell'informazione si sta dispiegando davanti ai nostri occhi. È politica. È globale. Ed è populista per natura."
+:::
+
+## La "democratizzazione della manipolazione" {background-color="#C5612E"}
+
+## Non più solo stati e corporation
+
+::: {.columns}
+::: {.column width="50%"}
+### La promessa originale
+
+Gli attivisti progressisti immaginavano che:
+
+- Il blogging avrebbe **interrotto** i media mainstream
+- I social media avrebbero **aggirato** la censura
+- Le "smart mobs" avrebbero portato il potere **dal basso**
+- Primavera Araba, Occupy, BLM come **prove** del potenziale
+:::
+
+::: {.column width="50%"}
+### La realtà
+
+Ma le stesse tecniche furono apprese da:
+
+- L'**establishment** politico
+- Le **forze dell'ordine**
+- I **marketer**
+- I **gruppi d'odio**
+:::
+:::
+
+::: {.notes}
+Boyd: "Ho passato 15 anni a guardare adolescenti giocare con potenti outlet mediali... Hanno manipolato gli algoritmi, coordinato campagne informative... Naturalmente, non furono solo gli attivisti progressisti e gli adolescenti a imparare a manipolare l'ecosistema mediale." Questo è il paradosso della democratizzazione: gli stessi strumenti che permettono ai cittadini di sfidare il potere permettono a chiunque — inclusi i gruppi d'odio — di manipolare il discorso pubblico.
+:::
+
+## Il *gaslighting* come arma informativa
+
+Boyd introduce il concetto di ***gaslighting*** informativo [@boyd2017]:
+
+::: {.orange-box}
+### Dal film all'ecosistema mediale
+Dal film *Gas Light* (1944): abuso psicologico in cui la vittima dubita della propria percezione della realtà.
+
+**Versione informativa:** sfruttare l'ambiguità dell'ecosistema mediale (cosa è legittimo? Cosa è falso? Cosa è propaganda?) per **seminare dubbio** nelle istituzioni e negli intermediari informativi.
+:::
+
+> "Questa tattica è fantastica per seminare il dubbio del pubblico nelle istituzioni e negli intermediari informativi" [@boyd2017].
+
+::: {.notes}
+Il gaslighting informativo funziona perché l'ecosistema mediale contemporaneo è intrinsecamente ambiguo: notizie vere, notizie false, satira, propaganda, opinione — tutto circola nello stesso spazio. In questo contesto, seminare dubbio è facilissimo: basta affermare che tutto è falso, che nessuno dice la verità, che "i media mentono." Se le persone dubitano di tutto, non possono agire informate. I regimi autocratici hanno imparato questa lezione. Collegamento con Marwick & Lewis: la crisi di fiducia nei media è sia una vulnerabilità sfruttata sia un risultato del gaslighting.
+:::
+
+## L'arco completo: dai Lolcats al populismo
+
+```
+  2003            2006–2010          2010–2014          2014–2017
+  ┌──────┐       ┌──────────┐       ┌──────────┐       ┌──────────────┐
+  │Meme  │──────►│Trolling  │──────►│Anonymous │──────►│Manipolazione │
+  │Lulz  │       │dei media │       │GamerGate │       │politica      │
+  │4chan  │       │Attenzione│       │Doxing    │       │Populismo     │
+  └──────┘       └──────────┘       └──────────┘       └──────────────┘
+
+  Divertimento    Sfida ai media    Danno reale        Acquisizione
+                                                        di potere
+```
+
+::: {.highlight-box}
+"Una nuova forma di manipolazione dell'informazione si sta dispiegando davanti ai nostri occhi. È **politica**. È **globale**. Ed è **populista** per natura. I media vengono suonati come un violino" [@boyd2017].
+:::
+
+::: {.notes}
+Questo diagramma è l'arco storico che Boyd traccia. È una progressione, non un salto: ogni fase costruisce sulle competenze della precedente. I memer di 4chan imparano a far circolare contenuti; i troll dei media imparano a manipolare l'attenzione; Anonymous e GamerGate mostrano che le stesse tecniche possono causare danni reali; la fase politica mostra che possono essere usate per acquisire potere. La chiave: a ogni passaggio, il gioco diventa più serio, ma le competenze di base restano le stesse — progettare informazione perché si diffonda, giocare con gli algoritmi, sfruttare le vulnerabilità dei media.
+:::
+
+## Il filo rosso dei cinque testi
+
+Boyd (2017) è la **chiave di volta** che collega i quattro autori precedenti:
+
+| Testo | Contributo | Ruolo nell'arco |
+|-------|-----------|-----------------|
+| **Boyd** (2018) | Le affordance dei *networked publics* | L'**infrastruttura** che rende tutto possibile |
+| **Jenkins** (2008) | Le culture partecipative | Le **competenze** acquisite |
+| **Shirky** (2009) | Il crollo dei costi di coordinamento | Il **meccanismo** che abbatte le barriere |
+| **Marwick & Lewis** (2017) | Le tattiche di manipolazione | La **strumentalizzazione** sistematica |
+| **Boyd** (2017) | L'arco storico | La **traiettoria** dall'hacking alla manipolazione politica |
+
+::: {.notes}
+Questa tabella sintetizza il quadro teorico del corso. È la stessa tabella che gli studenti dovranno usare come struttura per l'Introduction del loro saggio IMRAD. Ogni testo offre una lente diversa: Boyd 2018 descrive l'ambiente, Jenkins le pratiche, Shirky il motore economico, Marwick & Lewis la patologia, Boyd 2017 la storia. Insieme, raccontano una trasformazione: le proprietà delle piattaforme abilitano pratiche partecipative che, grazie al crollo dei costi di coordinamento, scalano a livello di massa — e possono essere piegate alla manipolazione.
+:::
+
+## Esercitazione: la mappa concettuale {background-color="#C5612E"}
+
+## Istruzioni
+
+::: {.orange-box}
+### Costruzione della mappa concettuale (60 minuti)
+
+**Materiale:** post-it di **cinque colori** (uno per testo), cartellone, pennarelli.
+
+**In gruppi di 4–5:**
+
+1. Su ciascun post-it scrivete un **concetto chiave** del testo corrispondente (3–5 per testo)
+2. Disponete i post-it sul cartellone
+3. Tracciate **connessioni** tra concetti di testi diversi con i pennarelli
+4. L'obiettivo è mostrare il percorso: **affordance → pratiche → meccanismo → strumentalizzazione**
+5. Preparate una presentazione di **5 minuti** della vostra mappa
+:::
+
+::: {.notes}
+Distribuire il materiale. Ogni colore corrisponde a un testo: es. arancione = Boyd 2018, verde = Jenkins, blu = Shirky, rosso = Marwick & Lewis, giallo = Boyd 2017. Dare 40 minuti per la costruzione della mappa e 20 minuti per le presentazioni (4-5 gruppi × 5 minuti ciascuno). Passare tra i gruppi per verificare che: (a) usino i concetti dei testi, non generici; (b) traccino connessioni tra testi diversi; (c) la mappa mostri una direzione/arco.
+:::
+
+## Concetti suggeriti per i post-it
+
+::: {.columns}
+::: {.column width="50%"}
+### Boyd (2018) — arancione
+- Persistenza
+- Visibilità
+- Replicabilità
+- Ricercabilità
+
+### Jenkins (2008) — verde
+- Cultura partecipativa
+- Intelligenza collettiva
+- Culture jamming vs. fan
+- Convergenza
+:::
+
+::: {.column width="50%"}
+### Shirky (2009) — blu
+- Pavimento di Coase
+- Condivisione / Cooperazione / Azione collettiva
+- Crollo dei costi
+
+### Marwick & Lewis (2017) — rosso
+- Meme warfare / Brigading / Astroturfing
+- Mainstreaming
+- Trading up the chain
+
+### Boyd (2017) — giallo
+- Economia dell'attenzione
+- Gaslighting
+- Democratizzazione della manipolazione
+:::
+:::
+
+::: {.notes}
+Questa slide è una guida, non un obbligo. I gruppi possono scegliere concetti diversi. L'importante è che i concetti siano specifici (non "manipolazione" ma "meme warfare") e che le connessioni siano argomentate (non "questo si collega a questo" ma "la replicabilità di Boyd rende possibile la meme warfare di Marwick & Lewis perché...").
+:::
+
+## Esempio di connessione
+
+::: {.highlight-box}
+**Replicabilità** (Boyd 2018) → **Condivisione di flusso** (Jenkins 2008) → **Crollo dei costi** (Shirky 2009) → **Meme warfare** (Marwick & Lewis 2017) → **Democratizzazione della manipolazione** (Boyd 2017)
+
+Una affordance (la facilità di copiare e condividere contenuti) abilita una pratica partecipativa (la condivisione di flusso), che scala grazie al crollo dei costi di coordinamento, viene sfruttata come tattica manipolativa (meme warfare), in un arco storico di democratizzazione della manipolazione.
+:::
+
+::: {.notes}
+Proiettare questo esempio prima dell'esercitazione per mostrare il tipo di ragionamento richiesto. Sottolineare che non esiste un'unica mappa corretta: i testi possono essere collegati in molti modi. L'importante è che ogni connessione sia argomentata. Questa capacità di collegare i testi è esattamente ciò che serve per scrivere l'Introduction del saggio IMRAD.
+:::
+
+## Presentazione delle mappe
+
+::: {.highlight-box}
+**Dopo le presentazioni, il docente sintetizza:**
+
+Questa mappa è l'**ossatura del quadro teorico** del vostro saggio IMRAD.
+
+Nella sezione Introduction dovrete:
+
+- Partire dalle affordance (Boyd 2018)
+- Mostrare le pratiche che abilitano (Jenkins e/o Shirky)
+- Arrivare alla manipolazione (Marwick & Lewis)
+- Usare Boyd (2017) come filo conduttore storico
+- Formulare la vostra RQ specifica
+:::
+
+::: {.notes}
+Sottolineare che non tutti i testi avranno lo stesso peso nel saggio: dipende dalla RQ scelta. Per la RQ1 (tattiche di manipolazione), Marwick & Lewis e Boyd 2017 saranno centrali; per la RQ2 (partecipazione genuina vs. strumentalizzata), Jenkins e il suo rapporto con Marwick & Lewis saranno al centro. Ma tutti e cinque i testi devono comparire nel quadro teorico perché si costruiscono l'uno sull'altro.
+:::
+
+## Transizione: dalla teoria alla ricerca {background-color="#C5612E"}
+
+## Le prossime quattro lezioni
+
+Da domani inizia la **preparazione al laboratorio**:
+
+| Lezione | Data | Tema |
+|---------|------|------|
+| **9** | Mer 22 apr | Fare ricerca con i dati delle piattaforme |
+| **10** | Gio 23 apr | Il dataset MCL: esplorazione guidata |
+| **11** | Mar 28 apr | Analisi del contenuto e codebook + formazione gruppi |
+| **12** | Mer 29 apr | Il formato IMRAD e avvio del codebook di gruppo |
+
+::: {.highlight-box}
+Nessuna nuova lettura da assegnare. I cinque testi del corso sono il vostro intero quadro teorico — da ora in poi li **applicate**, non ne leggete di nuovi.
+:::
+
+::: {.notes}
+Transizione importante: il Blocco 1 teorico si chiude oggi. Le prossime 4 lezioni preparano il laboratorio: accesso ai dati e etica della ricerca digitale (lez. 9), esplorazione hands-on del dataset in Google Sheets (lez. 10), analisi del contenuto e codifica pilota (lez. 11, con formazione dei gruppi), formato IMRAD e avvio del lavoro di gruppo (lez. 12). Ricordare: la scadenza del compito individuale è domani 22 aprile, ore 23:59.
+:::
+
+## Promemoria: compito individuale
+
+::: {.callout-warning}
+## Scadenza domani
+**Analisi di un caso di manipolazione mediatica**
+
+- 800–1.200 parole
+- Consegna: **martedì 22 aprile, ore 23:59**
+- Il completamento è requisito per la modalità frequentanti
+- Feedback sintetico del docente entro la Lezione 9
+:::
+
+::: {.notes}
+Ultimo promemoria per il compito. Chi non l'ha ancora scelto il caso, può cercare nel Media Manipulation Casebook di Data & Society o scegliere un caso italiano recente documentato da fonti affidabili.
+:::
+
+## In sintesi
+
+Boyd (2017) traccia l'arco storico: **Lolcats → trolling dei media → Anonymous → GamerGate → manipolazione politica**.
+
+::: {.columns}
+::: {.column width="50%"}
+### Concetti chiave di oggi
+
+- L'hacking non è intrinsecamente malvagio: è una **mentalità** di comprensione profonda dei sistemi
+- Le competenze partecipative di Jenkins vengono **piegate** alla manipolazione
+- La "**democratizzazione della manipolazione**": chiunque può farlo
+- Il **gaslighting** informativo: seminare dubbio nelle istituzioni
+:::
+
+::: {.column width="50%"}
+### Per il saggio
+
+La mappa concettuale di oggi è l'ossatura della vostra **Introduction**.
+
+I cinque testi si collegano in un arco coerente: affordance → pratiche → meccanismo → strumentalizzazione → storia.
+:::
+:::
+
+::: {.notes}
+Chiusura. Questa lezione segna il passaggio dalla teoria alla pratica. Da domani iniziamo a preparare gli strumenti per la ricerca empirica. Ma i concetti di oggi restano fondamentali: saranno il quadro teorico del saggio. Ricordare che il quiz di autovalutazione sarà disponibile su Moodle dopo oggi, per chi vuole verificare la propria comprensione dei cinque testi prima di iniziare il laboratorio.
+:::
+
+## Prossimi passi
+
+**Nessuna nuova lettura.** Le prossime lezioni sono pratiche.
+
+**Prossima lezione:** Mercoledì 22 aprile, 11:00–13:00, Aula D3
+
+*Fare ricerca con i dati delle piattaforme*
+
+::: {.notes}
+Anticipare: domani parleremo di come si accede ai dati delle piattaforme (dalle API aperte alla Meta Content Library), di etica della ricerca digitale, e dei due approcci che useremo nel laboratorio (analisi del contenuto qualitativa e analisi descrittiva quantitativa dell'engagement).
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Ricerca con i dati delle piattaforme — Mer 22 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

@@ -1,0 +1,109 @@
+---
+title: "Titolo della Lezione"
+subtitle: "Internet Studies — Settimana N"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "31 Marzo 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Roadmap della lezione
+
+- Primo argomento
+- Secondo argomento
+- Terzo argomento
+
+::: {.notes}
+Note per il docente: introdurre la lezione con un riassunto dei temi principali.
+:::
+
+## Titolo della Sezione {background-color="#C5612E"}
+
+## Slide di contenuto
+
+Testo del corpo. **Parole importanti** in grassetto.
+
+- Primo punto
+- Secondo punto
+- Terzo punto
+
+::: {.notes}
+Note per il docente: espandere sui punti principali.
+:::
+
+## Esempio di highlight box
+
+::: {.highlight-box}
+**Concetto chiave:** Testo importante da evidenziare.
+:::
+
+## Esempio di orange box
+
+::: {.orange-box}
+### Definizione
+Testo su sfondo arancione con testo bianco.
+:::
+
+## Esempio a due colonne
+
+::: {.columns}
+::: {.column width="50%"}
+### Colonna Sinistra
+
+Testo o contenuto.
+:::
+
+::: {.column width="50%"}
+### Colonna Destra
+
+Altro contenuto.
+:::
+:::
+
+## Esempio di tabella
+
+| Colonna 1 | Colonna 2 | Colonna 3 |
+|-----------|-----------|-----------|
+| Dato A    | Dato B    | Dato C    |
+| Dato D    | Dato E    | Dato F    |
+
+## Esempio di citazione
+
+> "Testo citato da un autore."
+>
+> — Autore, Anno
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** [titolo e data]
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

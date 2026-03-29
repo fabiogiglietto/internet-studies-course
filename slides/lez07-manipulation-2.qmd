@@ -1,0 +1,433 @@
+---
+title: "Media Manipulation e Disinformazione (II)"
+subtitle: "Internet Studies — Lezione 7"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "16 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Recap: le tattiche e le vulnerabilità
+
+Ieri abbiamo visto [@marwick2017]:
+
+::: {.columns}
+::: {.column width="50%"}
+### Tre vulnerabilità
+
+1. Crisi di fiducia nei media
+2. Declino del giornalismo locale
+3. Economia dell'attenzione
+:::
+
+::: {.column width="50%"}
+### Cinque tattiche
+
+1. *Brigading*
+2. *Astroturfing*
+3. *Meme warfare*
+4. *Hashtag hijacking*
+5. *Concern trolling*
+:::
+:::
+
+::: {.notes}
+Recap rapido (5 minuti). Chiedere: "Dall'esercitazione di ieri, quale tattica avete trovato più difficile da riconoscere? Perché?" Raccogliere 1-2 risposte. Poi: oggi completiamo il quadro con due domande: chi amplifica queste tattiche? E come i contenuti passano dal margine al mainstream?
+:::
+
+## Domanda-ponte
+
+::: {.highlight-box}
+Ieri abbiamo visto le **tattiche** e le **vulnerabilità** dell'ecosistema mediale.
+
+Oggi ci chiediamo:
+
+- **Chi** amplifica queste tattiche? Qual è il ruolo degli *influencer*?
+- **Come** i contenuti passano dalle subculture al **mainstream**?
+- **Perché** la manipolazione è **reticolare**, non top-down?
+:::
+
+::: {.notes}
+Oggi completiamo Marwick & Lewis con le sezioni 4-6. Il focus si sposta dalle tattiche al processo: la "catena di amplificazione" che porta un contenuto da 4chan alla prima pagina del New York Times. E il concetto chiave: la manipolazione non è propaganda governativa classica — è reticolare, dal basso, partecipativa.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Spiegare il ruolo degli **influencer e delle micro-celebrity** nella legittimazione dei contenuti manipolatori
+2. Ricostruire la **catena di amplificazione** dal contenuto di nicchia al mainstream
+3. Argomentare perché la manipolazione mediatica è **reticolare** e non top-down
+:::
+
+::: {.notes}
+L'obiettivo 2 sarà al centro dell'esercitazione: i gruppi ricostruiranno la catena di amplificazione di un caso di studio dettagliato, integrando tutti gli autori del corso (Boyd, Jenkins, Shirky, Marwick & Lewis).
+:::
+
+## Roadmap della lezione
+
+- **Gli influencer:** nodi di amplificazione nell'ecosistema manipolativo
+- **Il processo di mainstreaming:** dal margine al centro
+- ***Trading up the chain***: la scalata informativa
+- **Il punto chiave:** la manipolazione è reticolare
+- **Esercitazione:** ricostruire una catena di amplificazione
+- **Compito individuale:** assegnazione
+
+::: {.notes}
+Struttura: 50 minuti di lezione frontale, 50 minuti di esercitazione a gruppi con presentazione, 10 minuti di chiusura e assegnazione del compito individuale.
+:::
+
+## Gli *influencer* della manipolazione {background-color="#C5612E"}
+
+::: {.notes}
+Marwick e Lewis dedicano una sezione specifica al ruolo degli influencer — non gli influencer commerciali, ma figure che funzionano come "nodi di amplificazione" nell'ecosistema della manipolazione.
+:::
+
+## Chi sono gli *influencer* manipolativi?
+
+Figure che emergono grazie a una **comprensione sofisticata delle piattaforme** e delle tecniche di *attention hacking* [@marwick2017].
+
+> "Questi uomini spesso emergono grazie a una comprensione particolarmente sfumata delle piattaforme tecnologiche o delle tattiche di *attention hacking*. Una volta acquisita prominenza, sfruttano la propria notorietà per ottenere ulteriore copertura" [@marwick2017].
+
+::: {.notes}
+Marwick e Lewis descrivono figure come Richard Spencer (suprematista bianco, diventato famoso dopo essere stato preso a pugni in diretta TV), Andrew Anglin (blogger del Daily Stormer, ha reso il suprematismo bianco "appetibile" per i millennials attraverso il trolling), Milo Yiannopoulos (anti-femminista, anti-Islam, editorialista di Breitbart, poi rimosso dopo commenti sulla pedofilia), e Andrew "weev" Auernheimer (hacker diventato attivista suprematista). Tutti condividono la stessa caratteristica: sono emancipati dalla cultura di 4chan e usano le stesse competenze partecipative per la manipolazione.
+:::
+
+## Il ruolo degli *influencer* nel sistema
+
+::: {.columns}
+::: {.column width="50%"}
+### Come emergono
+
+- Comprensione profonda delle **piattaforme**
+- Competenze di *attention hacking*
+- Exploit della propria **notorietà**
+- Spesso provengono dalle stesse **subculture** manipolative
+:::
+
+::: {.column width="50%"}
+### Cosa fanno
+
+- Fungono da **nodi di amplificazione** significativi
+- Hanno il potere di far arrivare messaggi marginali alla **copertura mainstream**
+- Conferiscono **legittimità** a posizioni estreme
+- Collegano le subculture ai media tradizionali
+:::
+:::
+
+::: {.notes}
+Gli influencer non sono semplici "portavoce": sono mediatori strategici tra subculture e mainstream. Funzionano come i blogger di Jenkins — intermediari grassroots — ma con un obiettivo di manipolazione anziché di partecipazione. Collegamento con Jenkins: il passaggio dai culture jammers ai blogger è lo stesso passaggio che qui si osserva nel campo della manipolazione. Le stesse competenze, obiettivi diversi.
+:::
+
+## Caso di studio: la scalata di "weev"
+
+Il percorso di Andrew "weev" Auernheimer illustra la dinamica [@marwick2017]:
+
+1. **2010** — Hacker del gruppo Goatse Security: viola AT&T, espone 114.000 account iPad
+2. **Processo** — Condannato per frode informatica, diventa **eroe folk** della community hacker
+3. **Evoluzione** — Rivela il tatuaggio con la svastica, si dichiara apertamente suprematista bianco
+4. **2015** — Sfrutta i *promoted tweet* di Twitter per propaganda nazionalista bianca
+5. **2016** — Hackera stampanti universitarie per diffondere volantini antisemiti
+
+::: {.highlight-box}
+**Schema:** competenza tecnica → notorietà → radicalizzazione → sfruttamento strategico delle piattaforme.
+:::
+
+::: {.notes}
+Weev è un caso esemplare perché mostra il percorso completo: dall'hacking "ludico" (competenza tecnica, sfida alle istituzioni) alla manipolazione politica. È esattamente l'arco storico che Boyd (2017) descriverà nella prossima lezione: dall'hacking per divertimento all'hacking dell'economia dell'attenzione. Weev diventa admin del Daily Stormer — il sito suprematista più visitato.
+:::
+
+## Il processo di *mainstreaming* {background-color="#C5612E"}
+
+::: {.notes}
+Come fa un'idea nata su 4chan ad arrivare sulla prima pagina di un giornale nazionale? Marwick e Lewis descrivono un processo a stadi che funziona come una "scalata" informativa.
+:::
+
+## Quattro stadi: dal margine al centro
+
+| Stadio | Dove | Chi |
+|--------|------|-----|
+| **1. Innovazione subcultural** | 4chan, 8chan, forum | Anonimi, troll, memer |
+| **2. Amplificazione degli influencer** | Blog, YouTube, podcast | Spencer, Anglin, Yiannopoulos |
+| **3. Amplificazione politica** | Twitter, comizi, dichiarazioni | Politici, candidati |
+| **4. Copertura mainstream** | TV, giornali, portali | Giornalisti, editori |
+
+::: {.notes}
+Ogni stadio amplifica il messaggio e lo legittima. Allo stadio 1, un'idea circola in una community di nicchia. Allo stadio 2, un influencer con una piattaforma più ampia la rilancia. Allo stadio 3, un politico la cita — e dato il suo status, diventa notiziabile. Allo stadio 4, i media mainstream la coprono — per smentirla, contestarla o semplicemente riportarla — ma la copertura in sé è il risultato cercato dai manipolatori.
+:::
+
+## Stadio 1: innovazione subcultural
+
+Le subculture online (4chan/pol/, 8chan) sviluppano tattiche e linguaggi propri [@marwick2017]:
+
+- "Discorso deliberatamente offensivo, antipatia verso il sensazionalismo, desiderio di impatto emotivo, conservazione dell'ambiguità"
+- La **Legge di Poe**: è impossibile distinguere satira e posizioni genuine
+- I *lulz* (ridere provocando caos): piacere nel creare discordia
+
+::: {.callout-note}
+## Collegamento con Jenkins
+Queste community hanno tutte le caratteristiche della **cultura partecipativa** — ma applicate alla produzione di propaganda.
+:::
+
+::: {.notes}
+4chan /b/ (anni 2000) sviluppa una cultura specifica: l'anonimato, l'offensività come norma, l'ambiguità come strategia. La Legge di Poe è cruciale: se non puoi distinguere tra satira e posizione genuina, l'ironia diventa un'arma — puoi sempre dire "era solo uno scherzo" (plausible deniability). I lulz sono il carburante emotivo: il piacere sta nel provocare reazioni, nel "trollare" i media mainstream. Queste pratiche erano inizialmente apolitiche — diventano politiche quando vengono piegate alla manipolazione (passaggio che Boyd 2017 descriverà in dettaglio).
+:::
+
+## Stadio 2: amplificazione degli *influencer*
+
+Gli influencer fungono da **ponte** tra le subculture e il pubblico più ampio [@marwick2017]:
+
+- I blog iper-partigiani (Breitbart, Daily Stormer, Infowars) rilanciano i contenuti delle subculture
+- Questi siti combinano "verità decontestualizzate, falsità ripetute e salti logici"
+- Hanno generato **più engagement su Facebook** degli outlet mainstream durante le elezioni 2016
+
+::: {.notes}
+Dato chiave di BuzzFeed (citato nel report): durante le elezioni 2016, gli articoli di siti iper-partigiani hanno generato più engagement su Facebook di quelli dei media mainstream. Questo significa che il contenuto manipolativo raggiunge più persone attraverso la condivisione sociale di quanto i giornali tradizionali raggiungano con il loro brand. Il meccanismo è lo stesso della meme warfare: la diffusione interpersonale è più efficace della distribuzione top-down.
+:::
+
+## Stadio 3: amplificazione politica
+
+Quando un **politico** rilancia un contenuto, lo rende automaticamente **notiziabile** [@marwick2017]:
+
+- Lo status di candidato conferisce rilevanza giornalistica anche alle affermazioni più estreme
+- Le teorie cospirative (birther, anti-vax) passano dalla marginalità alla copertura nazionale in settimane
+- Il politico funziona come **mega-amplificatore**: ogni suo tweet è una notizia
+
+::: {.notes}
+Il caso Trump è l'esempio più estremo: come candidato, le sue affermazioni — anche le più assurde — erano automaticamente notiziabili. I media non potevano ignorarle perché provenivano da un candidato alla presidenza. Ogni tweet diventava un articolo. Questo ha creato un loop: Trump rilanciava contenuti dalle subculture → i media li coprivano → l'attenzione generava più copertura → le subculture producevano più contenuti. Ma il meccanismo non è esclusivo di Trump: funziona con qualsiasi politico di alto profilo.
+:::
+
+## Stadio 4: copertura mainstream
+
+Il **paradosso finale**: i media mainstream completano il ciclo amplificando ciò che cercano di smentire [@marwick2017].
+
+- Clinton che nomina l'*alt-right* nel discorso di Reno (agosto 2016) ne cementa l'importanza
+- "Basket of deplorables" viene abbracciato come **distintivo d'onore**
+- Ogni tentativo di **marginalizzare** finisce per **centralizzare**
+
+::: {.highlight-box}
+**La lezione:** nel sistema attuale, l'attenzione è una risorsa — qualsiasi attenzione, positiva o negativa, serve gli obiettivi dei manipolatori.
+:::
+
+::: {.notes}
+Il discorso di Clinton a Reno è il caso più emblematico: voleva denunciare l'alt-right, ma nominandola davanti a milioni di spettatori ha dato a un movimento marginale una visibilità che non avrebbe mai ottenuto da solo. "Basket of deplorables" è diventato un meme, una maglietta, un'identità. Lo stesso accade ogni volta che un media mainstream "spiega" o "smaschera" un fenomeno subcultural: l'attenzione è il premio, non la valutazione.
+:::
+
+## *Trading up the chain* {background-color="#C5612E"}
+
+## Come si scala la catena informativa
+
+Una tecnica specifica per sfruttare il processo di mainstreaming [@marwick2017]:
+
+::: {.orange-box}
+### *Trading up the chain*
+Piantare una storia in un **piccolo outlet locale** (con poche risorse per il fact-checking), poi amplificarla progressivamente verso outlet **medi** e infine **nazionali**.
+:::
+
+**Varianti:**
+
+- Hoax deliberati per giornali locali (es. pagine Facebook di "sindacati studenteschi bianchi" inesistenti)
+- Promozione tramite influencer (Alex Jones, Infowars)
+- Amplificazione politica (tweet di un candidato)
+
+::: {.notes}
+Il trading up the chain sfrutta la vulnerabilità del giornalismo locale: meno giornalisti = meno tempo per verificare. Una storia che appare su un giornale locale acquisisce una patina di credibilità ("l'ha scritto un giornale") che la rende più facile da riprendere per un outlet medio. L'outlet medio a sua volta legittima la storia per il media nazionale. A ogni passaggio, la storia viene "lavata" — perde la traccia della sua origine manipolativa.
+:::
+
+## Il punto chiave: la manipolazione è reticolare {background-color="#C5612E"}
+
+::: {.notes}
+Questo è il concetto più importante della lezione — e forse dell'intero modulo su Marwick & Lewis.
+:::
+
+## Non è propaganda tradizionale
+
+::: {.columns}
+::: {.column width="50%"}
+### Propaganda classica (top-down)
+
+- Governo o istituzione **controlla** il messaggio
+- Flusso unidirezionale: centro → periferia
+- Il pubblico è **passivo**
+- Canali controllati (TV di stato, giornali di partito)
+:::
+
+::: {.column width="50%"}
+### Manipolazione reticolare (dal basso)
+
+- **Nessun centro** di controllo unico
+- Flusso multidirezionale: periferia ↔ periferia ↔ centro
+- Il pubblico è **attivo** (condivide, rielabora, amplifica)
+- Canali aperti (social media, forum, blog)
+:::
+:::
+
+::: {.notes}
+Questo è il paradosso centrale: la manipolazione mediatica contemporanea sfrutta le stesse dinamiche dal basso che Jenkins descrive come emancipatorie. Produzione di meme, circolazione virale, coordinamento spontaneo — sono le stesse pratiche della cultura partecipativa. La differenza è nell'intenzionalità, non nel meccanismo. Citazione implicita: "Le stesse pratiche dal basso (produzione di meme, circolazione virale, coordinamento spontaneo) vengono piegate a fini strategici."
+:::
+
+## La strumentalizzazione della cultura partecipativa
+
+::: {.highlight-box}
+**Il punto di Marwick e Lewis:**
+
+La manipolazione mediatica non è top-down — è la **strumentalizzazione della cultura partecipativa** [@marwick2017].
+
+Le stesse competenze che Jenkins descrive come emancipatorie (produzione creativa, intelligenza collettiva, coordinamento dal basso) vengono piegate a fini di **manipolazione strategica**.
+:::
+
+La differenza non è nel **meccanismo** — è nell'**intenzionalità**.
+
+::: {.notes}
+Collegamento sistematico con tutti gli autori: Boyd (2018) descrive le affordance che abilitano entrambi gli usi; Jenkins (2008) mostra il potenziale partecipativo; Shirky (2009) spiega come il crollo dei costi di coordinamento renda tutto possibile; Marwick & Lewis (2017) mostrano la strumentalizzazione. Nella prossima lezione, Boyd (2017) chiuderà il cerchio mostrando la traiettoria storica: dall'hacking ludico alla manipolazione politica dell'attenzione. Questa mappa sarà l'ossatura del quadro teorico del saggio IMRAD.
+:::
+
+## Esercitazione: ricostruire la catena {background-color="#C5612E"}
+
+## Il caso di studio
+
+::: {.orange-box}
+### Esercitazione a gruppi di 4 (50 minuti)
+
+Il docente presenta un **caso dettagliato** di campagna di manipolazione mediatica documentata.
+
+Ogni gruppo ricostruisce la **catena di amplificazione**:
+
+1. **Dove** è nato il contenuto? (stadio 1)
+2. Attraverso quali **passaggi** è arrivato ai media mainstream? (stadi 2-4)
+3. Quali **tattiche** di Marwick e Lewis sono riconoscibili?
+4. Quali **affordance** di Boyd sono state sfruttate?
+5. I **costi di coordinamento** (Shirky) erano alti o bassi?
+
+Preparate una presentazione di **5 minuti**.
+:::
+
+::: {.notes}
+Il docente sceglie un caso di studio dettagliato e documentato — preferibilmente italiano o europeo per maggiore vicinanza. Possibili casi: una campagna di disinformazione durante un'elezione, un caso di astroturfing smascherato, una teoria cospirativa che è passata dai forum ai media nazionali. Il caso deve essere sufficientemente documentato perché gli studenti possano ricostruire i passaggi. Distribuire una scheda con la timeline del caso e le fonti. Dare 35 minuti per il lavoro a gruppi, 15 minuti per le presentazioni (2-3 gruppi).
+:::
+
+## Schema per la ricostruzione
+
+| Stadio | Dove? | Chi? | Quale tattica? | Quale affordance? |
+|--------|-------|------|----------------|-------------------|
+| 1. Subcultural | | | | |
+| 2. Influencer | | | | |
+| 3. Politico | | | | |
+| 4. Mainstream | | | | |
+
+**Domanda finale:** i costi di coordinamento (Shirky) di questa campagna erano alti o bassi? Quale istituzione tradizionale avrebbe potuto organizzare la stessa operazione?
+
+::: {.notes}
+Questa scheda guida il lavoro a gruppi. Sottolineare che non tutti i casi passano per tutti e 4 gli stadi: alcuni saltano dal subcultural al mainstream; altri non hanno un'amplificazione politica esplicita. L'importante è ricostruire il percorso effettivo, non forzarlo nello schema. La domanda sui costi di coordinamento collega l'analisi a Shirky: queste campagne costano pochissimo in termini organizzativi — è il pavimento di Coase applicato alla manipolazione.
+:::
+
+## Presentazione e discussione
+
+::: {.highlight-box}
+**Domande guida per la discussione:**
+
+- Il caso segue la **sequenza** subcultural → influencer → politico → mainstream? O la salta?
+- Quale **stadio** è stato il più critico per l'amplificazione?
+- C'è stato un momento in cui il processo poteva essere **interrotto**? Come?
+- Quale **autore** del corso aiuta di più a capire questo caso?
+:::
+
+::: {.notes}
+Selezionare 2 gruppi per la presentazione. La domanda sull'interruzione è importante: forza gli studenti a pensare in modo propositivo — non solo "come funziona" ma "come si potrebbe contrastare." La domanda sull'autore più utile prepara la sintesi della Lezione 8: i quattro autori offrono lenti diverse sullo stesso fenomeno.
+:::
+
+## In sintesi
+
+::: {.columns}
+::: {.column width="50%"}
+### Il processo di *mainstreaming*
+
+1. Innovazione subcultural
+2. Amplificazione degli influencer
+3. Amplificazione politica
+4. Copertura mainstream
+:::
+
+::: {.column width="50%"}
+### Il punto chiave
+
+La manipolazione mediatica è **reticolare**, non top-down.
+
+Sfrutta le **stesse dinamiche** della cultura partecipativa (Jenkins) resa possibile dal **crollo dei costi** (Shirky) nelle piattaforme con specifiche **affordance** (Boyd).
+:::
+:::
+
+::: {.notes}
+Riepilogo. Anticipare: la prossima lezione (Boyd 2017, "Hacking the Attention Economy") chiuderà il cerchio mostrando come questa traiettoria — dall'hacking ludico alla manipolazione politica — si è sviluppata storicamente. È il testo che unisce tutti gli altri in una narrazione coerente.
+:::
+
+## Compito individuale
+
+::: {.orange-box}
+### Analisi di un caso di manipolazione mediatica
+
+**Consegna:** entro martedì 22 aprile, ore 23:59
+
+Scegliete un caso dal **Media Manipulation Casebook** (Data & Society) o da altra fonte documentata. Scrivete un'analisi di **800–1.200 parole** che:
+
+1. **Descriva** il caso: piattaforma, attori, timeline, esito
+2. **Classifichi** le tattiche (Marwick & Lewis)
+3. **Identifichi** le affordance sfruttate (Boyd)
+4. **Valuti** la posizione nel continuum partecipazione genuina ↔ strumentalizzazione (Jenkins)
+:::
+
+::: {.notes}
+Spiegare il compito nel dettaglio. È formativo — non contribuisce al voto — ma il suo completamento è requisito per la modalità frequentanti. Il docente fornirà un feedback sintetico entro la Lezione 9. Il Media Manipulation Casebook di Data & Society è un archivio pubblico di casi documentati. Gli studenti possono anche scegliere un caso italiano recente, purché documentato da fonti affidabili. Sottolineare: non è un'opinione, è un'analisi — deve usare i concetti del corso con precisione.
+:::
+
+## Prossimi passi
+
+**Lettura da completare prima della prossima lezione:**
+
+- Boyd (2017), *Hacking the Attention Economy*
+
+**Prossima lezione:** Martedì 21 aprile, 9:00–11:00, Aula C1
+
+*Sintesi teorica: hackerare l'economia dell'attenzione*
+
+**Scadenza compito individuale:** Martedì 22 aprile, ore 23:59
+
+::: {.notes}
+Boyd (2017) è un testo breve (un articolo, non un libro) ma denso. È il testo di sintesi che collega tutti gli altri. Anticipare: "Boyd traccia un arco storico dall'hacking ludico degli anni '90 alla manipolazione politica dell'attenzione. È la chiave per capire come siamo arrivati dal mondo di Jenkins a quello di Marwick e Lewis." Ricordare la scadenza del compito individuale.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Sintesi — *Hacking the Attention Economy* — Mar 21 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

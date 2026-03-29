@@ -1,0 +1,117 @@
+---
+title: "Integrazione Analisi Qualitativa e Quantitativa"
+subtitle: "Internet Studies — Lezione 17"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "12 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Momento collettivo: mettere in dialogo i risultati {background-color="#C5612E"}
+
+## Qualitativo + quantitativo
+
+::: {.columns}
+::: {.column width="50%"}
+### I pattern qualitativi
+
+**Cosa dicono i post?**
+
+La codifica vi dice *che tipo* di contenuto c'è nel campione: tattiche (RQ1) o forme di partecipazione (RQ2).
+:::
+
+::: {.column width="50%"}
+### I pattern quantitativi
+
+**Come performano?**
+
+Le tabelle pivot vi dicono *come* ciascuna categoria si comporta in termini di engagement.
+:::
+:::
+
+::: {.highlight-box}
+**Il punto:** la descrizione dei risultati non è ancora la loro **interpretazione**. Separare i due momenti — la descrizione va nei Results, l'interpretazione nella Discussion.
+:::
+
+::: {.notes}
+Momento collettivo breve (15 min). Il passaggio dall'analisi alla scrittura inizia qui: i gruppi devono selezionare i 2-3 findings principali da riportare nel saggio. Non tutto ciò che hanno trovato merita di entrare nei Results — solo ciò che è rilevante per la RQ. Sottolineare la separazione Results/Discussion: "I post di tipo X hanno una mediana di reazioni doppia rispetto a Y" è un risultato; "Questo perché le affordance di replicabilità favoriscono..." è interpretazione.
+:::
+
+## Lavoro di gruppo: completamento analisi {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (75 minuti):**
+
+1. **Finalizzare** l'analisi — completare le tabelle pivot e i grafici
+2. **Selezionare** i 2–3 **risultati chiave** da riportare nel saggio
+3. **Produrre** le tabelle e i grafici **definitivi** (quelli che finiranno nel saggio)
+:::
+
+::: {.notes}
+I gruppi devono uscire dalla lezione con i risultati definitivi: tabelle e grafici pronti per essere inseriti nella sezione Results. Se un gruppo è in ritardo sulla codifica, ha tempo per completarla — ma deve avere almeno i risultati principali per il Checkpoint 3.
+:::
+
+## Checkpoint 3
+
+::: {.orange-box}
+### Consultazione con il docente (ultimi 30 minuti)
+
+Il docente discute con ciascun gruppo:
+
+1. I **risultati principali** — sono coerenti con la RQ?
+2. Ci sono **sorprese** rispetto a quanto previsto dalla teoria?
+3. **Manca qualcosa?** Ci sono analisi aggiuntive da fare?
+4. Le tabelle e i grafici sono **chiari**?
+:::
+
+**Da domani:** fase di **scrittura**.
+
+::: {.notes}
+Il Checkpoint 3 è l'ultimo momento di verifica prima della scrittura. Se i risultati sono coerenti con la RQ e le tabelle sono chiare, il gruppo è pronto per scrivere. Se ci sono lacune, il docente suggerisce analisi aggiuntive da completare prima di iniziare la stesura. Da domani (Lezione 18) inizia la fase di scrittura: Introduction e Methods.
+:::
+
+## Prossimi passi
+
+**Prossima lezione:** Mercoledì 13 maggio, 11:00–13:00, Aula D3
+
+*Stesura: Introduction e Methods*
+
+::: {.callout-tip}
+## Preparatevi a scrivere
+Da domani lavorerete su un **documento condiviso** (Google Docs). Create il documento e condividetelo con tutti i membri del gruppo e con il docente.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Stesura Introduction e Methods — Mer 13 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

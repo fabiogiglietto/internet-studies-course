@@ -1,0 +1,483 @@
+---
+title: "Introduzione al Corso e Networked Publics"
+subtitle: "Internet Studies — Lezione 1"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "31 Marzo 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Descrivere la **struttura del corso**, le modalità di valutazione e le politiche
+2. Elencare e spiegare le **quattro proprietà strutturali** dei *networked publics*
+3. **Applicare** le proprietà a un caso concreto tratto dalla vostra esperienza sulle piattaforme
+:::
+
+::: {.notes}
+Presentare gli obiettivi come guida alla lezione. Sottolineare che oggi si alterneranno una parte amministrativa (prima mezz'ora) e una parte teorica con esercitazione.
+:::
+
+## Roadmap della lezione
+
+- **Parte 1:** Il corso in sintesi — struttura, valutazione, politiche
+- **Parte 2:** I *networked publics* — le quattro proprietà strutturali
+- **Parte 3:** Esercitazione — analizzare un proprio post
+- **Chiusura:** Prossimi passi e letture
+
+::: {.notes}
+La lezione è divisa in due macro-blocchi: ~30 minuti di presentazione del corso e ~75 minuti dedicati al primo concetto teorico (Boyd, 2018). L'esercitazione conclude la lezione.
+:::
+
+## Il corso in sintesi {background-color="#C5612E"}
+
+## Informazioni generali
+
+| | |
+|---|---|
+| **Insegnamento** | Internet Studies |
+| **Docente** | Fabio Giglietto |
+| **A.A.** | 2025/2026 — II semestre |
+| **Durata** | 48 ore (24 lezioni × 2 ore) |
+| **Inizio – Fine** | 31 marzo – 27 maggio 2026 |
+| **Consegna finale** | 3 giugno 2026 |
+
+::: {.notes}
+Informazioni di base. Sottolineare che il corso è intensivo: 24 lezioni in 8 settimane, con tre incontri settimanali. La frequenza regolare è essenziale.
+:::
+
+## Orario e aule
+
+| Giorno | Orario | Aula |
+|--------|--------|------|
+| **Martedì** | 9:00 – 11:00 | C1 |
+| **Mercoledì** | 11:00 – 13:00 | D3 |
+| **Giovedì** | 11:00 – 13:00 | C2 |
+
+**Sospensione:** 3–8 aprile 2026 (ponte pasquale)
+
+::: {.notes}
+Tre aule diverse — ricordare agli studenti di controllare l'aula ogni giorno. La pausa pasquale interrompe dopo la terza lezione; si riprende giovedì 9 aprile.
+:::
+
+## Panoramica del corso
+
+::: {.columns}
+::: {.column width="50%"}
+### Blocco 1 — Fondamenti
+**Lezioni 1–12** (31 mar – 29 apr)
+
+Lezioni frontali + esercitazioni sui concetti chiave degli Internet Studies:
+
+- *Networked publics*
+- *Participatory culture*
+- *Collective action*
+- *Media manipulation*
+- *Attention economy*
+:::
+
+::: {.column width="50%"}
+### Blocco 2 — Laboratorio
+**Lezioni 13–24** (30 apr – 27 mag)
+
+Lavoro di gruppo su un dataset dalla **Meta Content Library**:
+
+- Analisi del contenuto
+- Codifica manuale
+- Analisi dell'engagement
+- Stesura saggio **IMRAD**
+:::
+:::
+
+::: {.notes}
+Il corso ha una struttura progressiva: prima si costruisce il quadro teorico leggendo cinque testi fondamentali, poi si applica quel quadro a un'analisi empirica reale. Il Blocco 2 non è "meno importante" — è dove si mettono in pratica le competenze.
+:::
+
+## Struttura delle 8 settimane
+
+| Sett. | Date | Focus |
+|-------|------|-------|
+| 1 | 31 mar – 2 apr | Boyd: *networked publics* + Jenkins: cultura partecipativa |
+| 2 | 9 apr | Shirky: azione collettiva (I) |
+| 3 | 14–16 apr | Shirky (II) + Marwick & Lewis: *media manipulation* |
+| 4 | 21–23 apr | Sintesi + Metodi di ricerca + Dataset |
+| 5 | 28–30 apr | Codebook + IMRAD + Avvio laboratorio |
+| 6 | 5–7 mag | Codifica e affidabilità |
+| 7 | 12–14 mag | Analisi e inizio scrittura |
+| 8 | 19–27 mag | Scrittura, revisione, presentazioni |
+
+::: {.notes}
+Mostrare l'arco complessivo. Le prime 4 settimane costruiscono la teoria; le ultime 4 la applicano. La settimana 5 è il "ponte" tra i due blocchi: si formano i gruppi e si inizia il lavoro empirico.
+:::
+
+## Materiali di studio
+
+Cinque testi — tutti obbligatori, tutti disponibili su Moodle:
+
+1. **Boyd** (2018) — *It's Complicated* (pp. 29–43)
+2. **Jenkins** (2008) — *Fan, Blogger e Videogamers* (pp. 7–22; 160–180; 219–229)
+3. **Shirky** (2009) — *Uno per Uno, Tutti per Tutti* (pp. 3–119)
+4. **Marwick & Lewis** (2017) — *Media Manipulation and Disinformation Online*
+5. **Boyd** (2017) — *Hacking the Attention Economy*
+
+::: {.notes}
+Sottolineare che non ci sono fonti esterne da cercare: il quadro teorico del saggio si basa interamente su questi cinque testi. Questo è un vincolo deliberato — la qualità della literature review riflette la comprensione dei materiali, non la capacità di citare fonti mai lette.
+:::
+
+## Modalità di valutazione — Frequentanti
+
+::: {.highlight-box}
+**Requisiti:** Iscrizione entro la seconda settimana + almeno **18 presenze su 24** + compito individuale completato.
+:::
+
+| Componente | Peso | Dettaglio |
+|------------|------|-----------|
+| **Progetto di gruppo** | 75% | Saggio IMRAD (4.000–6.000 parole) |
+| **Partecipazione** | 10% | Presenza rilevata (codice + geolocalizzazione) |
+| **Esame orale** | 15% | Individuale, ~10 min, tutti e 5 i testi + progetto |
+
+::: {.notes}
+Il progetto di gruppo è il cuore della valutazione. Tutti i membri ricevono lo stesso voto base, ma una peer evaluation intra-gruppo può modulare il voto individualmente. L'esame orale verifica che ciascuno abbia compreso i testi, anche quelli non direttamente usati nel proprio saggio.
+:::
+
+## Modalità di valutazione — Non frequentanti
+
+Chi non raggiunge 18 presenze sostiene l'esame sui testi indicati nel **programma ufficiale** dell'insegnamento, sezione "non frequentanti":
+
+🔗 [uniurb.it/insegnamenti-e-programmi/268626](https://www.uniurb.it/insegnamenti-e-programmi/268626)
+
+::: {.notes}
+Per i dettagli completi sulla modalità non frequentanti, fare riferimento al programma ufficiale pubblicato sul sito di Ateneo. Motivare la frequenza: il percorso frequentanti è supportato dal lavoro collaborativo e dal feedback continuo del docente.
+:::
+
+## Rilevazione delle presenze
+
+La presenza viene rilevata tramite **codice** + **geolocalizzazione**.
+
+- All'inizio di ogni lezione verrà comunicato un **codice alfanumerico**
+- Lo studente lo inserisce nell'apposita interfaccia, che verifica la posizione
+- **Ogni lezione oltre la soglia di 18** contribuisce alla componente partecipazione (max 3/30)
+
+::: {.callout-warning}
+## Giustificazione assenze
+Entro **2 giorni** dall'assenza, postare nel Forum dedicato su Moodle specificando i motivi.
+:::
+
+::: {.notes}
+Spiegare brevemente la procedura tecnica. Se la geolocalizzazione non funziona (edifici vecchi, segnale debole), lo studente segnala al docente a fine lezione per la registrazione manuale.
+:::
+
+## Policy sull'uso dell'IA generativa
+
+::: {.orange-box}
+### Consentito (supporto non sostitutivo)
+- **Brainstorming** e ideazione
+- **Revisione linguistica** (grammatica, chiarezza)
+- **Supporto all'analisi** (formule per Google Sheets, comprensione di pattern)
+:::
+
+**Non consentito:** generare intere sezioni del saggio, sostituire la lettura dei testi, produrre la codifica del contenuto.
+
+**Obbligo di trasparenza:** dichiarare ogni uso di IA nella sezione Methods.
+
+::: {.notes}
+Questa policy è pragmatica: l'IA generativa è uno strumento reale che gli studenti useranno. Meglio regolamentare che proibire. Il punto chiave è la trasparenza e la responsabilità: l'IA può commettere errori e la responsabilità del contenuto finale resta degli studenti.
+:::
+
+## Consegne in ritardo
+
+- **–1 punto** (su 30) per ogni giorno di ritardo
+- **Limite massimo:** 7 giorni dalla scadenza
+- Oltre il limite, la consegna non è accettata
+
+::: {.notes}
+Questa regola vale per tutte le consegne: compito individuale, bozza del saggio, saggio definitivo.
+:::
+
+## Spazio Moodle
+
+<!-- Il docente inserirà qui il link e/o QR code allo spazio blended -->
+
+Tutte le risorse del corso sono disponibili sullo spazio **Moodle** del corso:
+
+- Testi in programma (PDF e markdown)
+- Dataset e template Google Sheets
+- Forum per domande e giustificazione assenze
+- Consegne e feedback
+
+::: {.notes}
+Mostrare lo spazio Moodle proiettato, far vedere la struttura. Invitare gli studenti a iscriversi subito.
+:::
+
+## I *Networked Publics* {background-color="#C5612E"}
+
+::: {.notes}
+Transizione dalla parte amministrativa alla parte teorica. "Adesso entriamo nel vivo del corso. Il primo concetto che affrontiamo è fondamentale: accompagnerà tutto il semestre."
+:::
+
+## Cosa sono i *networked publics*?
+
+I *networked publics* sono **spazi pubblici riconfigurati dalle tecnologie di rete** [@boyd2018].
+
+Sono contemporaneamente:
+
+1. Lo **spazio** creato dalle tecnologie di rete
+2. La **comunità immaginata** che emerge dall'intersezione tra persone, tecnologia e pratiche sociali
+
+::: {.highlight-box}
+I *social media* non hanno inventato la socialità: hanno creato **nuovi spazi** in cui si esprime un desiderio antico — quello di essere parte di un mondo più ampio.
+:::
+
+::: {.notes}
+Boyd introduce il concetto con un aneddoto: a una partita di football liceale nel 2010, gli adolescenti usano i cellulari per fotografare e coordinarsi con gli amici presenti — non per fuggire dalla realtà, ma per estendere il piacere della socialità. I social media sono il "posto figo" di questa generazione, come il centro commerciale lo era per le precedenti.
+:::
+
+## Dai centri commerciali a Facebook
+
+::: {.columns}
+::: {.column width="50%"}
+### Spazi pubblici tradizionali
+
+- Il parco
+- Il centro commerciale
+- La partita di football
+- Il bar, la piazza
+
+Luoghi dove gli adolescenti **si incontrano, socializzano e costruiscono la propria identità**.
+:::
+
+::: {.column width="50%"}
+### *Networked publics*
+
+- Facebook, Instagram, TikTok
+- Discord, Reddit
+- YouTube, Twitch
+
+Stessi bisogni — **spazi diversi**, con proprietà strutturali diverse.
+:::
+:::
+
+::: {.notes}
+Boyd: "Se non sei su MySpace, non esisti" — disse un ragazzo di 18 anni nel 2006. Non parlava di dipendenza tecnologica, ma di accettazione sociale. Ogni generazione ha il suo "posto figo". I social media permettono di creare uno spazio senza muoversi fisicamente. Citare: "Le piattaforme cambiano, ma i principi sottostanti non cambiano" [@boyd2018].
+:::
+
+## Le *affordance*: cosa rende possibile la tecnologia?
+
+Le **affordance** sono le proprietà e caratteristiche di un ambiente che rendono possibili — ma non determinano — certi tipi di azioni [@boyd2018].
+
+> L'esempio della finestra: un vetro molto spesso permette a due persone di **vedersi senza sentirsi**. Per comunicare, possono gesticolare, scrivere cartelli o rompere il vetro. Le affordance non prevedono il comportamento, ma creano la situazione.
+
+::: {.notes}
+Il concetto di affordance viene da James Gibson (1979) e viene applicato qui alle tecnologie digitali. Boyd lo usa per spiegare perché i networked publics sono diversi dagli spazi fisici: non perché le persone siano cambiate, ma perché le proprietà dell'ambiente sono cambiate.
+:::
+
+## Le quattro affordance dei *networked publics* {background-color="#C5612E"}
+
+::: {.notes}
+Queste quattro proprietà sono il cuore del modello di Boyd e il fondamento teorico dell'intero corso. Ogni autore che leggeremo torna implicitamente o esplicitamente su queste proprietà.
+:::
+
+## 1. Persistenza
+
+I contenuti condivisi online **durano nel tempo** [@boyd2018].
+
+- Un messaggio inviato a mezzanotte resta disponibile al mattino — e per anni
+- Le conversazioni sui social media non sono effimere come quelle al parco
+- Le **tracce** degli utenti vengono "registrate" come mai prima
+
+::: {.highlight-box}
+**Conseguenza:** La persistenza permette interazioni **asincrone** — ma significa anche che ciò che pubblichiamo ci sopravvive nel tempo.
+:::
+
+::: {.notes}
+Boyd fa l'esempio di Alice e Bob: Alice scrive a mezzanotte, Bob legge al mattino o anche dopo settimane. Il messaggio non scompare. Questo cambia radicalmente la natura della comunicazione: le lettere dei nonni erano persistenti, ma non erano facilmente cercabili da chiunque.
+:::
+
+## 2. Visibilità
+
+I contenuti condivisi tramite i *social media* sono accessibili a un **pubblico potenzialmente ampio** [@boyd2018].
+
+- Nei sistemi digitali, la condivisione con un ampio pubblico è il **default**
+- Per rendere un contenuto privato bisogna **agire attivamente**
+- Negli spazi fisici è il contrario: ci vuole uno sforzo coordinato per rendersi visibili
+
+::: {.callout-note}
+## Da notare
+Nei *networked publics*, le interazioni sono **pubbliche per default**; per renderle private bisogna fare qualcosa.
+:::
+
+::: {.notes}
+Boyd sottolinea il rovesciamento rispetto allo spazio fisico: nella piazza devi urlare per farti sentire da tutti; su Facebook devi impostare la privacy per non essere visto da tutti. Questa asimmetria ha conseguenze enormi, soprattutto per gli adolescenti che non sempre comprendono chi può vedere i loro contenuti.
+:::
+
+## 3. Replicabilità (*spreadability*)
+
+I contenuti digitali sono facili da **copiare, condividere e far circolare** [@boyd2018].
+
+- Strumenti di *reblog*, *retweet*, *share*, copia-incolla
+- Un contenuto può essere **diffuso con pochi clic** — nel bene e nel male
+- La facilità di diffusione serve sia per organizzare manifestazioni politiche sia per far circolare gossip e disinformazione
+
+::: {.notes}
+Boyd: "La facilità con cui i media possono essere condivisi quotidianamente online è senza precedenti, e questo può essere sia una grande forza che un problema." Il gossip si è sempre diffuso rapidamente attraverso il passaparola, ma i social media amplificano la velocità e la scala. Anticipare: questo punto tornerà con forza quando leggeremo Marwick & Lewis sulla manipolazione mediatica.
+:::
+
+## 4. Ricercabilità (*searchability*)
+
+I contenuti digitali possono essere **trovati tramite motori di ricerca** [@boyd2018].
+
+- Chiunque può interrogare un database e trovare messaggi scritti da altri
+- I motori di ricerca **eliminano gli indizi di contesto**, aumentando il rischio di decontestualizzazione
+- "Mia madre avrebbe dato qualsiasi cosa per poter gridare 'Cerca!' e scoprire dove passavo il tempo con i miei amici"
+
+::: {.notes}
+Boyd nota che la pratica di "cercare" informazioni su qualcuno non è nuova — chiedere in giro è sempre esistito. Ma i motori di ricerca rendono la ricerca più efficiente e soprattutto anonima: nessun altro sa che stai cercando. Questa proprietà alimenta pratiche come il "stalking" dei profili di persone interessanti.
+:::
+
+## Le quattro affordance in sintesi
+
+| Affordance | Cosa significa | Esempio |
+|------------|----------------|---------|
+| **Persistenza** | I contenuti durano nel tempo | Un tweet del 2018 è ancora leggibile |
+| **Visibilità** | Pubblico potenzialmente ampio | Un post "privato" visto da centinaia di persone |
+| **Replicabilità** | Facile da copiare e condividere | Un meme che diventa virale in poche ore |
+| **Ricercabilità** | Trovabile tramite ricerca | Googling il nome di un candidato |
+
+::: {.callout-tip}
+## Punto chiave
+Nessuna di queste proprietà è nuova in sé. Ciò che è nuovo è la loro **combinazione e amplificazione** attraverso i *social media* [@boyd2018].
+:::
+
+::: {.notes}
+Boyd: "Le lettere dei miei nonni erano persistenti. I messaggi sulla bacheca del bagno della scuola erano visibili. Il gossip si è sempre diffuso alla velocità della luce. E chiedere in giro per trovare qualcuno non è certo una novità." Ma la combinazione di tutte e quattro in un unico ambiente cambia le dinamiche sociali.
+:::
+
+## Adolescenti e adulti: prospettive diverse
+
+::: {.columns}
+::: {.column width="50%"}
+### Gli adolescenti
+
+- La tecnologia è un **dato di fatto**
+- Si concentrano sul significato dell'**essere in pubblico**
+- Non analizzano le differenze tecnologiche
+- Sanno manipolare i *social media* — ma non sempre le conseguenze
+:::
+
+::: {.column width="50%"}
+### Gli adulti
+
+- Confrontano *networked publics* con altri spazi
+- Si concentrano sull'**essere online**
+- Più esperienza nel navigare gli spazi pubblici
+- Spesso più scettici verso le tecnologie
+:::
+:::
+
+::: {.notes}
+Boyd: "A causa della differenza di età e di esperienza, adolescenti e adulti si concentrano su questioni diverse: gli adolescenti sul significato di essere in pubblico, gli adulti sull'essere online." Questa differenza di prospettiva è alla base di molte ansie e incomprensioni.
+:::
+
+## Tecnologie: vecchie speranze, vecchie paure
+
+Ogni nuova tecnologia genera **panico morale** [@boyd2018]:
+
+- La **macchina da cucire** avrebbe avuto conseguenze sulla vita sessuale delle donne
+- Il **walkman** avrebbe isolato le persone dal mondo
+- I **fumetti** e il **rock and roll** avrebbero creato delinquenti giovanili
+- I **romanzi** erano una minaccia alla moralità femminile
+- Persino **Socrate** avvertiva dei pericoli della scrittura
+
+::: {.highlight-box}
+**La lezione:** I timori sono ricorrenti. Vanno presi *cum grano salis* — ma le trasformazioni sono reali.
+:::
+
+::: {.notes}
+Boyd cita una maglietta di John Slabyk: "They lied to us / this was supposed to be the future / where's my jet pack, where's my robot companion." Il punto: né le utopie né le distopie tecnologiche si realizzano mai completamente. La realtà è sempre più complicata. Da qui il titolo del libro: "It's Complicated."
+:::
+
+## Esercitazione {background-color="#C5612E"}
+
+## Analizzare un proprio post
+
+::: {.orange-box}
+### Istruzioni (40 minuti)
+1. Scegliete un **vostro post recente** su un social (o un post pubblico che conoscete)
+2. Analizzatelo alla luce delle **quattro proprietà**:
+   - Quale proprietà è **più evidente**?
+   - Quale **dinamica sociale** si attiva?
+   - La proprietà ha avuto effetti **positivi, problematici o entrambi**?
+3. Annotate in 3–4 righe la vostra analisi
+4. Condivisione in plenaria: presenteremo **4–5 casi**
+:::
+
+::: {.notes}
+Dare 15 minuti per il lavoro individuale, poi 25 minuti di plenaria. Il docente evidenzia come le stesse proprietà possano avere effetti positivi e problematici. Cercare casi che illustrino proprietà diverse. Se gli studenti non hanno un post proprio, possono usare un post pubblico di un personaggio noto.
+:::
+
+## In sintesi
+
+::: {.highlight-box}
+**Concetti chiave di oggi:**
+
+- I *networked publics* sono spazi pubblici riconfigurati dalla tecnologia
+- Quattro affordance: **persistenza**, **visibilità**, **replicabilità**, **ricercabilità**
+- Non sono proprietà nuove — è nuova la loro **combinazione e amplificazione**
+- Gli adolescenti e gli adulti vedono queste tecnologie da prospettive diverse
+:::
+
+::: {.notes}
+Ricapitolare i punti chiave. Anticipare: queste quattro proprietà sono il fondamento su cui costruiremo tutto il corso. Jenkins ci mostrerà cosa fanno le persone in questi spazi (cultura partecipativa), Shirky ci spiegherà perché possono farlo su larga scala (azione collettiva), e Marwick & Lewis ci mostreranno chi sfrutta tutto questo strategicamente (manipolazione mediatica).
+:::
+
+## Prossimi passi
+
+**Lettura da completare prima della prossima lezione:**
+
+- Jenkins (2008), *Fan, Blogger e Videogamers*, pp. 7–22
+
+**Prossima lezione:** Mercoledì 1 aprile, 11:00–13:00, Aula D3
+
+*Cultura partecipativa (I): il modello di Jenkins*
+
+::: {.notes}
+Ricordare che Jenkins è disponibile su Moodle. Il testo è in italiano. Le pagine 7-22 corrispondono all'introduzione del curatore dell'edizione italiana e alla prefazione di Jenkins — presentano il quadro concettuale generale della cultura partecipativa.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Cultura partecipativa (I) — Mer 1 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

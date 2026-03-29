@@ -1,0 +1,375 @@
+---
+title: "Il Dataset MCL: Esplorazione Guidata"
+subtitle: "Internet Studies — Lezione 10"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "23 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Oggi lavoriamo con i dati
+
+::: {.highlight-box}
+Questa lezione è **hands-on**: lavorerete direttamente sul dataset del corso in Google Sheets.
+
+Il docente proietta i passaggi, voi seguite sul vostro dispositivo.
+:::
+
+**Prerequisiti:**
+
+- Laptop o tablet con accesso a Google Sheets
+- Chi non ha un dispositivo lavora in **coppia**
+
+::: {.notes}
+Verificare che tutti abbiano accesso al foglio Google condiviso. Condividere il link se non è già stato distribuito. Dare 2-3 minuti perché tutti aprano il foglio. Per chi lavora in coppia, assicurarsi che entrambi possano vedere lo schermo.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. **Orientarvi** nella struttura del dataset MCL (variabili, tipi, valori mancanti)
+2. Utilizzare **filtri, CONTA.SE e tabelle pivot** in Google Sheets per esplorare i dati
+3. **Formulare domande esplorative** e rispondervi con strumenti descrittivi
+:::
+
+::: {.notes}
+Oggi è una lezione di competenze pratiche. Non c'è teoria nuova — si applicano le nozioni della lezione precedente al dataset reale. L'obiettivo è che alla fine della lezione ogni studente sia in grado di orientarsi nel foglio, filtrare i dati e produrre una statistica descrittiva semplice.
+:::
+
+## Roadmap della lezione
+
+- **Orientamento:** struttura del dataset e delle variabili (20 min)
+- **Esplorazione guidata:** filtri, CONTA.SE, tabelle pivot, grafici (40 min)
+- **Esplorazione autonoma:** a coppie, una domanda a scelta (30 min)
+- **Condivisione e chiusura** (20 min)
+
+::: {.notes}
+La lezione è divisa in due parti: una guidata (il docente mostra, gli studenti seguono) e una autonoma (le coppie esplorano liberamente). La condivisione finale serve a mostrare che lo stesso dataset può essere interrogato in molti modi — e che le domande descrittive sono il punto di partenza per l'analisi qualitativa del laboratorio.
+:::
+
+## Orientamento: il dataset {background-color="#C5612E"}
+
+## Struttura del dataset
+
+Il dataset è un export dalla **Meta Content Library** (MCL), predisposto dal docente:
+
+::: {.columns}
+::: {.column width="50%"}
+### File CSV in Google Sheets
+
+- Ogni **riga** = un post
+- Ogni **colonna** = una variabile
+- I contenuti multimediali sono in una **cartella condivisa** separata, collegati per ID
+:::
+
+::: {.column width="50%"}
+### Cosa contiene
+
+- Testo del post
+- Tipo di contenuto (testo, foto, video, link)
+- Metriche di engagement
+- Informazioni sulla pagina/gruppo
+- Data e ora di pubblicazione
+- URL del post originale
+:::
+:::
+
+::: {.notes}
+Proiettare il foglio Google e orientare gli studenti. Mostrare la prima riga (intestazioni) e scorrere alcune righe di dati. Spiegare come i record del CSV si collegano ai file multimediali nella cartella condivisa (es. tramite un campo ID o URL). Sottolineare che il dataset contiene solo contenuti pubblici da pagine e gruppi — non da profili personali.
+:::
+
+## Le variabili principali
+
+| Variabile | Tipo | Descrizione |
+|-----------|------|-------------|
+| **ID** | Testo | Identificativo univoco del post |
+| **Pagina/Gruppo** | Testo | Nome della fonte |
+| **Data** | Data | Data e ora di pubblicazione |
+| **Tipo di contenuto** | Categorica | Testo, foto, video, link |
+| **Testo del post** | Testo | Contenuto testuale |
+| **Reazioni** | Numerica | Totale reazioni (like, love, wow, angry...) |
+| **Commenti** | Numerica | Numero di commenti |
+| **Condivisioni** | Numerica | Numero di condivisioni |
+
+::: {.notes}
+Fermarsi su ciascuna variabile, mostrare la colonna corrispondente nel foglio. Verificare la presenza di valori mancanti (celle vuote): i post senza testo (solo immagine), i post senza condivisioni (conteggio 0 vs. dato mancante). Spiegare la differenza tra una variabile categorica (tipo di contenuto: un numero finito di valori possibili) e una numerica (reazioni: un numero continuo).
+:::
+
+## Primo sguardo: quanti dati abbiamo?
+
+Rispondiamo alle domande base **insieme**:
+
+::: {.orange-box}
+### Step 1: contare le righe
+
+- Selezionate una cella vuota
+- Digitate: `=CONTA.VALORI(A2:A)` oppure `=COUNTA(A2:A)`
+- Questo conta il numero di post nel dataset
+:::
+
+**Quanti post abbiamo?** → ______
+
+::: {.notes}
+Il docente esegue il passaggio proiettato e attende che gli studenti facciano lo stesso. Comunicare il risultato atteso e verificare che tutti ottengano lo stesso numero. Se qualcuno ha un numero diverso, verificare che non abbia filtri attivi o righe nascoste.
+:::
+
+## Esplorazione guidata {background-color="#C5612E"}
+
+## Step 2: filtrare per pagina/gruppo
+
+::: {.orange-box}
+### Come attivare i filtri
+
+1. Selezionate la riga delle intestazioni
+2. Menu **Dati** → **Crea un filtro**
+3. Cliccate sulla freccia nella colonna **Pagina/Gruppo**
+4. Selezionate una sola pagina per vedere solo i suoi post
+5. Per rimuovere: **Dati** → **Rimuovi filtro**
+:::
+
+**Domanda:** quanti post ha pubblicato la pagina che avete selezionato?
+
+::: {.notes}
+Mostrare il passaggio proiettato. Far provare gli studenti con pagine diverse. Sottolineare che i filtri non cancellano i dati — li nascondono temporaneamente. Questo è il primo strumento per esplorare sottoinsiemi del dataset. Chiedere: "La pagina con più post è anche quella con più engagement?"
+:::
+
+## Step 3: contare per categoria con CONTA.SE
+
+::: {.orange-box}
+### Quanti post per tipo di contenuto?
+
+In una cella vuota, digitate:
+
+- `=CONTA.SE(D:D;"foto")` → conta i post con foto
+- `=CONTA.SE(D:D;"video")` → conta i post con video
+- `=CONTA.SE(D:D;"link")` → conta i post con link
+- `=CONTA.SE(D:D;"testo")` → conta i post solo testo
+
+*(Adattare la colonna D al nome effettivo della variabile "tipo di contenuto")*
+:::
+
+::: {.notes}
+Il docente esegue il passaggio in diretta. Spiegare la sintassi di CONTA.SE: il primo argomento è l'intervallo, il secondo è il criterio. Far notare che il criterio deve corrispondere esattamente al valore nella cella (attenzione a maiuscole/minuscole e spazi). Alternativa inglese: COUNTIF. Risultato atteso: una piccola tabella con i conteggi per tipo di contenuto.
+:::
+
+## Step 4: tabelle pivot
+
+::: {.orange-box}
+### Creare una tabella pivot
+
+1. Selezionate **tutti i dati** (Ctrl+A o Cmd+A)
+2. Menu **Inserisci** → **Tabella pivot**
+3. Nella configurazione:
+   - **Righe:** aggiungete "Pagina/Gruppo"
+   - **Valori:** aggiungete "Reazioni" → impostate su **MEDIANA**
+   - Aggiungete anche "Commenti" e "Condivisioni" → MEDIANA
+4. Risultato: engagement mediano per ciascuna pagina
+:::
+
+::: {.notes}
+La tabella pivot è lo strumento più potente per l'analisi descrittiva in Google Sheets. Mostrare il passaggio step by step, aspettando che gli studenti seguano. Spiegare perché la MEDIANA è preferibile alla MEDIA per le metriche di engagement: le distribuzioni sono tipicamente molto asimmetriche (pochi post con moltissimo engagement, molti con poco), quindi la media è distorta dai valori estremi. La mediana dà un'idea più realistica dell'engagement "tipico".
+:::
+
+## Perché la mediana?
+
+::: {.columns}
+::: {.column width="50%"}
+### La media è sensibile agli outlier
+
+Se 9 post hanno 10 reazioni e 1 post ne ha 10.000:
+
+**Media = 1.009** reazioni
+
+Non rappresenta il post "tipico".
+:::
+
+::: {.column width="50%"}
+### La mediana è robusta
+
+Lo stesso dataset:
+
+**Mediana = 10** reazioni
+
+Rappresenta il post nel **mezzo** della distribuzione.
+:::
+:::
+
+::: {.highlight-box}
+Nel saggio IMRAD, riportate **sempre la mediana** per le metriche di engagement. La media può essere aggiunta come riferimento complementare.
+:::
+
+::: {.notes}
+Questo è un concetto statistico di base ma fondamentale per il laboratorio. Le distribuzioni di engagement sono sempre fortemente asimmetriche (fat-tailed): la maggior parte dei post ha poco engagement, pochi post ne hanno moltissimo. La media è "gonfiata" dai viral; la mediana è il valore del post centrale quando si ordinano dal meno al più popolare. Nel saggio, riportare entrambe — ma interpretare la mediana.
+:::
+
+## Step 5: un primo grafico
+
+::: {.orange-box}
+### Grafico a barre della distribuzione temporale
+
+1. Nella tabella pivot, cambiate le **Righe** in "Data" (raggruppata per **mese** o **settimana**)
+2. I **Valori** diventano: conteggio dei post (COUNTA)
+3. Selezionate la tabella risultante
+4. Menu **Inserisci** → **Grafico** → scegliete **Grafico a barre** o **Istogramma**
+:::
+
+**Domanda:** c'è un pattern temporale? Ci sono periodi con più post?
+
+::: {.notes}
+La distribuzione temporale è la prima cosa da guardare in un dataset di social media: ci sono picchi di attività? Corrispondono a eventi? Ci sono periodi di inattività? Questo tipo di analisi descrittiva sarà utile per la sezione Results del saggio. Far notare che il grafico si aggiorna automaticamente se i dati cambiano — un vantaggio di Google Sheets.
+:::
+
+## Esplorazione autonoma {background-color="#C5612E"}
+
+## Lavorate a coppie
+
+::: {.orange-box}
+### Esplorazione autonoma (30 minuti)
+
+Ogni coppia sceglie una **domanda esplorativa** e prova a rispondervi usando filtri, tabelle pivot e grafici.
+
+**Domande suggerite:**
+
+- Quale pagina ha più **engagement per post**?
+- I post con **foto** hanno più reazioni di quelli con solo testo?
+- C'è un **pattern temporale**? I post del weekend hanno più engagement?
+- Quale tipo di contenuto genera più **condivisioni**?
+- Ci sono **outlier** — post con engagement eccezionalmente alto? Cosa hanno in comune?
+:::
+
+::: {.notes}
+Le coppie possono scegliere una domanda dalla lista o formularne una propria. L'importante è che usino almeno uno degli strumenti visti (filtri, CONTA.SE, tabelle pivot, grafici). Passare tra le coppie per aiutare con problemi tecnici e verificare che le domande siano rispondibili con i dati disponibili. Incoraggiare le coppie ad annotare il risultato e preparare una frase di commento (es. "Le pagine X e Y hanno engagement mediano doppio rispetto a Z").
+:::
+
+## Suggerimenti tecnici
+
+| Obiettivo | Strumento | Formula/azione |
+|-----------|-----------|----------------|
+| Contare post per categoria | CONTA.SE | `=CONTA.SE(intervallo;"criterio")` |
+| Engagement mediano per gruppo | Tabella pivot | Righe = gruppo, Valori = MEDIANA |
+| Confrontare due categorie | Filtro + statistica | Filtrare per tipo, poi calcolare |
+| Distribuzione temporale | Tabella pivot + grafico | Righe = data raggruppata, Valori = COUNTA |
+| Trovare outlier | Ordina | Ordina per reazioni (Z→A), guarda i primi 10 |
+
+::: {.notes}
+Questa slide resta proiettata durante il lavoro autonomo come riferimento rapido. Le coppie possono consultarla per ricordare le formule. Se qualcuno è bloccato, suggerire di partire dall'ordinamento (il modo più semplice per trovare pattern: ordinare per una colonna e guardare cosa emerge).
+:::
+
+## Condivisione in plenaria {background-color="#C5612E"}
+
+## Cosa avete trovato?
+
+::: {.highlight-box}
+**3–4 coppie** condividono lo schermo e mostrano il loro risultato.
+
+Per ogni presentazione:
+
+- **Quale domanda** vi siete posti?
+- **Quale strumento** avete usato?
+- **Cosa avete trovato?**
+- **Cosa vi ha sorpreso?**
+:::
+
+::: {.notes}
+Selezionare coppie con domande diverse. Per ogni presentazione (3-5 minuti), il docente aggiunge un commento di collegamento: "Questa è una domanda descrittiva — il laboratorio aggiungerà la dimensione qualitativa. Sapere che i post con foto hanno più engagement non ci dice perché. La codifica del contenuto ci permetterà di distinguere tra tipi di foto (es. meme satirico vs. foto di cronaca) e vedere se le differenze di engagement dipendono dal tipo di contenuto, non solo dal formato."
+:::
+
+## Il prossimo passo: dalla descrizione alla classificazione
+
+::: {.columns}
+::: {.column width="50%"}
+### Oggi: domande descrittive
+
+- Quanti post ci sono?
+- Quale pagina ha più engagement?
+- Qual è la distribuzione temporale?
+
+Queste domande trattano tutti i post **allo stesso modo**.
+:::
+
+::: {.column width="50%"}
+### Il laboratorio: codifica del contenuto
+
+- Che **tipo** di contenuto è questo post?
+- Usa una tattica di manipolazione?
+- È partecipazione genuina o strumentalizzata?
+
+La codifica aggiunge una **dimensione qualitativa** ai dati.
+:::
+:::
+
+::: {.highlight-box}
+Martedì prossimo (Lezione 11): **analisi del contenuto, codebook e formazione dei gruppi**.
+:::
+
+::: {.notes}
+Collegamento chiave: le statistiche descrittive che avete calcolato oggi sono utili ma incomplete. Sapere che la pagina X ha più engagement non ci dice perché. Sapere che i post con foto hanno più reazioni non ci dice di che tipo di foto si tratta. La codifica del contenuto (che inizieremo a sviluppare nella Lezione 11) aggiunge questa dimensione: classificando ciascun post per tipo di tattica (RQ1) o tipo di partecipazione (RQ2), possiamo poi confrontare l'engagement tra categorie.
+:::
+
+## In sintesi
+
+Oggi avete imparato a:
+
+- **Orientarvi** nel dataset MCL: variabili, tipi, valori mancanti
+- Usare **CONTA.SE** per contare post per categoria
+- Creare **tabelle pivot** per calcolare engagement mediano per gruppo
+- Produrre **grafici** per visualizzare distribuzioni
+- Formulare e rispondere a **domande esplorative**
+
+::: {.notes}
+Queste competenze vi serviranno per tutto il Blocco 2. Le tabelle pivot saranno lo strumento principale per la sezione Results del saggio. I grafici andranno nel saggio. L'esplorazione descrittiva di oggi sarà la base su cui costruire l'analisi qualitativa-quantitativa integrata.
+:::
+
+## Prossimi passi
+
+**Nessuna lettura assegnata.**
+
+**Prossima lezione:** Martedì 28 aprile, 9:00–11:00, Aula C1
+
+*Analisi del contenuto, sviluppo del codebook e formazione dei gruppi*
+
+::: {.callout-tip}
+## Pensateci in anticipo
+Martedì formeremo i **gruppi** (max 6 persone) e ogni gruppo sceglierà una **RQ** (1 o 2). Se avete già delle preferenze su con chi lavorare o quale RQ scegliere, iniziate a parlarne tra di voi.
+:::
+
+::: {.notes}
+Anticipare: martedì è una lezione cruciale — si sviluppa il codebook con una codifica pilota collettiva, si introduce l'affidabilità inter-codificatore e si formano i gruppi. I gruppi che si formeranno martedì lavoreranno insieme per il resto del corso. Invitare gli studenti a pensarci in anticipo.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Codebook e formazione gruppi — Mar 28 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

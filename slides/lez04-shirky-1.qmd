@@ -1,0 +1,467 @@
+---
+title: "Azione Collettiva (I): Il Modello di Shirky"
+subtitle: "Internet Studies — Lezione 4"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "9 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Bentornati — Recap dopo la pausa
+
+::: {.columns}
+::: {.column width="50%"}
+### Boyd (2018)
+
+Le quattro affordance dei *networked publics*: persistenza, visibilità, replicabilità, ricercabilità.
+:::
+
+::: {.column width="50%"}
+### Jenkins (2008)
+
+Le culture partecipative: cinque caratteristiche, quattro forme. La tensione tra emancipazione e lavoro gratuito.
+:::
+:::
+
+::: {.notes}
+Ripasso dopo la pausa pasquale (10 minuti). Chiedere: "Chi ha scritto le 3-5 righe di riflessione su un proprio esempio di partecipazione alla luce di Jenkins?" Raccogliere 1-2 risposte. Poi porre la domanda-ponte: Boyd ci dice come funzionano gli spazi, Jenkins ci dice cosa fanno le persone. Ma perché possono farlo oggi su una scala senza precedenti?
+:::
+
+## Domanda-ponte
+
+::: {.highlight-box}
+Jenkins ci dice ***cosa*** fanno le persone quando partecipano.
+
+Ma ***perché*** oggi possono farlo **su larga scala**?
+
+Qual è il **meccanismo** che rende possibile l'azione collettiva online?
+:::
+
+::: {.notes}
+La risposta è nel lavoro di Clay Shirky: il crollo dei costi di coordinamento. Shirky non è interessato alle pratiche culturali (Jenkins) né alle proprietà tecniche (Boyd), ma al meccanismo economico-organizzativo che rende possibile l'azione di gruppo senza strutture gerarchiche.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Spiegare il concetto di **"pavimento di Coase"** e il suo rapporto con i costi di coordinamento
+2. Distinguere i **tre livelli** della scala di Shirky: condivisione, cooperazione, azione collettiva
+3. Identificare **esempi contemporanei** di attività rese possibili dal crollo dei costi di transazione
+:::
+
+::: {.notes}
+L'obiettivo 3 sarà al centro dell'esercitazione. Oggi leggiamo Shirky come un economista dell'organizzazione che spiega perché Internet ha cambiato le regole del gioco — non a livello culturale (Jenkins) ma a livello dei costi di coordinamento.
+:::
+
+## Roadmap della lezione
+
+- **Il problema:** perché esistono le organizzazioni?
+- **Il soffitto di Coase:** quando le gerarchie smettono di funzionare
+- **Il pavimento di Coase:** le attività che nessuna istituzione potrebbe fare
+- **La scala di Shirky:** condivisione → cooperazione → azione collettiva
+- **Flickr:** coordinamento senza manager
+- **Esercitazione:** il pavimento di Coase oggi
+
+::: {.notes}
+Struttura: 50 minuti di lezione frontale, 40 minuti di esercitazione a gruppi, 20 minuti di presentazioni e chiusura. Il testo di riferimento è Shirky (2009), pp. 3-60.
+:::
+
+## Perché esistono le organizzazioni? {background-color="#C5612E"}
+
+::: {.notes}
+Shirky parte da una domanda apparentemente ovvia. Se il mercato potrebbe coordinare tutto attraverso contratti tra individui, perché esistono le aziende, le istituzioni, le burocrazie? La risposta viene da Ronald Coase (1937): i costi di transazione.
+:::
+
+## Il problema dei costi di transazione
+
+Nel 1937, l'economista **Ronald Coase** si pose una domanda semplice: perché esistono le aziende? [@shirky2009]
+
+Se il mercato fosse perfettamente efficiente, ogni compito potrebbe essere coordinato tramite **contratti tra individui**.
+
+Ma ogni transazione ha un **costo**:
+
+- Trovare le persone giuste
+- Negoziare i termini
+- Verificare il rispetto degli accordi
+- Gestire le controversie
+
+::: {.notes}
+Coase (premio Nobel 1991) ha mostrato che le organizzazioni gerarchiche esistono perché i costi di transazione rendono il coordinamento via mercato troppo costoso per molte attività. È più efficiente assumere persone e coordinarle internamente che negoziare ogni singolo compito sul mercato. Questa intuizione del 1937 è il punto di partenza di Shirky.
+:::
+
+## La gerarchia come soluzione
+
+La soluzione storica ai costi di transazione: l'**organizzazione gerarchica** [@shirky2009].
+
+::: {.columns}
+::: {.column width="50%"}
+### Il modello di McCallum
+
+- Livelli multipli di management
+- Ogni livello riduce il carico comunicativo individuale
+- Coordinamento centralizzato
+- Dalla ferrovia alle corporation moderne
+:::
+
+::: {.column width="50%"}
+### Il costo della gerarchia
+
+- Servono **manager** per gestire i manager
+- L'organizzazione stessa diventa un **costo**
+- Funziona solo se il ritorno supera il costo di gestione
+:::
+:::
+
+::: {.notes}
+Shirky usa l'esempio di Daniel McCallum, sovrintendente della Erie Railroad negli anni 1850: inventò l'organigramma moderno per gestire la prima grande organizzazione americana. La gerarchia funziona — ma ha un costo. Ogni livello di management aggiunge overhead. Esiste un punto oltre il quale l'organizzazione diventa troppo costosa per ciò che produce.
+:::
+
+## Il soffitto e il pavimento di Coase {background-color="#C5612E"}
+
+::: {.notes}
+Shirky introduce due metafore spaziali per descrivere i limiti dell'organizzazione gerarchica: un soffitto (sopra il quale l'organizzazione è troppo costosa) e un pavimento (sotto il quale l'attività non è economicamente sostenibile per nessuna istituzione).
+:::
+
+## Il soffitto di Coase
+
+::: {.orange-box}
+### Definizione
+Il **soffitto di Coase** è il punto oltre il quale le classiche forme di organizzazione non funzionano più — i costi di gestione superano i benefici [@shirky2009].
+:::
+
+Quando un'organizzazione cresce troppo, i costi di coordinamento interno **divorano** il ritorno.
+
+- Più persone = più riunioni = più burocrazia = meno efficienza
+- Esiste un limite alla dimensione efficiente di un'organizzazione
+
+::: {.notes}
+Esempio concreto: un giornale può permettersi una redazione di 100 giornalisti, ma non di 10.000. Un'enciclopedia tradizionale (come la Britannica) può pagare qualche centinaio di esperti, ma non milioni di collaboratori. Il soffitto di Coase è la ragione per cui le grandi organizzazioni diventano burocratiche e lente.
+:::
+
+## Il pavimento di Coase
+
+::: {.highlight-box}
+**Il concetto chiave di Shirky:**
+
+Il **pavimento di Coase** rappresenta le attività che sono **troppo costose** per qualsiasi istituzione, ma che hanno **valore per qualcuno** [@shirky2009].
+:::
+
+Sotto il pavimento ci sono attività che:
+
+- Nessuna azienda farebbe (il ritorno non copre i costi)
+- Nessuna istituzione organizzerebbe (troppo dispersive)
+- Eppure qualcuno le vorrebbe
+
+::: {.notes}
+Esempio: raccogliere e catalogare tutte le foto di un evento locale (come la Mermaid Parade di Coney Island). Nessun giornale pagherebbe fotografi per documentare ogni angolo di un evento di quartiere. Nessuna agenzia organizzerebbe migliaia di fotografi amatoriali. Eppure, collettivamente, quelle foto hanno valore. Prima di Internet, queste attività semplicemente non avvenivano.
+:::
+
+## Quando il pavimento si abbassa
+
+> "Il costo di tutti i tipi di attività di gruppo sono scesi in maniera così significativa che quel che si nascondeva sotto il pavimento di Coase sta oggi venendo alla luce" [@shirky2009].
+
+::: {.columns}
+::: {.column width="50%"}
+### Calo moderato dei costi
+Le imprese diventano **più efficienti**.
+
+Stessa logica organizzativa, meno overhead.
+:::
+
+::: {.column width="50%"}
+### Crollo dei costi
+Emerge una **terza categoria**: attività che nessuna istituzione potrebbe intraprendere.
+
+**Nuova logica**: coordinamento senza organizzazione.
+:::
+:::
+
+::: {.notes}
+Distinzione cruciale: quando i costi scendono un po', le organizzazioni esistenti migliorano (email al posto delle lettere, videoconferenze al posto dei viaggi). Quando i costi crollano radicalmente, emerge qualcosa di qualitativamente diverso: gruppi che si formano e lavorano "senza l'imperativo del management" (Shirky). Non è un'organizzazione più efficiente — è un modo diverso di organizzarsi.
+:::
+
+## La scala dell'impresa di gruppo {background-color="#C5612E"}
+
+::: {.notes}
+Shirky non si limita a dire che il coordinamento è diventato più facile. Distingue tre livelli di complessità crescente: condivisione, cooperazione, azione collettiva. Ogni livello richiede più impegno, più fiducia e più coordinamento.
+:::
+
+## Tre livelli di difficoltà crescente
+
+Shirky descrive una **scala a tre pioli** — ogni livello è più difficile del precedente [@shirky2009]:
+
+| Livello | Cosa richiede | Esempio |
+|---------|--------------|---------|
+| **1. Condivisione** | Poche aspettative, libertà individuale | Flickr, Instagram |
+| **2. Cooperazione** | Sincronizzare i comportamenti, identità di gruppo | Wikipedia, GitHub |
+| **3. Azione collettiva** | Impegno comune, decisioni vincolanti | Sindacati, movimenti politici |
+
+::: {.notes}
+La metafora dei "pioli" è importante: non si salta dal primo al terzo. La condivisione è il livello base — richiede il minimo sforzo. La cooperazione richiede di adattare il proprio comportamento a quello degli altri. L'azione collettiva richiede che le decisioni del gruppo vincolino i singoli individui. Ogni piolo è più difficile, ma anche potenzialmente più potente.
+:::
+
+## 1. Condivisione
+
+Il livello più semplice: ogni partecipante agisce **individualmente**, il risultato emerge dall'aggregazione [@shirky2009].
+
+- Genera **poche aspettative** nei partecipanti
+- Funziona in modalità "prendere o lasciare"
+- Massima **libertà individuale**, minime complicazioni di gruppo
+- La condivisione può essere consapevole (Flickr) o inconsapevole (Google che indicizza i link)
+
+::: {.callout-note}
+## Collegamento con Boyd
+La condivisione sfrutta le affordance di **persistenza** e **ricercabilità**: i contenuti restano disponibili e possono essere trovati da chiunque.
+:::
+
+::: {.notes}
+Esempio: le foto della Mermaid Parade su Flickr. Nessuno ha diretto i fotografi, nessuno ha assegnato angolazioni o soggetti. Ogni persona ha scattato e caricato le proprie foto indipendentemente. Il risultato — una documentazione collettiva dell'evento — emerge dalla semplice aggregazione di azioni individuali. Nessuna decisione collettiva è necessaria.
+:::
+
+## 2. Cooperazione
+
+Il secondo livello: i partecipanti **sincronizzano i loro comportamenti** e sviluppano un'identità di gruppo [@shirky2009].
+
+- Richiede di **adattarsi** agli altri
+- Crea un senso di **appartenenza** al gruppo
+- Include la conversazione come forma base
+- Almeno alcune **decisioni collettive** devono essere prese
+
+::: {.highlight-box}
+**La differenza strutturale:** nella condivisione le decisioni sono individuali; nella cooperazione, almeno alcune decisioni sono collettive [@shirky2009].
+:::
+
+::: {.notes}
+Esempio: Wikipedia. Ogni voce richiede negoziazione tra più autori: cosa includere, come formulare, quali fonti citare. I cicli di revisione editoriale sono un processo cooperativo continuo. La cooperazione crea identità: "sono un wikipediano" è un'affermazione di appartenenza. Collegamento con Jenkins: la cooperazione corrisponde alle forme di appartenenza mediale e problem-solving collaborativo.
+:::
+
+## 3. Azione collettiva
+
+Il livello più difficile: il gruppo si impegna per un **fine comune** e le decisioni collettive sono **vincolanti** per i singoli [@shirky2009].
+
+- L'identità individuale si lega all'identità del gruppo
+- Il gruppo agisce **in nome** dei suoi membri
+- Deve superare il problema del ***free rider***
+- Richiede fiducia, impegno e responsabilità condivisa
+
+::: {.notes}
+L'azione collettiva è il livello dove il costo personale è più alto: ci si vincola a un obiettivo comune, si accetta che le decisioni del gruppo abbiano la precedenza su quelle individuali. Esempi storici: sindacati, partiti politici, movimenti sociali. Esempi digitali: campagne di crowdfunding con obiettivi condivisi, boicottaggi organizzati, petizioni vincolanti. Il problema del free rider: se tutti beneficiano dell'azione ma nessuno è obbligato a contribuire, perché qualcuno dovrebbe impegnarsi?
+:::
+
+## La scala in un'immagine
+
+```
+                    ┌─────────────────────┐
+                    │  AZIONE COLLETTIVA   │ ← Impegno comune,
+                    │  Fine comune,        │   decisioni vincolanti
+                    │  decisioni vincolanti│
+                ┌───┴─────────────────────┴───┐
+                │      COOPERAZIONE           │ ← Sincronizzazione,
+                │  Identità di gruppo,        │   identità di gruppo
+                │  decisioni collettive       │
+            ┌───┴─────────────────────────────┴───┐
+            │          CONDIVISIONE               │ ← Azioni individuali,
+            │    Poche aspettative,               │   aggregazione
+            │    libertà individuale              │
+            └─────────────────────────────────────┘
+```
+
+::: {.notes}
+Mostrare visivamente la scala crescente. Ogni livello include quello precedente e aggiunge complessità. Un gruppo che fa azione collettiva condivide anche e coopera anche, ma in più si vincola a decisioni comuni. Chiedere agli studenti: "Dove si collocano le community che avete analizzato nell'esercitazione su Jenkins?"
+:::
+
+## Flickr: coordinamento senza manager {background-color="#C5612E"}
+
+::: {.notes}
+Shirky usa Flickr come caso esemplare di come il coordinamento possa avvenire senza direzione manageriale. È un esempio perfetto di "pavimento di Coase" — un'attività che nessuna istituzione potrebbe organizzare.
+:::
+
+## Il modello Flickr
+
+Flickr **non** identifica gli eventi interessanti, **non** coordina i fotografi, **non** cataloga le foto [@shirky2009].
+
+Allora cosa fa?
+
+::: {.highlight-box}
+Flickr aiuta gli utenti a **coordinarsi da soli** attraverso i **tag** — etichette che fungono da "trampolino" per saltare tra i contenuti dei diversi membri.
+:::
+
+::: {.notes}
+Shirky sottolinea che la differenza tra "Flickr che coordina gli utenti" e "Flickr che li aiuta a coordinarsi da soli" sembra minima, ma è vitale. Nel primo caso Flickr dovrebbe sapere che esiste la Mermaid Parade, reclutare fotografi, assegnare il tag. Nel secondo, gli utenti fanno tutto da soli e Flickr fornisce solo l'infrastruttura. Il costo organizzativo è zero. Questo è ciò che sta "sotto il pavimento di Coase": nessuna istituzione pagherebbe per organizzare la documentazione fotografica di un evento di quartiere.
+:::
+
+## Coordinamento automatico
+
+Il meccanismo è una **sincronizzazione automatica di un gruppo latente** [@shirky2009]:
+
+1. **Evento** accade nel mondo reale
+2. I partecipanti **scattano foto** indipendentemente
+3. Le **caricano** su Flickr con un tag comune
+4. Il tag aggrega automaticamente — il **gruppo emerge**
+5. Nessun manager, nessuna riunione, nessun piano
+
+> "Il grande vantaggio dei nuovi strumenti sociali è l'imbarazzante facilità con cui si possono formare i gruppi" [@shirky2009].
+
+::: {.notes}
+Shirky: "La voglia di essere parte di un insieme che condivide, collabora o agisce è un istinto naturale dell'uomo." Gli strumenti sociali non creano questo istinto — lo liberano, rimuovendo le barriere organizzative. L'esempio delle foto del 7 luglio 2005 a Londra (attentati alla metropolitana): i cittadini hanno documentato l'evento con i loro telefoni e caricato le foto online ore prima che le reti televisive avessero immagini di qualità. Nessuna redazione avrebbe potuto piazzare fotografi in ogni vagone della metropolitana.
+:::
+
+## L'esempio dello tsunami (2004)
+
+Un caso estremo di condivisione sotto il pavimento di Coase [@shirky2009]:
+
+- Decine di foto apparse online **entro poche ore**, centinaia nei giorni successivi
+- Flickr diventa hub centrale: le foto permettono di **ritrovare persone scomparse**
+- Utenti da più paesi pubblicano e discutono
+- Le community si formano spontaneamente attorno alle immagini
+
+::: {.callout-note}
+## Collegamento con Boyd
+La **persistenza** (le foto restano), la **ricercabilità** (trovabili tramite tag) e la **replicabilità** (condivise istantaneamente) rendono possibile questa forma di coordinamento.
+:::
+
+::: {.notes}
+Un caso emotivamente forte: "Happy Dave" carica una foto con didascalia "Io sto bene" per notificare i propri follower che è sopravvissuto. Le immagini generano conversazioni sul trauma, sul come affrontare la crisi con i bambini. Questo tipo di documentazione collettiva non era possibile prima — non perché le persone non volessero farlo, ma perché il costo organizzativo era proibitivo. Collegamento con Boyd: le affordance dei networked publics (persistenza, ricercabilità, replicabilità) sono l'infrastruttura che Shirky presuppone.
+:::
+
+## Il colpo di stato in Thailandia (2006)
+
+Un esempio di condivisione come **resistenza** [@shirky2009]:
+
+- La giunta militare impose forti **restrizioni alla stampa**
+- Ma non riuscì a bloccare l'intera popolazione online
+- Flickr ospitò fotografie amatoriali nonostante la censura
+- Una blogger ("Alisara") pubblicò, linkò la copertura live di Wikipedia, lanciò una petizione per la libertà di espressione
+
+::: {.highlight-box}
+**Il punto:** quando i costi di coordinamento crollano, anche il controllo dell'informazione diventa più difficile — sia per i governi autoritari sia per le corporation mediali.
+:::
+
+::: {.notes}
+Shirky: "I militari non riuscirono — forse non potevano — a bloccare l'intera popolazione." Questo caso anticipa un tema che tornerà con forza in Boyd (2017): la "democratizzazione" degli strumenti di manipolazione/resistenza. Se la censura diventa più difficile, anche il controllo della narrazione diventa più difficile — e questo vale sia per i regimi autoritari sia per chi vuole manipolare il dibattito pubblico.
+:::
+
+## Esercitazione: il pavimento di Coase oggi {background-color="#C5612E"}
+
+## Istruzioni per l'esercitazione
+
+::: {.orange-box}
+### Esercitazione a gruppi di 4 (40 minuti)
+
+Identificate un **esempio contemporaneo** (2024–2026) di attività che "stava sotto il pavimento di Coase" e che oggi è possibile grazie agli strumenti digitali.
+
+**Compilate la scheda:**
+
+1. **Qual è l'attività?** Descrivetela in 2-3 frasi
+2. **Perché nessuna istituzione la farebbe?** (Costi troppo alti? Troppo dispersiva? Nessun ritorno economico?)
+3. **Quale strumento la rende possibile?** (Piattaforma, app, protocollo)
+4. **A che livello della scala di Shirky si colloca?** Condivisione, cooperazione o azione collettiva?
+:::
+
+::: {.notes}
+Dare 25 minuti per il lavoro a gruppi e 15 minuti per le presentazioni (3 gruppi × 5 minuti). Suggerimenti per gruppi in difficoltà: community di traduttori volontari (es. sottotitoli di serie TV), documentazione collettiva di emergenze (es. terremoto su Twitter), raccolta dati ambientali citizen science (es. iNaturalist), archivi collaborativi di storia locale, community di mutuo aiuto su Telegram durante il COVID. Passare tra i gruppi per verificare che l'esempio sia effettivamente "sotto il pavimento di Coase" — cioè che nessuna istituzione lo farebbe.
+:::
+
+## Esempi per orientarvi
+
+| Esempio | Perché "sotto il pavimento"? | Livello |
+|---------|------------------------------|---------|
+| Traduzione fan-sub di serie TV | Nessun editore tradurrebbe in 20 lingue in 24 ore | Cooperazione |
+| Foto di un evento locale su Instagram | Nessuna agenzia pagherebbe 100 fotografi | Condivisione |
+| OpenStreetMap | Nessuna azienda mapperebbe ogni sentiero | Cooperazione |
+| Raccolta fondi virale per una causa | Nessuna ONG raggiungerebbe quei micro-donatori | Azione collettiva |
+
+::: {.notes}
+Questa slide serve come ispirazione, non come risposta. Chiedere ai gruppi di trovare un esempio diverso da quelli elencati. Evidenziare che il livello della scala non è sempre ovvio: una raccolta fondi virale è condivisione (ognuno dona individualmente) o azione collettiva (il gruppo si impegna per un obiettivo comune)? La risposta dipende dal grado di coordinamento.
+:::
+
+## Presentazione dei gruppi
+
+::: {.highlight-box}
+**Domande guida per le presentazioni:**
+
+- L'attività è davvero "sotto il pavimento di Coase"? Nessuna istituzione potrebbe farla?
+- Lo strumento digitale è **necessario** o solo **comodo**?
+- Il livello della scala è giusto? C'è coordinamento o solo aggregazione?
+- Quali **affordance di Boyd** sono in gioco?
+:::
+
+::: {.notes}
+Selezionare 3 gruppi con esempi diversi. Dopo ogni presentazione, porre 1-2 domande critiche. Alla fine, sottolineare il collegamento tra le tre lezioni: Boyd ci dà le proprietà dell'ambiente (affordance), Jenkins ci dà le pratiche culturali (partecipazione), Shirky ci dà il meccanismo economico (crollo dei costi di coordinamento). Tutti e tre spiegano la stessa trasformazione da angolazioni diverse.
+:::
+
+## In sintesi
+
+::: {.columns}
+::: {.column width="50%"}
+### Concetti chiave
+
+- **Costi di transazione**: perché servono le organizzazioni
+- **Soffitto di Coase**: il limite della gerarchia
+- **Pavimento di Coase**: attività di valore ma troppo costose
+- **Crollo dei costi**: emerge il coordinamento senza organizzazione
+:::
+
+::: {.column width="50%"}
+### La scala di Shirky
+
+1. **Condivisione**: azioni individuali, aggregazione automatica
+2. **Cooperazione**: sincronizzazione, identità di gruppo
+3. **Azione collettiva**: impegno vincolante, fine comune
+:::
+:::
+
+::: {.notes}
+Riepilogo. Anticipare: nella prossima lezione (Shirky II) vedremo i limiti di questo modello. Se il coordinamento è così facile, perché non tutto funziona? Il paradosso dello slacktivism: se il costo della partecipazione tende a zero, qual è il valore di quella partecipazione? E il ponte verso la manipolazione: se i costi crollano per le azioni "buone", crollano anche per quelle "cattive".
+:::
+
+## Prossimi passi
+
+**Lettura da completare prima della prossima lezione:**
+
+- Shirky (2009), *Uno per Uno, Tutti per Tutti*, pp. 60–119
+
+**Prossima lezione:** Martedì 14 aprile, 9:00–11:00, Aula C1
+
+*Azione collettiva (II): limiti, slacktivism e strumentalizzazione*
+
+::: {.notes}
+Le pagine 60-119 contengono gli esempi più complessi di Shirky: il telefono smarrito di Ivanna (caso completo), Wikipedia come esempio di cooperazione, i limiti dell'azione a basso costo. Anticipare la domanda della prossima lezione: "Se il costo della partecipazione tende a zero, qual è il valore di quella partecipazione?"
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Azione collettiva (II) — Mar 14 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

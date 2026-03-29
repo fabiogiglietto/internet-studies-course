@@ -1,0 +1,127 @@
+---
+title: "Stesura Discussion"
+subtitle: "Internet Studies — Lezione 20"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "19 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Momento collettivo: come scrivere la Discussion {background-color="#C5612E"}
+
+## Dalla descrizione all'interpretazione
+
+::: {.columns}
+::: {.column width="50%"}
+### Results (fatto)
+
+"I post classificati come meme warfare hanno una mediana di reazioni **doppia** rispetto ai post informativi neutri (245 vs. 89)."
+:::
+
+::: {.column width="50%"}
+### Discussion (da fare oggi)
+
+"Questo pattern è coerente con l'analisi di Marwick e Lewis [-@marwick2017] sulla *meme warfare* come tattica progettata per la viralità: le affordance di **replicabilità** [@boyd2018] favoriscono contenuti emotivi e semplificati."
+:::
+:::
+
+::: {.highlight-box}
+La Discussion **collega i risultati al quadro teorico**: i risultati confermano, complicano o contraddicono quanto previsto dai testi del corso?
+:::
+
+::: {.notes}
+Momento collettivo (25 min). La Discussion è dove il saggio "chiude il cerchio": l'Introduction presenta la teoria e la RQ; i Methods spiegano come; i Results mostrano cosa; la Discussion dice cosa significa. Dare l'esempio proiettato e chiedere: "Vedete la differenza? Il Results dice 'cosa'; la Discussion dice 'perché' e 'cosa significa'."
+:::
+
+## Collegare i risultati alla teoria
+
+::: {.orange-box}
+### Domande guida per la Discussion
+
+- I risultati **confermano** ciò che prevedevano Boyd, Jenkins, Shirky, Marwick & Lewis?
+- Ci sono risultati che **complicano** o **contraddicono** le aspettative?
+- Quale autore aiuta di più a **interpretare** i vostri findings?
+- **Esempio:** se i meme manipolatori hanno più engagement, cosa dice questo sulle affordance della replicabilità (Boyd) e sull'economia dell'attenzione (Boyd 2017)?
+:::
+
+::: {.notes}
+La Discussion non deve citare tutti e 5 i testi — solo quelli rilevanti per i risultati specifici. Ma almeno 3-4 testi dovrebbero essere richiamati nell'interpretazione. Se un risultato è sorprendente (contraddice le aspettative), questo è particolarmente interessante da discutere: perché? I dati sono affidabili? Il dataset ha caratteristiche particolari? La teoria ha dei limiti?
+:::
+
+## I limiti dello studio
+
+Discutere i limiti **onestamente ma senza svalutare** il lavoro:
+
+| Tipo di limite | Come formularlo |
+|---------------|----------------|
+| **Campione** | "Il campione di N post non consente generalizzazioni, ma i pattern osservati sono coerenti con..." |
+| **Periodo** | "I risultati riflettono un periodo specifico e potrebbero variare in contesti diversi" |
+| **Soggettività** | "La codifica manuale comporta un grado di soggettività, mitigato dal Kappa di κ = 0.XX" |
+| **Dataset** | "Il dataset include solo contenuti da pagine pubbliche Facebook, escludendo gruppi chiusi e profili personali" |
+
+::: {.notes}
+I limiti non sono un'ammissione di colpa: sono trasparenza scientifica. Ogni studio ha limiti — l'importante è riconoscerli e spiegare perché non invalidano i risultati. "Lo studio ha molti limiti e non prova nulla" è troppo pessimista; "I risultati dimostrano definitivamente che..." è troppo ottimista. La via giusta: "Nonostante i limiti del campione, i pattern osservati sono coerenti con il quadro teorico e suggeriscono che..."
+:::
+
+## Lavoro di gruppo: scrittura Discussion {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (85 minuti):**
+
+- Redigete la sezione **Discussion** (~800–1.200 parole)
+- Collegate i risultati al **quadro teorico**
+- Discutete i **limiti** dello studio
+- Formulate le **implicazioni** dei risultati
+:::
+
+**Status check** negli ultimi 10 minuti.
+
+::: {.notes}
+Il docente passa tra i gruppi verificando che la Discussion torni effettivamente ai testi del corso. Se un gruppo scrive una Discussion generica ("la manipolazione è un problema") senza citare gli autori, segnalarlo: la Discussion deve essere ancorata al quadro teorico dell'Introduction.
+:::
+
+## Prossimi passi
+
+**Prossima lezione:** Mercoledì 20 maggio, 11:00–13:00, Aula D3
+
+*Revisione interna e coerenza del saggio (sessione flessibile)*
+
+::: {.callout-tip}
+## Obiettivo per mercoledì
+Arrivare con una **bozza completa** di tutte e 4 le sezioni IMRAD, anche se incompleta. La revisione interna funziona solo se c'è materiale da rivedere.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Revisione interna — Mer 20 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

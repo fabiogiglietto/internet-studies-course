@@ -1,0 +1,432 @@
+---
+title: "Fare Ricerca con i Dati delle Piattaforme"
+subtitle: "Internet Studies — Lezione 9"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "22 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Una nuova fase del corso
+
+::: {.columns}
+::: {.column width="50%"}
+### Blocco 1 — Fondamenti ✓
+
+Lezioni 1–8: i cinque testi, il quadro teorico, la mappa concettuale.
+
+Sappiamo **cosa** succede sui *networked publics* e **perché**.
+:::
+
+::: {.column width="50%"}
+### Ora: preparazione al laboratorio
+
+Lezioni 9–12: **come** si studia tutto questo con i dati.
+
+Metodi, dataset, codebook, formato IMRAD.
+:::
+:::
+
+::: {.notes}
+Transizione esplicita: da oggi ci spostiamo dalla teoria ai metodi. Le prossime 4 lezioni preparano il laboratorio del Blocco 2. Oggi: panorama dell'accesso ai dati, etica della ricerca digitale, introduzione ai metodi che useremo. Comunicare che il feedback sui compiti individuali è disponibile (o verrà restituito durante la lezione).
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Descrivere l'**evoluzione dell'accesso** ai dati delle piattaforme (dalle API aperte alla Meta Content Library)
+2. Identificare le principali **questioni etiche** della ricerca digitale
+3. Distinguere tra **analisi del contenuto qualitativa** e **analisi descrittiva quantitativa** dell'engagement
+:::
+
+::: {.notes}
+Questi tre obiettivi corrispondono alle tre parti della lezione: accesso ai dati (40 min), etica (30 min), metodi (40 min). La lezione è interamente frontale — domani si lavora hands-on con il dataset.
+:::
+
+## Roadmap della lezione
+
+- **Accesso ai dati:** breve storia, dalle API aperte alla chiusura
+- **La Meta Content Library:** cos'è e come funziona
+- **Etica della ricerca digitale:** consenso, GDPR, anonimizzazione
+- **I metodi del laboratorio:** analisi qualitativa + analisi quantitativa
+- **Chiusura:** cosa vi aspetta domani
+
+::: {.notes}
+Tre blocchi da circa 40 minuti ciascuno, più 10 minuti di chiusura. Nessuna esercitazione oggi — il lavoro pratico inizia domani con il dataset.
+:::
+
+## L'accesso ai dati delle piattaforme {background-color="#C5612E"}
+
+::: {.notes}
+La prima domanda metodologica: come accediamo ai dati delle piattaforme per studiarle? La storia dell'accesso è una storia di apertura e poi di chiusura progressiva.
+:::
+
+## Una breve storia dell'accesso
+
+| Periodo | Cosa accadeva | Livello di accesso |
+|---------|--------------|-------------------|
+| **2006–2014** | API aperte (Twitter, Facebook Graph API) | Alto — i ricercatori potevano raccogliere dati su larga scala |
+| **2015–2018** | Primi scandali (Cambridge Analytica, 2018) | In calo — le piattaforme iniziano a restringere |
+| **2019–2023** | Chiusura delle API (Twitter/X, 2023) | Basso — accesso a pagamento o chiuso |
+| **2024–oggi** | Fine di CrowdTangle, lancio della MCL | Selettivo — accesso solo per ricercatori accreditati |
+
+::: {.notes}
+La storia dell'accesso ai dati è cruciale per capire perché usiamo la Meta Content Library e non altre fonti. Negli anni d'oro (2006-2014), i ricercatori potevano raccogliere milioni di tweet o post Facebook con poche righe di codice. Lo scandalo Cambridge Analytica (2018) ha cambiato tutto: le piattaforme hanno capito che i dati potevano essere usati per la manipolazione, e hanno iniziato a chiudere gli accessi. Twitter/X nel 2023 ha reso l'API a pagamento (42.000 $/mese per l'accesso accademico). CrowdTangle (lo strumento di Meta per monitorare i contenuti pubblici) è stato chiuso nel 2024 e sostituito dalla Meta Content Library.
+:::
+
+## Il caso Twitter/X (2023)
+
+Un esempio paradigmatico della **chiusura dell'accesso**:
+
+- **Prima:** API Academic Research — gratuita per i ricercatori, accesso a archivi storici completi
+- **Dopo (aprile 2023):** API a pagamento — il livello "Enterprise" costa fino a **42.000 $/mese**
+- **Conseguenza:** interi programmi di ricerca interrotti, dati storici inaccessibili
+
+::: {.callout-warning}
+## Il paradosso
+Le piattaforme che hanno creato i *networked publics* controllano anche l'**accesso ai dati** su ciò che accade al loro interno. Chi studia la manipolazione dipende dalla collaborazione di chi la ospita.
+:::
+
+::: {.notes}
+Questo paradosso è fondamentale: i ricercatori che studiano la disinformazione su Facebook dipendono dalla volontà di Meta di concedere l'accesso ai dati. Le piattaforme possono chiudere l'accesso in qualsiasi momento — come ha fatto Twitter/X. Questo pone un problema di governance: chi controlla lo studio dei networked publics? Il Digital Services Act europeo (2024) ha iniziato ad affrontare il tema con l'obbligo di accesso per i ricercatori, ma l'implementazione è ancora incerta.
+:::
+
+## La Meta Content Library (MCL)
+
+La **MCL** è lo strumento di Meta per fornire accesso ai dati di Facebook e Instagram ai ricercatori accreditati.
+
+| Caratteristica | Dettaglio |
+|---------------|-----------|
+| **Cosa contiene** | Post pubblici da pagine e gruppi Facebook, post Instagram |
+| **Variabili** | Testo, tipo di contenuto, metriche di engagement, info sulla pagina, data, URL |
+| **Contenuto multimediale** | Immagini e video associati ai post |
+| **Chi può accedere** | Ricercatori accreditati (università, centri di ricerca) |
+| **Limiti** | Solo contenuti pubblici; nessun dato sui profili personali; accesso regolamentato |
+
+::: {.notes}
+La MCL è il successore di CrowdTangle con alcune differenze importanti: è più regolamentata (richiede accreditamento), più ampia (include più dati) ma anche più controllata (Meta può revocare l'accesso). Per il nostro laboratorio, il docente ha estratto un dataset dalla MCL e lo ha reso disponibile in formato CSV — gli studenti non accederanno direttamente alla MCL ma lavoreranno sul dataset pre-estratto.
+:::
+
+## Altre fonti di dati
+
+Oltre alla MCL, i ricercatori usano diverse fonti:
+
+::: {.columns}
+::: {.column width="50%"}
+### Fonti istituzionali
+
+- **TikTok Research API** — accesso regolamentato per ricercatori europei
+- **AT Protocol / Bluesky** — dati pubblici e aperti per design
+- **Archivi web** (Internet Archive, Wayback Machine)
+:::
+
+::: {.column width="50%"}
+### Fonti alternative
+
+- **Scraping** — raccolta automatizzata (spesso in zona grigia legale)
+- **Donazione dei dati** — gli utenti condividono i propri dati con i ricercatori
+- **Osservazione diretta** — analisi manuale di contenuti pubblici
+:::
+:::
+
+::: {.notes}
+AT Protocol (Bluesky) è un caso interessante: è un protocollo aperto dove i dati sono pubblici per design — chiunque può accedervi. È l'opposto del modello di Meta/Twitter. Per il nostro laboratorio non usiamo queste fonti, ma è utile sapere che il panorama è variegato e in evoluzione. Lo scraping (raccolta automatizzata) è in una zona grigia: tecnicamente possibile, spesso vietato dai termini di servizio, legalmente controverso dopo il caso LinkedIn v. hiQ Labs (2022).
+:::
+
+## Etica della ricerca digitale {background-color="#C5612E"}
+
+::: {.notes}
+Seconda parte della lezione (30 minuti). Le questioni etiche sono fondamentali: il fatto che un dato sia tecnicamente accessibile non significa che sia eticamente lecito usarlo per la ricerca.
+:::
+
+## Un post su Facebook è "pubblico"?
+
+La domanda centrale dell'etica della ricerca digitale:
+
+::: {.columns}
+::: {.column width="50%"}
+### Tecnicamente sì
+
+- Il post è visibile a chiunque navighi la pagina
+- Non richiede autenticazione per essere letto
+- È indicizzato dai motori di ricerca
+:::
+
+::: {.column width="50%"}
+### Eticamente... dipende
+
+- L'autore si aspettava un **pubblico limitato** (amici, familiari)?
+- Esiste un **consenso informato** all'uso per la ricerca?
+- Il contenuto può causare **danno** all'autore se analizzato in un contesto diverso?
+:::
+:::
+
+::: {.highlight-box}
+**Il principio:** la **raggiungibilità tecnica** non equivale al **consenso informato** per la ricerca.
+:::
+
+::: {.notes}
+Boyd (2018) ci ha insegnato il "collasso dei contesti": le persone pubblicano pensando a un pubblico specifico, ma le affordance dei networked publics rendono quel contenuto visibile a pubblici imprevisti. Un adolescente che scrive un post su Facebook non pensa che un ricercatore universitario lo analizzerà. Il GDPR (Regolamento Generale sulla Protezione dei Dati) introduce ulteriori vincoli: anche i dati "pubblici" sono dati personali se possono identificare un individuo.
+:::
+
+## Il GDPR e la ricerca sociale
+
+Il **Regolamento Generale sulla Protezione dei Dati** (GDPR, 2018) ha implicazioni per la ricerca:
+
+- I dati personali includono **qualsiasi dato** che possa identificare una persona — anche nomi, foto, username
+- La ricerca è consentita come **interesse legittimo**, ma con vincoli
+- Principio di **minimizzazione**: raccogliere solo i dati strettamente necessari
+- Principio di **proporzionalità**: il beneficio della ricerca deve giustificare il trattamento
+
+::: {.notes}
+Il GDPR non vieta la ricerca — la regola. L'articolo 89 prevede deroghe per la ricerca scientifica, ma richiede "garanzie adeguate" come l'anonimizzazione. Per il nostro laboratorio, il dataset è stato pre-elaborato dal docente: i dati provengono da pagine pubbliche (non profili personali), e nell'analisi gli studenti non dovranno identificare singoli utenti. Ma la consapevolezza etica è importante anche quando i vincoli tecnici sono già rispettati.
+:::
+
+## Le responsabilità del ricercatore
+
+::: {.orange-box}
+### Quattro principi guida
+
+1. **Anonimizzazione:** rimuovere o mascherare le informazioni identificative quando possibile
+2. **Proporzionalità:** raccogliere solo i dati necessari alla RQ
+3. **Rispetto:** ricordare che dietro ogni dato c'è una **persona** con aspettative di privacy
+4. **Trasparenza:** descrivere chiaramente nella sezione Methods come i dati sono stati trattati
+:::
+
+::: {.notes}
+Questi principi valgono anche per il laboratorio del corso. Quando gli studenti codificheranno il contenuto multimediale (immagini e video), lavoreranno con contenuti pubblicati da persone reali. Anche se i contenuti provengono da pagine pubbliche, il rispetto per le persone dietro i dati è un obbligo etico, non solo legale. Nel saggio IMRAD, la sezione Methods dovrà descrivere come i dati sono stati trattati (fonte, periodo, anonimizzazione).
+:::
+
+## I termini di servizio come vincolo
+
+Oltre all'etica e al GDPR, i ricercatori devono rispettare i **termini di servizio** delle piattaforme:
+
+- La maggior parte delle piattaforme vieta la raccolta automatizzata (*scraping*) senza autorizzazione
+- La MCL ha un proprio framework di regole d'uso
+- Le violazioni possono portare alla **chiusura dell'accesso** e a conseguenze legali
+
+::: {.callout-tip}
+## Per il nostro laboratorio
+Il dataset è stato estratto dal docente nell'ambito di un progetto di ricerca autorizzato. Gli studenti lavorano su un **dataset già predisposto** — non accedono direttamente alla MCL.
+:::
+
+::: {.notes}
+Rassicurare gli studenti: non dovranno affrontare queste complessità direttamente. Il dataset è già estratto e predisposto in Google Sheets. Ma è importante che capiscano da dove vengono i dati e quali vincoli li accompagnano — anche per la sezione Methods del saggio.
+:::
+
+## I metodi del laboratorio {background-color="#C5612E"}
+
+::: {.notes}
+Terza parte della lezione (40 minuti). Introduzione ai due approcci che gli studenti useranno nel Blocco 2: analisi del contenuto qualitativa e analisi descrittiva quantitativa dell'engagement.
+:::
+
+## Due approcci complementari
+
+Nel laboratorio userete **due metodi** che si integrano:
+
+::: {.columns}
+::: {.column width="50%"}
+### 1. Analisi del contenuto qualitativa
+
+**Cosa fate:** codificate manualmente un campione di post (testo + immagini/video) usando un codebook basato sui testi del corso.
+
+**Cosa producete:** una classificazione di ogni post per tipo di tattica (RQ1) o tipo di partecipazione (RQ2).
+:::
+
+::: {.column width="50%"}
+### 2. Analisi descrittiva quantitativa
+
+**Cosa fate:** calcolate statistiche descrittive (medie, mediane, distribuzioni) delle metriche di engagement per ciascuna categoria.
+
+**Cosa producete:** tabelle e grafici che mostrano se e come le categorie differiscono in termini di engagement.
+:::
+:::
+
+::: {.notes}
+I due approcci rispondono a domande diverse: il qualitativo dice "che tipo di contenuto è questo?" (classificazione); il quantitativo dice "come performa questo tipo di contenuto?" (metriche). L'integrazione è il cuore del saggio: non basta classificare (ci direbbe solo cosa c'è), bisogna anche mostrare i pattern di engagement (ci dice come il pubblico reagisce a ciascuna categoria).
+:::
+
+## Analisi del contenuto: cos'è
+
+::: {.orange-box}
+### Definizione
+L'analisi del contenuto è una tecnica di ricerca per la classificazione sistematica e replicabile di contenuti (testi, immagini, video) in categorie predefinite.
+:::
+
+Elementi chiave:
+
+- **Unità di analisi:** il singolo post con il suo contenuto multimediale
+- **Codebook:** il documento che definisce le categorie, le regole di codifica, gli esempi e i contro-esempi
+- **Codifica:** il processo di assegnazione di ciascuna unità a una categoria
+- **Affidabilità:** la misura dell'accordo tra codificatori diversi
+
+::: {.notes}
+L'analisi del contenuto è uno dei metodi più usati nelle scienze della comunicazione. La versione che userete è "qualitativa" nel senso che la codifica è manuale (non automatizzata) e le categorie derivano dalla teoria (non emergono dai dati). Ma il processo deve essere sistematico e replicabile: il codebook deve essere sufficientemente preciso perché due codificatori diversi arrivino alla stessa classificazione.
+:::
+
+## Il codebook: dalla teoria alle categorie
+
+Come si trasforma un **concetto teorico** in una **categoria di codifica**?
+
+| Concetto teorico | Possibile categoria | Esempio di post |
+|-----------------|--------------------|----|
+| *Meme warfare* (Marwick & Lewis) | "Contenuto satirico/ironico con messaggio politico implicito" | Immagine con testo sovrapposto che deride un politico |
+| *Astroturfing* (Marwick & Lewis) | "Contenuto apparentemente spontaneo ma con pattern ripetitivi" | Post identico pubblicato da 5 pagine diverse |
+| Partecipazione genuina (Jenkins) | "Contenuto creativo originale prodotto dalla community" | Video amatoriale di commento a un evento |
+
+::: {.notes}
+Questo passaggio — dall'astratto al concreto — è il più difficile della codifica. "Meme warfare" è un concetto teorico; la categoria del codebook deve essere sufficientemente operativa perché un codificatore possa decidere se un post specifico rientra o meno. Le lezioni 11 e 12 (e poi il Checkpoint 1 del laboratorio) saranno dedicate allo sviluppo del codebook. Per ora, basta capire il principio: ogni categoria del codebook deve avere una definizione precisa, esempi positivi, esempi negativi e regole per i casi ambigui.
+:::
+
+## Analisi quantitativa dell'engagement
+
+Le metriche di engagement nel dataset MCL:
+
+| Metrica | Cosa misura |
+|---------|------------|
+| **Reazioni** (like, love, wow, angry...) | Risposta emotiva immediata |
+| **Commenti** | Engagement più attivo — richiede sforzo |
+| **Condivisioni** | Replicabilità — il contenuto viene diffuso |
+
+**Come le userete:**
+
+- Calcolare medie, mediane e distribuzioni **per ciascuna categoria** del codebook
+- Confrontare: i post classificati come "meme warfare" hanno più engagement di quelli "genuini"?
+- Produrre **tabelle e grafici** (tabelle pivot, grafici a barre)
+
+::: {.notes}
+L'analisi è strettamente descrittiva — non si chiede statistica inferenziale (test di significatività, regressioni). Il focus è su pattern visibili: le mediane di engagement differiscono tra categorie? Le condivisioni sono concentrate su un tipo di contenuto? Ci sono outlier? Le tabelle pivot di Google Sheets sono lo strumento principale. Domani iniziamo a lavorare con il dataset — vedrete queste metriche dal vivo.
+:::
+
+## Un approccio descrittivo, non inferenziale
+
+::: {.highlight-box}
+**Cosa si chiede:**
+
+- Distribuzione delle categorie nel campione
+- Metriche di engagement (mediane, medie) per ciascuna categoria
+- Confronti visivi tra categorie (grafici a barre, box plot)
+- Pattern temporali o per pagina/gruppo
+
+**Cosa NON si chiede:**
+
+- Test statistici (chi-quadro, t-test, regressione)
+- Generalizzazioni alla popolazione
+- Nessi causali
+:::
+
+::: {.notes}
+Essere espliciti su questo punto: il laboratorio non richiede competenze statistiche avanzate. Il focus è sulla capacità di leggere i dati, trovare pattern, produrre visualizzazioni chiare e interpretare i risultati alla luce del quadro teorico. La sezione Results del saggio presenterà tabelle e grafici con commento descrittivo; la sezione Discussion interpreterà questi pattern usando i cinque testi del corso.
+:::
+
+## Il flusso del laboratorio
+
+```
+  Lezione 10          Lezione 11          Lezione 12          Lezioni 13–24
+  ┌──────────┐       ┌──────────┐       ┌──────────┐       ┌──────────────┐
+  │Esplorazione│─────►│Codebook  │──────►│IMRAD     │──────►│LABORATORIO   │
+  │del dataset│      │+ Gruppi  │       │+ RQ      │       │Codifica,     │
+  │(Google    │      │          │       │+ Codebook│       │analisi,      │
+  │ Sheets)   │      │          │       │di gruppo │       │scrittura     │
+  └──────────┘       └──────────┘       └──────────┘       └──────────────┘
+```
+
+::: {.notes}
+Mostrare il percorso: domani (lez. 10) esploriamo il dataset hands-on; martedì 28 (lez. 11) sviluppiamo il codebook e formiamo i gruppi; mercoledì 29 (lez. 12) presentiamo il formato IMRAD e i gruppi iniziano il codebook specifico. Da giovedì 30 aprile (lez. 13) inizia il laboratorio vero e proprio.
+:::
+
+## Feedback sui compiti individuali
+
+::: {.callout-tip}
+## Compiti individuali
+Il docente restituirà un **feedback sintetico** sui compiti consegnati.
+
+Punti frequenti da tenere presente:
+
+- Usare la **terminologia specifica** dei testi (non parafrasi generiche)
+- Collegare le tattiche alle **affordance** in modo esplicito
+- Il continuum genuino/strumentalizzato richiede **argomentazione**, non solo etichettatura
+:::
+
+::: {.notes}
+Se i compiti sono già stati corretti, restituire il feedback ora (anche sintetico, per gruppi di problemi comuni). Se non sono ancora pronti, comunicare la tempistica. I punti frequenti servono sia come feedback sia come anticipazione del livello atteso nel saggio IMRAD.
+:::
+
+## In sintesi
+
+::: {.columns}
+::: {.column width="50%"}
+### Accesso ai dati
+
+- Dalle API aperte alla chiusura
+- La MCL come strumento attuale
+- Il paradosso: i ricercatori dipendono dalle piattaforme
+:::
+
+::: {.column width="50%"}
+### Per il laboratorio
+
+- **Analisi qualitativa:** codifica manuale con codebook
+- **Analisi quantitativa:** statistiche descrittive dell'engagement
+- Approccio **descrittivo**, non inferenziale
+- Etica: anonimizzazione, proporzionalità, rispetto
+:::
+:::
+
+::: {.notes}
+Riepilogo. Anticipare domani: lavoro hands-on con il dataset MCL in Google Sheets. Gli studenti devono portare un laptop o un tablet con accesso a Google Sheets. Chi non ha un dispositivo lavorerà in coppia.
+:::
+
+## Prossimi passi
+
+**Nessuna lettura assegnata.**
+
+**Prossima lezione:** Giovedì 23 aprile, 11:00–13:00, Aula C2
+
+*Il dataset MCL: esplorazione guidata*
+
+::: {.callout-tip}
+## Portate un dispositivo
+Domani lavorerete direttamente in **Google Sheets** sul dataset del corso. Portate un laptop o un tablet.
+:::
+
+::: {.notes}
+Ricordare: domani è una lezione hands-on. Il docente proietterà i passaggi e gli studenti seguiranno sul proprio dispositivo. Chi non ha un laptop/tablet lavorerà in coppia con un compagno. Il foglio Google sarà condiviso prima dell'inizio della lezione.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Il dataset MCL — Gio 23 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

@@ -1,0 +1,21 @@
+/.quarto/
+_output/
+
+# Reading materials (copyrighted PDFs and markdown transcriptions)
+readings/*.pdf
+readings/*.md
+readings/*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# R session files
+.Rhistory
+.Rdata
+.RData
+.Ruserdata
+
+# Dataset and student project data (large files, copyrighted content)
+data/
+

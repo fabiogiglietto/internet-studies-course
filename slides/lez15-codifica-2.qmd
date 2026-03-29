@@ -1,0 +1,133 @@
+---
+title: "Codifica del Contenuto (II) + Affidabilità"
+subtitle: "Internet Studies — Lezione 15"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "6 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Momento collettivo: calcolare l'accordo {background-color="#C5612E"}
+
+## Come calcolare la percentuale di accordo
+
+::: {.orange-box}
+### In Google Sheets
+
+1. Affiancate le **colonne di codifica** di due codificatori (es. colonne E e F)
+2. In una nuova colonna, formula: `=SE(E2=F2;1;0)` oppure `=IF(E2=F2,1,0)`
+3. Copiate la formula per tutte le righe del sottoinsieme comune
+4. In fondo: `=MEDIA(G2:G31)` → percentuale di accordo
+:::
+
+**Esempio:** se su 30 post, 24 hanno la stessa codifica → accordo = **80%**
+
+::: {.notes}
+Momento collettivo (20 min). Proiettare il template Google Sheets con le formule già predisposte. Mostrare il passaggio step by step. La percentuale di accordo è il primo indicatore, ma non tiene conto del caso: se ci sono solo 2 categorie, il caso da solo produce il 50% di accordo. Per questo serve il Kappa.
+:::
+
+## Il Kappa di Cohen
+
+::: {.highlight-box}
+**Concettualmente:** il Kappa misura quanto l'accordo osservato supera l'accordo che ci si aspetterebbe **per puro caso**.
+
+| Valore di κ | Interpretazione |
+|-------------|----------------|
+| **> 0.80** | Accordo **buono** — il codebook funziona |
+| **0.60 – 0.80** | Accordo **accettabile** — alcune categorie da rivedere |
+| **< 0.60** | Accordo **insufficiente** — rivedere il codebook |
+:::
+
+Il template Google Sheets fornito dal docente calcola il Kappa automaticamente.
+
+::: {.notes}
+Non serve la formula matematica — basta capire il concetto. Se due codificatori lanciano un dado a 4 facce, per caso saranno d'accordo il 25% delle volte. Un accordo osservato del 50% con 4 categorie non è buono come sembra: il Kappa lo corregge. Il template calcola tutto: gli studenti devono solo inserire le codifiche nelle colonne corrette.
+:::
+
+## Cosa fare se il Kappa è basso
+
+1. **Identificare** le categorie con più disaccordo
+2. **Discutere** caso per caso: perché avete codificato diversamente?
+3. **Rivedere** le definizioni nel codebook
+4. **Aggiungere** regole di decisione ed esempi
+5. **Ricodificare** il sottoinsieme e ricalcolare
+
+::: {.highlight-box}
+Il processo è **iterativo**. Un primo Kappa basso è normale — indica che il codebook va affinato, non che il gruppo ha sbagliato.
+:::
+
+::: {.notes}
+Il Kappa basso è un dato, non un fallimento. L'iterazione (codifica → verifica → revisione → ri-codifica) è il processo standard nell'analisi del contenuto. Se dopo 2-3 iterazioni il Kappa resta sotto 0.60, il problema è probabilmente nelle categorie stesse — sono troppo simili o troppo ambigue.
+:::
+
+## Lavoro di gruppo {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (60 minuti):**
+
+1. **Confrontare** le codifiche del sottoinsieme comune
+2. **Calcolare** l'accordo (percentuale + Kappa) usando il template
+3. **Discutere** le discrepanze caso per caso
+4. **Rivedere** il codebook se necessario
+5. **Proseguire** la codifica dei post rimanenti
+:::
+
+::: {.notes}
+Il lavoro oggi è misto: prima collaborativo (confronto e discussione delle discrepanze), poi individuale (proseguire la codifica). Se il Kappa è buono (>0.60), il gruppo può procedere con la codifica individuale. Se è basso, deve prima rivedere il codebook.
+:::
+
+## Checkpoint 2
+
+::: {.orange-box}
+### Report al docente (ultimi 40 minuti)
+
+Ogni gruppo comunica:
+
+1. Il **valore di Kappa** ottenuto
+2. Le **categorie problematiche** (quelle con più disaccordo)
+3. Le **modifiche** apportate al codebook
+4. Lo **stato** della codifica (quanti post codificati su quanti totali)
+
+Se il Kappa è insufficiente, il docente suggerisce **strategie correttive**.
+:::
+
+**Prossima lezione:** Giovedì 7 maggio — *Analisi quantitativa dell'engagement*
+
+::: {.notes}
+Il Checkpoint 2 è il momento di verifica più importante della fase di preparazione. Se il Kappa è accettabile, il gruppo è pronto per l'analisi quantitativa (prossima lezione). Se non lo è, deve iterare — ma ha solo un giorno prima della Lezione 16.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Analisi dell'engagement — Gio 7 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

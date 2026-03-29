@@ -1,0 +1,104 @@
+---
+title: "Peer Review Incrociata"
+subtitle: "Internet Studies — Lezione 23"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "26 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Come funziona la peer review {background-color="#C5612E"}
+
+## Criteri della griglia
+
+La peer review usa gli **stessi criteri** della griglia di valutazione:
+
+| Criterio | Cosa cercare |
+|----------|-------------|
+| **Chiarezza della RQ** | È formulata esplicitamente? È coerente con la Discussion? |
+| **Quadro teorico** | Quanti testi sono usati? Sono collegati tra loro? |
+| **Metodo** | La procedura è replicabile? L'affidabilità è documentata? |
+| **Risultati** | Tabelle e grafici sono chiari? C'è interpretazione prematura? |
+| **Discussion** | Torna ai testi? I limiti sono discussi? |
+| **Scrittura** | Stile coerente? Citazioni corrette? |
+
+Per ciascun criterio: **(a)** punto di forza / da migliorare + **(b)** suggerimento specifico.
+
+::: {.notes}
+Istruzioni (10 min). Ricordare che la peer review non contribuisce al voto del saggio recensito, ma la qualità del feedback fornito è considerata nella componente partecipazione. Un buon feedback è specifico: non "la Discussion è debole" ma "la Discussion non cita Boyd (2017) — potrebbe essere usato per collegare i risultati all'arco storico dell'hacking dell'attenzione."
+:::
+
+## Presentazione del feedback
+
+::: {.orange-box}
+### Ogni gruppo revisore presenta (8–10 minuti)
+
+1. **Punti di forza** del saggio recensito (almeno 2)
+2. **Criticità** principali (almeno 2) con suggerimenti specifici
+3. **Il suggerimento più importante** per migliorare il saggio
+
+Il gruppo autore **ascolta senza intervenire** durante la presentazione.
+:::
+
+::: {.notes}
+L'ordine è importante: prima i punti di forza, poi le criticità. Questo evita che la sessione diventi un esercizio di demolizione. Il gruppo autore ascolta senza difendersi — potrà fare domande dopo. Calcolare 8-10 minuti per presentazione: con 4-5 gruppi, sono 40-50 minuti di presentazioni.
+:::
+
+## Discussione e risposta
+
+::: {.highlight-box}
+Dopo tutte le presentazioni:
+
+- Ogni **gruppo autore** ha **5 minuti** per porre domande ai revisori e chiarire dubbi
+- **Discussione collettiva** delle criticità ricorrenti
+- Il docente sintetizza i pattern comuni
+:::
+
+::: {.notes}
+Le criticità ricorrenti sono particolarmente preziose: se più gruppi hanno lo stesso problema (es. Discussion che non torna alla teoria), il docente può affrontarlo collettivamente. Le domande degli autori servono a chiarire il feedback ambiguo: "Quando dite che la sezione Methods è vaga, cosa intendete esattamente?"
+:::
+
+## Prossimi passi
+
+::: {.callout-warning}
+## Scadenze
+
+- **Domani (Lezione 24, mercoledì 27 maggio):** revisione finale e presentazioni
+- **Mercoledì 3 giugno, ore 23:59:** consegna definitiva del saggio IMRAD
+- Insieme al saggio: **modulo di peer evaluation** intra-gruppo (individuale, anonimo)
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Revisione finale e presentazioni — Mer 27 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

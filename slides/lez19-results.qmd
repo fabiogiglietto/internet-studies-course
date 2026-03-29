@@ -1,0 +1,113 @@
+---
+title: "Stesura Results (Tabelle e Grafici)"
+subtitle: "Internet Studies — Lezione 19"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "14 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Momento collettivo: come scrivere i Results {background-color="#C5612E"}
+
+## Results = descrizione, non interpretazione
+
+::: {.columns}
+::: {.column width="50%"}
+### Cosa fare
+
+- Ogni tabella/grafico deve essere **introdotto** e **commentato** nel testo
+- Guidare il lettore: **descrivere** cosa mostra la tabella
+- Presentare i dati in **ordine logico** (es. dalla categoria più frequente alla meno)
+:::
+
+::: {.column width="50%"}
+### Cosa NON fare
+
+- ~~"Vedi Tabella 1"~~ senza commento
+- ~~"Questo dimostra che..."~~ → interpretazione, va nella Discussion
+- ~~Tabelle senza titolo~~ o con intestazioni ambigue
+- ~~Grafici senza etichette~~ sugli assi
+:::
+:::
+
+::: {.notes}
+Momento collettivo breve (15 min). La separazione Results/Discussion è il punto più critico. Dare un esempio: "La Tabella 1 mostra la distribuzione delle categorie nel campione. I post classificati come meme warfare rappresentano il 35% del campione (n=52), seguiti dal contenuto informativo neutro (28%, n=42)." — Questo è Results. "La prevalenza dei meme warfare è coerente con quanto osservato da Marwick e Lewis (2017) riguardo al ruolo dei meme come 'gateway drug'" — Questo è Discussion.
+:::
+
+## Formattazione delle tabelle
+
+::: {.highlight-box}
+Ogni tabella nel saggio deve avere:
+
+1. **Titolo** (sopra la tabella): "Tabella 1. Distribuzione delle categorie nel campione"
+2. **Intestazioni chiare** nelle colonne
+3. **Note a piè di tabella** se necessario (es. "N = 150; le percentuali sono arrotondate")
+4. Un **commento nel testo** che descrive cosa mostra
+:::
+
+| Categoria | n | % | Mediana reazioni | Mediana commenti |
+|-----------|---|---|-----------------|-----------------|
+| Meme warfare | 52 | 35% | 245 | 18 |
+| Contenuto neutro | 42 | 28% | 89 | 7 |
+| ... | ... | ... | ... | ... |
+
+::: {.notes}
+Mostrare un esempio di tabella ben formattata. Le tabelle devono essere leggibili senza dover leggere il testo — e il testo deve descrivere la tabella senza costringere il lettore a guardarla. Le due cose si complementano.
+:::
+
+## Lavoro di gruppo: scrittura Results {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (95 minuti):**
+
+- Integrate **tabelle e grafici** nel documento condiviso
+- Scrivete il **testo descrittivo** che accompagna ciascuna tabella/grafico
+- Il docente verifica che non ci sia **interpretazione prematura** nei Results
+:::
+
+**Status check** negli ultimi 10 minuti.
+
+::: {.notes}
+Passare tra i gruppi con attenzione alla separazione Results/Discussion. Se un gruppo scrive "questo perché..." o "questo conferma che...", segnalarlo: queste frasi vanno spostate nella Discussion.
+:::
+
+## Prossimi passi
+
+**Prossima lezione:** Martedì 19 maggio, 9:00–11:00, Aula C1
+
+*Stesura Discussion*
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Stesura Discussion — Mar 19 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

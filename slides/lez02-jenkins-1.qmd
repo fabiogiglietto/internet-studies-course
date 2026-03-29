@@ -1,0 +1,446 @@
+---
+title: "Cultura Partecipativa (I): Il Modello di Jenkins"
+subtitle: "Internet Studies — Lezione 2"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "1 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Recap: i *networked publics*
+
+Nella lezione precedente abbiamo visto che i *social media* creano **spazi pubblici riconfigurati dalla tecnologia** con quattro proprietà strutturali [@boyd2018]:
+
+| Affordance | In breve |
+|------------|----------|
+| **Persistenza** | I contenuti durano nel tempo |
+| **Visibilità** | Pubblico potenzialmente ampio |
+| **Replicabilità** | Facile da copiare e condividere |
+| **Ricercabilità** | Trovabile tramite ricerca |
+
+::: {.notes}
+Ripasso rapido (5 min). Chiedere: "Chi ricorda un esempio dall'esercitazione di martedì?" Raccogliere 1-2 risposte. Poi porre la domanda-ponte.
+:::
+
+## Domanda-ponte
+
+::: {.highlight-box}
+Le proprietà strutturali dei *networked publics* ci dicono **come funzionano** questi spazi.
+
+Ma **che tipo di pratiche** rendono possibili?
+:::
+
+Oggi rispondiamo con il primo dei nostri autori: **Henry Jenkins**.
+
+::: {.notes}
+La domanda è il collegamento logico tra Boyd e Jenkins. Boyd descrive le proprietà dell'ambiente; Jenkins descrive cosa le persone fanno in quell'ambiente. Transizione: "Jenkins è uno studioso dei media che studia i fan — le persone che non si limitano a consumare i contenuti, ma li rielaborano, li condividono, li trasformano."
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Elencare le **cinque caratteristiche** della cultura partecipativa secondo Jenkins
+2. Distinguere le **quattro forme di partecipazione** mediale
+3. **Riconoscere** queste forme in community online contemporanee
+:::
+
+::: {.notes}
+Presentare gli obiettivi. Sottolineare che l'esercitazione finale chiederà di applicare il punto 3 a una community a scelta.
+:::
+
+## Roadmap della lezione
+
+- **Il contesto:** una mutazione nei media studies
+- **Le cinque caratteristiche** della cultura partecipativa
+- **Le quattro forme** di partecipazione mediale
+- **YouTube** come piattaforma esemplare
+- **Esercitazione:** mappare la partecipazione in una community
+
+::: {.notes}
+Struttura della lezione: 40 minuti di lezione frontale, 30 minuti di esercitazione a coppie, 30 minuti di discussione plenaria. Il testo di riferimento è Jenkins (2008), pp. 7-22: l'introduzione del curatore italiano (Giovanni Boccia Artieri) e la prefazione di Jenkins.
+:::
+
+## Il modello di Jenkins {background-color="#C5612E"}
+
+::: {.notes}
+Sezione principale della lezione. Iniziare presentando Jenkins come figura: non è solo uno studioso che osserva i fan dall'esterno, ma un "Aca/Fan" — un accademico che è egli stesso un fan. Questo approccio metodologico è una delle sue innovazioni.
+:::
+
+## Una "mutazione" nei media
+
+Jenkins descrive l'emergere delle culture partecipative come una **mutazione** nel rapporto tra media e società [@jenkins2008].
+
+- Non sono le tecnologie a renderci più liberi
+- Ma le tecnologie rendono **visibile** un'attività degli spettatori che prima era **invisibile**
+
+::: {.callout-warning}
+## Attenzione
+"Se l'attuale scenario mediale rende visibile l'operatività degli spettatori, una volta invisibile, è sbagliato assumere che siano le tecnologie a renderci più liberi" [@jenkins2008].
+:::
+
+::: {.notes}
+Punto fondamentale: Jenkins rifiuta il determinismo tecnologico. Le persone hanno sempre rielaborato i contenuti mediali — scrivevano lettere agli autori, creavano fanzine, si vestivano come i personaggi. La differenza è che ora queste pratiche sono visibili su scala massiva grazie alle piattaforme. Collegamento con Boyd: le affordance (soprattutto visibilità e replicabilità) rendono visibile ciò che prima era sommerso.
+:::
+
+## Da spettatori passivi a partecipanti attivi
+
+::: {.columns}
+::: {.column width="50%"}
+### Prima
+
+- Il pubblico **consuma** contenuti
+- Flusso unidirezionale: produttore → consumatore
+- I fan sono una nicchia "eccentrica"
+- L'attività del pubblico è **invisibile**
+:::
+
+::: {.column width="50%"}
+### Ora
+
+- Il pubblico **produce, rielabora, condivide**
+- Flusso circolare: produttore ↔ consumatore
+- Ogni spettatore è un **potenziale fan**
+- L'attività è **visibile e amplificata**
+:::
+:::
+
+::: {.notes}
+Jenkins invita a ripensare ogni spettatore come un potenziale fan. Il "fandom" non è una condizione binaria ma un continuum: dalla semplice passione all'interazione diretta con gli autori (dialogo online con gli sceneggiatori, traduzione, revisione). Le aziende mediali devono riconsiderare la natura del coinvolgimento del consumo.
+:::
+
+## Le cinque caratteristiche della cultura partecipativa {background-color="#C5612E"}
+
+::: {.notes}
+Queste cinque caratteristiche sono la definizione operativa di Jenkins. Non si tratta di un elenco casuale: descrivono le condizioni necessarie perché una community possa definirsi "partecipativa". Alcune community le soddisfano tutte, altre solo alcune.
+:::
+
+## 1. Basse barriere all'espressione
+
+Le culture partecipative hanno **soglie di accesso basse** per l'espressione artistica e il coinvolgimento civico [@jenkins2008].
+
+- Non servono competenze specialistiche per iniziare
+- Gli strumenti sono accessibili e spesso gratuiti
+- La qualità "grezza" è accettata e normalizzata
+
+::: {.notes}
+Esempi concreti: un meme creato con MSPaint è culturalmente accettabile; un video amatoriale su YouTube può avere milioni di visualizzazioni; un post su un forum non richiede credenziali accademiche. Confronto: prima, pubblicare significava avere accesso a una tipografia o a una casa editrice.
+:::
+
+## 2. Supporto alla condivisione
+
+La community fornisce **infrastrutture e incoraggiamento** per creare e condividere le proprie produzioni [@jenkins2008].
+
+- Piattaforme progettate per facilitare la pubblicazione
+- Feedback immediato da parte della community
+- Cultura del "condividi quello che hai fatto"
+
+::: {.notes}
+Non basta che le barriere siano basse: serve anche un ecosistema che incoraggi attivamente la condivisione. Esempio: su Wattpad o AO3, le piattaforme sono costruite intorno alla pubblicazione di fan fiction. Su GitHub, il codice è condiviso per default. La community non solo accetta ma si aspetta che i membri condividano.
+:::
+
+## 3. *Mentorship* informale
+
+La conoscenza passa dagli **esperti ai novizi** seguendo la sola logica della competenza [@jenkins2008].
+
+- Non ci sono gerarchie formali o titoli
+- Chi sa di più insegna a chi sa di meno
+- Si impara **facendo** e **osservando** (*lurking*)
+
+::: {.notes}
+Esempio: nei forum di modding dei videogiochi, un utente esperto pubblica un tutorial non perché è pagato o ha un ruolo formale, ma perché nella community il prestigio si acquisisce condividendo competenze. Lo stesso accade su Stack Overflow, nei subreddit tecnici, nelle community di cosplay. Jenkins enfatizza che questo meccanismo è radicalmente diverso dall'istruzione formale: la competenza, non il titolo, determina chi insegna.
+:::
+
+## 4. Credere che il proprio contributo conti
+
+I membri **sentono che i loro contributi sono importanti** e saranno valutati dalla community [@jenkins2008].
+
+> "Non tutti i membri potranno contribuire, ma tutti saranno consapevoli di essere liberi di farlo quando si sentiranno pronti, e sapranno che ciò a cui contribuiranno sarà appropriatamente valutato" [@jenkins2008].
+
+::: {.notes}
+Questo è forse il punto più sottile: non si tratta di contribuire effettivamente, ma di *credere* di poterlo fare e che il proprio contributo abbia valore. Se un membro sente che la community ignora i nuovi arrivati o che il suo contributo non conta, la partecipazione si spegne. Collegamento con Shirky (prossima settimana): questa percezione è legata al crollo dei costi di partecipazione.
+:::
+
+## 5. Connessione sociale
+
+I membri percepiscono **gradi di connessione** con gli altri — si preoccupano di ciò che gli altri pensano delle loro produzioni [@jenkins2008].
+
+- La partecipazione non è un atto solitario
+- Esiste un senso di **appartenenza** alla community
+- Il feedback degli altri è parte della motivazione
+
+::: {.notes}
+La community è il contesto sociale che dà senso alla partecipazione. Un fan che scrive una fan fiction e non la condivide con nessuno non sta partecipando a una cultura partecipativa. La connessione sociale è sia la motivazione che il risultato della partecipazione. Collegamento con Boyd: le affordance dei networked publics (visibilità, replicabilità) abilitano questa connessione su scala mai vista prima.
+:::
+
+## Le cinque caratteristiche in sintesi
+
+| # | Caratteristica | In una frase |
+|---|----------------|--------------|
+| 1 | Basse barriere | Chiunque può iniziare |
+| 2 | Supporto alla condivisione | La community incoraggia a pubblicare |
+| 3 | *Mentorship* informale | Si impara dagli esperti, senza gerarchie |
+| 4 | I contributi contano | Ogni membro si sente valorizzato |
+| 5 | Connessione sociale | L'appartenenza motiva la partecipazione |
+
+::: {.highlight-box}
+La community prevede **forti incentivi** per esprimersi creativamente e partecipare attivamente [@jenkins2008].
+:::
+
+::: {.notes}
+Riepilogo visivo. Sottolineare che queste cinque caratteristiche funzionano insieme: una community con basse barriere ma senza connessione sociale non è partecipativa. Una community con forte connessione ma barriere alte nemmeno. È la combinazione che conta.
+:::
+
+## Le quattro forme di partecipazione {background-color="#C5612E"}
+
+::: {.notes}
+Passaggio dalle caratteristiche (cosa definisce una cultura partecipativa) alle forme (come si manifesta concretamente la partecipazione). Jenkins identifica quattro forme che emergono nelle pratiche mediali.
+:::
+
+## 1. Appartenenza mediale
+
+La partecipazione come **appartenenza** a community che si formano attorno a pratiche mediali condivise [@jenkins2008].
+
+- Non si tratta solo di comunicazione, ma di **pratiche condivise**
+- L'identità si costruisce attraverso la familiarità con un territorio mediale
+- Esempi: gilde di World of Warcraft, fandom su Discord, community su Reddit
+
+::: {.notes}
+Jenkins distingue l'appartenenza mediale dalla semplice comunicazione online: non basta scambiarsi messaggi, bisogna condividere pratiche legate a un oggetto mediale. Una gilda di WoW (7+ milioni di giocatori all'epoca) non è un gruppo di chat: è un gruppo che coopera per raggiungere obiettivi nel gioco, sviluppa gergo proprio, rituali, regole interne. L'appartenenza si manifesta anche nel mondo fisico: merchandise "soul-bound", cosplay, raduni.
+:::
+
+## 2. Espressività mediale
+
+La crescente capacità dei consumatori di **produrre forme mediali** attraverso rielaborazione e remix [@jenkins2008].
+
+::: {.columns}
+::: {.column width="50%"}
+- **Fan fiction** — storie scritte dai fan nell'universo narrativo originale
+- **Machinima** — film realizzati con motori di videogiochi 3D
+- ***Cosplay*** — performance in costume ai raduni
+:::
+
+::: {.column width="50%"}
+- ***Modding*** — modifiche ai videogiochi
+- ***Skinning*** — personalizzazione degli avatar
+- **Remix musicale** — campionamento e rielaborazione
+:::
+:::
+
+::: {.notes}
+Ogni forma di espressività mediale implica una rielaborazione creativa del contenuto originale. Caso emblematico: Star Trek New Voyages — una serie TV interamente prodotta da fan che continua la serie classica, con episodi di un'ora girati e distribuiti online. La Paramount (detentrice dei diritti) non si oppose. Questo tipo di produzione amatoriale sfuma il confine tra consumo e produzione.
+:::
+
+## 3. *Problem-solving* collaborativo
+
+Lavorare in team per **risolvere problemi e costruire conoscenza** collettivamente [@jenkins2008].
+
+::: {.orange-box}
+### L'esempio di Wikipedia
+Un universo di conoscenza multilingue dove **lettori e produttori sono le stesse persone**. La community si automodera, crea contenuti e li verifica — nessuna istituzione tradizionale potrebbe produrre lo stesso risultato.
+:::
+
+::: {.notes}
+Wikipedia è l'esempio perfetto di problem-solving collaborativo: milioni di voci scritte e revisionate da volontari, con un sistema di governance emergente. Ma Jenkins nota anche le criticità: chi ha diritto di modificare? Come si gestiscono i conflitti? La democraticità produce anche sfide di governance. Collegamento con Shirky (prossime lezioni): Wikipedia come esempio di coordinamento senza direzione manageriale.
+:::
+
+## 4. Condivisione di flusso
+
+La partecipazione come **flusso continuo** di contenuti caricati, scaricati, condivisi e rielaborati [@jenkins2008].
+
+- **Podcasting** — contenuti radiofonici fruiti in modo asincrono
+- **RSS feed** — aggregazione personalizzata di informazioni
+- **File sharing** — condivisione in una logica post-comunitaria
+
+::: {.highlight-box}
+Non è necessario appartenere a una community: si condivide tra **individui anonimi** in una logica post-comunitaria, connessi dal tagging e dalla ricerca.
+:::
+
+::: {.notes}
+Questa è la forma più "diffusa" di partecipazione: non richiede appartenenza a un gruppo, ma la semplice pratica di caricare, taggare e condividere contenuti. Il tagging rende i contenuti cercabili e scopribili. Collegamento con Boyd: la ricercabilità è l'affordance che rende possibile la condivisione di flusso.
+:::
+
+## Le quattro forme a confronto
+
+| Forma | Cosa si fa | Esempio |
+|-------|-----------|---------|
+| **Appartenenza** | Ci si identifica con una community mediale | Gilda di WoW, fandom K-pop |
+| **Espressività** | Si producono contenuti creativi | Fan fiction, cosplay, meme |
+| **Problem-solving** | Si costruisce conoscenza insieme | Wikipedia, forum tecnici |
+| **Condivisione di flusso** | Si diffondono contenuti in modo continuo | Podcast, playlist condivise |
+
+::: {.notes}
+Mostrare la tabella e chiedere: "Quale di queste forme praticate voi quotidianamente?" Probabilmente la condivisione di flusso è la più comune (condividere storie su Instagram, playlist su Spotify). L'espressività mediale richiede più sforzo. L'appartenenza implica un investimento identitario.
+:::
+
+## YouTube: la piattaforma esemplare {background-color="#C5612E"}
+
+::: {.notes}
+Jenkins dedica ampio spazio a YouTube come caso emblematico della convergenza tra cultura corporate e cultura dal basso. YouTube è il luogo dove tutti questi fenomeni si manifestano contemporaneamente.
+:::
+
+## YouTube come luogo di convergenza
+
+YouTube è il luogo dove si ritrovano **tutti i tipi di cultura partecipativa** [@jenkins2008]:
+
+- Fan di videogiochi, blogger, subculture
+- Contenuti delle corporation (legali e illegali)
+- Media amatoriali
+- Attivisti, ONG, istituzioni educative
+
+::: {.callout-note}
+## Da discutere
+L'acquisizione di YouTube da parte di Google (2005, 1,65 miliardi di dollari) ha posto una domanda cruciale: **quando gli amatori diventano professionisti? Quando i fan meritano un compenso?**
+:::
+
+::: {.notes}
+YouTube nasce come "un'economia del dono" — le persone creavano e condividevano gratuitamente. L'acquisizione da parte di Google ha rivelato il potenziale di monetizzazione di questo contenuto. Jenkins esprime "sentimenti ambivalenti": è eccitante vedere la creatività amatoriale ottenere visibilità, ma è preoccupante che l'user generated content resti un big business dove gli utenti non vengono compensati. Questa tensione sarà il filo conduttore fino alla lezione di sintesi (Lezione 8).
+:::
+
+## Il concetto di Aca/Fan
+
+Jenkins si definisce **Aca/Fan**: un accademico che è anche fan [@jenkins2008].
+
+- **Osservazione partecipante** + **auto-osservazione**
+- Studia le community di fan dall'interno, non dall'esterno
+- I materiali di ricerca sono quelli che le community producono spontaneamente
+
+::: {.highlight-box}
+**Innovazione metodologica:** analizzare conversazioni che avvengono online senza intervento del ricercatore, in tempo reale, sincronizzate con l'esperienza del pubblico.
+:::
+
+::: {.notes}
+La metodologia di Jenkins è un'innovazione rispetto agli studi precedenti sulle audience (es. le 42 lettere analizzate da Ien Ang sugli spettatori di Dallas). Jenkins lavora con materiali prodotti spontaneamente online: discussioni nei forum durante la trasmissione degli episodi, fan fiction, video amatoriali. Il ricercatore non costruisce focus group artificiali, ma osserva pratiche in atto. Questo approccio è reso possibile dalle affordance di persistenza e ricercabilità (Boyd).
+:::
+
+## Esercitazione: mappare la partecipazione {background-color="#C5612E"}
+
+## Istruzioni per l'esercitazione
+
+::: {.orange-box}
+### Esercitazione a coppie (30 minuti)
+
+1. **Scegliete** una community online che conoscete bene (un fandom, un subreddit, un gruppo Facebook, un canale Discord, una community di TikTok...)
+2. Per ciascuna delle **quattro forme di partecipazione**, indicate:
+   - È presente nella community? **Sì / No / Parzialmente**
+   - Se sì, **un esempio concreto**
+3. Compilate la **scheda** fornita dal docente
+4. Preparatevi a presentare in **2 minuti**
+:::
+
+::: {.notes}
+Distribuire la scheda (cartacea o digitale). Dare 20 minuti per il lavoro a coppie e 10 minuti per la preparazione della presentazione. Passare tra le coppie per verificare che abbiano scelto community concrete e non generiche. Se qualcuno non partecipa a nessuna community, può scegliere una community pubblica da osservare (es. un subreddit popolare).
+:::
+
+## Scheda per l'esercitazione
+
+| Forma di partecipazione | Presente? | Esempio concreto |
+|------------------------|-----------|------------------|
+| **Appartenenza mediale** | | |
+| **Espressività mediale** | | |
+| **Problem-solving collaborativo** | | |
+| **Condivisione di flusso** | | |
+
+**Community scelta:** ____________________________
+
+**Delle cinque caratteristiche di Jenkins, quali sono più evidenti?** ____________________________
+
+::: {.notes}
+La scheda è semplice per non rallentare il lavoro. L'ultima domanda (sulle cinque caratteristiche) collega l'esercitazione alla parte teorica: le cinque caratteristiche sono le condizioni, le quattro forme sono le manifestazioni.
+:::
+
+## Discussione plenaria
+
+::: {.highlight-box}
+**Domande guida per la discussione:**
+
+- Tutte le forme di partecipazione sono **ugualmente presenti**?
+- Quale forma è **più comune** e quale **più rara**?
+- Emergono **differenze** tra community diverse?
+- Quali delle **cinque caratteristiche** di Jenkins sono più evidenti?
+:::
+
+::: {.notes}
+Selezionare 3-4 coppie con community diverse (es. un fandom, un subreddit tecnico, un canale Discord gaming, una community TikTok). Guidare la riflessione: probabilmente la condivisione di flusso è onnipresente, l'espressività è più rara (richiede sforzo creativo), l'appartenenza varia molto. Le community gaming tendono ad avere forte appartenenza e problem-solving; le community creative forte espressività. Sottolineare che queste differenze emergono dalle affordance specifiche della piattaforma (collegamento con Boyd).
+:::
+
+## In sintesi
+
+::: {.columns}
+::: {.column width="50%"}
+### Cinque caratteristiche
+
+1. Basse barriere
+2. Supporto alla condivisione
+3. *Mentorship* informale
+4. I contributi contano
+5. Connessione sociale
+:::
+
+::: {.column width="50%"}
+### Quattro forme
+
+1. Appartenenza mediale
+2. Espressività mediale
+3. *Problem-solving* collaborativo
+4. Condivisione di flusso
+:::
+:::
+
+::: {.highlight-box}
+**Il punto chiave:** Capire le culture partecipative nei media significa capire "il fermento sotto traccia che caratterizzerà i rapporti futuri fra istituzioni e cittadini, fra consumatori e mercato" — è la **cultura della convergenza** [@jenkins2008].
+:::
+
+::: {.notes}
+Questa citazione di Jenkins anticipa il tema della prossima lezione: la convergenza non è solo un fatto tecnologico, ma un cambiamento culturale che ridefinisce il rapporto tra chi produce e chi consuma. Nella prossima lezione vedremo come questo potenziale ha anche un lato problematico.
+:::
+
+## Prossimi passi
+
+**Lettura da completare prima della prossima lezione:**
+
+- Jenkins (2008), pp. 160–180 e pp. 219–229
+
+**Temi della prossima lezione:** Giovedì 2 aprile, 11:00–13:00, Aula C2
+
+*Cultura partecipativa (II): convergenza, intelligenza collettiva, culture jamming — e un dibattito: la partecipazione è emancipazione?*
+
+::: {.notes}
+Anticipare i contenuti: le pagine 160-180 riguardano il concetto di intelligenza collettiva di Pierre Lévy applicato alle community di fan; le pagine 219-229 il passaggio dai culture jammers ai blogger come intermediari grassroots. Nella prossima lezione ci sarà un dibattito strutturato sulla tensione tra emancipazione e sfruttamento nella cultura partecipativa.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Cultura partecipativa (II) — Gio 2 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

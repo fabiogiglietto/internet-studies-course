@@ -1,0 +1,110 @@
+---
+title: "Analisi Quantitativa dell'Engagement"
+subtitle: "Internet Studies — Lezione 16"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "7 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Momento collettivo: analizzare l'engagement {background-color="#C5612E"}
+
+## Unire codifica qualitativa e dati quantitativi
+
+::: {.orange-box}
+### CERCA.VERT / VLOOKUP
+
+Per aggiungere le categorie codificate al foglio con le metriche di engagement:
+
+`=CERCA.VERT(A2; Codifica!A:D; 4; FALSO)`
+
+- **A2** = ID del post nel foglio dati
+- **Codifica!A:D** = intervallo nel foglio di codifica (da ID a categoria)
+- **4** = numero della colonna con la categoria
+- **FALSO** = corrispondenza esatta
+:::
+
+::: {.notes}
+Momento collettivo (25 min). Proiettare il passaggio step by step. Il CERCA.VERT collega i due fogli: il foglio dati (con le metriche di engagement) e il foglio di codifica (con le categorie assegnate). Il risultato: un foglio unico dove ogni post ha sia le metriche sia la categoria.
+:::
+
+## Confrontare l'engagement tra categorie
+
+Con i dati unificati, usate le **tabelle pivot**:
+
+| Cosa calcolare | Come |
+|---------------|------|
+| **Engagement mediano per categoria** | Tabella pivot: Righe = categoria, Valori = MEDIANA di reazioni/commenti/condivisioni |
+| **Distribuzione per categoria** | Tabella pivot: conteggio per categoria |
+| **Grafico a barre** | Selezionate la tabella pivot → Inserisci → Grafico |
+
+::: {.callout-tip}
+## Ricordate
+Usate la **mediana**, non la media. Le distribuzioni di engagement sono asimmetriche — la media è distorta dagli outlier.
+:::
+
+::: {.notes}
+Dimostrazione dal vivo: creare una tabella pivot con le categorie nelle righe e la mediana delle reazioni nei valori. Poi trasformarla in un grafico a barre. Mostrare anche la media come confronto — far notare quanto è più alta a causa degli outlier. Questi grafici e tabelle andranno direttamente nella sezione Results del saggio.
+:::
+
+## Lavoro di gruppo: analisi {background-color="#C5612E"}
+
+::: {.highlight-box}
+**Oggi (75 minuti):**
+
+1. **Unire** la codifica al dataset originale con CERCA.VERT
+2. **Calcolare** le statistiche descrittive per categoria con tabelle pivot
+3. **Produrre** le prime tabelle e grafici
+
+**Ultimi 20 minuti — condivisione rapida:** ogni gruppo mostra il grafico o la tabella più interessante.
+:::
+
+::: {.notes}
+Il lavoro oggi è tecnico: collegare i fogli, creare tabelle pivot, produrre grafici. Passare tra i gruppi per aiutare con problemi tecnici (CERCA.VERT che non trova corrispondenze, tabelle pivot mal configurate). Il momento di condivisione finale è importante: ogni gruppo vede cosa stanno trovando gli altri.
+:::
+
+## Prossimi passi
+
+**Prossima lezione:** Martedì 12 maggio, 9:00–11:00, Aula C1
+
+*Integrazione analisi qualitativa e quantitativa — Checkpoint 3*
+
+::: {.callout-warning}
+## Per martedì
+Completate le tabelle pivot e i grafici principali. Martedì presenterete i **risultati principali** al docente (Checkpoint 3).
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Integrazione e Checkpoint 3 — Mar 12 maggio
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

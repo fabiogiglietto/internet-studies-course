@@ -1,0 +1,398 @@
+---
+title: "Il Formato IMRAD, le RQ e Avvio Codebook di Gruppo"
+subtitle: "Internet Studies — Lezione 12"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "29 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## L'ultima lezione prima del laboratorio
+
+::: {.highlight-box}
+Oggi è il ponte tra la **preparazione** e il **laboratorio**.
+
+Dopo oggi, ogni lezione sarà lavoro di gruppo supervisionato.
+
+**Domani** (Lezione 13) è il **Checkpoint 1**: campione estratto e codebook adattato.
+:::
+
+::: {.notes}
+Sottolineare l'urgenza: da domani inizia il lavoro vero. Oggi i gruppi devono uscire dalla lezione con: (1) una RQ e un angolo approvati dal docente; (2) una bozza di codebook su cui lavorare stasera. Il tempo è stretto ma gestibile perché i gruppi si sono già formati ieri.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Descrivere la **struttura e la funzione** di ciascuna sezione IMRAD
+2. Identificare gli **errori comuni** nella scrittura accademica
+3. Formulare una **RQ specifica** per il proprio gruppo e iniziare ad **adattare il codebook**
+:::
+
+::: {.notes}
+L'obiettivo 1 è la lezione frontale (30 min); l'obiettivo 2 emerge dall'analisi dell'articolo esemplare; l'obiettivo 3 è il lavoro di gruppo (30 min finali).
+:::
+
+## Roadmap della lezione
+
+- **Il formato IMRAD:** struttura e funzione di ogni sezione
+- **Errori comuni** e analisi di un articolo esemplare
+- **Le due RQ** nel dettaglio: testi, categorie, angoli
+- **Negoziazione** con il docente: ogni gruppo presenta la sua scelta
+- **Lavoro di gruppo:** bozza del codebook
+- **Istruzioni operative** per il laboratorio
+
+::: {.notes}
+Struttura: 30 minuti su IMRAD, 20 minuti sulle RQ, 30 minuti di negoziazione, 30 minuti di lavoro di gruppo, 10 minuti di chiusura.
+:::
+
+## Il formato IMRAD {background-color="#C5612E"}
+
+## Cos'è il formato IMRAD
+
+IMRAD è l'acronimo per la struttura standard del **saggio scientifico empirico**:
+
+| Sezione | Funzione | Domanda a cui risponde |
+|---------|----------|----------------------|
+| **I**ntroduction | Perché lo fai | Qual è il problema e la domanda di ricerca? |
+| **M**ethods | Come lo fai | Come hai raccolto e analizzato i dati? |
+| **R**esults | Cosa hai trovato | Quali sono i risultati? |
+| **A**nd **D**iscussion | Cosa significa | Come si interpretano i risultati? |
+
+::: {.notes}
+IMRAD non è un'invenzione accademica arbitraria: è una struttura che aiuta il lettore a trovare rapidamente l'informazione che cerca. Uno scienziato può leggere solo la Discussion per capire le implicazioni; un metodologo può leggere solo i Methods; un revisore può concentrarsi sui Results. La struttura serve la comunicazione, non la burocrazia.
+:::
+
+## Introduction (~800–1.200 parole)
+
+**Funzione:** dal tema ampio alla domanda specifica — la struttura "a imbuto."
+
+::: {.columns}
+::: {.column width="50%"}
+### Cosa include
+
+- Il **tema** e la sua rilevanza
+- Il **quadro teorico** dai 5 testi del corso
+- La **RQ** formulata esplicitamente
+:::
+
+::: {.column width="50%"}
+### Come usare i 5 testi
+
+- **Boyd (2018)** → le affordance
+- **Jenkins (2008)** → la partecipazione
+- **Shirky (2009)** → il meccanismo
+- **Marwick & Lewis (2017)** → la manipolazione
+- **Boyd (2017)** → il filo storico
+:::
+:::
+
+::: {.callout-warning}
+## Errore comune
+Introduction senza RQ esplicita, o con una RQ che compare solo nell'ultima riga senza preparazione. La RQ deve emergere **logicamente** dal quadro teorico.
+:::
+
+::: {.notes}
+La struttura a imbuto: partire dal tema ampio (le piattaforme digitali e la manipolazione mediatica), restringere con il quadro teorico (Boyd → Jenkins → Shirky → Marwick & Lewis), arrivare alla lacuna o alla domanda specifica (la propria RQ). Non serve cercare fonti esterne: i cinque testi del corso forniscono tutto il necessario. Il collegamento alla mappa concettuale costruita nella Lezione 8: quella mappa è la struttura dell'Introduction.
+:::
+
+## Methods (~600–1.000 parole)
+
+**Funzione:** descrivere **cosa avete fatto** in modo sufficientemente dettagliato perché qualcuno possa **replicarlo**.
+
+| Elemento | Cosa scrivere |
+|----------|--------------|
+| **Dataset** | Fonte (MCL), periodo, dimensione, tipo di contenuto |
+| **Campione** | Strategia (casuale/stratificato), dimensione, giustificazione |
+| **Codebook** | Categorie, definizioni (riassunte), processo di sviluppo |
+| **Procedura** | Chi ha codificato cosa, in che ordine |
+| **Affidabilità** | Kappa di Cohen, come calcolato, azioni correttive |
+| **Strumenti** | Google Sheets, formule e tabelle pivot utilizzate |
+
+::: {.callout-warning}
+## Errore comune
+Methods vaghi ("abbiamo analizzato dei post"). Il lettore deve poter capire **esattamente** cosa avete fatto.
+:::
+
+::: {.notes}
+La sezione Methods è dove si documenta il "come". Deve essere concreta e specifica: non "abbiamo usato un codebook" ma "abbiamo sviluppato un codebook di 5 categorie basate sulla tassonomia di Marwick e Lewis (2017), raffinato attraverso 3 cicli di codifica pilota." Se avete usato l'IA generativa (es. per le formule di Google Sheets), dichiaratelo qui come richiesto dalla policy del corso.
+:::
+
+## Results (~1.000–1.500 parole)
+
+**Funzione:** presentare i risultati — **descrizione**, non interpretazione.
+
+::: {.columns}
+::: {.column width="50%"}
+### Cosa include
+
+- Distribuzione delle **categorie** nel campione
+- Metriche di engagement **per categoria** (tabelle pivot → tabelle nel saggio)
+- **Grafici** a barre o box plot
+- Descrizione dei **pattern** principali
+:::
+
+::: {.column width="50%"}
+### Come scrivere
+
+- Ogni tabella/grafico deve essere **introdotto** nel testo
+- Non scrivere solo "vedi Tabella 1" — descrivere **cosa mostra**
+- Guidare il lettore attraverso i dati
+- **Non interpretare** ancora
+:::
+:::
+
+::: {.callout-warning}
+## Errore comune
+Results che mescolano descrizione e interpretazione. "I meme hanno più engagement **perché** sfruttano l'economia dell'attenzione" → il "perché" va nella Discussion, non qui.
+:::
+
+::: {.notes}
+La separazione tra Results e Discussion è la più difficile da rispettare. I Results dicono "cosa": la mediana delle reazioni per i post di tipo X è 150, per i post di tipo Y è 45. La Discussion dice "perché": questa differenza è coerente con quanto previsto da Boyd (2017) perché i contenuti progettati per l'economia dell'attenzione sfruttano la replicabilità. Se vi trovate a scrivere "perché" o "questo dimostra che", state interpretando → spostate nella Discussion.
+:::
+
+## Discussion (~800–1.200 parole)
+
+**Funzione:** interpretare i risultati alla luce del **quadro teorico**.
+
+- I risultati **confermano, complicano o contraddicono** quanto previsto dai testi del corso?
+- Come si collegano alle affordance di Boyd? Alle forme di partecipazione di Jenkins? Al meccanismo di Shirky?
+- Quali sono i **limiti** dello studio? (campione, periodo, soggettività della codifica)
+- **Implicazioni:** cosa significano i risultati per la comprensione della manipolazione/partecipazione online?
+
+::: {.callout-warning}
+## Errore comune
+Discussion che non torna al quadro teorico. I risultati vanno **collegati ai testi** — non lasciati "in sospeso."
+:::
+
+::: {.notes}
+La Discussion è dove il saggio "chiude il cerchio": l'Introduction presenta la teoria e la RQ; i Methods spiegano come avete indagato; i Results mostrano cosa avete trovato; la Discussion collega i risultati alla teoria. I limiti vanno discussi onestamente ma senza svalutare il lavoro: "Il campione di 120 post non consente generalizzazioni, ma i pattern osservati sono coerenti con..." è meglio di "Lo studio ha molti limiti e non prova nulla."
+:::
+
+## La griglia di valutazione
+
+| Criterio | Peso |
+|----------|------|
+| Chiarezza della RQ e rilevanza | 10% |
+| Quadro teorico (uso dei 5 testi) | 20% |
+| Metodo (procedura replicabile, affidabilità) | 20% |
+| Risultati (tabelle, grafici, descrizione) | 20% |
+| Discussion (interpretazione, limiti) | 15% |
+| Qualità della scrittura | 15% |
+
+::: {.highlight-box}
+La griglia completa con i descrittori per ogni livello (insufficiente → ottimo) è disponibile su **Moodle**.
+:::
+
+::: {.notes}
+Proiettare la griglia completa (disponibile nel piano del corso). Mostrare la differenza tra un "sufficiente" e un "ottimo" nel quadro teorico: "Usa 1-2 testi in modo superficiale" vs. "Integra tutti e 5 i testi mostrando le connessioni tra essi." Questa è la differenza tra elencare i testi e usarli come un arco argomentativo coerente — come nella mappa concettuale della Lezione 8.
+:::
+
+## Esempi di saggi degli anni precedenti
+
+::: {.highlight-box}
+Su Moodle sono disponibili **2–3 saggi IMRAD anonimizzati** degli anni precedenti, come modello di riferimento.
+
+Guardate:
+
+- Come è strutturata l'**Introduction** (imbuto, quadro teorico, RQ)
+- Come sono descritti i **Methods** (livello di dettaglio)
+- Come sono presentati i **Results** (tabelle commentate)
+- Come la **Discussion** torna alla teoria
+:::
+
+::: {.notes}
+Proiettare brevemente un esempio, evidenziando la struttura sezione per sezione. Non serve leggere l'intero saggio: basta mostrare l'architettura. Gli studenti possono consultare gli esempi autonomamente su Moodle.
+:::
+
+## Le due RQ nel dettaglio {background-color="#C5612E"}
+
+## RQ1 — Tattiche di manipolazione mediatica
+
+::: {.orange-box}
+*Quali tattiche di manipolazione mediatica, tra quelle identificate da Marwick e Lewis (2017), sono riconoscibili nel contenuto multimediale delle pagine/gruppi Facebook presenti nel dataset? Come si distribuiscono e quali pattern di engagement generano?*
+:::
+
+**Quadro teorico:** Marwick & Lewis (tattiche) + Boyd 2018 (affordance che le abilitano) + Boyd 2017 (arco storico)
+
+**Categorie di analisi:** dalla tassonomia di Marwick & Lewis (*meme warfare*, *astroturfing*, contenuto emotivo strumentale, contenuto informativo neutro)
+
+**Angoli possibili:** focus sui meme, sui post con più engagement, confronto tra pagine, focus su un periodo
+
+::: {.notes}
+La RQ1 è più "quantitativa" nello spirito: classificare le tattiche e misurare il loro engagement. Il codebook si basa direttamente sulla tassonomia di Marwick & Lewis, con adattamenti al dataset. Il quadro teorico collega le tattiche alle affordance di Boyd (persistenza, replicabilità) e al percorso storico di Boyd (2017). Jenkins e Shirky entrano come contesto (le competenze partecipative usate per la manipolazione, il crollo dei costi di coordinamento).
+:::
+
+## RQ2 — Partecipazione genuina vs. strumentalizzata
+
+::: {.orange-box}
+*In che misura i contenuti presenti nel dataset presentano caratteristiche di cultura partecipativa genuina (Jenkins, 2008) rispetto a pratiche partecipative strumentalizzate a fini di manipolazione mediatica (Marwick & Lewis, 2017)? Quali differenze emergono nei pattern di engagement?*
+:::
+
+**Il punto teorico chiave:** la manipolazione non è top-down — sfrutta le **stesse dinamiche dal basso** che Jenkins descrive come emancipatorie [@marwick2017].
+
+**Categorie di analisi:** lungo un continuum genuino ↔ strumentalizzato (+ categoria "ambiguo")
+
+**Angoli possibili:** confronto tra pagine, confronto tra periodi, focus sul contenuto visuale vs. testuale
+
+::: {.notes}
+La RQ2 è più "teorica" nello spirito: lavora sulla tensione tra Jenkins e Marwick & Lewis. Il punto chiave (da esplicitare nell'Introduction) è che le affordance di Boyd abilitano entrambi gli usi, i costi di coordinamento di Shirky crollano per entrambi, e la differenza è nell'intenzionalità, non nella direzione del flusso. Questa è la chiave interpretativa per la Discussion.
+:::
+
+## Negoziazione con il docente {background-color="#C5612E"}
+
+## Presentazione dei gruppi
+
+::: {.orange-box}
+### Ogni gruppo presenta in 2 minuti
+
+1. **Chi siete** (nomi e numero di membri)
+2. **Quale RQ** avete scelto (1 o 2)
+3. **Quale angolo** specifico adottate
+4. **Perché** questo angolo vi interessa
+
+Il docente fornisce **feedback** e, se necessario, suggerisce aggiustamenti.
+:::
+
+::: {.notes}
+Dare 2 minuti rigorosi per gruppo. Il docente verifica: (1) l'angolo è fattibile con i dati disponibili? (2) c'è troppa sovrapposizione con un altro gruppo? (3) le categorie di analisi sono coerenti con la RQ? Se un angolo non è fattibile, suggerire alternative. Se c'è sovrapposizione, aiutare i gruppi a differenziarsi.
+:::
+
+## Lavoro di gruppo: bozza del codebook {background-color="#C5612E"}
+
+## Adattate il codebook alla vostra RQ
+
+::: {.orange-box}
+### Lavoro di gruppo (30 minuti)
+
+Partendo dal codebook pilota della Lezione 11, adattate le categorie alla vostra RQ e al vostro angolo:
+
+1. **Definite** le categorie specifiche per il vostro codebook
+2. **Scrivete** una definizione operativa per ciascuna
+3. **Identificate** almeno un esempio positivo e un negativo dal dataset
+4. **Annotate** i punti ambigui da risolvere
+5. **Discutete** la gerarchia: se un post rientra in due categorie, quale prevale?
+:::
+
+::: {.notes}
+Il docente passa tra i gruppi. Verificare che le categorie siano operazionalizzabili: una categoria come "manipolazione" è troppo generica; "meme satirico con informazione falsa verificabile" è operativa. Ogni gruppo deve avere almeno una bozza di codebook su cui lavorare stasera e domani mattina, perché domani è il Checkpoint 1.
+:::
+
+## Istruzioni operative per il laboratorio {background-color="#C5612E"}
+
+## Come funziona da domani
+
+::: {.columns}
+::: {.column width="50%"}
+### Struttura delle lezioni (13–24)
+
+- **Momento collettivo** (15–30 min): mini-lezione del docente
+- **Lavoro di gruppo** (90–105 min): codifica, analisi, scrittura
+
+Il docente è disponibile per **consultazioni** durante il lavoro di gruppo.
+:::
+
+::: {.column width="50%"}
+### Strumenti
+
+- **Foglio Google condiviso** per ogni gruppo (il docente lo predispone)
+- Il dataset è già caricato
+- Template per la codifica e il calcolo del Kappa forniti
+- Documento condiviso (Google Docs) per la stesura del saggio
+:::
+:::
+
+::: {.notes}
+Spiegare la logistica: da domani, ogni lezione inizia con un breve momento collettivo (15-30 minuti) su un tema specifico (campionamento, affidabilità, engagement, scrittura), poi il resto è lavoro di gruppo con supervisione. Il docente non farà lezione frontale per 2 ore — sarà disponibile per consultazioni.
+:::
+
+## I checkpoint
+
+| Checkpoint | Lezione | Data | Cosa consegnare |
+|-----------|---------|------|-----------------|
+| **1** | 13 | 30 aprile | Campione estratto + codebook adattato |
+| **2** | 15 | 6 maggio | Affidabilità inter-codificatore calcolata |
+| **3** | 17 | 12 maggio | Risultati principali presentati |
+| **4** | 22 | 21 maggio | Bozza completa consegnata (entro il 22/5) |
+| **Peer review** | 23 | 26 maggio | Revisione incrociata completata |
+| **Finale** | — | **3 giugno** | Saggio IMRAD definitivo (4.000–6.000 parole) |
+
+::: {.notes}
+I checkpoint non sono opzionali: servono a garantire che nessun gruppo arrivi alla fase di scrittura senza aver completato l'analisi. Il docente verifica ciascun checkpoint e fornisce feedback. Se un gruppo è in ritardo al Checkpoint 2, ha tempo per recuperare prima del Checkpoint 3. Ma se è in ritardo al Checkpoint 3, rischia di non completare la stesura in tempo.
+:::
+
+## In sintesi
+
+Oggi avete:
+
+- Imparato la struttura **IMRAD** e gli errori da evitare
+- Visto la **griglia di valutazione** e gli esempi di saggi precedenti
+- **Presentato** la vostra scelta (RQ + angolo) al docente
+- Iniziato ad **adattare il codebook** alla vostra RQ
+
+::: {.highlight-box}
+**Domani (Checkpoint 1):** portate il codebook adattato e il campione estratto. Il docente verificherà entrambi.
+:::
+
+::: {.notes}
+Riassunto operativo. Da stasera i gruppi devono: (1) finalizzare il codebook (almeno le categorie con definizioni); (2) estrarre il campione dal dataset (domani nella Lezione 13 vedremo le strategie di campionamento, ma i gruppi possono iniziare a pensarci). Ricordare che ogni gruppo avrà il proprio foglio Google condiviso — il docente lo predispone per domani.
+:::
+
+## Prossimi passi
+
+**Nessuna lettura assegnata.**
+
+**Prossima lezione:** Giovedì 30 aprile, 11:00–13:00, Aula C2
+
+*Campionamento e pianificazione della codifica — Checkpoint 1*
+
+::: {.callout-warning}
+## Checkpoint 1 — Domani
+Ogni gruppo deve presentare:
+
+- Il **codebook adattato** alla propria RQ
+- Il **campione estratto** dal dataset
+
+Il docente verifica e approva entrambi.
+:::
+
+::: {.notes}
+Ultimo promemoria. Il Checkpoint 1 è domani: non è una consegna formale, ma un momento di verifica con il docente. Se il codebook non è pronto, il gruppo avrà tempo per finirlo durante la lezione — ma deve avere almeno una bozza ragionata.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Da domani: il laboratorio!**
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

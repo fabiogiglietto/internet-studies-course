@@ -1,0 +1,392 @@
+---
+title: "Analisi del Contenuto, Codebook e Formazione Gruppi"
+subtitle: "Internet Studies — Lezione 11"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "28 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Recap: dal dataset all'analisi
+
+Giovedì avete esplorato il dataset MCL con filtri, CONTA.SE e tabelle pivot.
+
+Quelle domande erano **descrittive**: quanti post, quale pagina ha più engagement, che distribuzione temporale.
+
+::: {.highlight-box}
+Oggi aggiungiamo la **dimensione qualitativa**: come si **classifica** il contenuto dei post? E come si costruisce lo strumento per farlo — il **codebook**?
+
+Inoltre, oggi formerete i **gruppi di lavoro** per il laboratorio.
+:::
+
+::: {.notes}
+Oggi è una lezione densa e cruciale: teoria dell'analisi del contenuto (30 min), esercitazione di codifica pilota (35 min), introduzione all'affidabilità (10 min), formazione dei gruppi (20 min). I gruppi che si formeranno oggi lavoreranno insieme per le prossime 6 settimane.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Definire cos'è l'**analisi del contenuto** e distinguerne l'approccio qualitativo da quello quantitativo
+2. Trasformare un **concetto teorico** in una **categoria di codifica** operazionalizzabile
+3. Applicare un **codebook pilota** a casi concreti e identificare le fonti di **disaccordo**
+:::
+
+::: {.notes}
+L'obiettivo 3 è l'esercitazione collettiva: codificherete 10 post dal dataset reale usando un codebook preparato dal docente. Scoprirete dove siete d'accordo e dove no — e perché.
+:::
+
+## Roadmap della lezione
+
+- **Cos'è l'analisi del contenuto** e come si costruisce un codebook
+- **Dalle teorie alle categorie:** operazionalizzare Boyd, Jenkins, Marwick & Lewis
+- **Codifica pilota:** 10 post codificati insieme
+- **Affidabilità inter-codificatore:** perché misurarla, come interpretarla
+- **Formazione dei gruppi** e scelta preliminare della RQ
+
+::: {.notes}
+La lezione alterna teoria e pratica: prima i concetti, poi li applichiamo subito a casi reali dal dataset. La formazione dei gruppi chiude la lezione per dare ai gruppi qualche giorno per coordinarsi prima della Lezione 12 (domani).
+:::
+
+## Cos'è l'analisi del contenuto {background-color="#C5612E"}
+
+## Definizione e approcci
+
+::: {.orange-box}
+### Analisi del contenuto
+Tecnica di ricerca per la classificazione **sistematica e replicabile** di contenuti (testi, immagini, video) in categorie predefinite.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+### Approccio quantitativo
+
+- Le categorie **emergono** dai dati (induttivo)
+- Focus sulla **frequenza** e distribuzione
+- Grandi campioni, codifica automatizzata
+:::
+
+::: {.column width="50%"}
+### Approccio qualitativo (il nostro)
+
+- Le categorie **derivano dalla teoria** (deduttivo)
+- Focus sul **significato** del contenuto
+- Campioni più piccoli, codifica **manuale**
+:::
+:::
+
+::: {.notes}
+Il nostro approccio è deduttivo: partiamo dai concetti dei cinque testi del corso (tattiche di Marwick & Lewis, forme di partecipazione di Jenkins) e li trasformiamo in categorie di codifica. Non cerchiamo di "scoprire" le categorie nei dati — le definiamo a priori sulla base della teoria. Questo approccio ha il vantaggio di essere direttamente collegabile al quadro teorico del saggio (Introduction → Methods è un flusso naturale).
+:::
+
+## Gli elementi della codifica
+
+| Elemento | Descrizione |
+|----------|-------------|
+| **Unità di analisi** | Il singolo post con il suo contenuto multimediale (testo + immagine/video) |
+| **Codebook** | Il documento che definisce le categorie e le regole |
+| **Codifica** | Il processo di assegnazione di ciascun post a una categoria |
+| **Codificatori** | Le persone che codificano (voi, nel gruppo) |
+| **Affidabilità** | La misura dell'accordo tra codificatori |
+
+::: {.notes}
+Ogni elemento è importante: l'unità di analisi deve essere definita chiaramente (nel nostro caso: un post = una riga nel dataset, con tutto il contenuto associato — testo e multimedia); il codebook è lo strumento chiave; la codifica è il lavoro vero e proprio; l'affidabilità verifica che il codebook sia sufficientemente preciso perché codificatori diversi arrivino alla stessa classificazione.
+:::
+
+## Il codebook: anatomia
+
+Un buon codebook contiene, per ciascuna categoria:
+
+::: {.columns}
+::: {.column width="50%"}
+### Elementi obbligatori
+
+1. **Nome della categoria** (breve, univoco)
+2. **Definizione** (cosa include e cosa esclude)
+3. **Esempi positivi** (almeno 2)
+4. **Esempi negativi** (almeno 1)
+:::
+
+::: {.column width="50%"}
+### Elementi consigliati
+
+5. **Regole di decisione** per i casi ambigui
+6. **Gerarchia**: se un post rientra in più categorie, quale prevale?
+7. **Note** dal processo di codifica pilota
+:::
+:::
+
+::: {.highlight-box}
+Un codebook ben fatto **riduce l'ambiguità** e aumenta l'accordo tra codificatori. Se l'accordo è basso, il problema è quasi sempre nel codebook, non nei codificatori.
+:::
+
+::: {.notes}
+Sottolineare che il codebook è un documento vivo: evolve durante la codifica pilota e la verifica dell'affidabilità. La versione iniziale non sarà perfetta — il processo iterativo (codifica → verifica accordo → revisione → ri-codifica) è normale e atteso. I gruppi raffineranno il codebook fino al Checkpoint 2 (Lezione 15).
+:::
+
+## Dalle teorie alle categorie {background-color="#C5612E"}
+
+## Esempio 1: codebook per la RQ1
+
+**RQ1 — Tattiche di manipolazione mediatica:**
+
+| Categoria | Definizione | Esempio |
+|-----------|------------|---------|
+| ***Meme warfare*** | Immagine con testo sovrapposto che veicola un messaggio politico in forma satirica/ironica | Meme che deride un politico con informazioni decontestualizzate |
+| ***Astroturfing*** | Contenuto che simula consenso spontaneo con pattern ripetitivi tra pagine diverse | Post identico pubblicato da 3+ pagine in 24 ore |
+| **Contenuto emotivo strumentale** | Post progettato per generare reazione emotiva forte (indignazione, paura) attraverso semplificazione | Titolo allarmistico con dati decontestualizzati |
+| **Contenuto informativo neutro** | Post che riporta fatti senza evidente manipolazione | Articolo di cronaca condiviso con commento neutro |
+
+::: {.notes}
+Questo è un esempio semplificato — il codebook reale sarà più dettagliato. Mostrare come ogni categoria nasce da un concetto di Marwick & Lewis e viene operazionalizzata con una definizione e un esempio. La categoria "contenuto informativo neutro" serve come baseline: non tutto nel dataset è manipolazione. Senza una categoria residuale, il codificatore è forzato ad assegnare una tattica anche a post innocui.
+:::
+
+## Esempio 2: codebook per la RQ2
+
+**RQ2 — Partecipazione genuina vs. strumentalizzata:**
+
+| Categoria | Definizione | Esempio |
+|-----------|------------|---------|
+| **Partecipazione genuina** | Contenuto che esprime opinione/creatività autentica senza coordinamento strategico visibile | Commento personale su un evento, racconto di un'esperienza |
+| **Partecipazione strumentalizzata** | Contenuto che usa le forme della partecipazione (meme, commento personale) per veicolare un'agenda strategica | Meme "spontaneo" che ricicla argomenti di una campagna coordinata |
+| **Ambiguo/indeterminabile** | Post in cui non è possibile distinguere tra le due categorie sulla base del contenuto visibile | Post con opinione forte ma senza indizi di coordinamento |
+
+::: {.notes}
+La RQ2 lavora su un continuum, non su categorie discrete. La classificazione a tre livelli (genuina / strumentalizzata / ambigua) è una semplificazione operativa. Sottolineare che la categoria "ambiguo" non è un fallimento — è un dato informativo. Se molti post sono ambigui, questo dice qualcosa sulla difficoltà di distinguere tra partecipazione genuina e strumentalizzata — che è esattamente il punto teorico di Jenkins e Marwick & Lewis.
+:::
+
+## Codifica pilota: proviamo insieme {background-color="#C5612E"}
+
+## Come funziona
+
+::: {.orange-box}
+### Codifica pilota collettiva (35 minuti)
+
+1. Il docente proietta **10 post** dal dataset MCL (testo + immagine)
+2. Per ciascun post, usando la bozza di codebook proiettata:
+   - Ciascuno **annota individualmente** la propria codifica
+   - Poi si **confronta con il vicino**
+3. Il docente raccoglie le risposte a **mano alzata**
+4. **Dove c'è disaccordo**, discutiamo: perché?
+5. **Revisioniamo** le definizioni in base ai problemi emersi
+:::
+
+::: {.notes}
+Proiettare il codebook di riferimento (una versione semplificata con 4-5 categorie). Per ogni post, dare 1 minuto per la codifica individuale, 1 minuto per il confronto con il vicino, poi raccogliere le risposte. I post dovrebbero essere scelti per coprire casi chiari (2-3), casi ambigui (4-5) e casi difficili (2-3). Il disaccordo è il dato più importante: indica dove il codebook va migliorato.
+:::
+
+## Post 1
+
+<!-- Il docente inserirà qui il contenuto del primo post dal dataset MCL -->
+
+::: {.highlight-box}
+**Il docente proietta il post (testo + immagine).**
+
+1. Codificate individualmente: quale categoria?
+2. Confrontate con il vicino
+3. Alzata di mano
+:::
+
+::: {.notes}
+Il docente deve preparare 10 post prima della lezione, selezionandoli dal dataset reale. I post devono includere sia testo che contenuto multimediale. Scegliere post che coprano categorie diverse e includano casi ambigui.
+:::
+
+## Dopo la codifica: cosa abbiamo imparato?
+
+::: {.columns}
+::: {.column width="50%"}
+### Dove c'era accordo
+
+- Le categorie erano **chiare**
+- La definizione era **operativa**
+- Gli esempi aiutavano
+
+→ Queste categorie **funzionano**
+:::
+
+::: {.column width="50%"}
+### Dove c'era disaccordo
+
+- La definizione era **ambigua**
+- Mancavano **regole di decisione**
+- Il post rientrava in **più categorie**
+
+→ Queste categorie vanno **riviste**
+:::
+:::
+
+::: {.highlight-box}
+**Il disaccordo non è un problema — è un dato.** Indica dove il codebook deve essere migliorato prima della codifica vera.
+:::
+
+::: {.notes}
+Annotare i punti di disaccordo emersi: saranno la base per la revisione del codebook di ogni gruppo. Tipici problemi: categorie troppo larghe (tutto ci rientra), categorie che si sovrappongono (un post rientra in due), mancanza di una categoria residuale (il post non rientra in nessuna). Questi problemi sono normali nel primo round — la codifica pilota serve esattamente a questo.
+:::
+
+## Affidabilità inter-codificatore {background-color="#C5612E"}
+
+## Perché misurare l'accordo
+
+Se due codificatori assegnano lo stesso post a **categorie diverse**, il codebook non è sufficientemente preciso.
+
+::: {.orange-box}
+### Kappa di Cohen (κ)
+Misura l'accordo tra due codificatori **al netto del caso**.
+
+- **κ > 0.80** → accordo buono
+- **κ > 0.60** → accordo accettabile
+- **κ < 0.60** → accordo insufficiente → rivedere il codebook
+:::
+
+**Concettualmente:** la differenza tra l'accordo **osservato** e l'accordo che ci si aspetterebbe **per caso**.
+
+::: {.notes}
+Non serve la formula matematica — il concetto è sufficiente. Se due codificatori lanciano un dado a 4 facce, per puro caso saranno d'accordo il 25% delle volte. Il Kappa misura quanto l'accordo osservato supera questo livello casuale. Un Kappa di 0.80 significa che l'accordo è molto superiore al caso — il codebook funziona. Un Kappa di 0.40 significa che c'è troppo disaccordo — il codebook va rivisto. Il template Google Sheets che verrà fornito calcola il Kappa automaticamente.
+:::
+
+## Cosa fare quando l'accordo è basso
+
+1. **Identificare** le categorie problematiche (quelle con più disaccordo)
+2. **Rivedere** le definizioni: sono abbastanza precise?
+3. **Aggiungere** esempi e contro-esempi
+4. **Aggiungere** regole di decisione per i casi ambigui
+5. **Ricodificare** il sottoinsieme di test e ricalcolare il Kappa
+
+::: {.highlight-box}
+Il processo è **iterativo**: codifica → verifica → revisione → ri-codifica. Non ci si aspetta che il primo Kappa sia perfetto.
+:::
+
+::: {.notes}
+Per il laboratorio: ogni gruppo codificherà indipendentemente un sottoinsieme comune di 20-30 post, poi calcolerà il Kappa. Se è < 0.60, il gruppo rivede il codebook e ripete la codifica del sottoinsieme. Il Checkpoint 2 (Lezione 15) richiede che l'affidabilità sia calcolata e documentata.
+:::
+
+## Formazione dei gruppi {background-color="#C5612E"}
+
+## Istruzioni per la formazione
+
+::: {.orange-box}
+### Formazione dei gruppi (20 minuti)
+
+- **Max 6 persone** per gruppo
+- Ogni gruppo sceglie preliminarmente una **RQ** (1 o 2)
+- Discutete internamente quale **angolo specifico** adottare
+- Il docente passa tra i gruppi per verificare la fattibilità
+:::
+
+**Ricordate le due RQ:**
+
+- **RQ1:** Quali tattiche di manipolazione mediatica (Marwick & Lewis) sono riconoscibili nel dataset? Quali pattern di engagement generano?
+- **RQ2:** In che misura il contenuto mostra partecipazione genuina (Jenkins) vs. strumentalizzata (Marwick & Lewis)?
+
+::: {.notes}
+Dare 15 minuti per la formazione e 5 minuti per la verifica rapida. Passare tra i gruppi per verificare: (1) la dimensione (max 6); (2) la fattibilità dell'angolo scelto; (3) che non ci siano sovrapposizioni eccessive tra gruppi. Se un gruppo è indeciso tra le due RQ, suggerire di pensare a quale si sente più affine in base alla codifica pilota appena fatta: chi ha trovato più facile classificare le tattiche sceglierà la RQ1; chi ha trovato più interessante il continuum genuino/strumentalizzato sceglierà la RQ2.
+:::
+
+## Possibili angoli per la RQ
+
+::: {.columns}
+::: {.column width="50%"}
+### RQ1 — Tattiche
+
+Angoli possibili:
+
+- Focus solo sui **meme** (contenuto visuale)
+- Focus sui post con **più engagement**
+- Confronto tra **pagine diverse**
+- Focus su un **periodo specifico**
+:::
+
+::: {.column width="50%"}
+### RQ2 — Partecipazione
+
+Angoli possibili:
+
+- Confronto tra **pagine diverse** lungo il continuum
+- Confronto tra **periodi diversi**
+- Focus sul **contenuto visuale** vs. testuale
+- Analisi dei **commenti** come indicatore di partecipazione
+:::
+:::
+
+::: {.notes}
+Gli angoli servono a differenziare i gruppi che scelgono la stessa RQ. Due gruppi che lavorano sulla RQ1 possono produrre saggi diversi se uno si concentra sui meme e l'altro sui post con più engagement. Domani (Lezione 12) ogni gruppo presenterà la propria scelta al docente per una negoziazione più dettagliata.
+:::
+
+## In sintesi
+
+::: {.columns}
+::: {.column width="50%"}
+### Oggi avete imparato
+
+- Cos'è l'analisi del contenuto
+- Come si costruisce un **codebook**
+- Come si trasformano i **concetti teorici** in categorie operative
+- L'importanza dell'**affidabilità**
+:::
+
+::: {.column width="50%"}
+### Oggi avete fatto
+
+- **Codifica pilota** di 10 post
+- Identificato le **fonti di disaccordo**
+- Formato i **gruppi**
+- Scelto una **RQ preliminare**
+:::
+:::
+
+::: {.notes}
+Riepilogo. Domani (Lezione 12): il formato IMRAD, la presentazione dettagliata delle due RQ, la negoziazione dell'angolo con il docente e l'inizio del codebook di gruppo. I gruppi sono invitati a confrontarsi informalmente prima di domani sulla scelta della RQ e dell'angolo.
+:::
+
+## Prossimi passi
+
+**Nessuna lettura assegnata.**
+
+**Prossima lezione:** Mercoledì 29 aprile, 11:00–13:00, Aula D3
+
+*Il formato IMRAD, le RQ nel dettaglio e avvio del codebook di gruppo*
+
+::: {.callout-tip}
+## Per i gruppi
+Confrontatevi informalmente **prima di domani**: siete sicuri della RQ? Quale angolo specifico vi interessa? Avete dubbi sul codebook?
+:::
+
+::: {.notes}
+Domani ogni gruppo presenterà in 2 minuti la propria scelta (RQ + angolo) al docente e alla classe. Il docente fornirà feedback. Poi i gruppi inizieranno ad adattare il codebook alla propria RQ. Dopodomani (Lezione 13, giovedì 30 aprile) è il Checkpoint 1: campione estratto e codebook adattato.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** IMRAD e codebook di gruppo — Mer 29 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

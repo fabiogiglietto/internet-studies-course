@@ -1,0 +1,450 @@
+---
+title: "Media Manipulation e Disinformazione (I)"
+subtitle: "Internet Studies — Lezione 6"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "15 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Aggancio: dal potenziale alla manipolazione
+
+Nelle lezioni precedenti abbiamo visto:
+
+- **Boyd** → le affordance rendono possibile la partecipazione su larga scala
+- **Jenkins** → le culture partecipative producono creatività e conoscenza
+- **Shirky** → il crollo dei costi di coordinamento abilita l'azione collettiva
+
+::: {.highlight-box}
+Ma se i costi crollano per le azioni "buone", crollano anche per quelle "cattive". **Marwick e Lewis** ci mostrano sistematicamente il lato della manipolazione [@marwick2017].
+:::
+
+::: {.notes}
+Aggancio diretto al continuum costruito nella Lezione 5. Ricordare: la stessa dinamica (coordinamento spontaneo, cultura partecipativa, meme) può essere usata per fini genuini o manipolatori. Oggi entriamo nel lato destro del continuum, con un report sistematico di Data & Society (2017).
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Descrivere le **vulnerabilità** dell'ecosistema mediale alla manipolazione
+2. Classificare le principali **tattiche manipolative**: *brigading*, *astroturfing*, *meme warfare*, *hashtag hijacking*, *concern trolling*
+3. **Riconoscere** queste tattiche in casi reali e collegare ciascuna alle affordance di Boyd
+:::
+
+::: {.notes}
+Oggi ci concentriamo sulla tassonomia delle tattiche e sulle vulnerabilità strutturali. Domani (Lezione 7) completeremo con il processo di mainstreaming e il ruolo degli influencer. L'esercitazione di oggi chiederà di riconoscere le tattiche in casi concreti.
+:::
+
+## Roadmap della lezione
+
+- **Il quadro generale:** chi manipola e perché
+- **Le vulnerabilità** dell'ecosistema mediale
+- **La tassonomia delle tattiche** manipolative
+- **Il rapporto simbiotico** con i media tradizionali
+- **Esercitazione:** riconoscere le tattiche in 8 casi
+
+::: {.notes}
+Struttura: 50 minuti di lezione frontale, 40 minuti di esercitazione a coppie, 20 minuti di discussione e chiusura. Il testo di riferimento è Marwick & Lewis (2017), sezioni 1-3.
+:::
+
+## Il quadro di Marwick e Lewis {background-color="#C5612E"}
+
+::: {.notes}
+Il report "Media Manipulation and Disinformation Online" (2017) è un'analisi sistematica di come subculture online sfruttano l'ecosistema mediale per amplificare le proprie idee. Non è un testo accademico tradizionale: è un report di policy research, pieno di casi concreti e analisi di piattaforme.
+:::
+
+## Chi manipola — e come
+
+> "Le subculture di Internet sfruttano l'attuale ecosistema mediale per manipolare i frame informativi, stabilire le agende e propagare idee [...] I gruppi di estrema destra hanno sviluppato tecniche di *attention hacking* per aumentare la visibilità delle loro idee" [@marwick2017].
+
+::: {.orange-box}
+### Il meccanismo
+Questi gruppi **sfruttano le opportunità offerte da Internet per la collaborazione, la comunicazione e la produzione tra pari**, prendendo di mira le **vulnerabilità** dell'ecosistema informativo [@marwick2017].
+:::
+
+::: {.notes}
+Sottolineare il linguaggio: "collaborazione, comunicazione, produzione tra pari" — sono esattamente le stesse parole di Jenkins sulla cultura partecipativa. Marwick e Lewis mostrano che le tattiche partecipative possono essere piegate alla manipolazione. Il collegamento con Jenkins è esplicito nel report: le community manipolative hanno "basse barriere all'espressione artistica, forte supporto tra pari, mentorship informale" — le cinque caratteristiche di Jenkins applicate alla produzione di propaganda.
+:::
+
+## La cultura partecipativa della manipolazione
+
+Le community manipolative funzionano come **culture partecipative** (Jenkins) [@marwick2017]:
+
+::: {.columns}
+::: {.column width="50%"}
+### Le stesse cinque caratteristiche
+
+- **Basse barriere**: meme grezzi creati con MSPaint sono la norma
+- **Supporto**: feedback collaborativo sui messaggi
+- **Mentorship**: i membri si educano reciprocamente
+- **I contributi contano**: ogni meme può diventare virale
+- **Connessione**: forte identità di gruppo
+:::
+
+::: {.column width="50%"}
+### Ma con un obiettivo diverso
+
+- Sviluppare ***memetic warriors*** con competenze sofisticate di manipolazione mediale
+- "Redpillare i normies" — convincere il pubblico mainstream
+- Sfruttare l'ecosistema mediale per imporre la propria agenda
+:::
+:::
+
+::: {.notes}
+Citazione dal report: "Gli anonimi si educano a vicenda e sviluppano collaborativamente tecniche per diffondere idee e 'redpillare i normie'" — cioè per convertire le persone "normali" all'ideologia della community. La community condivide testi di McLuhan, Le Bon, Bernays, Alinsky — materiale sulla persuasione e la propaganda — per sviluppare competenze sempre più sofisticate. È un perfetto esempio di intelligenza collettiva (Lévy/Jenkins) applicata alla manipolazione.
+:::
+
+## Le vulnerabilità dell'ecosistema mediale {background-color="#C5612E"}
+
+::: {.notes}
+Marwick e Lewis identificano tre vulnerabilità strutturali che rendono l'ecosistema mediale suscettibile alla manipolazione. Non sono difetti accidentali: sono caratteristiche intrinseche del sistema.
+:::
+
+## 1. Crisi di fiducia nei media
+
+La fiducia nei media mainstream è ai **minimi storici** [@marwick2017]:
+
+- Sondaggio Gallup (settembre 2016): solo il **32%** degli americani si fida dei media
+- Tra i repubblicani: solo il **14%**
+- La stampa iper-partigiana di destra crea un **sistema mediale isolato** che attacca i media mainstream
+
+::: {.highlight-box}
+**Il precedente:** la copertura errata delle armi di distruzione di massa in Iraq (NYT, 2004) ha distrutto la credibilità dei media — un danno auto-inflitto che i manipolatori sfruttano ancora oggi.
+:::
+
+::: {.notes}
+La crisi di fiducia non è un'invenzione dei manipolatori: è un dato di fatto, aggravato da errori reali dei media mainstream (Iraq WMDs, copertura elettorale 2016). Ma i manipolatori sfruttano questa crisi: se le persone non si fidano dei media, sono più vulnerabili a fonti alternative — incluse quelle deliberatamente manipolative. Collegamento con Boyd (2017): il gaslighting funziona meglio quando le istituzioni informative sono già indebolite.
+:::
+
+## 2. Declino del giornalismo locale
+
+Il modello economico del giornalismo locale è **crollato** [@marwick2017]:
+
+- La pubblicità si è spostata sulle piattaforme (Google, Facebook)
+- I giornali locali non riescono a finanziare il digitale
+- Le redazioni si riducono: meno giornalisti, meno fact-checking
+
+::: {.callout-warning}
+## Conseguenza
+L'**85%** delle notizie che alimentano la democrazia locale proviene dai giornali locali. La loro scomparsa crea "deserti informativi" — regioni senza copertura giornalistica [@marwick2017].
+:::
+
+::: {.notes}
+I giornali locali sono il primo bersaglio delle tattiche di manipolazione come il "trading up the chain" (che vedremo nella Lezione 7): si pianta una storia in un piccolo giornale locale con meno risorse per verificarla, poi si amplifica verso i media nazionali. Meno giornalisti locali = meno capacità di verifica = più vulnerabilità alla manipolazione.
+:::
+
+## 3. L'economia dell'attenzione
+
+Internet è un'**economia dell'attenzione**: il contenuto più virale vince [@marwick2017].
+
+- Tutti i media (BuzzFeed, Vice, NYT) sono ossessionati dalle metriche: clic, condivisioni, like
+- Il software traccia le performance in tempo reale
+- I contenuti **sensazionali, emotivi, controversi** ottengono più attenzione
+
+::: {.highlight-box}
+**Il risultato:** i media sono strutturalmente incentivati a pubblicare contenuti che generano reazioni — anche se questo significa amplificare la manipolazione [@marwick2017].
+:::
+
+::: {.notes}
+Marwick e Lewis: "I social media — e in generale Internet — sono un'economia dell'attenzione dove il contenuto più valorizzato è quello che ha più probabilità di attirare attenzione." Questo incentivo strutturale è la vulnerabilità più profonda: i manipolatori sanno che i contenuti provocatori, scandalosi o emotivamente carichi verranno ripresi dai media mainstream perché generano clic. Trump ha ricevuto una copertura sproporzionata durante la campagna 2016 proprio per questo: ogni scandalo generava traffico. Collegamento con Boyd (2017): "hackerare l'economia dell'attenzione" è il concetto che sintetizza tutto questo.
+:::
+
+## Le tre vulnerabilità in sintesi
+
+| Vulnerabilità | Come viene sfruttata |
+|---------------|---------------------|
+| **Crisi di fiducia** | Se nessuno si fida dei media, le fonti alternative (anche manipolative) diventano credibili |
+| **Declino del locale** | Meno giornalisti = meno fact-checking = più facile piantare storie false |
+| **Economia dell'attenzione** | I contenuti provocatori vengono amplificati perché generano clic |
+
+::: {.notes}
+Queste tre vulnerabilità non sono indipendenti: si rinforzano a vicenda. La crisi di fiducia spinge le persone verso fonti alternative; il declino del locale riduce la capacità di verifica; l'economia dell'attenzione incentiva il sensazionalismo. Il risultato è un ecosistema strutturalmente vulnerabile alla manipolazione.
+:::
+
+## La tassonomia delle tattiche {background-color="#C5612E"}
+
+::: {.notes}
+Parte centrale della lezione (20 minuti). Marwick e Lewis identificano diverse tattiche specifiche usate dalle subculture manipolative. Per ciascuna, vedremo cos'è, come funziona e quale affordance di Boyd la rende efficace.
+:::
+
+## *Brigading*
+
+::: {.orange-box}
+### Definizione
+Azione coordinata in cui un gruppo **inonda** uno spazio online (sezione commenti, thread, profilo) con messaggi ostili per sopraffare le voci dissenzienti.
+:::
+
+- I membri si coordinano su piattaforme separate (Discord, Telegram, 4chan)
+- Poi convergono simultaneamente su un bersaglio
+- L'effetto: la voce del gruppo sembra **unanime** e **spontanea**
+
+**Affordance chiave:** **visibilità** — il volume dei messaggi domina lo spazio [@boyd2018]
+
+::: {.notes}
+Il brigading funziona perché le piattaforme mostrano i contenuti per volume e recentità. Se 500 account postano la stessa cosa in 10 minuti, la piattaforma li rende visibili — anche se sono coordinati. L'osservatore esterno vede un "consenso spontaneo" che non esiste. Collegamento con Shirky: i costi di coordinamento per organizzare un brigading sono bassissimi (un messaggio su Discord: "andate tutti su questo thread").
+:::
+
+## *Astroturfing*
+
+::: {.orange-box}
+### Definizione
+Creazione di **falsa apparenza di consenso popolare** tramite account multipli, bot o persone pagate per simulare un movimento grassroots.
+:::
+
+- Il nome viene da "AstroTurf" — erba sintetica che sembra vera
+- Account falsi, bot automatici, farm di troll
+- L'obiettivo: far sembrare che un'opinione minoritaria sia **maggioritaria**
+
+**Affordance chiave:** **replicabilità** — è facile creare e diffondere contenuti identici da fonti apparentemente diverse [@boyd2018]
+
+::: {.notes}
+L'astroturfing è il contrario del grassroots: sembra dal basso ma è orchestrato dall'alto. Esempio: durante le elezioni USA 2016, circa il 20% dei tweet sul primo dibattito proveniva da bot (lo 0,5% degli utenti); i bot pro-Trump erano 4 volte quelli pro-Clinton. I bot sono economici, facili da creare e in continuo cambiamento — difficili da distinguere dagli account reali.
+:::
+
+## *Meme warfare*
+
+::: {.orange-box}
+### Definizione
+Uso strategico dei **meme** (immagini, video, frasi virali) come strumento di propaganda, progettati per essere condivisi attraverso le reti interpersonali.
+:::
+
+- Le immagini più blande funzionano come ***gateway drug*** verso contenuti più estremi [@marwick2017]
+- La propaganda diffusa tramite reti personali è **più efficace** di quella top-down
+- L'esposizione ripetuta aumenta l'efficacia del messaggio
+
+::: {.highlight-box}
+**Principio:** un meme divertente viene condiviso; la condivisione espone al messaggio; l'esposizione ripetuta normalizza l'idea.
+:::
+
+::: {.notes}
+Caso emblematico: Pepe the Frog. Un personaggio di fumetti diventa un in-joke dell'alt-right. Quando l'ADL lo classifica come simbolo d'odio e il team di Clinton pubblica una spiegazione, la community /pol/ lo celebra come una vittoria: l'attenzione mainstream legittima il simbolo. Le immagini più miti funzionano come "droga d'ingresso" verso l'ideologia: un meme vagamente ironico condiviso da un amico è più persuasivo di un manifesto politico esplicito.
+:::
+
+## *Hashtag hijacking*
+
+::: {.orange-box}
+### Definizione
+**Dirottamento** di un hashtag esistente, inserendo contenuti ostili o fuorvianti per compromettere la capacità dei sostenitori originali di organizzarsi.
+:::
+
+- Esempio: prendere #BlackLivesMatter e postare messaggi critici per annacquare il messaggio
+- Oppure: creare un hashtag coordinato per farlo diventare trending — come #BLMKidnapping (480.000 usi in 24 ore, coordinato da Mike Cernovich su Periscope) [@marwick2017]
+
+**Affordance chiave:** **ricercabilità** — gli hashtag aggregano contenuti indipendentemente dall'intenzione [@boyd2018]
+
+::: {.notes}
+L'hashtag hijacking funziona perché le piattaforme non distinguono tra usi "legittimi" e "dirottati" di un hashtag. Chiunque può usare qualsiasi hashtag. Collegamento con Shirky: il coordinamento costa pochissimo (un messaggio su un canale: "usiamo tutti questo hashtag adesso"). Collegamento con l'esercitazione della Lezione 5 (caso 4): l'hashtag hijacking era uno dei casi analizzati.
+:::
+
+## *Concern trolling*
+
+::: {.orange-box}
+### Definizione
+Fingere **preoccupazione genuina** per un tema allo scopo di spostare la discussione, delegittimare una posizione o seminare dubbio.
+:::
+
+- "Non sono razzista, ma mi preoccupo per la sicurezza..."
+- "Sono un vostro sostenitore, ma non pensate che questo approccio sia controproducente?"
+- L'obiettivo: **sembrare ragionevoli** mentre si sabota la conversazione
+
+**Affordance chiave:** **persistenza** — il commento resta visibile e influenza i lettori successivi [@boyd2018]
+
+::: {.notes}
+Il concern trolling è la tattica più sottile: non è aggressivo come il brigading, non è falso come l'astroturfing. Sembra un contributo legittimo alla discussione. È efficace perché sfrutta le norme della conversazione civile: "dobbiamo ascoltare tutti i punti di vista." Il risultato: lo spostamento dell'onere della prova e la delegittimazione delle posizioni attaccate. È particolarmente difficile da riconoscere e da contrastare.
+:::
+
+## Le tattiche in sintesi
+
+| Tattica | Meccanismo | Affordance sfruttata |
+|---------|-----------|---------------------|
+| ***Brigading*** | Inondare con messaggi coordinati | Visibilità |
+| ***Astroturfing*** | Falso consenso (bot, account multipli) | Replicabilità |
+| ***Meme warfare*** | Propaganda condivisa via reti personali | Replicabilità + Ricercabilità |
+| ***Hashtag hijacking*** | Dirottare un hashtag esistente | Ricercabilità |
+| ***Concern trolling*** | Fingere preoccupazione per sabotare | Persistenza |
+
+::: {.notes}
+Riepilogo visivo. Sottolineare che ogni tattica sfrutta una o più affordance di Boyd: non sono accidenti, sono strategie progettate per sfruttare le proprietà strutturali delle piattaforme. I manipolatori "capiscono" l'ambiente meglio di molti utenti normali.
+:::
+
+## Il rapporto simbiotico con i media {background-color="#C5612E"}
+
+::: {.notes}
+Ultimo blocco teorico prima dell'esercitazione. Marwick e Lewis mostrano che la manipolazione non funziona in isolamento: ha bisogno dei media mainstream per amplificarsi. E i media mainstream hanno bisogno di contenuti virali per generare clic. È un rapporto simbiotico.
+:::
+
+## Un loop di amplificazione reciproca
+
+::: {.columns}
+::: {.column width="50%"}
+### I manipolatori → i media
+
+- Creano contenuti progettati per essere **ripresi** (scandalosi, controversi, virali)
+- Sfruttano l'incentivo al sensazionalismo
+- Sanno che anche il **debunking** conta come copertura
+:::
+
+::: {.column width="50%"}
+### I media → i manipolatori
+
+- La copertura **amplifica** la visibilità delle idee marginali
+- Anche il debunking **mette nell'agenda** pubblica il tema
+- La copertura conferisce **legittimità** alle posizioni estreme
+:::
+:::
+
+::: {.notes}
+Marwick e Lewis: "Per i manipolatori, non importa se i media coprono una storia per smentirla o criticarla; l'importante è farla coprire. L'agenda dei media influenza l'agenda pubblica. In questo senso, facendo coprire certe storie, anche smentendole, i manipolatori riescono a influenzare l'agenda pubblica." Questo è il paradosso fondamentale: debunkare la disinformazione le dà visibilità. Ignorarla la lascia circolare senza contraddittorio. Non c'è una soluzione semplice.
+:::
+
+## Il paradosso del debunking
+
+> "Per i manipolatori, non importa se i media coprono una storia per smentirla o criticarla; l'importante è farla coprire [...] L'agenda dei media influenza l'agenda pubblica" [@marwick2017].
+
+::: {.callout-warning}
+## Il dilemma
+**Coprire** una storia manipolativa = amplificarla.
+**Ignorarla** = lasciarla circolare senza contraddittorio.
+
+Non esiste una soluzione semplice.
+:::
+
+::: {.notes}
+Questo dilemma è strutturale: i media non possono vincere. Se coprono la cospirazione Pizzagate per smentirla, la portano all'attenzione di milioni di persone che non ne avevano mai sentito parlare. Se la ignorano, circola liberamente nei circuiti alternativi. Il problema è l'economia dell'attenzione: l'attenzione è una risorsa scarsa, e dedicarla a un tema — per qualsiasi motivo — lo rende "importante" nell'agenda pubblica.
+:::
+
+## Esercitazione: riconoscere le tattiche {background-color="#C5612E"}
+
+## Istruzioni
+
+::: {.orange-box}
+### Esercitazione a coppie (40 minuti)
+
+Il docente distribuisce **8 descrizioni di casi reali** (anonimizzati).
+
+Per ciascun caso, classificate:
+
+1. **Quale tattica** di Marwick e Lewis è utilizzata?
+2. **Quali affordance** (Boyd) la rendono efficace?
+3. In una frase: **perché funziona**?
+
+Ci sono casi **ambigui**? Preparatevi a spiegare perché.
+:::
+
+::: {.notes}
+Distribuire la scheda con gli 8 casi (cartacea o digitale). I casi dovrebbero essere diversificati: 2 casi chiari di brigading, 1 astroturfing, 2 meme warfare, 1 hashtag hijacking, 1 concern trolling, 1 caso ambiguo che potrebbe essere classificato in più modi. Dare 25 minuti per il lavoro a coppie, poi 15 minuti di discussione plenaria. Il docente prepara i casi in anticipo usando esempi italiani e internazionali recenti (anonimizzati per evitare bias politici).
+:::
+
+## Esempio di caso per l'esercitazione
+
+::: {.highlight-box}
+**Caso X:** Un account con 50.000 follower pubblica un'immagine satirica su un politico. L'immagine è divertente ma contiene informazioni false sulla posizione del politico su un tema. L'immagine viene condivisa 20.000 volte in 48 ore. Molti commenti citano l'informazione falsa come se fosse vera.
+:::
+
+**Quale tattica?** ***Meme warfare*** — propaganda diffusa tramite contenuto virale.
+
+**Quale affordance?** **Replicabilità** — l'immagine è facile da condividere; **Persistenza** — resta visibile e continua a circolare.
+
+**Perché funziona?** Il formato satirico abbassa le difese critiche; la diffusione interpersonale è più persuasiva della propaganda esplicita.
+
+::: {.notes}
+Questo è un esempio da proiettare prima dell'esercitazione, per mostrare il tipo di analisi richiesto. Sottolineare che non sempre c'è una sola risposta corretta: un caso può combinare più tattiche. L'importante è argomentare la classificazione usando i concetti del corso.
+:::
+
+## Discussione plenaria
+
+::: {.highlight-box}
+**Domande guida:**
+
+- Ci sono stati casi **difficili da classificare**? Perché?
+- Una stessa azione può essere classificata come **più di una tattica**?
+- Quali affordance di Boyd emergono **più spesso**?
+- Come si distingue una tattica **spontanea** da una **coordinata**?
+:::
+
+::: {.notes}
+Selezionare 3-4 coppie con risposte diverse. Evidenziare i casi ambigui: nella realtà le tattiche si sovrappongono, e la distinzione tra azione spontanea e coordinata è spesso impossibile da stabilire senza accesso ai dati interni delle piattaforme. Questo anticipa la sfida del laboratorio: quando analizzeranno il dataset MCL nel Blocco 2, dovranno codificare contenuti che possono essere ambigui.
+:::
+
+## In sintesi
+
+Oggi abbiamo visto il **lato oscuro** della partecipazione online [@marwick2017]:
+
+::: {.columns}
+::: {.column width="50%"}
+### Vulnerabilità strutturali
+
+- Crisi di fiducia nei media
+- Declino del giornalismo locale
+- Economia dell'attenzione
+:::
+
+::: {.column width="50%"}
+### Tattiche manipolative
+
+- *Brigading*
+- *Astroturfing*
+- *Meme warfare*
+- *Hashtag hijacking*
+- *Concern trolling*
+:::
+:::
+
+::: {.highlight-box}
+Domani completeremo il quadro: **chi** amplifica queste tattiche? Come arrivano dal margine al **mainstream**? E perché la manipolazione è **reticolare**, non top-down?
+:::
+
+::: {.notes}
+Anticipare la Lezione 7: domani vedremo il ruolo degli influencer (Richard Spencer, Milo Yiannopoulos, Andrew Anglin), il processo di "trading up the chain" (dal giornale locale al media nazionale), e il paradosso centrale: la manipolazione non è top-down come la propaganda tradizionale, ma sfrutta le stesse dinamiche dal basso che Jenkins descrive come emancipatorie.
+:::
+
+## Prossimi passi
+
+**Lettura da completare prima della prossima lezione:**
+
+- Marwick & Lewis (2017), sezioni 4–6 e conclusioni
+
+**Prossima lezione:** Giovedì 16 aprile, 11:00–13:00, Aula C2
+
+*Media manipulation e disinformazione online (II): il processo di mainstreaming*
+
+::: {.notes}
+Le sezioni 4-6 coprono: il ruolo degli influencer e delle micro-celebrity, il processo di mainstreaming (come contenuti nati nelle subculture raggiungono il pubblico di massa), e le implicazioni per il giornalismo e la democrazia. È la parte più "politica" del report.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** *Media manipulation* (II) — Gio 16 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

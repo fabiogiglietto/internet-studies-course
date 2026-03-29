@@ -1,0 +1,411 @@
+---
+title: "Cultura Partecipativa (II): Convergenza e Limiti"
+subtitle: "Internet Studies — Lezione 3"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "2 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Recap: il modello di Jenkins
+
+Nella lezione precedente abbiamo visto [@jenkins2008]:
+
+::: {.columns}
+::: {.column width="50%"}
+### Cinque caratteristiche
+1. Basse barriere all'espressione
+2. Supporto alla condivisione
+3. *Mentorship* informale
+4. I contributi contano
+5. Connessione sociale
+:::
+
+::: {.column width="50%"}
+### Quattro forme
+1. Appartenenza mediale
+2. Espressività mediale
+3. *Problem-solving* collaborativo
+4. Condivisione di flusso
+:::
+:::
+
+::: {.notes}
+Recap rapido (5 minuti). Chiedere: "Dall'esercitazione di ieri, quale forma di partecipazione era più comune nelle vostre community? Quale più rara?" Raccogliere 2-3 risposte.
+:::
+
+## Domanda-ponte
+
+::: {.highlight-box}
+Ieri abbiamo visto **cosa fanno** le persone nei *networked publics* e **come si organizzano** le culture partecipative.
+
+Oggi ci chiediamo: **a chi giova** questa partecipazione? E **chi la usa** — e come?
+:::
+
+::: {.notes}
+La lezione di oggi completa Jenkins spostandosi dal "cosa" al "per chi". Le pagine assegnate (160-180 e 219-229) introducono due concetti chiave: l'intelligenza collettiva di Lévy e il passaggio dai culture jammers ai blogger. Entrambi preparano il terreno per la tensione centrale del corso: partecipazione genuina vs. strumentalizzazione.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Spiegare il rapporto tra **cultura delle corporation** e **cultura dal basso** nella convergenza mediale
+2. Descrivere le tattiche di ***culture jamming*** come forme di resistenza
+3. Argomentare criticamente se la cultura partecipativa sia **emancipatoria** o una forma di **lavoro gratuito**
+:::
+
+::: {.notes}
+L'obiettivo 3 sarà messo alla prova nel dibattito strutturato della seconda parte della lezione. Gli studenti dovranno prendere posizione — anche se la risposta finale, come vedremo, non è binaria.
+:::
+
+## Roadmap della lezione
+
+- **Intelligenza collettiva:** il concetto di Lévy applicato ai fan
+- **Convergenza:** il rapporto tra corporation e cultura dal basso
+- **Il problema del valore:** chi guadagna dalla partecipazione?
+- **Culture jamming:** tattiche di resistenza dal basso
+- **Dai jammers ai blogger:** un cambio di strategia
+- **Dibattito:** la partecipazione è emancipazione?
+
+::: {.notes}
+Struttura: 40 minuti di lezione frontale (convergenza + culture jamming), 40 minuti di dibattito strutturato, 20 minuti di chiusura e sintesi. Il ritmo è diverso dalle lezioni precedenti: oggi c'è meno contenuto frontale e più discussione attiva.
+:::
+
+## L'intelligenza collettiva {background-color="#C5612E"}
+
+::: {.notes}
+Jenkins incorpora il framework di Pierre Lévy per spiegare la dimensione sociale delle community di fan. Lévy è un filosofo francese che teorizza come le community di conoscenza possano produrre qualcosa che nessun individuo potrebbe produrre da solo.
+:::
+
+## Il concetto di Lévy
+
+Jenkins va oltre la semplice "rielaborazione" dei contenuti mediali. Si appoggia a Pierre Lévy per spiegare la dimensione sociale: l'**intelligenza collettiva** [@jenkins2008].
+
+> "Nessuno sa tutto, ognuno sa qualcosa, la totalità del sapere risiede nell'umanità" — Pierre Lévy
+
+::: {.highlight-box}
+L'intelligenza collettiva non è conoscenza condivisa (ciò che tutti sanno), ma la **conoscenza disponibile a tutti i membri**, che espande la capacità produttiva del gruppo liberando gli individui dai limiti della memoria individuale.
+:::
+
+::: {.notes}
+Distinzione fondamentale: "conoscenza condivisa" = ciò che tutti i membri sanno; "intelligenza collettiva" = ciò che è disponibile a tutti attraverso il contributo di ciascuno. Il gruppo sa più di qualsiasi individuo. Esempio: nelle community di fan di soap opera (studio di Nancy Baym), il genere televisivo trasmette più materiale di quanto un singolo fan possa ricordare. La community crea un pool comune di conoscenza.
+:::
+
+## L'intelligenza collettiva nelle community di fan
+
+> "Un ampio gruppo di fan può fare quel che è impossibile anche per il singolo fan più convinto: accumulare, indicizzare e far ricircolare in continuazione quantità senza precedenti di informazioni importanti" [@jenkins2008].
+
+I fan sono spinti dall'**epistemofilia**: il piacere non solo di sapere, ma di **scambiare conoscenza** [@jenkins2008].
+
+::: {.notes}
+Nancy Baym ha studiato le community di fan delle soap opera: i fan condividono la storia del genere perché il genere lo richiede — nessuno può ricordare tutte le trame. La community permette di "mettere in vetrina" le proprie competenze, rendendole disponibili a tutti. Le discussioni non si fermano alla decifrazione del materiale: producono nuovi scenari, espandono i significati. Collegamento: questo meccanismo è reso possibile dalle affordance di persistenza e ricercabilità (Boyd, 2018) — i messaggi restano e sono cercabili.
+:::
+
+## Un'utopia raggiungibile?
+
+Per Lévy, l'intelligenza collettiva è un'**"utopia raggiungibile"** — non inevitabile, ma qualcosa per cui lottare [@jenkins2008].
+
+::: {.columns}
+::: {.column width="50%"}
+### Non è una "mente alveare"
+
+- Le voci individuali **non** vengono soppresse
+- Molteplicità di conoscenze, non uniformità
+- Il valore nasce dallo **scambio**, non dall'omologazione
+:::
+
+::: {.column width="50%"}
+### Sfida ai poteri tradizionali
+
+- Gerarchie burocratiche (scrittura statica)
+- Monarchie mediali (televisione)
+- Reti economiche internazionali
+
+Lo scambio collettivo minaccia le forme tradizionali di **expertise**.
+:::
+:::
+
+::: {.notes}
+Lévy distingue esplicitamente l'intelligenza collettiva dalla "mente alveare" (hive mind) in cui le voci individuali vengono soppresse. Il suo ideale è animato dalla molteplicità. Ma questa visione è anche una sfida: le strutture di potere tradizionali (burocrazie, media centralizzati, mercati) si basano sul controllo dell'informazione. L'intelligenza collettiva redistribuisce quel potere. Questa è una visione ottimista — la seconda parte della lezione problematizzerà questo ottimismo.
+:::
+
+## Il rapporto produttori / consumatori {background-color="#C5612E"}
+
+::: {.notes}
+Transizione: dall'intelligenza collettiva come potenziale al problema concreto del valore economico. Chi beneficia della partecipazione? Chi guadagna quando milioni di persone creano contenuti gratuitamente?
+:::
+
+## La circolarità della convergenza
+
+La **cultura della convergenza** è la circolarità tra cultura delle corporation e cultura dal basso [@jenkins2008]:
+
+::: {.columns}
+::: {.column width="50%"}
+### Dall'alto
+
+Le corporation:
+
+- Riconoscono il valore dei fan
+- Incorporano le pratiche partecipative nel marketing
+- Monetizzano i contenuti user-generated
+:::
+
+::: {.column width="50%"}
+### Dal basso
+
+I fan:
+
+- Producono contenuti che ampliano la vita del prodotto
+- Diversificano il pubblico
+- Svolgono un **lavoro invisibile** di promozione
+:::
+:::
+
+::: {.notes}
+Jenkins mostra che il rapporto non è unidirezionale. Le corporation non si limitano a sfruttare i fan: alcuni li rispettano, li coinvolgono, riconoscono il valore generato. Ma il potere economico resta asimmetrico. Caso emblematico: i fan di Firefly che hanno calcolato le ore investite nella promozione virale di Serenity e hanno inviato una "fattura" alla casa di produzione. Lo studio ha concesso e ha riconosciuto il valore superiore generato dai fan.
+:::
+
+## Il caso YouTube: economia del dono?
+
+YouTube nasce come **economia del dono**: le persone creavano e condividevano liberamente [@jenkins2008].
+
+L'acquisizione da parte di Google (1,65 miliardi di dollari, 2005) ha rivelato il **potenziale di monetizzazione**.
+
+::: {.callout-warning}
+## La domanda scomoda
+"Fino a quando l'*user generated content* rimarrà un *big business*, sarà sempre possibile approfittare della produzione creativa degli utenti nel farla ricircolare a livello commerciale senza che a costoro venga riconosciuta alcuna percentuale sulle entrate" [@jenkins2008].
+:::
+
+::: {.notes}
+Jenkins esprime "sentimenti ambivalenti": da un lato è eccitante vedere la creatività amatoriale ottenere visibilità e rispetto; dall'altro, l'UGC resta un grande business dove le piattaforme traggono profitto dal lavoro non retribuito degli utenti. Quando gli amatori diventano professionisti? Quando meritano un compenso? Questa domanda è ancora irrisolta nel 2026 (anzi, si è intensificata con l'economia dei creator).
+:::
+
+## Dai *culture jammers* ai blogger {background-color="#C5612E"}
+
+::: {.notes}
+Cambio di prospettiva: dal rapporto economico alla dimensione politica e culturale della partecipazione. Jenkins distingue due strategie di intervento dal basso: il culture jamming (distruttivo) e il blogging/fandom (dialogico). Questa distinzione è cruciale per il corso perché anticipa Marwick & Lewis: le stesse tattiche riappariranno con finalità diverse.
+:::
+
+## Il *culture jamming*
+
+Mark Dery (1993) descrive tattiche di **resistenza dal basso** alla "tecnocultura intrusiva e strumentale" [@jenkins2008]:
+
+- **"Jamming"** (dal gergo radio CB): introdurre rumore nel segnale
+- Rifiuto del consumo passivo, diritto a inserire **idee alternative** nel flusso
+- Storia DIY: fotocopiatrici → computer → videocamere → reti digitali
+
+::: {.orange-box}
+### Esempi storici
+**Adbusters**, **ACT UP**, **Negativeland**, **Barbie Liberation Army**, **Electronic Disturbance Theater** — tutti usavano tattiche di "hacking mediatico, guerra dell'informazione, guerriglia semiotica."
+:::
+
+::: {.notes}
+Il culture jamming ha radici nella controcultura degli anni '60 (rock alternativo, stampa underground, poster artistici, radio pirata). Negli anni '80, una seconda ondata: musicisti punk, attivisti gay, femministe della terza ondata abbracciano zine fotocopiate, adesivi, spille, t-shirt. Questi gruppi riconoscono il potenziale radicale della registrazione video come contro-sorveglianza. Anticipazione: queste stesse tattiche ("hacking mediatico, guerra dell'informazione") torneranno in Marwick & Lewis (Lezioni 6-7), ma usate da attori con finalità di manipolazione anziché di resistenza.
+:::
+
+## Fan vs. *culture jammers*
+
+Jenkins distingue nettamente le due strategie [@jenkins2008]:
+
+| | *Culture jammers* | Fan |
+|---|---|---|
+| **Obiettivo** | Distruggere il potere dei media | Ottenere una fetta di quel potere |
+| **Approccio** | Oppositivo, ideologico | Dialogico, affettivo, collaborativo |
+| **Relazione con i media** | "Inceppare" (*jam*) i media | Appropriarsi dei contenuti |
+| **Visione** | Negativa, reattiva | Partecipativa, costruttiva |
+
+::: {.notes}
+Citazione chiave di Jenkins: "La cultura dei fan è dialogica piuttosto che distruttiva, affettiva invece che ideologica, collaborativa anziché oppositiva. I culture jammers vogliono distruggere il potere dei media, mentre i bracconieri ne vogliono una fetta." Questa distinzione è fondamentale perché mostra che la partecipazione non è un blocco monolitico: ci sono modi diversi di intervenire nel flusso mediale, con logiche e obiettivi diversi.
+:::
+
+## Dai *jammers* ai blogger
+
+Il passaggio storico secondo Jenkins: nell'era digitale, i **blogger** sono più efficaci dei *culture jammers* [@jenkins2008].
+
+::: {.columns}
+::: {.column width="50%"}
+### *Culture jammers*
+- Vogliono **uscire** dal consumo mediale
+- Concezione **puramente negativa** della cultura popolare
+- Tattiche di **sabotaggio**
+:::
+
+::: {.column width="50%"}
+### Blogger
+- **Facilitatori** del flusso, non sabotatori
+- Il blog descrive un **processo comunicativo**, non una posizione ideologica
+- Prendono la conoscenza nelle **proprie mani**
+:::
+:::
+
+::: {.notes}
+Jenkins cita Lévy: "Finora ci si è riappropriati della parola solo grazie a un movimento rivoluzionario, a una crisi, a una cura, a un atto creativo eccezionale. Quale potrebbe essere una riappropriazione della parola normale, tranquilla, istituita?" I blogger rappresentano questa "riappropriazione normale" — non eroica, non rivoluzionaria, ma quotidiana ed efficace. Il potere del consumatore si esercita meglio come intermediario grassroots che come sabotatore.
+:::
+
+## Una tensione non risolta
+
+Jenkins riconosce l'**ambivalenza** di questa trasformazione [@jenkins2008]:
+
+::: {.columns}
+::: {.column width="50%"}
+### Emancipazione?
+- Creatività amatoriale visibile
+- Diversità delle voci
+- Distribuzione del potere mediale
+- Community come spazi di apprendimento
+:::
+
+::: {.column width="50%"}
+### Sfruttamento?
+- Lavoro gratuito per le piattaforme
+- Nessun compenso per i creator
+- Le corporation monetizzano l'UGC
+- Co-optazione della resistenza come marketing
+:::
+:::
+
+::: {.highlight-box}
+**La risposta non è binaria.** Questa tensione è il **filo conduttore** dell'intero corso.
+:::
+
+::: {.notes}
+Questa slide prepara il dibattito. Jenkins non risolve la tensione: la riconosce come strutturale. Le culture partecipative sono contemporaneamente spazi di emancipazione E fonti di lavoro sfruttato. Le stesse affordance (Boyd) che permettono la partecipazione creativa permettono anche lo sfruttamento commerciale. Nelle prossime lezioni vedremo che la stessa tensione si riproduce nell'azione collettiva (Shirky: i costi di coordinamento crollano sia per le azioni "buone" sia per quelle "cattive") e nella manipolazione mediatica (Marwick & Lewis, Boyd 2017).
+:::
+
+## Dibattito: la partecipazione è emancipazione? {background-color="#C5612E"}
+
+::: {.notes}
+Seconda parte della lezione (40 minuti). Dividere fisicamente la classe in due gruppi. Spiegare le regole prima di iniziare.
+:::
+
+## Regole del dibattito
+
+::: {.orange-box}
+### Come funziona
+
+1. La classe si divide in **due gruppi**
+2. **Gruppo A** argomenta: la cultura partecipativa è **genuinamente emancipatoria**
+3. **Gruppo B** argomenta: la cultura partecipativa è una forma di **lavoro gratuito per le piattaforme**
+4. **10 minuti** per preparare gli argomenti
+5. **5 minuti** per gruppo per presentare
+6. **Discussione aperta** (15–20 minuti)
+:::
+
+::: {.notes}
+Assegnare i gruppi in modo casuale (es. lato sinistro/destro dell'aula). Sottolineare che non importa la propria opinione personale: l'obiettivo è argomentare la posizione assegnata usando i testi del corso. Ogni gruppo deve trovare almeno 3 argomenti con riferimenti a Jenkins e Boyd.
+:::
+
+## Argomenti per il dibattito
+
+::: {.columns}
+::: {.column width="50%"}
+### Gruppo A — Emancipazione
+
+Usate Jenkins e Boyd per argomentare che:
+
+- Le barriere si sono abbassate
+- Nuove voci hanno accesso al discorso
+- L'intelligenza collettiva produce conoscenza
+- Le community creano valore sociale
+:::
+
+::: {.column width="50%"}
+### Gruppo B — Lavoro gratuito
+
+Usate Jenkins e Boyd per argomentare che:
+
+- Le piattaforme monetizzano l'UGC
+- I creator non vengono compensati
+- Le affordance servono le corporation
+- La "partecipazione" è una strategia di marketing
+:::
+:::
+
+::: {.notes}
+Questa slide resta proiettata durante la preparazione. Passare tra i gruppi per verificare che stiano usando i testi e non solo opinioni personali. Se un gruppo è in difficoltà, suggerire un passaggio specifico di Jenkins (es. la citazione sull'UGC come big business per il Gruppo B, o la citazione sull'intelligenza collettiva di Lévy per il Gruppo A).
+:::
+
+## Sintesi del dibattito
+
+::: {.highlight-box}
+**Il docente sintetizza:**
+
+La risposta non è binaria. Le culture partecipative sono **contemporaneamente** spazi di emancipazione e fonti di lavoro sfruttato.
+
+Questa tensione non è un difetto dell'analisi — è la **realtà** della partecipazione online. Ed è il filo conduttore che seguiremo per tutto il corso.
+:::
+
+::: {.notes}
+Dopo il dibattito, il docente tira le fila. Punti chiave da evidenziare: (1) le stesse affordance abilitano entrambe le dinamiche — persistenza e replicabilità servono sia i fan che le corporation; (2) la posizione nel continuum dipende dal contesto, dalla piattaforma, dal rapporto di potere; (3) questa tensione si ripresenterà con Shirky (i costi di coordinamento crollano per tutti, "buoni" e "cattivi") e con Marwick & Lewis (le tattiche partecipative vengono piegate alla manipolazione). Collegamento esplicito: "Jenkins ci mostra il potenziale. Shirky ci spiegherà il meccanismo. Marwick e Lewis ci mostreranno la strumentalizzazione."
+:::
+
+## Il filo conduttore del corso
+
+```
+Boyd (2018)          Jenkins (2008)         Shirky (2009)         Marwick & Lewis (2017)
+Le proprietà    →    Le pratiche che    →   Il meccanismo    →    Chi sfrutta tutto
+strutturali          rendono possibili      che le abilita         questo strategicamente
+                                            su larga scala
+```
+
+La lezione di oggi ci ha mostrato che **la partecipazione ha un lato luminoso e un lato oscuro**. Le prossime lezioni esploreranno entrambi.
+
+::: {.notes}
+Questa mappa concettuale tornerà nella Lezione 8 (sintesi). Per ora basta piantare il seme: i quattro autori non sono isolati, costruiscono un arco narrativo. Boyd descrive l'infrastruttura, Jenkins le pratiche, Shirky il motore, Marwick & Lewis la strumentalizzazione. Boyd (2017) chiuderà il cerchio mostrando come l'hacking dell'attenzione è l'evoluzione storica di questo percorso.
+:::
+
+## Prossimi passi
+
+**Lettura da completare prima della prossima lezione:**
+
+- Shirky (2009), *Uno per Uno, Tutti per Tutti*, pp. 3–60
+
+**Attenzione:** la prossima lezione è dopo la **pausa pasquale** (3–8 aprile). Si riprende **giovedì 9 aprile**, Aula C2, 11:00–13:00.
+
+::: {.callout-tip}
+## Suggerimento per la pausa
+Scrivete 3–5 righe su un vostro esempio di partecipazione online alla luce di Jenkins: vi aiuterà a mantenere il contatto con il materiale.
+:::
+
+::: {.notes}
+Sottolineare la pausa: una settimana senza lezioni. L'esercizio di riflessione è facoltativo ma utile. Shirky (pp. 3-60) copre i primi capitoli: il caso del telefono smarrito, il pavimento di Coase, i costi di coordinamento. È una lettura avvincente, piena di esempi concreti. Anticipare: "Se Jenkins ci dice cosa fanno le persone, Shirky ci spiega perché oggi possono farlo su una scala senza precedenti."
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Azione collettiva (I) — Gio 9 aprile
+
+Buone vacanze di Pasqua!
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

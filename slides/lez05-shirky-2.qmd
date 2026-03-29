@@ -1,0 +1,472 @@
+---
+title: "Azione Collettiva (II): Limiti e Slacktivism"
+subtitle: "Internet Studies — Lezione 5"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "14 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Recap: il modello di Shirky
+
+Nella lezione precedente abbiamo visto [@shirky2009]:
+
+- **Costi di transazione** → le organizzazioni gerarchiche come soluzione
+- **Soffitto di Coase** → il limite della gerarchia
+- **Pavimento di Coase** → attività di valore ma troppo costose per le istituzioni
+- Il **crollo dei costi** fa emergere una terza categoria: coordinamento senza organizzazione
+- La **scala**: condivisione → cooperazione → azione collettiva
+
+::: {.notes}
+Recap rapido (5 minuti). Chiedere: "Dall'esercitazione di giovedì, qual è l'esempio che vi ha colpito di più?" Raccogliere 1-2 risposte. Poi: oggi completiamo Shirky passando dal meccanismo ai suoi limiti.
+:::
+
+## Domanda-ponte
+
+::: {.highlight-box}
+Giovedì abbiamo visto **perché** l'azione collettiva è diventata possibile su larga scala.
+
+Oggi ci chiediamo: **tutti i gruppi** che si formano facilmente producono risultati significativi?
+
+Se il costo della partecipazione tende a **zero**, qual è il **valore** di quella partecipazione?
+:::
+
+::: {.notes}
+Questa domanda introduce la critica allo slacktivism. Shirky mostra il lato positivo nella prima parte del libro; la seconda parte riconosce che la facilità di organizzazione non è garanzia di efficacia. Non tutti i gruppi sono uguali.
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. Spiegare il modello **"promessa, strumento, accordo"** per l'azione collettiva
+2. Definire ***slacktivism*** e ***clicktivism*** e discuterne le implicazioni
+3. Classificare **casi concreti** lungo il continuum tra azione genuina e strumentalizzata
+:::
+
+::: {.notes}
+L'obiettivo 3 sarà al centro dell'esercitazione collettiva: 6 casi da classificare sulla scala di Shirky e lungo il continuum genuino/strumentalizzato.
+:::
+
+## Roadmap della lezione
+
+- **Promessa, strumento, accordo:** le tre condizioni per l'azione collettiva
+- **Il caso del telefono smarrito:** un'azione collettiva esemplare
+- **I limiti:** *slacktivism*, *clicktivism* e il paradosso dell'azione a basso costo
+- **Il ponte verso la manipolazione:** i costi crollano per tutti
+- **Esercitazione:** classificare 6 casi
+
+::: {.notes}
+Struttura: 40 minuti di lezione frontale sulla triplice condizione per l'azione collettiva, 30 minuti sui limiti (slacktivism), 40 minuti di esercitazione collettiva, 10 minuti di chiusura.
+:::
+
+## Promessa, strumento, accordo {background-color="#C5612E"}
+
+::: {.notes}
+Shirky identifica tre condizioni necessarie perché l'azione collettiva funzioni. Senza tutte e tre, il gruppo non si forma o si dissolve rapidamente.
+:::
+
+## Le tre condizioni dell'azione collettiva
+
+Perché un gruppo riesca ad agire collettivamente servono tre elementi [@shirky2009]:
+
+| Condizione | Cosa significa | Esempio |
+|------------|---------------|---------|
+| **Promessa** | Un obiettivo che motiva la partecipazione | "Recuperiamo il telefono rubato" |
+| **Strumento** | Una piattaforma che abbatte i costi di coordinamento | Un sito web, email, social media |
+| **Accordo** | Un'intesa implicita o esplicita sulle regole | "Tutti segnalano informazioni, nessuno agisce da solo" |
+
+::: {.notes}
+Shirky non usa esattamente questi tre termini come formula rigida, ma il concetto emerge chiaramente dalla sua analisi. La promessa è il "perché": il desiderio di essere parte di un gruppo che condivide, collabora o agisce è un istinto naturale dell'uomo. Lo strumento è il "come": le moderne reti di comunicazione sono una piattaforma per la creazione di gruppi. L'accordo è il "a che condizioni": le regole del gioco, anche implicite.
+:::
+
+## Non tutti i gruppi sono uguali
+
+> "La facilità di costruzione dei gruppi diventa un fattore di un certo peso perché la voglia di essere parte di un insieme che condivide, collabora o agisce è un istinto naturale dell'uomo" [@shirky2009].
+
+Ma la facilità di organizzazione produce una **proliferazione di effetti diversi**, non una convergenza verso il bene comune.
+
+::: {.highlight-box}
+I nuovi strumenti sociali non determinano **cosa** fanno i gruppi — solo che **possono** formarsi facilmente.
+:::
+
+::: {.notes}
+Punto cruciale: Shirky non è un utopista. Riconosce che la stessa facilità di organizzazione che rende possibili le iniziative virtuose rende possibili anche quelle dannose. I gruppi si formano facilmente indipendentemente dall'obiettivo — buono o cattivo. Questo è il collegamento diretto con Marwick & Lewis che vedremo nelle prossime lezioni.
+:::
+
+## Il caso del telefono smarrito {background-color="#C5612E"}
+
+::: {.notes}
+Questo è il caso con cui Shirky apre il libro. È un esempio dettagliato di come un'azione collettiva può emergere spontaneamente, ma anche delle sue ambiguità.
+:::
+
+## Il Sidekick di Ivanna
+
+Il caso più celebre di Shirky — una storia di azione collettiva spontanea [@shirky2009]:
+
+1. **Ivanna** perde il suo Sidekick in un taxi a New York
+2. Le foto sul dispositivo rivelano l'identità di chi lo ha trovato: **Sasha**
+3. **Evan Guttman** (amico di Ivanna) crea una pagina web con le foto e una spiegazione minima
+4. La pagina diventa **virale** — 10 email al minuto
+
+::: {.notes}
+Shirky usa questo caso per mostrare come un'azione collettiva possa emergere senza nessuna organizzazione formale. Evan non ha un piano, non ha un'organizzazione, non ha un budget. Ha solo una pagina web e una storia che risuona con le persone.
+:::
+
+## L'escalation
+
+La community si mobilita spontaneamente [@shirky2009]:
+
+- **Indagine collettiva**: gli utenti cercano il profilo MySpace di Sasha, trovano informazioni, postano video della sua casa
+- **Pressione mediatica**: la storia viene ripresa dai media
+- **Pressione sulla polizia**: il NYPD, inizialmente disinteressato, è costretto ad intervenire
+- **Risultato**: Sasha viene arrestata, il telefono restituito
+
+::: {.callout-warning}
+## La domanda scomoda
+Questa è **giustizia** o **linciaggio digitale**? La community ha agito bene — ma con quali garanzie? Chi decide i limiti?
+:::
+
+::: {.notes}
+Shirky stesso pone la questione: "Quando le possibilità di recuperare un oggetto smarrito sono esigue ce ne facciamo una ragione... ma se esiste una possibilità, allora la nostra solidarietà aumenta esponenzialmente." L'azione funziona, ma solleva interrogativi: la pubblicazione delle foto di Sasha, l'indagine sui suoi profili social, il video della sua casa — tutto questo avviene senza nessun controllo istituzionale. È una forma di giustizia popolare resa possibile dal crollo dei costi di coordinamento.
+:::
+
+## Cosa ci insegna il caso
+
+::: {.columns}
+::: {.column width="50%"}
+### La forza
+
+- **Promessa** chiara: recuperare il telefono
+- **Strumento** efficace: un sito web + viralità
+- **Accordo** implicito: segnalare, non agire da soli
+- Risultato: la polizia interviene
+:::
+
+::: {.column width="50%"}
+### L'ambiguità
+
+- Nessun **filtro** sulle azioni del gruppo
+- La **pressione** può diventare molestia
+- Chi **protegge** i diritti di Sasha?
+- La **giustizia** popolare non ha garanzie
+:::
+:::
+
+::: {.notes}
+Questo caso funziona come esempio positivo — il telefono viene restituito, la polizia agisce. Ma Shirky è onesto nel mostrare l'ambiguità: la stessa dinamica, con un obiettivo diverso, potrebbe diventare una campagna di molestie. È esattamente ciò che vedremo con GamerGate in Boyd (2017) e con le campagne coordinate di Marwick & Lewis. Le stesse tre condizioni (promessa, strumento, accordo) funzionano indipendentemente dalla moralità dell'obiettivo.
+:::
+
+## I limiti dell'azione collettiva in rete {background-color="#C5612E"}
+
+::: {.notes}
+Seconda parte della lezione (30 minuti). Passiamo dalla celebrazione alla critica. Se formare gruppi è così facile, perché non tutto funziona? E cosa significa partecipare quando il costo è quasi zero?
+:::
+
+## Il paradosso dello *slacktivism*
+
+::: {.orange-box}
+### Definizione
+***Slacktivism*** (da *slacker* + *activism*): forme di partecipazione a basso costo che danno al partecipante la **sensazione** di fare qualcosa senza produrre un **impatto** reale.
+
+***Clicktivism***: la sua versione digitale — firmare petizioni online, condividere hashtag, cambiare la foto profilo.
+:::
+
+La domanda fondamentale:
+
+**Se il costo della partecipazione tende a zero, qual è il valore di quella partecipazione?**
+
+::: {.notes}
+Lo slacktivism è la critica più forte al modello di Shirky. Se mettere un like a una causa costa zero sforzo, quel like non vale nulla in termini di impegno reale. Cambiare la foto profilo con un filtro tricolore dopo un attentato non salva nessuno. Firmare una petizione online non richiede nessun sacrificio. La critica: queste azioni a basso costo sostituiscono l'azione reale anziché accompagnarla. Le persone "si sentono a posto" e non fanno nulla di più.
+:::
+
+## Due posizioni a confronto
+
+::: {.columns}
+::: {.column width="50%"}
+### Lo *slacktivism* come problema
+
+- Il basso costo **dequalifica** la partecipazione
+- L'illusione di aver "fatto qualcosa" **sostituisce** l'azione reale
+- I like e le condivisioni non cambiano le politiche
+- Le piattaforme **monetizzano** l'indignazione senza trasformarla in azione
+:::
+
+::: {.column width="50%"}
+### Lo *slacktivism* come punto di partenza
+
+- Le azioni a basso costo possono **scalare** verso l'impegno reale
+- La visibilità di una causa è un **prerequisito** per l'azione
+- L'aggregazione di molte piccole azioni può avere **effetti emergenti**
+- Non tutti parteciperanno di più, ma **alcuni** sì
+:::
+:::
+
+::: {.notes}
+Non c'è una risposta semplice. Mohandas Jha ha coniato il termine "slacktivism" nel 1995 in senso positivo (azioni a basso costo ma significative), poi è diventato peggiorativo. Il dibattito è ancora aperto: Evgeny Morozov (The Net Delusion) è il critico più feroce; altri studiosi (come Zeynep Tufekci) mostrano che le azioni online possono essere propedeutiche a quelle offline.
+:::
+
+## Wikipedia: un controesempio
+
+Wikipedia dimostra che il modello di Shirky può produrre **risultati straordinari** — quando le condizioni sono giuste [@shirky2009]:
+
+- **Motivazione personale** + **sistema aperto** = risultato che nessuna istituzione potrebbe produrre
+- Fondata nel 2001 come alternativa leggera a Nupedia (che richiedeva revisione accademica)
+- Il wiki ha **democratizzato** la modifica — chiunque può contribuire
+
+::: {.highlight-box}
+Wikipedia funziona perché combina **basse barriere** (Jenkins) con **cooperazione strutturata** (Shirky): non è solo condivisione, ma produzione collaborativa con negoziazione continua.
+:::
+
+::: {.notes}
+Wikipedia è il controesempio perfetto allo slacktivism: dimostra che il basso costo di partecipazione non implica basso valore del risultato. Ma ha una caratteristica cruciale: il prodotto è un artefatto collettivo (la voce dell'enciclopedia) che richiede cooperazione reale — revisione, negoziazione, compromesso. Non è un like o una firma: è lavoro cooperativo. Questo la colloca al secondo livello della scala di Shirky (cooperazione), non al primo (condivisione).
+:::
+
+## Il ponte verso la manipolazione {background-color="#C5612E"}
+
+::: {.notes}
+Punto di svolta concettuale della lezione. Il crollo dei costi di coordinamento non è selettivo — funziona per chiunque.
+:::
+
+## I costi crollano per tutti
+
+::: {.highlight-box}
+**Il punto chiave:**
+
+Se i costi di coordinamento crollano per le azioni **"buone"**, crollano anche per quelle **"cattive"** [@shirky2009].
+:::
+
+Le stesse tre condizioni (promessa, strumento, accordo) funzionano indipendentemente dalla **moralità** dell'obiettivo:
+
+| | Azione "positiva" | Azione "negativa" |
+|---|---|---|
+| **Promessa** | Recuperare il telefono rubato | Molestare una persona online |
+| **Strumento** | Pagina web + viralità | Forum + coordinate via DM |
+| **Accordo** | Segnalare informazioni | Condividere dati personali |
+
+::: {.notes}
+Questo è il collegamento diretto con Marwick & Lewis (prossime due lezioni). Boyd e Jenkins descrivono il potenziale della partecipazione; Shirky ne rivela il meccanismo; Marwick & Lewis mostreranno chi lo sfrutta strategicamente. L'insight fondamentale: la manipolazione mediatica non è top-down (governi, corporation) ma usa le stesse dinamiche dal basso (coordinamento spontaneo, cultura partecipativa, meme) che Jenkins descrive come emancipatorie. La differenza è nell'intenzionalità, non nel meccanismo.
+:::
+
+## Il continuum: dalla partecipazione alla manipolazione
+
+```
+  Partecipazione          Zona                    Manipolazione
+  genuina                 grigia                  strategica
+  ◄─────────────────────────────────────────────────────────────►
+
+  Wikipedia               Kony2012                Hashtag hijacking
+  Fan fiction             Petizione online         Astroturfing
+  Citizen science         Raccolta fondi virale    Brigading coordinato
+```
+
+::: {.callout-note}
+## Anticipazione
+Nelle prossime lezioni, **Marwick & Lewis** mapperanno il lato destro di questo continuum. **Boyd (2017)** spiegherà come ci si è arrivati storicamente.
+:::
+
+::: {.notes}
+Costruire questo continuum alla lavagna è utile perché mostra che non esiste un confine netto tra partecipazione genuina e manipolazione. Kony2012 era genuina nell'intenzione ma manipolativa nelle tattiche (semplificazione estrema, viralità forzata, pressione emotiva). Una raccolta fondi virale può essere autentica o astroturfing mascherato. L'esercitazione chiederà di posizionare 6 casi lungo questo continuum.
+:::
+
+## Esercitazione: classificare i casi {background-color="#C5612E"}
+
+## I sei casi
+
+::: {.orange-box}
+### Istruzioni
+Per ciascun caso, la classe discute:
+
+1. È **condivisione**, **cooperazione** o **azione collettiva**? (scala di Shirky)
+2. È un esempio di azione **genuina** o **strumentalizzata**?
+3. Dove si colloca nel **continuum**?
+:::
+
+::: {.notes}
+Proiettare un caso alla volta (5-7 minuti per caso). Per ciascuno, chiedere alzata di mano sul livello della scala di Shirky, poi aprire la discussione. Il docente costruisce progressivamente il continuum alla lavagna, posizionando ogni caso.
+:::
+
+## Caso 1: Kony 2012
+
+La campagna di Invisible Children: un video di 30 minuti che chiedeva di "rendere famoso" il criminale di guerra ugandese Joseph Kony per forzare un intervento internazionale.
+
+- **100 milioni di visualizzazioni** in 6 giorni
+- Hashtag #StopKony trending mondiale
+- Critiche: semplificazione, white saviorism, nessun impatto sul campo
+
+**Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?**
+
+::: {.notes}
+Caso volutamente ambiguo. È condivisione (ognuno condivide il video individualmente) o azione collettiva (la campagna chiede un impegno vincolante: "Cover the Night")? L'intenzione è genuina, ma le tattiche (viralità forzata, semplificazione emotiva) sono le stesse usate dalla propaganda. Il caso è diventato emblematico dello slacktivism: 100 milioni di visualizzazioni, nessun effetto sul conflitto in Uganda.
+:::
+
+## Caso 2: Raccolta fondi virale
+
+Un GoFundMe per le vittime di un incendio domestico diventa virale: centinaia di migliaia di euro raccolti in pochi giorni da migliaia di micro-donatori.
+
+- Nessuna organizzazione dietro — solo una persona che pubblica la storia
+- I media locali rilanciano, poi i nazionali
+- Risultato: l'obiettivo viene superato del 500%
+
+**Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?**
+
+::: {.notes}
+Caso relativamente lineare: è condivisione (ognuno dona individualmente) con elementi di cooperazione (il passaparola è coordinato informalmente). L'azione è genuina — ma il meccanismo è lo stesso che potrebbe essere usato per raccolte fondi fraudolente. Come si distingue una raccolta genuina da una truffa? La piattaforma ha un ruolo di verifica? Spoiler: spesso no.
+:::
+
+## Caso 3: *Shitstorm* su Twitter
+
+Un brand pubblica un post promozionale tono-sordo durante una crisi. La reazione: migliaia di risposte negative, meme satirici, hashtag ironici. Il brand ritira il post e si scusa.
+
+- La "tempesta" dura 48 ore
+- Nessun coordinamento esplicito — reazione spontanea
+- Il brand subisce danni reputazionali
+
+**Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?**
+
+::: {.notes}
+Caso interessante: sembra condivisione (reazioni individuali), ma l'effetto è quello dell'azione collettiva (il brand cambia comportamento). Non c'è coordinamento esplicito — è una "tempesta" emergente. È genuina (indignazione autentica) ma usa meccanismi simili al brigading coordinato. La differenza è nell'intenzionalità e nel coordinamento. Anticipazione: Marwick & Lewis descriveranno casi di shitstorm deliberatamente orchestrate.
+:::
+
+## Caso 4: *Hashtag hijacking*
+
+Un partito politico lancia l'hashtag #IlFuturoCheVogliamo. In poche ore, l'hashtag viene "dirottato" da utenti critici che lo usano per postare contenuti satirici contro il partito.
+
+- Il significato originale viene **sovvertito**
+- Il partito non può "riprendere" il controllo dell'hashtag
+- Alcuni dei post satirici sono spontanei, altri provengono da account coordinati
+
+**Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?**
+
+::: {.notes}
+Caso ambiguo: l'hashtag hijacking può essere sia genuino (cittadini che esprimono dissenso) sia strumentalizzato (account coordinati che manipolano la percezione). Spesso è un misto. Collegamento con Marwick & Lewis: l'hashtag hijacking è una delle tattiche che vedremo nella prossima lezione. Collegamento con Boyd: la ricercabilità e la replicabilità rendono l'hijacking efficace.
+:::
+
+## Caso 5: Petizione online
+
+Una petizione su Change.org raccoglie 500.000 firme per chiedere una legge contro il cyberbullismo. La petizione viene consegnata al Parlamento.
+
+- Firmare richiede **30 secondi**
+- La maggior parte dei firmatari non fa nulla di più
+- Il Parlamento "prende atto" ma non agisce
+
+**Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?**
+
+::: {.notes}
+Caso emblematico dello slacktivism. La firma costa zero: è condivisione, non azione collettiva (nessun impegno vincolante). Ma la petizione crea visibilità e mette la questione nell'agenda pubblica. È inutile? Non completamente: la visibilità è un prerequisito per l'azione. Ma non è sufficiente. Il punto: il basso costo della firma non la rende strumentalizzata — la rende solo debole come forma di pressione.
+:::
+
+## Caso 6: *Edit war* su Wikipedia
+
+Due gruppi di utenti modificano ripetutamente la stessa voce di Wikipedia, ciascuno cercando di imporre la propria versione dei fatti. L'articolo viene bloccato dagli amministratori.
+
+- Entrambe le parti citano fonti — ma le selezionano strategicamente
+- Sembra cooperazione, ma è **conflitto** mascherato da collaborazione
+- La governance di Wikipedia interviene per arbitrare
+
+**Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?**
+
+::: {.notes}
+Caso che mostra i limiti interni della cooperazione. Wikipedia funziona perché ha un sistema di governance, ma quel sistema può essere manipolato. L'edit war è cooperazione nel formato (editing collaborativo) ma azione collettiva nel contenuto (due gruppi si impegnano per obiettivi opposti). Collegamento con Shirky: Wikipedia come esempio virtuoso di cooperazione, ma anche come terreno di conflitto.
+:::
+
+## Costruiamo il continuum insieme
+
+Dopo aver discusso tutti i casi, posizioniamoli nel continuum:
+
+```
+  Genuina                  Zona grigia              Strumentalizzata
+  ◄──────────────────────────────────────────────────────────────►
+
+  Raccolta fondi?          Kony2012?               Hashtag hijacking?
+  Wikipedia?               Shitstorm?              Edit war?
+                           Petizione?
+```
+
+::: {.highlight-box}
+**Osservazione:** i confini non sono netti. Le **stesse tattiche** possono essere usate per fini genuini o manipolatori. È il **contesto** che fa la differenza — non il meccanismo.
+:::
+
+::: {.notes}
+Costruire questo continuum alla lavagna con il contributo degli studenti. Evidenziare che la posizione di ciascun caso è discutibile — ed è proprio questo il punto. La classificazione richiede analisi del contesto, non solo osservazione del meccanismo. Anticipazione: "Le prossime due lezioni (Marwick & Lewis) mapperanno sistematicamente il lato destro di questo continuum."
+:::
+
+## In sintesi
+
+::: {.columns}
+::: {.column width="50%"}
+### Da Boyd a Shirky
+
+- Boyd: le **proprietà** dell'ambiente
+- Jenkins: le **pratiche** di partecipazione
+- Shirky: il **meccanismo** (crollo dei costi di coordinamento)
+:::
+
+::: {.column width="50%"}
+### I limiti
+
+- Il crollo dei costi non è selettivo
+- Lo ***slacktivism*** è un rischio reale
+- Le stesse dinamiche abilitano azioni **genuine e manipolate**
+- La prossima domanda: **chi sfrutta tutto questo?**
+:::
+:::
+
+::: {.notes}
+Chiusura. Boyd e Jenkins descrivono il potenziale, Shirky il meccanismo. Ma il meccanismo funziona indipendentemente dalle intenzioni. La prossima lezione (Marwick & Lewis) risponde alla domanda "chi sfrutta tutto questo strategicamente?" — e la risposta è: subculture online, influencer, attori politici che hanno imparato a giocare con le stesse dinamiche partecipative.
+:::
+
+## Prossimi passi
+
+**Lettura da completare prima della prossima lezione:**
+
+- Marwick & Lewis (2017), *Media Manipulation and Disinformation Online*, sezioni 1–3
+
+**Prossima lezione:** Mercoledì 15 aprile, 11:00–13:00, Aula D3
+
+*Media manipulation e disinformazione online (I)*
+
+::: {.callout-tip}
+## Anticipazione
+Boyd e Jenkins descrivono il potenziale. Shirky il meccanismo. Ora vedremo **chi sfrutta tutto questo strategicamente**. Marwick e Lewis ci mostrano sistematicamente il lato della manipolazione.
+:::
+
+::: {.notes}
+Marwick & Lewis è un report di Data & Society del 2017 — è un testo più "giornalistico" e analitico rispetto ai libri di Shirky e Jenkins. Le sezioni 1-3 coprono il panorama delle subculture online manipolative, il ruolo degli influencer e le tattiche di base. È una lettura intensa ma molto concreta — piena di esempi e casi di studio.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** *Media manipulation* (I) — Mer 15 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

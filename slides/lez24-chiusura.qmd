@@ -1,0 +1,143 @@
+---
+title: "Revisione Finale e Presentazioni"
+subtitle: "Internet Studies — Lezione 24"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "27 Maggio 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## L'ultima lezione {background-color="#C5612E"}
+
+::: {.highlight-box}
+Oggi: **revisione finale** del saggio (50 minuti) + **presentazioni** dei risultati (55 minuti) + **riflessione** di chiusura (15 minuti).
+:::
+
+::: {.notes}
+L'ultima lezione del corso. Due momenti: prima il lavoro pratico (integrare il feedback della peer review), poi le presentazioni e una riflessione collettiva sul percorso.
+:::
+
+## Lavoro di gruppo: revisione finale {background-color="#C5612E"}
+
+::: {.highlight-box}
+**50 minuti:**
+
+- Integrate il **feedback** della peer review e le osservazioni del docente
+- Ultima sessione di lavoro in aula
+- Concentrate le energie sulle **criticità** segnalate dai revisori
+
+**Ricordate:** consegna definitiva entro **mercoledì 3 giugno, ore 23:59**.
+:::
+
+::: {.notes}
+I gruppi lavorano per integrare il feedback ricevuto nella Lezione 23. Il docente è disponibile per consultazioni dell'ultimo minuto. Dopo 50 minuti, si passa alle presentazioni.
+:::
+
+## Presentazioni dei risultati {background-color="#C5612E"}
+
+## Istruzioni per le presentazioni
+
+::: {.orange-box}
+### Ogni gruppo presenta i risultati principali (8–10 minuti)
+
+**Formato libero:** slide, poster, condivisione dello schermo con il foglio Google, o racconto orale con le tabelle chiave proiettate.
+
+**Contenuto:**
+
+1. La vostra **RQ** e l'angolo scelto
+2. I **2–3 risultati principali** (con tabella o grafico)
+3. L'**interpretazione** più interessante (collegamento alla teoria)
+4. Una **cosa che vi ha sorpreso**
+:::
+
+::: {.notes}
+Le presentazioni non sono valutate formalmente ma sono parte della componente partecipazione. Il formato libero è intenzionale: non tutti i gruppi devono fare slide — possono semplicemente proiettare le tabelle dal foglio Google e raccontare. L'importante è comunicare i risultati in modo chiaro e collegato alla teoria.
+:::
+
+## Riflessione collettiva {background-color="#C5612E"}
+
+## Due domande per chiudere
+
+::: {.highlight-box}
+1. **Cos'è cambiato** nella vostra comprensione delle piattaforme dopo questo percorso?
+
+2. **Cosa avete imparato** dal processo di ricerca che non avreste imparato solo dalle lezioni?
+:::
+
+::: {.notes}
+Domande aperte alla classe (15 minuti). Raccogliere 4-5 risposte. L'obiettivo è la metacognizione: gli studenti riflettono su cosa hanno appreso non solo in termini di contenuto (i 5 testi) ma di processo (fare ricerca empirica, lavorare in gruppo, scrivere un saggio accademico). Collegare le risposte agli obiettivi formativi del corso presentati nella Lezione 1.
+:::
+
+## Scadenze finali
+
+| Cosa | Quando |
+|------|--------|
+| **Consegna saggio definitivo** | Mercoledì **3 giugno**, ore **23:59** |
+| **Modulo peer evaluation** | Da consegnare insieme al saggio (individuale, anonimo) |
+| **Formato** | PDF, su Moodle |
+| **Lunghezza** | 4.000–6.000 parole |
+| **Ritardo** | –1 punto/giorno, max 7 giorni |
+
+::: {.notes}
+Ultimo promemoria sulle scadenze. Il modulo di peer evaluation intra-gruppo va compilato individualmente e in modo anonimo da ciascun membro: valuta il contributo di ogni membro su partecipazione, codifica, scrittura, rispetto delle scadenze (scala 1-5).
+:::
+
+## Il percorso del corso
+
+```
+Lezione 1                                              Lezione 24
+┌──────────────────────────────────────────────────────────────────┐
+│ Boyd → Jenkins → Shirky → Marwick & Lewis → Boyd (2017)         │
+│                                                                  │
+│ Affordance → Pratiche → Meccanismo → Strumentalizzazione → Arco │
+│                                                                  │
+│         ↓                                                        │
+│                                                                  │
+│ Metodi → Dataset → Codebook → Codifica → Analisi → Saggio IMRAD│
+└──────────────────────────────────────────────────────────────────┘
+```
+
+::: {.highlight-box}
+In 8 settimane avete costruito un **quadro teorico**, applicato dei **metodi di ricerca** e prodotto un **saggio empirico**. Questo è il nucleo del lavoro scientifico.
+:::
+
+::: {.notes}
+Mostrare l'arco completo del corso. Dalla prima lezione (Boyd e le affordance) alla consegna del saggio IMRAD: un percorso dalla teoria alla pratica. Sottolineare che le competenze sviluppate (analisi critica dei media, metodi di ricerca, scrittura accademica, lavoro di gruppo) sono trasferibili ben oltre questo corso.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Buon lavoro per la consegna finale!**
+
+Consegna: **3 giugno 2026**
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it
