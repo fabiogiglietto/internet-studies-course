@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<script src="lez05-shirky-2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="lez05-shirky-2_files/libs/quarto-html/tabby.min.js"></script>
+<script src="lez05-shirky-2_files/libs/quarto-html/popper.min.js"></script>
+<script src="lez05-shirky-2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="lez05-shirky-2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="lez05-shirky-2_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="lez05-shirky-2_files/libs/quarto-html/quarto-syntax-highlighting-de84f8d6bb715db06a919283c2d1e787.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.42">
+
+  <meta name="author" content="Fabio Giglietto">
+  <title>Azione Collettiva (II): Limiti e Slacktivism</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="lez05-shirky-2_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="lez05-shirky-2_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="lez05-shirky-2_files/libs/revealjs/dist/theme/quarto-7e00b0553a54811f55212491940a2ab0.css">
+  <link href="lez05-shirky-2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="lez05-shirky-2_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="lez05-shirky-2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="lez05-shirky-2_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Azione Collettiva (II): Limiti e Slacktivism</h1>
+  <p class="subtitle">Internet Studies — Lezione 5</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Fabio Giglietto 
+</div>
+        <p class="quarto-title-affiliation">
+            DISCUI · Università degli Studi di Urbino Carlo Bo
+          </p>
+    </div>
+</div>
+
+  <p class="date">14 aprile 2026</p>
+</section>
+<section id="recap-il-modello-di-shirky" class="slide level2">
+<h2>Recap: il modello di Shirky</h2>
+<p>Nella lezione precedente abbiamo visto <span class="citation" data-cites="shirky2009">(<a href="#/grazie" role="doc-biblioref" onclick="">Shirky, 2009</a>)</span>:</p>
+<ul>
+<li><strong>Costi di transazione</strong> → le organizzazioni gerarchiche come soluzione</li>
+<li><strong>Soffitto di Coase</strong> → il limite della gerarchia</li>
+<li><strong>Pavimento di Coase</strong> → attività di valore ma troppo costose per le istituzioni</li>
+<li>Il <strong>crollo dei costi</strong> fa emergere una terza categoria: coordinamento senza organizzazione</li>
+<li>La <strong>scala</strong>: condivisione → cooperazione → azione collettiva</li>
+</ul>
+<aside class="notes">
+<p>Recap rapido (5 minuti). Chiedere: “Dall’esercitazione di giovedì, qual è l’esempio che vi ha colpito di più?” Raccogliere 1-2 risposte. Poi: oggi completiamo Shirky passando dal meccanismo ai suoi limiti.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="domanda-ponte" class="slide level2">
+<h2>Domanda-ponte</h2>
+<div class="highlight-box">
+<p>Giovedì abbiamo visto <strong>perché</strong> l’azione collettiva è diventata possibile su larga scala.</p>
+<p>Oggi ci chiediamo: <strong>tutti i gruppi</strong> che si formano facilmente producono risultati significativi?</p>
+<p>Se il costo della partecipazione tende a <strong>zero</strong>, qual è il <strong>valore</strong> di quella partecipazione?</p>
+</div>
+<aside class="notes">
+<p>Questa domanda introduce la critica allo slacktivism. Shirky mostra il lato positivo nella prima parte del libro; la seconda parte riconosce che la facilità di organizzazione non è garanzia di efficacia. Non tutti i gruppi sono uguali.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="obiettivi-di-apprendimento" class="slide level2">
+<h2>Obiettivi di apprendimento</h2>
+<div class="highlight-box">
+<p>Al termine della lezione, sarete in grado di:</p>
+<ol type="1">
+<li>Spiegare il modello <strong>“promessa, strumento, accordo”</strong> per l’azione collettiva</li>
+<li>Definire <strong><em>slacktivism</em></strong> e <strong><em>clicktivism</em></strong> e discuterne le implicazioni</li>
+<li>Classificare <strong>casi concreti</strong> lungo il continuum tra azione genuina e strumentalizzata</li>
+</ol>
+</div>
+<aside class="notes">
+<p>L’obiettivo 3 sarà al centro dell’esercitazione collettiva: 6 casi da classificare sulla scala di Shirky e lungo il continuum genuino/strumentalizzato.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="roadmap-della-lezione" class="slide level2">
+<h2>Roadmap della lezione</h2>
+<ul>
+<li><strong>Promessa, strumento, accordo:</strong> le tre condizioni per l’azione collettiva</li>
+<li><strong>Il caso del telefono smarrito:</strong> un’azione collettiva esemplare</li>
+<li><strong>I limiti:</strong> <em>slacktivism</em>, <em>clicktivism</em> e il paradosso dell’azione a basso costo</li>
+<li><strong>Il ponte verso la manipolazione:</strong> i costi crollano per tutti</li>
+<li><strong>Esercitazione:</strong> classificare 6 casi</li>
+</ul>
+<aside class="notes">
+<p>Struttura: 40 minuti di lezione frontale sulla triplice condizione per l’azione collettiva, 30 minuti sui limiti (slacktivism), 40 minuti di esercitazione collettiva, 10 minuti di chiusura.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="promessa-strumento-accordo" class="slide level2" data-background-color="#C5612E">
+<h2>Promessa, strumento, accordo</h2>
+<aside class="notes">
+<p>Shirky identifica tre condizioni necessarie perché l’azione collettiva funzioni. Senza tutte e tre, il gruppo non si forma o si dissolve rapidamente.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="le-tre-condizioni-dellazione-collettiva" class="slide level2">
+<h2>Le tre condizioni dell’azione collettiva</h2>
+<p>Perché un gruppo riesca ad agire collettivamente servono tre elementi <span class="citation" data-cites="shirky2009">(<a href="#/grazie" role="doc-biblioref" onclick="">Shirky, 2009</a>)</span>:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 41%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Condizione</th>
+<th>Cosa significa</th>
+<th>Esempio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Promessa</strong></td>
+<td>Un obiettivo che motiva la partecipazione</td>
+<td>“Recuperiamo il telefono rubato”</td>
+</tr>
+<tr class="even">
+<td><strong>Strumento</strong></td>
+<td>Una piattaforma che abbatte i costi di coordinamento</td>
+<td>Un sito web, email, social media</td>
+</tr>
+<tr class="odd">
+<td><strong>Accordo</strong></td>
+<td>Un’intesa implicita o esplicita sulle regole</td>
+<td>“Tutti segnalano informazioni, nessuno agisce da solo”</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>Shirky non usa esattamente questi tre termini come formula rigida, ma il concetto emerge chiaramente dalla sua analisi. La promessa è il “perché”: il desiderio di essere parte di un gruppo che condivide, collabora o agisce è un istinto naturale dell’uomo. Lo strumento è il “come”: le moderne reti di comunicazione sono una piattaforma per la creazione di gruppi. L’accordo è il “a che condizioni”: le regole del gioco, anche implicite.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="non-tutti-i-gruppi-sono-uguali" class="slide level2">
+<h2>Non tutti i gruppi sono uguali</h2>
+<blockquote>
+<p>“La facilità di costruzione dei gruppi diventa un fattore di un certo peso perché la voglia di essere parte di un insieme che condivide, collabora o agisce è un istinto naturale dell’uomo” <span class="citation" data-cites="shirky2009">(<a href="#/grazie" role="doc-biblioref" onclick="">Shirky, 2009</a>)</span>.</p>
+</blockquote>
+<p>Ma la facilità di organizzazione produce una <strong>proliferazione di effetti diversi</strong>, non una convergenza verso il bene comune.</p>
+<div class="highlight-box">
+<p>I nuovi strumenti sociali non determinano <strong>cosa</strong> fanno i gruppi — solo che <strong>possono</strong> formarsi facilmente.</p>
+</div>
+<aside class="notes">
+<p>Punto cruciale: Shirky non è un utopista. Riconosce che la stessa facilità di organizzazione che rende possibili le iniziative virtuose rende possibili anche quelle dannose. I gruppi si formano facilmente indipendentemente dall’obiettivo — buono o cattivo. Questo è il collegamento diretto con Marwick &amp; Lewis che vedremo nelle prossime lezioni.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="il-caso-del-telefono-smarrito" class="slide level2" data-background-color="#C5612E">
+<h2>Il caso del telefono smarrito</h2>
+<aside class="notes">
+<p>Questo è il caso con cui Shirky apre il libro. È un esempio dettagliato di come un’azione collettiva può emergere spontaneamente, ma anche delle sue ambiguità.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="il-sidekick-di-ivanna" class="slide level2">
+<h2>Il Sidekick di Ivanna</h2>
+<p>Il caso più celebre di Shirky — una storia di azione collettiva spontanea <span class="citation" data-cites="shirky2009">(<a href="#/grazie" role="doc-biblioref" onclick="">Shirky, 2009</a>)</span>:</p>
+<ol type="1">
+<li><strong>Ivanna</strong> perde il suo Sidekick in un taxi a New York</li>
+<li>Le foto sul dispositivo rivelano l’identità di chi lo ha trovato: <strong>Sasha</strong></li>
+<li><strong>Evan Guttman</strong> (amico di Ivanna) crea una pagina web con le foto e una spiegazione minima</li>
+<li>La pagina diventa <strong>virale</strong> — 10 email al minuto</li>
+</ol>
+<aside class="notes">
+<p>Shirky usa questo caso per mostrare come un’azione collettiva possa emergere senza nessuna organizzazione formale. Evan non ha un piano, non ha un’organizzazione, non ha un budget. Ha solo una pagina web e una storia che risuona con le persone.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lescalation" class="slide level2">
+<h2>L’escalation</h2>
+<p>La community si mobilita spontaneamente <span class="citation" data-cites="shirky2009">(<a href="#/grazie" role="doc-biblioref" onclick="">Shirky, 2009</a>)</span>:</p>
+<ul>
+<li><strong>Indagine collettiva</strong>: gli utenti cercano il profilo MySpace di Sasha, trovano informazioni, postano video della sua casa</li>
+<li><strong>Pressione mediatica</strong>: la storia viene ripresa dai media</li>
+<li><strong>Pressione sulla polizia</strong>: il NYPD, inizialmente disinteressato, è costretto ad intervenire</li>
+<li><strong>Risultato</strong>: Sasha viene arrestata, il telefono restituito</li>
+</ul>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>La domanda scomoda</strong></p>
+</div>
+<div class="callout-content">
+<p>Questa è <strong>giustizia</strong> o <strong>linciaggio digitale</strong>? La community ha agito bene — ma con quali garanzie? Chi decide i limiti?</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Shirky stesso pone la questione: “Quando le possibilità di recuperare un oggetto smarrito sono esigue ce ne facciamo una ragione… ma se esiste una possibilità, allora la nostra solidarietà aumenta esponenzialmente.” L’azione funziona, ma solleva interrogativi: la pubblicazione delle foto di Sasha, l’indagine sui suoi profili social, il video della sua casa — tutto questo avviene senza nessun controllo istituzionale. È una forma di giustizia popolare resa possibile dal crollo dei costi di coordinamento.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cosa-ci-insegna-il-caso" class="slide level2">
+<h2>Cosa ci insegna il caso</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="la-forza">La forza</h3>
+<ul>
+<li><strong>Promessa</strong> chiara: recuperare il telefono</li>
+<li><strong>Strumento</strong> efficace: un sito web + viralità</li>
+<li><strong>Accordo</strong> implicito: segnalare, non agire da soli</li>
+<li>Risultato: la polizia interviene</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="lambiguità">L’ambiguità</h3>
+<ul>
+<li>Nessun <strong>filtro</strong> sulle azioni del gruppo</li>
+<li>La <strong>pressione</strong> può diventare molestia</li>
+<li>Chi <strong>protegge</strong> i diritti di Sasha?</li>
+<li>La <strong>giustizia</strong> popolare non ha garanzie</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Questo caso funziona come esempio positivo — il telefono viene restituito, la polizia agisce. Ma Shirky è onesto nel mostrare l’ambiguità: la stessa dinamica, con un obiettivo diverso, potrebbe diventare una campagna di molestie. È esattamente ciò che vedremo con GamerGate in Boyd (2017) e con le campagne coordinate di Marwick &amp; Lewis. Le stesse tre condizioni (promessa, strumento, accordo) funzionano indipendentemente dalla moralità dell’obiettivo.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="i-limiti-dellazione-collettiva-in-rete" class="slide level2" data-background-color="#C5612E">
+<h2>I limiti dell’azione collettiva in rete</h2>
+<aside class="notes">
+<p>Seconda parte della lezione (30 minuti). Passiamo dalla celebrazione alla critica. Se formare gruppi è così facile, perché non tutto funziona? E cosa significa partecipare quando il costo è quasi zero?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="il-paradosso-dello-slacktivism" class="slide level2">
+<h2>Il paradosso dello <em>slacktivism</em></h2>
+<section id="definizione" class="orange-box">
+<h3>Definizione</h3>
+<p><strong><em>Slacktivism</em></strong> (da <em>slacker</em> + <em>activism</em>): forme di partecipazione a basso costo che danno al partecipante la <strong>sensazione</strong> di fare qualcosa senza produrre un <strong>impatto</strong> reale.</p>
+<p><strong><em>Clicktivism</em></strong>: la sua versione digitale — firmare petizioni online, condividere hashtag, cambiare la foto profilo.</p>
+</section>
+<p>La domanda fondamentale:</p>
+<p><strong>Se il costo della partecipazione tende a zero, qual è il valore di quella partecipazione?</strong></p>
+<aside class="notes">
+<p>Lo slacktivism è la critica più forte al modello di Shirky. Se mettere un like a una causa costa zero sforzo, quel like non vale nulla in termini di impegno reale. Cambiare la foto profilo con un filtro tricolore dopo un attentato non salva nessuno. Firmare una petizione online non richiede nessun sacrificio. La critica: queste azioni a basso costo sostituiscono l’azione reale anziché accompagnarla. Le persone “si sentono a posto” e non fanno nulla di più.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="due-posizioni-a-confronto" class="slide level2">
+<h2>Due posizioni a confronto</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="lo-slacktivism-come-problema">Lo <em>slacktivism</em> come problema</h3>
+<ul>
+<li>Il basso costo <strong>dequalifica</strong> la partecipazione</li>
+<li>L’illusione di aver “fatto qualcosa” <strong>sostituisce</strong> l’azione reale</li>
+<li>I like e le condivisioni non cambiano le politiche</li>
+<li>Le piattaforme <strong>monetizzano</strong> l’indignazione senza trasformarla in azione</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="lo-slacktivism-come-punto-di-partenza">Lo <em>slacktivism</em> come punto di partenza</h3>
+<ul>
+<li>Le azioni a basso costo possono <strong>scalare</strong> verso l’impegno reale</li>
+<li>La visibilità di una causa è un <strong>prerequisito</strong> per l’azione</li>
+<li>L’aggregazione di molte piccole azioni può avere <strong>effetti emergenti</strong></li>
+<li>Non tutti parteciperanno di più, ma <strong>alcuni</strong> sì</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Non c’è una risposta semplice. Mohandas Jha ha coniato il termine “slacktivism” nel 1995 in senso positivo (azioni a basso costo ma significative), poi è diventato peggiorativo. Il dibattito è ancora aperto: Evgeny Morozov (The Net Delusion) è il critico più feroce; altri studiosi (come Zeynep Tufekci) mostrano che le azioni online possono essere propedeutiche a quelle offline.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="wikipedia-un-controesempio" class="slide level2">
+<h2>Wikipedia: un controesempio</h2>
+<p>Wikipedia dimostra che il modello di Shirky può produrre <strong>risultati straordinari</strong> — quando le condizioni sono giuste <span class="citation" data-cites="shirky2009">(<a href="#/grazie" role="doc-biblioref" onclick="">Shirky, 2009</a>)</span>:</p>
+<ul>
+<li><strong>Motivazione personale</strong> + <strong>sistema aperto</strong> = risultato che nessuna istituzione potrebbe produrre</li>
+<li>Fondata nel 2001 come alternativa leggera a Nupedia (che richiedeva revisione accademica)</li>
+<li>Il wiki ha <strong>democratizzato</strong> la modifica — chiunque può contribuire</li>
+</ul>
+<div class="highlight-box">
+<p>Wikipedia funziona perché combina <strong>basse barriere</strong> (Jenkins) con <strong>cooperazione strutturata</strong> (Shirky): non è solo condivisione, ma produzione collaborativa con negoziazione continua.</p>
+</div>
+<aside class="notes">
+<p>Wikipedia è il controesempio perfetto allo slacktivism: dimostra che il basso costo di partecipazione non implica basso valore del risultato. Ma ha una caratteristica cruciale: il prodotto è un artefatto collettivo (la voce dell’enciclopedia) che richiede cooperazione reale — revisione, negoziazione, compromesso. Non è un like o una firma: è lavoro cooperativo. Questo la colloca al secondo livello della scala di Shirky (cooperazione), non al primo (condivisione).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="il-ponte-verso-la-manipolazione" class="slide level2" data-background-color="#C5612E">
+<h2>Il ponte verso la manipolazione</h2>
+<aside class="notes">
+<p>Punto di svolta concettuale della lezione. Il crollo dei costi di coordinamento non è selettivo — funziona per chiunque.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="i-costi-crollano-per-tutti" class="slide level2">
+<h2>I costi crollano per tutti</h2>
+<div class="highlight-box">
+<p><strong>Il punto chiave:</strong></p>
+<p>Se i costi di coordinamento crollano per le azioni <strong>“buone”</strong>, crollano anche per quelle <strong>“cattive”</strong> <span class="citation" data-cites="shirky2009">(<a href="#/grazie" role="doc-biblioref" onclick="">Shirky, 2009</a>)</span>.</p>
+</div>
+<p>Le stesse tre condizioni (promessa, strumento, accordo) funzionano indipendentemente dalla <strong>moralità</strong> dell’obiettivo:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Azione “positiva”</th>
+<th>Azione “negativa”</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Promessa</strong></td>
+<td>Recuperare il telefono rubato</td>
+<td>Molestare una persona online</td>
+</tr>
+<tr class="even">
+<td><strong>Strumento</strong></td>
+<td>Pagina web + viralità</td>
+<td>Forum + coordinate via DM</td>
+</tr>
+<tr class="odd">
+<td><strong>Accordo</strong></td>
+<td>Segnalare informazioni</td>
+<td>Condividere dati personali</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>Questo è il collegamento diretto con Marwick &amp; Lewis (prossime due lezioni). Boyd e Jenkins descrivono il potenziale della partecipazione; Shirky ne rivela il meccanismo; Marwick &amp; Lewis mostreranno chi lo sfrutta strategicamente. L’insight fondamentale: la manipolazione mediatica non è top-down (governi, corporation) ma usa le stesse dinamiche dal basso (coordinamento spontaneo, cultura partecipativa, meme) che Jenkins descrive come emancipatorie. La differenza è nell’intenzionalità, non nel meccanismo.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="il-continuum-dalla-partecipazione-alla-manipolazione" class="slide level2">
+<h2>Il continuum: dalla partecipazione alla manipolazione</h2>
+<pre><code>  Partecipazione          Zona                    Manipolazione
+  genuina                 grigia                  strategica
+  ◄─────────────────────────────────────────────────────────────►
+
+  Wikipedia               Kony2012                Hashtag hijacking
+  Fan fiction             Petizione online         Astroturfing
+  Citizen science         Raccolta fondi virale    Brigading coordinato</code></pre>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Anticipazione</strong></p>
+</div>
+<div class="callout-content">
+<p>Nelle prossime lezioni, <strong>Marwick &amp; Lewis</strong> mapperanno il lato destro di questo continuum. <strong>Boyd (2017)</strong> spiegherà come ci si è arrivati storicamente.</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Costruire questo continuum alla lavagna è utile perché mostra che non esiste un confine netto tra partecipazione genuina e manipolazione. Kony2012 era genuina nell’intenzione ma manipolativa nelle tattiche (semplificazione estrema, viralità forzata, pressione emotiva). Una raccolta fondi virale può essere autentica o astroturfing mascherato. L’esercitazione chiederà di posizionare 6 casi lungo questo continuum.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="esercitazione-classificare-i-casi" class="slide level2" data-background-color="#C5612E">
+<h2>Esercitazione: classificare i casi</h2>
+</section>
+<section id="i-sei-casi" class="slide level2">
+<h2>I sei casi</h2>
+<section id="istruzioni" class="orange-box">
+<h3>Istruzioni</h3>
+<p>Per ciascun caso, la classe discute:</p>
+<ol type="1">
+<li>È <strong>condivisione</strong>, <strong>cooperazione</strong> o <strong>azione collettiva</strong>? (scala di Shirky)</li>
+<li>È un esempio di azione <strong>genuina</strong> o <strong>strumentalizzata</strong>?</li>
+<li>Dove si colloca nel <strong>continuum</strong>?</li>
+</ol>
+</section>
+<aside class="notes">
+<p>Proiettare un caso alla volta (5-7 minuti per caso). Per ciascuno, chiedere alzata di mano sul livello della scala di Shirky, poi aprire la discussione. Il docente costruisce progressivamente il continuum alla lavagna, posizionando ogni caso.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="caso-1-kony-2012" class="slide level2">
+<h2>Caso 1: Kony 2012</h2>
+<p>La campagna di Invisible Children: un video di 30 minuti che chiedeva di “rendere famoso” il criminale di guerra ugandese Joseph Kony per forzare un intervento internazionale.</p>
+<ul>
+<li><strong>100 milioni di visualizzazioni</strong> in 6 giorni</li>
+<li>Hashtag #StopKony trending mondiale</li>
+<li>Critiche: semplificazione, white saviorism, nessun impatto sul campo</li>
+</ul>
+<p><strong>Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?</strong></p>
+<aside class="notes">
+<p>Caso volutamente ambiguo. È condivisione (ognuno condivide il video individualmente) o azione collettiva (la campagna chiede un impegno vincolante: “Cover the Night”)? L’intenzione è genuina, ma le tattiche (viralità forzata, semplificazione emotiva) sono le stesse usate dalla propaganda. Il caso è diventato emblematico dello slacktivism: 100 milioni di visualizzazioni, nessun effetto sul conflitto in Uganda.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="caso-2-raccolta-fondi-virale" class="slide level2">
+<h2>Caso 2: Raccolta fondi virale</h2>
+<p>Un GoFundMe per le vittime di un incendio domestico diventa virale: centinaia di migliaia di euro raccolti in pochi giorni da migliaia di micro-donatori.</p>
+<ul>
+<li>Nessuna organizzazione dietro — solo una persona che pubblica la storia</li>
+<li>I media locali rilanciano, poi i nazionali</li>
+<li>Risultato: l’obiettivo viene superato del 500%</li>
+</ul>
+<p><strong>Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?</strong></p>
+<aside class="notes">
+<p>Caso relativamente lineare: è condivisione (ognuno dona individualmente) con elementi di cooperazione (il passaparola è coordinato informalmente). L’azione è genuina — ma il meccanismo è lo stesso che potrebbe essere usato per raccolte fondi fraudolente. Come si distingue una raccolta genuina da una truffa? La piattaforma ha un ruolo di verifica? Spoiler: spesso no.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="caso-3-shitstorm-su-twitter" class="slide level2">
+<h2>Caso 3: <em>Shitstorm</em> su Twitter</h2>
+<p>Un brand pubblica un post promozionale tono-sordo durante una crisi. La reazione: migliaia di risposte negative, meme satirici, hashtag ironici. Il brand ritira il post e si scusa.</p>
+<ul>
+<li>La “tempesta” dura 48 ore</li>
+<li>Nessun coordinamento esplicito — reazione spontanea</li>
+<li>Il brand subisce danni reputazionali</li>
+</ul>
+<p><strong>Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?</strong></p>
+<aside class="notes">
+<p>Caso interessante: sembra condivisione (reazioni individuali), ma l’effetto è quello dell’azione collettiva (il brand cambia comportamento). Non c’è coordinamento esplicito — è una “tempesta” emergente. È genuina (indignazione autentica) ma usa meccanismi simili al brigading coordinato. La differenza è nell’intenzionalità e nel coordinamento. Anticipazione: Marwick &amp; Lewis descriveranno casi di shitstorm deliberatamente orchestrate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="caso-4-hashtag-hijacking" class="slide level2">
+<h2>Caso 4: <em>Hashtag hijacking</em></h2>
+<p>Un partito politico lancia l’hashtag #IlFuturoCheVogliamo. In poche ore, l’hashtag viene “dirottato” da utenti critici che lo usano per postare contenuti satirici contro il partito.</p>
+<ul>
+<li>Il significato originale viene <strong>sovvertito</strong></li>
+<li>Il partito non può “riprendere” il controllo dell’hashtag</li>
+<li>Alcuni dei post satirici sono spontanei, altri provengono da account coordinati</li>
+</ul>
+<p><strong>Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?</strong></p>
+<aside class="notes">
+<p>Caso ambiguo: l’hashtag hijacking può essere sia genuino (cittadini che esprimono dissenso) sia strumentalizzato (account coordinati che manipolano la percezione). Spesso è un misto. Collegamento con Marwick &amp; Lewis: l’hashtag hijacking è una delle tattiche che vedremo nella prossima lezione. Collegamento con Boyd: la ricercabilità e la replicabilità rendono l’hijacking efficace.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="caso-5-petizione-online" class="slide level2">
+<h2>Caso 5: Petizione online</h2>
+<p>Una petizione su Change.org raccoglie 500.000 firme per chiedere una legge contro il cyberbullismo. La petizione viene consegnata al Parlamento.</p>
+<ul>
+<li>Firmare richiede <strong>30 secondi</strong></li>
+<li>La maggior parte dei firmatari non fa nulla di più</li>
+<li>Il Parlamento “prende atto” ma non agisce</li>
+</ul>
+<p><strong>Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?</strong></p>
+<aside class="notes">
+<p>Caso emblematico dello slacktivism. La firma costa zero: è condivisione, non azione collettiva (nessun impegno vincolante). Ma la petizione crea visibilità e mette la questione nell’agenda pubblica. È inutile? Non completamente: la visibilità è un prerequisito per l’azione. Ma non è sufficiente. Il punto: il basso costo della firma non la rende strumentalizzata — la rende solo debole come forma di pressione.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="caso-6-edit-war-su-wikipedia" class="slide level2">
+<h2>Caso 6: <em>Edit war</em> su Wikipedia</h2>
+<p>Due gruppi di utenti modificano ripetutamente la stessa voce di Wikipedia, ciascuno cercando di imporre la propria versione dei fatti. L’articolo viene bloccato dagli amministratori.</p>
+<ul>
+<li>Entrambe le parti citano fonti — ma le selezionano strategicamente</li>
+<li>Sembra cooperazione, ma è <strong>conflitto</strong> mascherato da collaborazione</li>
+<li>La governance di Wikipedia interviene per arbitrare</li>
+</ul>
+<p><strong>Condivisione, cooperazione o azione collettiva? Genuina o strumentalizzata?</strong></p>
+<aside class="notes">
+<p>Caso che mostra i limiti interni della cooperazione. Wikipedia funziona perché ha un sistema di governance, ma quel sistema può essere manipolato. L’edit war è cooperazione nel formato (editing collaborativo) ma azione collettiva nel contenuto (due gruppi si impegnano per obiettivi opposti). Collegamento con Shirky: Wikipedia come esempio virtuoso di cooperazione, ma anche come terreno di conflitto.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="costruiamo-il-continuum-insieme" class="slide level2">
+<h2>Costruiamo il continuum insieme</h2>
+<p>Dopo aver discusso tutti i casi, posizioniamoli nel continuum:</p>
+<pre><code>  Genuina                  Zona grigia              Strumentalizzata
+  ◄──────────────────────────────────────────────────────────────►
+
+  Raccolta fondi?          Kony2012?               Hashtag hijacking?
+  Wikipedia?               Shitstorm?              Edit war?
+                           Petizione?</code></pre>
+<div class="highlight-box">
+<p><strong>Osservazione:</strong> i confini non sono netti. Le <strong>stesse tattiche</strong> possono essere usate per fini genuini o manipolatori. È il <strong>contesto</strong> che fa la differenza — non il meccanismo.</p>
+</div>
+<aside class="notes">
+<p>Costruire questo continuum alla lavagna con il contributo degli studenti. Evidenziare che la posizione di ciascun caso è discutibile — ed è proprio questo il punto. La classificazione richiede analisi del contesto, non solo osservazione del meccanismo. Anticipazione: “Le prossime due lezioni (Marwick &amp; Lewis) mapperanno sistematicamente il lato destro di questo continuum.”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="in-sintesi" class="slide level2">
+<h2>In sintesi</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="da-boyd-a-shirky">Da Boyd a Shirky</h3>
+<ul>
+<li>Boyd: le <strong>proprietà</strong> dell’ambiente</li>
+<li>Jenkins: le <strong>pratiche</strong> di partecipazione</li>
+<li>Shirky: il <strong>meccanismo</strong> (crollo dei costi di coordinamento)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="i-limiti">I limiti</h3>
+<ul>
+<li>Il crollo dei costi non è selettivo</li>
+<li>Lo <strong><em>slacktivism</em></strong> è un rischio reale</li>
+<li>Le stesse dinamiche abilitano azioni <strong>genuine e manipolate</strong></li>
+<li>La prossima domanda: <strong>chi sfrutta tutto questo?</strong></li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Chiusura. Boyd e Jenkins descrivono il potenziale, Shirky il meccanismo. Ma il meccanismo funziona indipendentemente dalle intenzioni. La prossima lezione (Marwick &amp; Lewis) risponde alla domanda “chi sfrutta tutto questo strategicamente?” — e la risposta è: subculture online, influencer, attori politici che hanno imparato a giocare con le stesse dinamiche partecipative.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="prossimi-passi" class="slide level2">
+<h2>Prossimi passi</h2>
+<p><strong>Lettura da completare prima della prossima lezione:</strong></p>
+<ul>
+<li>Marwick &amp; Lewis (2017), <em>Media Manipulation and Disinformation Online</em>, sezioni 1–3</li>
+</ul>
+<p><strong>Prossima lezione:</strong> Mercoledì 15 aprile, 11:00–13:00, Aula D3</p>
+<p><em>Media manipulation e disinformazione online (I)</em></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Anticipazione</strong></p>
+</div>
+<div class="callout-content">
+<p>Boyd e Jenkins descrivono il potenziale. Shirky il meccanismo. Ora vedremo <strong>chi sfrutta tutto questo strategicamente</strong>. Marwick e Lewis ci mostrano sistematicamente il lato della manipolazione.</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Marwick &amp; Lewis è un report di Data &amp; Society del 2017 — è un testo più “giornalistico” e analitico rispetto ai libri di Shirky e Jenkins. Le sezioni 1-3 coprono il panorama delle subculture online manipolative, il ruolo degli influencer e le tattiche di base. È una lettura intensa ma molto concreta — piena di esempi e casi di studio.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="grazie" class="slide level2 smaller scrollable" data-background-color="#C5612E">
+<h2>Grazie!</h2>
+<p><strong>Prossima lezione:</strong> <em>Media manipulation</em> (I) — Mer 15 aprile</p>
+<p>📧 fabio.giglietto@uniurb.it</p>
+<p>🌐 blended.uniurb.it</p>
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-shirky2009" class="csl-entry" role="listitem">
+Shirky, C. (2009). <em>Uno per Uno, Tutti per Tutti: Il Potere di Organizzare Senza Organizzazione</em>. Codice.
+</div>
+</div>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="../assets/logo-uniurb-white.svg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Internet Studies · A.A. 2025/2026</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="lez05-shirky-2_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="lez05-shirky-2_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': true,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'pdfMaxPagesPerSlide': 1,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: false,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: false,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1920,
+
+        height: 1080,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 8.0e-2,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copiato!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copiato!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
