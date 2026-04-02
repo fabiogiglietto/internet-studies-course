@@ -284,6 +284,35 @@ La crescente capacità dei consumatori di **produrre forme mediali** attraverso 
 Ogni forma di espressività mediale implica una rielaborazione creativa del contenuto originale. Caso emblematico: Star Trek New Voyages — una serie TV interamente prodotta da fan che continua la serie classica, con episodi di un'ora girati e distribuiti online. La Paramount (detentrice dei diritti) non si oppose. Questo tipo di produzione amatoriale sfuma il confine tra consumo e produzione.
 :::
 
+## 3. *Problem-solving* collaborativo
+
+Lavorare in team per **risolvere problemi e costruire conoscenza** collettivamente [@jenkins2008].
+
+::: {.orange-box}
+### L'esempio di Wikipedia
+Un universo di conoscenza multilingue dove **lettori e produttori sono le stesse persone**. La community si automodera, crea contenuti e li verifica — nessuna istituzione tradizionale potrebbe produrre lo stesso risultato.
+:::
+
+::: {.notes}
+Wikipedia è l'esempio perfetto di problem-solving collaborativo: milioni di voci scritte e revisionate da volontari, con un sistema di governance emergente. Ma Jenkins nota anche le criticità: chi ha diritto di modificare? Come si gestiscono i conflitti? La democraticità produce anche sfide di governance. Collegamento con Shirky (prossime lezioni): Wikipedia come esempio di coordinamento senza direzione manageriale.
+:::
+
+## 4. Condivisione di flusso
+
+La partecipazione come **flusso continuo** di contenuti caricati, scaricati, condivisi e rielaborati [@jenkins2008].
+
+- **Podcasting** — contenuti radiofonici fruiti in modo asincrono
+- **RSS feed** — aggregazione personalizzata di informazioni
+- **File sharing** — condivisione in una logica post-comunitaria
+
+::: {.highlight-box}
+Non è necessario appartenere a una community: si condivide tra **individui anonimi** in una logica post-comunitaria, connessi dal tagging e dalla ricerca.
+:::
+
+::: {.notes}
+Questa è la forma più "diffusa" di partecipazione: non richiede appartenenza a un gruppo, ma la semplice pratica di caricare, taggare e condividere contenuti. Il tagging rende i contenuti cercabili e scopribili. Collegamento con Boyd: la ricercabilità è l'affordance che rende possibile la condivisione di flusso.
+:::
+
 ## Caso: Jonathan Coulton e "Code Monkey"
 
 > "Potevo dare alle mie canzoni delle gambe, così che potessero camminare per il mondo e trovare la strada verso luoghi che non avrei mai pensato di raggiungere" — Jonathan Coulton
@@ -316,35 +345,6 @@ La cultura partecipativa **non è solo un fenomeno americano**. In Italia, i fan
 
 ::: {.notes}
 Trek IT! (2021, IMDb 8.2) è un caso perfetto per Jenkins: mostra tutte e cinque le caratteristiche della cultura partecipativa applicate al contesto italiano. Basse barriere (chiunque poteva partecipare allo STIC), supporto alla condivisione (riviste, fanzine, poi il web), mentorship informale (gli appassionati più esperti guidavano i nuovi), credere che il proprio contributo conti (ogni trekker sentiva di far parte di qualcosa di più grande), connessione sociale (le convention come momento di incontro). Il documentario stesso è un atto di cultura partecipativa: fan che raccontano la propria storia, distribuita poi su una piattaforma globale. Link: https://www.primevideo.com/detail/Trek-IT/0JX0VP5E9Q8NGTT6J6U4Z3V5XH
-:::
-
-## 3. *Problem-solving* collaborativo
-
-Lavorare in team per **risolvere problemi e costruire conoscenza** collettivamente [@jenkins2008].
-
-::: {.orange-box}
-### L'esempio di Wikipedia
-Un universo di conoscenza multilingue dove **lettori e produttori sono le stesse persone**. La community si automodera, crea contenuti e li verifica — nessuna istituzione tradizionale potrebbe produrre lo stesso risultato.
-:::
-
-::: {.notes}
-Wikipedia è l'esempio perfetto di problem-solving collaborativo: milioni di voci scritte e revisionate da volontari, con un sistema di governance emergente. Ma Jenkins nota anche le criticità: chi ha diritto di modificare? Come si gestiscono i conflitti? La democraticità produce anche sfide di governance. Collegamento con Shirky (prossime lezioni): Wikipedia come esempio di coordinamento senza direzione manageriale.
-:::
-
-## 4. Condivisione di flusso
-
-La partecipazione come **flusso continuo** di contenuti caricati, scaricati, condivisi e rielaborati [@jenkins2008].
-
-- **Podcasting** — contenuti radiofonici fruiti in modo asincrono
-- **RSS feed** — aggregazione personalizzata di informazioni
-- **File sharing** — condivisione in una logica post-comunitaria
-
-::: {.highlight-box}
-Non è necessario appartenere a una community: si condivide tra **individui anonimi** in una logica post-comunitaria, connessi dal tagging e dalla ricerca.
-:::
-
-::: {.notes}
-Questa è la forma più "diffusa" di partecipazione: non richiede appartenenza a un gruppo, ma la semplice pratica di caricare, taggare e condividere contenuti. Il tagging rende i contenuti cercabili e scopribili. Collegamento con Boyd: la ricercabilità è l'affordance che rende possibile la condivisione di flusso.
 :::
 
 ## Le quattro forme a confronto
