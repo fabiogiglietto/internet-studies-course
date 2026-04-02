@@ -207,6 +207,7 @@ Il corso ha una struttura progressiva: prima si costruisce il quadro teorico leg
 
 ## Struttura delle 8 settimane
 
+::: {style="font-size: 0.78em"}
 | Sett. | Date | Focus |
 |-------|------|-------|
 | 1 | 31 mar – 2 apr | Boyd: *networked publics* + Jenkins: cultura partecipativa |
@@ -217,6 +218,7 @@ Il corso ha una struttura progressiva: prima si costruisce il quadro teorico leg
 | 6 | 5–7 mag | Codifica e affidabilità |
 | 7 | 12–14 mag | Analisi e inizio scrittura |
 | 8 | 19–27 mag | Scrittura, revisione, presentazioni |
+:::
 
 ::: {.notes}
 Mostrare l'arco complessivo. Le prime 4 settimane costruiscono la teoria; le ultime 4 la applicano. La settimana 5 è il "ponte" tra i due blocchi: si formano i gruppi e si inizia il lavoro empirico.

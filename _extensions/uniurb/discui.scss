@@ -228,6 +228,36 @@ $code-color: #333333;
       color: rgba(255, 255, 255, 0.8);
     }
   }
+
+  // Reset text colors for elements with their own light backgrounds
+  // to prevent white-on-white when placed on dark slides
+  table td {
+    color: #333333;
+  }
+
+  table tr:nth-child(even) td {
+    color: #333333;
+  }
+
+  blockquote {
+    color: #333333;
+
+    p {
+      color: #333333;
+    }
+  }
+
+  .highlight-box {
+    color: #333333;
+
+    p, li, span {
+      color: #333333;
+    }
+
+    strong {
+      color: $discui-primary;
+    }
+  }
 }
 
 // ============================================
@@ -451,11 +481,24 @@ $code-color: #333333;
 // Highlight box — white card with orange border
 .highlight-box {
   background-color: white;
+  color: #333333;
   border: 2px solid $discui-primary;
   border-radius: 10px;
   padding: 1.2em 1.5em;
   margin: 1.2em 0;
   box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+  p, li, span {
+    color: #333333;
+  }
+
+  strong {
+    color: $discui-primary;
+  }
+
+  em {
+    color: $discui-dark;
+  }
 }
 
 // Orange box — dark background card

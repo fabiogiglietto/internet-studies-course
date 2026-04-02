@@ -109,6 +109,7 @@ Proiettare il foglio Google e orientare gli studenti. Mostrare la prima riga (in
 
 ## Le variabili principali
 
+::: {style="font-size: 0.78em"}
 | Variabile | Tipo | Descrizione |
 |-----------|------|-------------|
 | **ID** | Testo | Identificativo univoco del post |
@@ -119,6 +120,7 @@ Proiettare il foglio Google e orientare gli studenti. Mostrare la prima riga (in
 | **Reazioni** | Numerica | Totale reazioni (like, love, wow, angry...) |
 | **Commenti** | Numerica | Numero di commenti |
 | **Condivisioni** | Numerica | Numero di condivisioni |
+:::
 
 ::: {.notes}
 Fermarsi su ciascuna variabile, mostrare la colonna corrispondente nel foglio. Verificare la presenza di valori mancanti (celle vuote): i post senza testo (solo immagine), i post senza condivisioni (conteggio 0 vs. dato mancante). Spiegare la differenza tra una variabile categorica (tipo di contenuto: un numero finito di valori possibili) e una numerica (reazioni: un numero continuo).
