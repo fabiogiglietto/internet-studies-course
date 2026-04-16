@@ -278,19 +278,17 @@ Punto di svolta concettuale della lezione. Il crollo dei costi di coordinamento 
 
 ## I costi crollano per tutti
 
+::: {style="font-size: 0.85em"}
 ::: {.highlight-box}
-**Il punto chiave:**
-
-Se i costi di coordinamento crollano per le azioni **"buone"**, crollano anche per quelle **"cattive"** [@shirky2009].
+**Il punto chiave:** se i costi di coordinamento crollano per le azioni **"buone"**, crollano anche per quelle **"cattive"** [@shirky2009]. Le stesse tre condizioni funzionano indipendentemente dalla **moralità** dell'obiettivo.
 :::
-
-Le stesse tre condizioni (promessa, strumento, accordo) funzionano indipendentemente dalla **moralità** dell'obiettivo:
 
 | | Azione "positiva" | Azione "negativa" |
 |---|---|---|
 | **Promessa** | Recuperare il telefono rubato | Molestare una persona online |
 | **Strumento** | Pagina web + viralità | Forum + coordinate via DM |
 | **Accordo** | Segnalare informazioni | Condividere dati personali |
+:::
 
 ::: {.notes}
 Questo è il collegamento diretto con Marwick & Lewis (prossime due lezioni). Boyd e Jenkins descrivono il potenziale della partecipazione; Shirky ne rivela il meccanismo; Marwick & Lewis mostreranno chi lo sfrutta strategicamente. L'insight fondamentale: la manipolazione mediatica non è top-down (governi, corporation) ma usa le stesse dinamiche dal basso (coordinamento spontaneo, cultura partecipativa, meme) che Jenkins descrive come emancipatorie. La differenza è nell'intenzionalità, non nel meccanismo.
