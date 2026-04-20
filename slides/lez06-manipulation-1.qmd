@@ -87,7 +87,8 @@ Il report "Media Manipulation and Disinformation Online" (2017) è un'analisi si
 > "Le subculture di Internet sfruttano l'attuale ecosistema mediale per manipolare i frame informativi, stabilire le agende e propagare idee [...] I gruppi di estrema destra hanno sviluppato tecniche di *attention hacking* per aumentare la visibilità delle loro idee" [@marwick2017].
 
 ::: {.orange-box}
-### Il meccanismo
+[Il meccanismo]{.box-title}
+
 Questi gruppi **sfruttano le opportunità offerte da Internet per la collaborazione, la comunicazione e la produzione tra pari**, prendendo di mira le **vulnerabilità** dell'ecosistema informativo [@marwick2017].
 :::
 
@@ -234,7 +235,8 @@ Parte centrale della lezione (20 minuti). Marwick e Lewis identificano diverse t
 ## *Brigading*
 
 ::: {.orange-box}
-### Definizione
+[Definizione]{.box-title}
+
 Azione coordinata in cui un gruppo **inonda** uno spazio online (sezione commenti, thread, profilo) con messaggi ostili per sopraffare le voci dissenzienti.
 :::
 
@@ -251,7 +253,8 @@ Il brigading funziona perché le piattaforme mostrano i contenuti per volume e r
 ## *Astroturfing*
 
 ::: {.orange-box}
-### Definizione
+[Definizione]{.box-title}
+
 Creazione di **falsa apparenza di consenso popolare** tramite account multipli, bot o persone pagate per simulare un movimento grassroots.
 :::
 
@@ -268,7 +271,8 @@ L'astroturfing è il contrario del grassroots: sembra dal basso ma è orchestrat
 ## *Meme warfare*
 
 ::: {.orange-box}
-### Definizione
+[Definizione]{.box-title}
+
 Uso strategico dei **meme** (immagini, video, frasi virali) come strumento di propaganda, progettati per essere condivisi attraverso le reti interpersonali.
 :::
 
@@ -287,7 +291,8 @@ Caso emblematico: Pepe the Frog. Un personaggio di fumetti diventa un in-joke de
 ## *Hashtag hijacking*
 
 ::: {.orange-box}
-### Definizione
+[Definizione]{.box-title}
+
 **Dirottamento** di un hashtag esistente, inserendo contenuti ostili o fuorvianti per compromettere la capacità dei sostenitori originali di organizzarsi.
 :::
 
@@ -303,7 +308,8 @@ L'hashtag hijacking funziona perché le piattaforme non distinguono tra usi "leg
 ## *Concern trolling*
 
 ::: {.orange-box}
-### Definizione
+[Definizione]{.box-title}
+
 Fingere **preoccupazione genuina** per un tema allo scopo di spostare la discussione, delegittimare una posizione o seminare dubbio.
 :::
 
@@ -400,7 +406,7 @@ Questo dilemma è strutturale: i media non possono vincere. Se coprono la cospir
 ## Istruzioni
 
 ::: {.orange-box}
-### Esercitazione a coppie (40 minuti)
+[Esercitazione a coppie (40 minuti)]{.box-title}
 
 Il docente distribuisce **8 descrizioni di casi reali** (anonimizzati).
 
