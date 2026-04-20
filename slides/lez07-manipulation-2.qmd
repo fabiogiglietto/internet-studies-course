@@ -89,7 +89,7 @@ Al termine della lezione, sarete in grado di:
 :::
 
 ::: {.notes}
-L'obiettivo 2 sarà al centro dell'esercitazione: i gruppi ricostruiranno la catena di amplificazione di un caso di studio dettagliato, integrando tutti gli autori del corso (Boyd, Jenkins, Shirky, Marwick & Lewis).
+L'obiettivo 2 è al centro del compito individuale: ogni studente ricostruirà la catena di amplificazione di un caso di studio integrando tutti gli autori del corso (Boyd, Jenkins, Shirky, Marwick & Lewis).
 :::
 
 ## Roadmap della lezione
@@ -98,11 +98,10 @@ L'obiettivo 2 sarà al centro dell'esercitazione: i gruppi ricostruiranno la cat
 - **Il processo di mainstreaming:** dal margine al centro
 - ***Trading up the chain***: la scalata informativa
 - **Il punto chiave:** la manipolazione è reticolare
-- **Esercitazione:** ricostruire una catena di amplificazione
-- **Compito individuale:** assegnazione
+- **Compito individuale:** assegnazione e discussione
 
 ::: {.notes}
-Struttura: 50 minuti di lezione frontale, 50 minuti di esercitazione a gruppi con presentazione, 10 minuti di chiusura e assegnazione del compito individuale.
+Struttura: lezione frontale estesa con esempi e discussione in plenaria; ampio spazio finale per presentare il compito individuale e rispondere alle domande.
 :::
 
 ## Gli *influencer* della manipolazione {background-color="#C5612E"}
@@ -414,58 +413,6 @@ La differenza non è nel **meccanismo** — è nell'**intenzionalità**.
 
 ::: {.notes}
 Collegamento sistematico con tutti gli autori: Boyd (2018) descrive le affordance che abilitano entrambi gli usi; Jenkins (2008) mostra il potenziale partecipativo; Shirky (2009) spiega come il crollo dei costi di coordinamento renda tutto possibile; Marwick & Lewis (2017) mostrano la strumentalizzazione. Nella prossima lezione, Boyd (2017) chiuderà il cerchio mostrando la traiettoria storica: dall'hacking ludico alla manipolazione politica dell'attenzione. Questa mappa sarà l'ossatura del quadro teorico del saggio IMRAD.
-:::
-
-## Esercitazione: ricostruire la catena {background-color="#C5612E"}
-
-## Il caso di studio
-
-::: {.orange-box style="font-size: 0.9em"}
-### Esercitazione a gruppi di 4 (50 minuti)
-
-Il docente presenta un **caso documentato**. Ogni gruppo ne ricostruisce la **catena di amplificazione**:
-
-1. **Dove** è nato il contenuto? (stadio 1)
-2. Quali **passaggi** l'hanno portato al *mainstream*? (stadi 2–4)
-3. Quali **tattiche** [@marwick2017] sono riconoscibili?
-4. Quali **affordance** [@boyd2018] sono state sfruttate?
-5. I **costi di coordinamento** [@shirky2009] erano alti o bassi?
-
-Presentazione di **5 minuti**.
-:::
-
-::: {.notes}
-Il docente sceglie un caso di studio dettagliato e documentato — preferibilmente italiano o europeo per maggiore vicinanza. Possibili casi: una campagna di disinformazione durante un'elezione, un caso di astroturfing smascherato, una teoria cospirativa che è passata dai forum ai media nazionali. Il caso deve essere sufficientemente documentato perché gli studenti possano ricostruire i passaggi. Distribuire una scheda con la timeline del caso e le fonti. Dare 35 minuti per il lavoro a gruppi, 15 minuti per le presentazioni (2-3 gruppi).
-:::
-
-## Schema per la ricostruzione
-
-| Stadio | Dove? | Chi? | Quale tattica? | Quale affordance? |
-|--------|-------|------|----------------|-------------------|
-| 1. Subcultural | | | | |
-| 2. Influencer | | | | |
-| 3. Politico | | | | |
-| 4. Mainstream | | | | |
-
-**Domanda finale:** i costi di coordinamento (Shirky) di questa campagna erano alti o bassi? Quale istituzione tradizionale avrebbe potuto organizzare la stessa operazione?
-
-::: {.notes}
-Questa scheda guida il lavoro a gruppi. Sottolineare che non tutti i casi passano per tutti e 4 gli stadi: alcuni saltano dal subcultural al mainstream; altri non hanno un'amplificazione politica esplicita. L'importante è ricostruire il percorso effettivo, non forzarlo nello schema. La domanda sui costi di coordinamento collega l'analisi a Shirky: queste campagne costano pochissimo in termini organizzativi — è il pavimento di Coase applicato alla manipolazione.
-:::
-
-## Presentazione e discussione
-
-::: {.highlight-box}
-**Domande guida per la discussione:**
-
-- Il caso segue la **sequenza** subcultural → influencer → politico → mainstream? O la salta?
-- Quale **stadio** è stato il più critico per l'amplificazione?
-- C'è stato un momento in cui il processo poteva essere **interrotto**? Come?
-- Quale **autore** del corso aiuta di più a capire questo caso?
-:::
-
-::: {.notes}
-Selezionare 2 gruppi per la presentazione. La domanda sull'interruzione è importante: forza gli studenti a pensare in modo propositivo — non solo "come funziona" ma "come si potrebbe contrastare." La domanda sull'autore più utile prepara la sintesi della Lezione 8: i quattro autori offrono lenti diverse sullo stesso fenomeno.
 :::
 
 ## In sintesi
