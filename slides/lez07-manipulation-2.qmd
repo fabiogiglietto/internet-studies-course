@@ -420,20 +420,18 @@ Collegamento sistematico con tutti gli autori: Boyd (2018) descrive le affordanc
 
 ## Il caso di studio
 
-::: {.orange-box}
+::: {.orange-box style="font-size: 0.9em"}
 ### Esercitazione a gruppi di 4 (50 minuti)
 
-Il docente presenta un **caso dettagliato** di campagna di manipolazione mediatica documentata.
-
-Ogni gruppo ricostruisce la **catena di amplificazione**:
+Il docente presenta un **caso documentato**. Ogni gruppo ne ricostruisce la **catena di amplificazione**:
 
 1. **Dove** è nato il contenuto? (stadio 1)
-2. Attraverso quali **passaggi** è arrivato ai media mainstream? (stadi 2-4)
-3. Quali **tattiche** di Marwick e Lewis sono riconoscibili?
-4. Quali **affordance** di Boyd sono state sfruttate?
-5. I **costi di coordinamento** (Shirky) erano alti o bassi?
+2. Quali **passaggi** l'hanno portato al *mainstream*? (stadi 2–4)
+3. Quali **tattiche** [@marwick2017] sono riconoscibili?
+4. Quali **affordance** [@boyd2018] sono state sfruttate?
+5. I **costi di coordinamento** [@shirky2009] erano alti o bassi?
 
-Preparate una presentazione di **5 minuti**.
+Presentazione di **5 minuti**.
 :::
 
 ::: {.notes}
