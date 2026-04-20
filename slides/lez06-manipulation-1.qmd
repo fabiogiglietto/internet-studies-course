@@ -99,6 +99,7 @@ Sottolineare il linguaggio: "collaborazione, comunicazione, produzione tra pari"
 
 Una **tassonomia degli attori** [@marwick2017]:
 
+::: {style="font-size: 0.78em"}
 | Attore | Caratteristiche |
 |--------|----------------|
 | ***Internet trolls*** | Provocazione per il divertimento ("lulz"), anonimato, ambiguità (Legge di Poe) |
@@ -108,6 +109,7 @@ Una **tassonomia degli attori** [@marwick2017]:
 | ***Influencer*** | Comprensione profonda delle piattaforme, notorietà come risorsa, ponte verso il mainstream |
 | **Fonti iper-partigiane** | "Verità decontestualizzate, falsità ripetute e salti logici" — propaganda come informazione |
 | **Politici** | Legittimazione mediatica, amplificazione di contenuti marginali |
+:::
 
 ::: {.notes}
 Questa tassonomia (adattata da Marwick & Lewis e dal libro "Meme Wars" di Donovan, Dreyfuss, Friedberg) mostra che la manipolazione non ha un unico attore: è un ecosistema di figure diverse con motivazioni diverse (ideologia, denaro, status/attenzione) che si rafforzano reciprocamente. I trolls sviluppano le tattiche, i gamergaters le testano, i gruppi d'odio le politicizzano, gli influencer le amplificano, le fonti iper-partigiane le distribuiscono, i politici le legittimano.
