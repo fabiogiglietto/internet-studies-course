@@ -165,6 +165,23 @@ Il percorso di Andrew "weev" Auernheimer illustra la dinamica [@marwick2017]:
 Weev è un caso esemplare perché mostra il percorso completo: dall'hacking "ludico" (competenza tecnica, sfida alle istituzioni) alla manipolazione politica. È esattamente l'arco storico che Boyd (2017) descriverà nella prossima lezione: dall'hacking per divertimento all'hacking dell'economia dell'attenzione. Weev diventa admin del Daily Stormer — il sito suprematista più visitato.
 :::
 
+## Caso 2026: *influencer* sintetici generati con l'IA
+
+Avatar creati con IA generativa come nodi di amplificazione industrializzati [@hsu2026]:
+
+- **304+ account** fake pro-Trump su TikTok (gen–apr 2026); decine su Instagram, Facebook, YouTube (ricerca **Purdue GRAIL** e **Alethea**)
+- Alcuni profili superano i **35.000 follower**; singoli post oltre **500.000 visualizzazioni**
+- Produzione a costo marginale: **\$1–3 per post**, gestibili anche da una sola persona
+- Trump rilancia contenuti di un avatar biondo con affermazioni infondate sul governatore della California — amplificazione verso il *mainstream*
+
+::: {.highlight-box}
+**Dall'***hacker*** al *content farm***: stesse funzioni di amplificazione, ma produzione sintetica e industrializzata. L'economia dell'attenzione piegata ad *influencer* che non esistono [@boyd2017].
+:::
+
+::: {.notes}
+Caso emerso il 17 aprile 2026 da un'inchiesta del New York Times (Tiffany Hsu). I ricercatori hanno rilevato cluster di account con linguaggio, immagini profilo e audio identici — esattamente il pattern di coordinamento visto nella Lezione 6 (astroturfing, brigading). Personaggi ricorrenti: una donna bionda con trecce in una fattoria, una donna afroamericana con cappellino MAGA e occhiali da aviatore. Nessuna rete analoga identificata dal lato opposto dello spettro politico — deployment asimmetrico. TikTok ha classificato la rete come "spam", rifiutando l'etichetta di operazione di influenza coordinata. Collegamenti con la teoria del corso: (1) Marwick & Lewis — gli *influencer* sono nodi di amplificazione; qui sono sintetici ma funzionano allo stesso modo; (2) Boyd (2018) — replicabilità e scalabilità portate al limite; (3) Shirky — i costi di coordinamento crollano a \$1-3 per post; (4) Boyd (2017) — hackerare l'economia dell'attenzione con contenuti che Trump stesso rilancia (*trading up the chain*, che vedremo a breve).
+:::
+
 ## Il processo di *mainstreaming* {background-color="#C5612E"}
 
 ::: {.notes}
