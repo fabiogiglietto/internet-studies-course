@@ -184,9 +184,9 @@ La crisi di fiducia non è un'invenzione dei manipolatori: è un dato di fatto, 
 
 Il modello economico del giornalismo locale è **crollato** [@marwick2017]:
 
-- La pubblicità si è spostata sulle piattaforme (Google, Facebook)
-- I giornali locali non riescono a finanziare il digitale
-- Le redazioni si riducono: meno giornalisti, meno fact-checking
+- **La pubblicità migra sulle piattaforme**: in Italia l'**85% dei ricavi pubblicitari digitali** va a Google e Meta; agli editori tradizionali resta il **15%** [@newman2025]
+- **Il digitale non si monetizza**: solo il **9%** degli italiani paga per le notizie online [@newman2025]
+- **Redazioni ridotte**: meno giornalisti, meno *fact-checking*
 
 ::: {.callout-warning}
 ## Conseguenza
@@ -194,7 +194,7 @@ L'**85%** delle notizie che alimentano la democrazia locale proviene dai giornal
 :::
 
 ::: {.notes}
-I giornali locali sono il primo bersaglio delle tattiche di manipolazione come il "trading up the chain" (che vedremo nella Lezione 7): si pianta una storia in un piccolo giornale locale con meno risorse per verificarla, poi si amplifica verso i media nazionali. Meno giornalisti locali = meno capacità di verifica = più vulnerabilità alla manipolazione.
+I dati del Reuters Institute Digital News Report 2025 (Italia) confermano e aggiornano la diagnosi di Marwick & Lewis: le piattaforme internazionali catturano la quasi totalità dei ricavi pubblicitari digitali, e pochissimi lettori pagano direttamente per informarsi. La fiducia complessiva nelle notizie resta bassa (36%, +2 pp sul 2024), collocando l'Italia al 27° posto su 48 paesi. In questo ecosistema finanziariamente indebolito, i giornali locali sono il primo bersaglio delle tattiche di manipolazione come il "trading up the chain" (che vedremo nella Lezione 7): si pianta una storia in un piccolo giornale locale con meno risorse per verificarla, poi si amplifica verso i media nazionali. Meno giornalisti locali = meno capacità di verifica = più vulnerabilità alla manipolazione.
 :::
 
 ## 3. L'economia dell'attenzione
