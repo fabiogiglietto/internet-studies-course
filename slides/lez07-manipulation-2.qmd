@@ -207,6 +207,7 @@ Pizzagate è il caso più documentato di mainstreaming di una teoria cospirata. 
 
 Un modello in **5 fasi** per analizzare qualsiasi campagna di manipolazione:
 
+::: {style="font-size: 0.85em"}
 | Fase | Descrizione |
 |------|-------------|
 | **1. Pianificazione** | Origine della campagna e scelta delle tattiche |
@@ -214,9 +215,10 @@ Un modello in **5 fasi** per analizzare qualsiasi campagna di manipolazione:
 | **3. Reazioni** | Risposte di industria, attivisti, politici, giornalisti |
 | **4. Mitigazione** | Azioni di contenimento (fact-checking, rimozione, deplatforming) |
 | **5. Adattamento** | I manipolatori si adeguano al nuovo ambiente |
+:::
 
 ::: {.highlight-box}
-Questo modello (Media Manipulation Life Cycle) sarà utile per l'**esercitazione di oggi** e per il **compito individuale**: analizzare un caso seguendo le 5 fasi.
+Il **Media Manipulation Life Cycle** guida l'**esercitazione** di oggi e il **compito individuale**.
 :::
 
 ::: {.notes}
@@ -322,7 +324,7 @@ Il caso 2020 è l'evoluzione naturale di Pizzagate: non più una singola cospira
 
 ## Il panorama mediatico italiano
 
-<!-- PROIETTARE: grafici PCA (Analisi delle Componenti Principali) del posizionamento dei media italiani sullo spettro partigiano. Dalla ricerca LabCA - Università di Urbino. -->
+<!-- PROIETTARE: grafici PCA (Analisi delle Componenti Principali) del posizionamento dei media italiani sullo spettro partigiano. Dalla ricerca Mapping Italian News - Università di Urbino. -->
 
 Anche l'Italia ha il suo **ecosistema mediatico partigiano**:
 

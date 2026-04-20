@@ -70,10 +70,10 @@ Oggi ci concentriamo sulla tassonomia delle tattiche e sulle vulnerabilità stru
 - **Le vulnerabilità** dell'ecosistema mediale
 - **La tassonomia delle tattiche** manipolative
 - **Il rapporto simbiotico** con i media tradizionali
-- **Esercitazione:** riconoscere le tattiche in 8 casi
+- **Caso guidato:** riconoscere le tattiche insieme
 
 ::: {.notes}
-Struttura: 50 minuti di lezione frontale, 40 minuti di esercitazione a coppie, 20 minuti di discussione e chiusura. Il testo di riferimento è Marwick & Lewis (2017), sezioni 1-3.
+Struttura: lezione frontale (~100 minuti), seguita da un caso guidato breve (~10 minuti) da discutere collettivamente. Il testo di riferimento è Marwick & Lewis (2017), sezioni 1-3.
 :::
 
 ## Il quadro di Marwick e Lewis {background-color="#C5612E"}
@@ -276,12 +276,11 @@ L'astroturfing è il contrario del grassroots: sembra dal basso ma è orchestrat
 Uso strategico dei **meme** (immagini, video, frasi virali) come strumento di propaganda, progettati per essere condivisi attraverso le reti interpersonali.
 :::
 
-- Le immagini più blande funzionano come ***gateway drug*** verso contenuti più estremi [@marwick2017]
-- La propaganda diffusa tramite reti personali è **più efficace** di quella top-down
-- L'esposizione ripetuta aumenta l'efficacia del messaggio
+- Le immagini blande fanno da ***gateway drug*** verso contenuti estremi [@marwick2017]
+- La diffusione tramite reti personali è **più efficace** di quella top-down
 
 ::: {.highlight-box}
-**Principio:** un meme divertente viene condiviso; la condivisione espone al messaggio; l'esposizione ripetuta normalizza l'idea.
+**Principio:** meme divertente → condiviso → esposizione ripetuta → normalizzazione.
 :::
 
 ::: {.notes}
@@ -339,20 +338,20 @@ Riepilogo visivo. Sottolineare che ogni tattica sfrutta una o più affordance di
 
 ## Queste tattiche in Italia
 
-<!-- PROIETTARE: grafici di rete di pagine Facebook italiane che condividono link in modo coordinato (dalla ricerca LabCA - Università di Urbino). Nell'edizione 2024-2025 si mostravano i network di Matteo Salvini, Italia Patria Mia, Situazioni Virali, Aforismi e Link. -->
+<!-- PROIETTARE: grafici di rete di pagine Facebook italiane che condividono link in modo coordinato (dalla ricerca Mapping Italian News - Università di Urbino). Nell'edizione 2024-2025 si mostravano i network di Matteo Salvini, Italia Patria Mia, Situazioni Virali, Aforismi e Link. -->
 
 Le stesse tattiche operano anche nel contesto italiano:
 
 - **Reti di pagine coordinate** su Facebook che condividono gli stessi link simultaneamente — *astroturfing* a livello di rete
 - Pagine apparentemente indipendenti (meme, aforismi, notizie) che amplificano **gli stessi contenuti politici**
-- Ricerca LabCA (Università di Urbino): analisi delle reti di condivisione coordinata durante le elezioni italiane
+- Ricerca **Mapping Italian News** (Università di Urbino): analisi delle reti di condivisione coordinata durante le elezioni italiane
 
 ::: {.highlight-box}
 La manipolazione mediatica non è un fenomeno solo americano. Le stesse tattiche si adattano al **contesto locale** — con le stesse affordance e gli stessi meccanismi.
 :::
 
 ::: {.notes}
-Mostrare i grafici di rete dalla ricerca del docente (LabCA, Università di Urbino Carlo Bo): reti di pagine Facebook che condividono link in modo coordinato e inautentico (CIB - Coordinated Inauthentic Behavior). I grafici mostrano cluster di pagine apparentemente indipendenti (meme pages, pagine di aforismi, pagine di "controinformazione") che condividono gli stessi URL nello stesso arco temporale — un pattern compatibile con l'astroturfing. Questo è il dataset che il docente conosce direttamente e può commentare con competenza.
+Mostrare i grafici di rete dalla ricerca del docente (Mapping Italian News, Università di Urbino Carlo Bo): reti di pagine Facebook che condividono link in modo coordinato e inautentico (CIB - Coordinated Inauthentic Behavior). I grafici mostrano cluster di pagine apparentemente indipendenti (meme pages, pagine di aforismi, pagine di "controinformazione") che condividono gli stessi URL nello stesso arco temporale — un pattern compatibile con l'astroturfing. Questo è il dataset che il docente conosce direttamente e può commentare con competenza.
 :::
 
 ## Il rapporto simbiotico con i media {background-color="#C5612E"}
@@ -401,62 +400,30 @@ Non esiste una soluzione semplice.
 Questo dilemma è strutturale: i media non possono vincere. Se coprono la cospirazione Pizzagate per smentirla, la portano all'attenzione di milioni di persone che non ne avevano mai sentito parlare. Se la ignorano, circola liberamente nei circuiti alternativi. Il problema è l'economia dell'attenzione: l'attenzione è una risorsa scarsa, e dedicarla a un tema — per qualsiasi motivo — lo rende "importante" nell'agenda pubblica.
 :::
 
-## Esercitazione: riconoscere le tattiche {background-color="#C5612E"}
-
-## Istruzioni
-
-::: {.orange-box}
-[Esercitazione a coppie (40 minuti)]{.box-title}
-
-Il docente distribuisce **8 descrizioni di casi reali** (anonimizzati).
-
-Per ciascun caso, classificate:
-
-1. **Quale tattica** di Marwick e Lewis è utilizzata?
-2. **Quali affordance** (Boyd) la rendono efficace?
-3. In una frase: **perché funziona**?
-
-Ci sono casi **ambigui**? Preparatevi a spiegare perché.
-:::
-
-::: {.notes}
-Distribuire la scheda con gli 8 casi (cartacea o digitale). I casi dovrebbero essere diversificati: 2 casi chiari di brigading, 1 astroturfing, 2 meme warfare, 1 hashtag hijacking, 1 concern trolling, 1 caso ambiguo che potrebbe essere classificato in più modi. Dare 25 minuti per il lavoro a coppie, poi 15 minuti di discussione plenaria. Il docente prepara i casi in anticipo usando esempi italiani e internazionali recenti (anonimizzati per evitare bias politici).
-:::
-
-## Esempio di caso per l'esercitazione
+## Riconosciamo le tattiche: un caso
 
 ::: {.highlight-box}
-**Caso X:** Un account con 50.000 follower pubblica un'immagine satirica su un politico. L'immagine è divertente ma contiene informazioni false sulla posizione del politico su un tema. L'immagine viene condivisa 20.000 volte in 48 ore. Molti commenti citano l'informazione falsa come se fosse vera.
+**Caso:** Un account con 50.000 follower pubblica un'immagine satirica su un politico. L'immagine è divertente ma contiene informazioni false sulla posizione del politico su un tema. L'immagine viene condivisa 20.000 volte in 48 ore. Molti commenti citano l'informazione falsa come se fosse vera.
 :::
 
-**Quale tattica?** ***Meme warfare*** — propaganda diffusa tramite contenuto virale.
-
-**Quale affordance?** **Replicabilità** — l'immagine è facile da condividere; **Persistenza** — resta visibile e continua a circolare.
-
-**Perché funziona?** Il formato satirico abbassa le difese critiche; la diffusione interpersonale è più persuasiva della propaganda esplicita.
-
-::: {.notes}
-Questo è un esempio da proiettare prima dell'esercitazione, per mostrare il tipo di analisi richiesto. Sottolineare che non sempre c'è una sola risposta corretta: un caso può combinare più tattiche. L'importante è argomentare la classificazione usando i concetti del corso.
-:::
-
-## Discussione plenaria
-
-::: {.highlight-box}
-**Domande guida:**
-
-- Ci sono stati casi **difficili da classificare**? Perché?
-- Una stessa azione può essere classificata come **più di una tattica**?
-- Quali affordance di Boyd emergono **più spesso**?
-- Come si distingue una tattica **spontanea** da una **coordinata**?
+::: {.callout-note}
+## Da discutere insieme
+- **Quale tattica** di Marwick e Lewis è utilizzata?
+- **Quali affordance** (Boyd) la rendono efficace?
+- In una frase: **perché funziona**?
 :::
 
 ::: {.notes}
-Selezionare 3-4 coppie con risposte diverse. Evidenziare i casi ambigui: nella realtà le tattiche si sovrappongono, e la distinzione tra azione spontanea e coordinata è spesso impossibile da stabilire senza accesso ai dati interni delle piattaforme. Questo anticipa la sfida del laboratorio: quando analizzeranno il dataset MCL nel Blocco 2, dovranno codificare contenuti che possono essere ambigui.
+Discussione guidata (~10 minuti). Risposte di riferimento da costruire con la classe:
+
+- **Tattica:** *meme warfare* — propaganda diffusa tramite contenuto virale [@marwick2017].
+- **Affordance:** **replicabilità** (facile da condividere) e **persistenza** (resta visibile) [@boyd2018].
+- **Perché funziona:** il formato satirico abbassa le difese critiche; la diffusione interpersonale è più persuasiva della propaganda esplicita.
+
+Evidenziare che nella realtà le tattiche si sovrappongono: un caso può combinare più tattiche, e la distinzione tra azione spontanea e coordinata è spesso impossibile senza accesso ai dati interni delle piattaforme. Anticipazione della sfida del Blocco 2 sul dataset MCL.
 :::
 
 ## In sintesi
-
-Oggi abbiamo visto il **lato oscuro** della partecipazione online [@marwick2017]:
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -479,7 +446,7 @@ Oggi abbiamo visto il **lato oscuro** della partecipazione online [@marwick2017]
 :::
 
 ::: {.highlight-box}
-Domani completeremo il quadro: **chi** amplifica queste tattiche? Come arrivano dal margine al **mainstream**? E perché la manipolazione è **reticolare**, non top-down?
+Il **lato oscuro** della partecipazione online [@marwick2017]. Domani: **chi** amplifica queste tattiche e come arrivano al **mainstream**.
 :::
 
 ::: {.notes}
