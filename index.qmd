@@ -33,7 +33,7 @@ lang: it
 Il corso &egrave; articolato in due blocchi:
 
 - **Blocco 1 — Fondamenti** (lezioni 1–12, 31 marzo – 29 aprile): lezioni frontali, seminari e esercitazioni sui concetti chiave degli Internet Studies.
-- **Blocco 2 — Laboratorio di ricerca** (lezioni 13–24, 30 aprile – 27 maggio): lavoro di gruppo supervisionato su un dataset dalla Meta Content Library, finalizzato alla produzione di un saggio empirico in formato IMRAD (4.000–6.000 parole).
+- **Blocco 2 — Laboratorio di ricerca** (lezioni 13–24, 30 aprile – 27 maggio): lavoro di gruppo supervisionato su un dataset TikTok raccolto via TikTok Research API, finalizzato alla produzione di un saggio empirico in formato IMRAD (4.000–6.000 parole).
 
 ## Materiali di studio
 
@@ -59,7 +59,7 @@ Il corso &egrave; articolato in due blocchi:
 | 7 | 16 apr | *Media manipulation* e disinformazione (II) | [Apri](slides/lez07-manipulation-2.html) |
 | 8 | 21 apr | Sintesi: hackerare l'economia dell'attenzione | [Apri](slides/lez08-sintesi.html) |
 | 9 | 22 apr | Fare ricerca con i dati delle piattaforme | [Apri](slides/lez09-ricerca-piattaforme.html) |
-| 10 | 23 apr | Il dataset MCL: esplorazione guidata | [Apri](slides/lez10-dataset-mcl.html) |
+| 10 | 23 apr | Il dataset TikTok: esplorazione guidata | [Apri](slides/lez10-dataset-tiktok.html) |
 | 11 | 28 apr | Analisi del contenuto, codebook e formazione gruppi | [Apri](slides/lez11-analisi-contenuto.html) |
 | 12 | 29 apr | Il formato IMRAD, le RQ e avvio codebook di gruppo | [Apri](slides/lez12-imrad-gruppi.html) |
 
@@ -79,20 +79,3 @@ Il corso &egrave; articolato in due blocchi:
 | 22 | 21 mag | Sessione di lavoro finale e consegna bozza | [Apri](slides/lez22-consegna-bozza.html) |
 | 23 | 26 mag | Peer review incrociata | [Apri](slides/lez23-peer-review.html) |
 | 24 | 27 mag | Revisione finale e presentazioni | [Apri](slides/lez24-chiusura.html) |
-
-## Scadenze
-
-| Scadenza | Data |
-|----------|------|
-| Compito individuale | 22 aprile 2026 |
-| Checkpoint 1 — Campione e codebook | 30 aprile 2026 |
-| Checkpoint 2 — Affidabilit&agrave; inter-codificatore | 6 maggio 2026 |
-| Checkpoint 3 — Risultati principali | 12 maggio 2026 |
-| Checkpoint 4 — Consegna bozza | 22 maggio 2026 |
-| Peer review incrociata | 26 maggio 2026 |
-| **Consegna definitiva del saggio** | **1 giugno 2026** |
-
-## Contatti
-
-- **Email:** fabio.giglietto@uniurb.it
-- **Spazio Moodle:** [blended.uniurb.it](https://blended.uniurb.it)
