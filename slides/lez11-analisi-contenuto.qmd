@@ -36,12 +36,12 @@ csl: ../apa.csl
 
 ## Recap: dal dataset all'analisi
 
-Giovedì avete esplorato il dataset MCL con filtri, CONTA.SE e tabelle pivot.
+Giovedì avete esplorato il dataset TikTok nel **Foglio Google master** con filtri, ordinamenti e i pivot pre-costruiti.
 
-Quelle domande erano **descrittive**: quanti post, quale pagina ha più engagement, che distribuzione temporale.
+Quelle domande erano **descrittive**: quanti video, quale account ha più views, che distribuzione temporale.
 
 ::: {.highlight-box}
-Oggi aggiungiamo la **dimensione qualitativa**: come si **classifica** il contenuto dei post? E come si costruisce lo strumento per farlo — il **codebook**?
+Oggi aggiungiamo la **dimensione qualitativa**: come si **classifica** il contenuto dei video TikTok? E come si costruisce lo strumento per farlo — il **codebook**?
 
 Inoltre, oggi formerete i **gruppi di lavoro** per il laboratorio.
 :::
@@ -111,11 +111,11 @@ Il nostro approccio è deduttivo: partiamo dai concetti dei cinque testi del cor
 
 | Elemento | Descrizione |
 |----------|-------------|
-| **Unità di analisi** | Il singolo post con il suo contenuto multimediale (testo + immagine/video) |
-| **Codebook** | Il documento che definisce le categorie e le regole |
-| **Codifica** | Il processo di assegnazione di ciascun post a una categoria |
+| **Unità di analisi** | Il singolo video TikTok (caption + audio/voice_to_text + video stesso, aperto via `watch_url`) |
+| **Codebook** | Il documento che definisce le categorie e le regole — vivrà nel tab `03_Codebook` del Foglio |
+| **Codifica** | Il processo di assegnazione di ciascun video a una categoria, via dropdown nei tab `04_Codifica_coderN` |
 | **Codificatori** | Le persone che codificano (voi, nel gruppo) |
-| **Affidabilità** | La misura dell'accordo tra codificatori |
+| **Affidabilità** | La misura dell'accordo tra codificatori (κ di Cohen, calcolato dal tab `06_Kappa`) |
 
 ::: {.notes}
 Ogni elemento è importante: l'unità di analisi deve essere definita chiaramente (nel nostro caso: un post = una riga nel dataset, con tutto il contenuto associato — testo e multimedia); il codebook è lo strumento chiave; la codifica è il lavoro vero e proprio; l'affidabilità verifica che il codebook sia sufficientemente preciso perché codificatori diversi arrivino alla stessa classificazione.
@@ -156,31 +156,31 @@ Sottolineare che il codebook è un documento vivo: evolve durante la codifica pi
 
 ## Esempio 1: codebook per la RQ1
 
-**RQ1 — Tattiche di manipolazione mediatica:**
+**RQ1 — Tattiche di manipolazione mediatica adattate a TikTok** [@marwick2017]:
 
-| Categoria | Definizione | Esempio |
-|-----------|------------|---------|
-| ***Meme warfare*** | Immagine con testo sovrapposto che veicola un messaggio politico in forma satirica/ironica | Meme che deride un politico con informazioni decontestualizzate |
-| ***Astroturfing*** | Contenuto che simula consenso spontaneo con pattern ripetitivi tra pagine diverse | Post identico pubblicato da 3+ pagine in 24 ore |
-| **Contenuto emotivo strumentale** | Post progettato per generare reazione emotiva forte (indignazione, paura) attraverso semplificazione | Titolo allarmistico con dati decontestualizzati |
-| **Contenuto informativo neutro** | Post che riporta fatti senza evidente manipolazione | Articolo di cronaca condiviso con commento neutro |
+| Categoria | Definizione | Esempio TikTok |
+|-----------|------------|----------------|
+| ***Meme warfare*** (sound-as-meme) | Riuso ironico/satirico di un sound o trend per veicolare un messaggio politico | Sound virale usato per deridere un politico in voiceover |
+| ***Trend hijacking*** | Uso di un trend popolare per veicolare un'agenda non collegata al trend originale | Hashtag challenge "innocuo" cooptato per diffondere narrazione politica |
+| **Contenuto emotivo strumentale** | Video progettato per generare reazione emotiva forte (indignazione, paura) attraverso semplificazione | Voiceover allarmistico su tema migratorio con sound drammatico |
+| **Contenuto informativo neutro** | Video che riporta fatti senza evidente manipolazione | Spiegazione di un evento senza framing emotivo o ironico |
 
 ::: {.notes}
-Questo è un esempio semplificato — il codebook reale sarà più dettagliato. Mostrare come ogni categoria nasce da un concetto di Marwick & Lewis e viene operazionalizzata con una definizione e un esempio. La categoria "contenuto informativo neutro" serve come baseline: non tutto nel dataset è manipolazione. Senza una categoria residuale, il codificatore è forzato ad assegnare una tattica anche a post innocui.
+Questo è un esempio semplificato — il codebook reale del vostro gruppo sarà più dettagliato e adattato al tema specifico del dataset. Mostrare come ogni categoria nasce da un concetto di Marwick & Lewis e viene operazionalizzata in **forme TikTok-native** (sound, hashtag challenge, duet, voiceover). Sottolineare l'importanza dell'audio: su TikTok il *sound* è centrale per il framing, e `voice_to_text` quando presente aiuta a codificarlo. La categoria "contenuto informativo neutro" serve come baseline: non tutto è manipolazione.
 :::
 
 ## Esempio 2: codebook per la RQ2
 
-**RQ2 — Partecipazione genuina vs. strumentalizzata:**
+**RQ2 — Partecipazione genuina** [@jenkins2008] **vs. strumentalizzata** [@marwick2017]:
 
-| Categoria | Definizione | Esempio |
-|-----------|------------|---------|
-| **Partecipazione genuina** | Contenuto che esprime opinione/creatività autentica senza coordinamento strategico visibile | Commento personale su un evento, racconto di un'esperienza |
-| **Partecipazione strumentalizzata** | Contenuto che usa le forme della partecipazione (meme, commento personale) per veicolare un'agenda strategica | Meme "spontaneo" che ricicla argomenti di una campagna coordinata |
-| **Ambiguo/indeterminabile** | Post in cui non è possibile distinguere tra le due categorie sulla base del contenuto visibile | Post con opinione forte ma senza indizi di coordinamento |
+| Categoria | Definizione | Esempio TikTok |
+|-----------|------------|----------------|
+| **Partecipazione genuina** | Video che esprime opinione/creatività autentica senza coordinamento strategico visibile | Reaction personale a un evento; remix originale di un sound |
+| **Partecipazione strumentalizzata** | Video che usa le forme della partecipazione TikTok (trend, sound, hashtag challenge, duet) per veicolare un'agenda strategica | Trend "innocuo" usato in modo coordinato da più account allineati per spingere un messaggio politico |
+| **Ambiguo/indeterminabile** | Video in cui non è possibile distinguere sulla base del contenuto visibile | Voce forte personale che però segue uno script ricorrente |
 
 ::: {.notes}
-La RQ2 lavora su un continuum, non su categorie discrete. La classificazione a tre livelli (genuina / strumentalizzata / ambigua) è una semplificazione operativa. Sottolineare che la categoria "ambiguo" non è un fallimento — è un dato informativo. Se molti post sono ambigui, questo dice qualcosa sulla difficoltà di distinguere tra partecipazione genuina e strumentalizzata — che è esattamente il punto teorico di Jenkins e Marwick & Lewis.
+La RQ2 lavora su un continuum, non su categorie discrete. Su TikTok il continuum è particolarmente sottile: l'API ci dà solo le metriche aggregate (non i pattern di coordinamento), quindi la classificazione si basa su segnali interni al video (script ricorrenti, sound usati in modo identico, hashtag bundle ripetuti). La categoria "ambiguo" non è un fallimento — è un dato informativo. Se molti video sono ambigui, questo dice qualcosa sulla difficoltà di distinguere tra partecipazione genuina e strumentalizzata — che è esattamente il punto teorico di Jenkins e Marwick & Lewis.
 :::
 
 ## Codifica pilota: proviamo insieme {background-color="#C5612E"}
@@ -190,8 +190,8 @@ La RQ2 lavora su un continuum, non su categorie discrete. La classificazione a t
 ::: {.orange-box}
 ### Codifica pilota collettiva (35 minuti)
 
-1. Il docente proietta **10 post** dal dataset MCL (testo + immagine)
-2. Per ciascun post, usando la bozza di codebook proiettata:
+1. Il docente proietta **10 video TikTok** dal dataset (apertura via `watch_url` + caption + `voice_to_text`)
+2. Per ciascun video, usando la bozza di codebook proiettata:
    - Ciascuno **annota individualmente** la propria codifica
    - Poi si **confronta con il vicino**
 3. Il docente raccoglie le risposte a **mano alzata**
@@ -200,23 +200,24 @@ La RQ2 lavora su un continuum, non su categorie discrete. La classificazione a t
 :::
 
 ::: {.notes}
-Proiettare il codebook di riferimento (una versione semplificata con 4-5 categorie). Per ogni post, dare 1 minuto per la codifica individuale, 1 minuto per il confronto con il vicino, poi raccogliere le risposte. I post dovrebbero essere scelti per coprire casi chiari (2-3), casi ambigui (4-5) e casi difficili (2-3). Il disaccordo è il dato più importante: indica dove il codebook va migliorato.
+Proiettare il codebook di riferimento (una versione semplificata con 4-5 categorie). Per ogni video, dare 60-90 secondi per la visione collettiva (riprodurre il video proiettato), 1 minuto per la codifica individuale, 1 minuto per il confronto con il vicino, poi raccogliere le risposte. I video dovrebbero coprire casi chiari (2-3), casi ambigui (4-5) e casi difficili (2-3). Il disaccordo è il dato più importante: indica dove il codebook va migliorato.
 :::
 
-## Post 1
+## Video 1
 
-<!-- Il docente inserirà qui il contenuto del primo post dal dataset MCL -->
+<!-- Il docente apre qui il primo video dal dataset TikTok via watch_url -->
 
 ::: {.highlight-box}
-**Il docente proietta il post (testo + immagine).**
+**Il docente apre il video TikTok proiettato (visione collettiva).**
 
-1. Codificate individualmente: quale categoria?
-2. Confrontate con il vicino
-3. Alzata di mano
+1. Guardate il video (con audio)
+2. Codificate individualmente: quale categoria?
+3. Confrontate con il vicino
+4. Alzata di mano
 :::
 
 ::: {.notes}
-Il docente deve preparare 10 post prima della lezione, selezionandoli dal dataset reale. I post devono includere sia testo che contenuto multimediale. Scegliere post che coprano categorie diverse e includano casi ambigui.
+Il docente deve preparare 10 video prima della lezione, selezionandoli dal dataset reale. I video devono coprire categorie diverse e includere casi ambigui. Importante: collegare l'aula a casse o scegliere video con `voice_to_text` significativo, perché su TikTok l'audio è centrale.
 :::
 
 ## Dopo la codifica: cosa abbiamo imparato?
@@ -268,8 +269,12 @@ Misura l'accordo tra due codificatori **al netto del caso**.
 
 **Concettualmente:** la differenza tra l'accordo **osservato** e l'accordo che ci si aspetterebbe **per caso**.
 
+::: {.callout-tip}
+Nel **Foglio Google master**, il tab **`06_Kappa`** calcola κ automaticamente non appena tutti i membri del gruppo hanno codificato il sotto-campione comune nel tab `05_Sottocampione_affidabilità`. Voi non scrivete formule.
+:::
+
 ::: {.notes}
-Non serve la formula matematica — il concetto è sufficiente. Se due codificatori lanciano un dado a 4 facce, per puro caso saranno d'accordo il 25% delle volte. Il Kappa misura quanto l'accordo osservato supera questo livello casuale. Un Kappa di 0.80 significa che l'accordo è molto superiore al caso — il codebook funziona. Un Kappa di 0.40 significa che c'è troppo disaccordo — il codebook va rivisto. Il template Google Sheets che verrà fornito calcola il Kappa automaticamente.
+Non serve la formula matematica — il concetto è sufficiente. Se due codificatori lanciano un dado a 4 facce, per puro caso saranno d'accordo il 25% delle volte. Il Kappa misura quanto l'accordo osservato supera questo livello casuale. Un Kappa di 0.80 significa che l'accordo è molto superiore al caso — il codebook funziona. Un Kappa di 0.40 significa che c'è troppo disaccordo — il codebook va rivisto. Il tab `06_Kappa` del Foglio è già pre-costruito con la formula, le matrici di confusione pairwise e il colore di sintesi (rosso/giallo/verde).
 :::
 
 ## Cosa fare quando l'accordo è basso
@@ -288,6 +293,36 @@ Il processo è **iterativo**: codifica → verifica → revisione → ri-codific
 Per il laboratorio: ogni gruppo codificherà indipendentemente un sottoinsieme comune di 20-30 post, poi calcolerà il Kappa. Se è < 0.60, il gruppo rivede il codebook e ripete la codifica del sottoinsieme. Il Checkpoint 2 (Lezione 15) richiede che l'affidabilità sia calcolata e documentata.
 :::
 
+## Gemini come strumento di supporto
+
+::: {.columns}
+::: {.column width="50%"}
+### Cosa **potete** fare con Gemini
+
+- Far **draftare definizioni** di categoria a partire dai concetti dei testi
+- **Discutere** un caso ambiguo prima di prendere una decisione
+- **Riformulare** una regola di decisione che non funziona
+- Far **revisionare la prosa** di una sezione del saggio
+:::
+
+::: {.column width="50%"}
+### Cosa **NON potete** fare
+
+- Far classificare i video al posto vostro
+- Far scrivere intere sezioni del saggio
+- Sostituire la lettura dei 5 testi del corso
+- Accettare l'output senza verifica
+:::
+:::
+
+::: {.highlight-box}
+**Ogni uso di Gemini va dichiarato** nella sezione "Dichiarazione d'uso dell'IA generativa" del saggio finale (template: `templates/paper_template.md`).
+:::
+
+::: {.notes}
+Spiegare la logica: l'IA è un assistente, non un sostituto. Può accelerare il drafting iniziale e aiutare nelle decisioni difficili, ma la responsabilità intellettuale resta del gruppo. La codifica deve essere fatta da esseri umani perché il progetto valuta la **vostra** comprensione dei concetti dei 5 testi. Se Gemini codifica al posto vostro, non state dimostrando di aver capito Marwick & Lewis — state dimostrando che sapete usare Gemini. La dichiarazione d'uso non è una formalità: è una pratica di trasparenza scientifica.
+:::
+
 ## Formazione dei gruppi {background-color="#C5612E"}
 
 ## Istruzioni per la formazione
@@ -301,10 +336,10 @@ Per il laboratorio: ogni gruppo codificherà indipendentemente un sottoinsieme c
 - Il docente passa tra i gruppi per verificare la fattibilità
 :::
 
-**Ricordate le due RQ:**
+**Ricordate le due RQ (entrambe sul dataset TikTok):**
 
-- **RQ1:** Quali tattiche di manipolazione mediatica (Marwick & Lewis) sono riconoscibili nel dataset? Quali pattern di engagement generano?
-- **RQ2:** In che misura il contenuto mostra partecipazione genuina (Jenkins) vs. strumentalizzata (Marwick & Lewis)?
+- **RQ1:** Quali tattiche di manipolazione mediatica [@marwick2017] sono riconoscibili nei video TikTok del dataset? Quali pattern di engagement (views, likes, shares, comments) generano?
+- **RQ2:** In che misura i video mostrano partecipazione genuina [@jenkins2008] vs. strumentalizzata [@marwick2017]?
 
 ::: {.notes}
 Dare 15 minuti per la formazione e 5 minuti per la verifica rapida. Passare tra i gruppi per verificare: (1) la dimensione (max 6); (2) la fattibilità dell'angolo scelto; (3) che non ci siano sovrapposizioni eccessive tra gruppi. Se un gruppo è indeciso tra le due RQ, suggerire di pensare a quale si sente più affine in base alla codifica pilota appena fatta: chi ha trovato più facile classificare le tattiche sceglierà la RQ1; chi ha trovato più interessante il continuum genuino/strumentalizzato sceglierà la RQ2.
@@ -318,10 +353,10 @@ Dare 15 minuti per la formazione e 5 minuti per la verifica rapida. Passare tra 
 
 Angoli possibili:
 
-- Focus solo sui **meme** (contenuto visuale)
-- Focus sui post con **più engagement**
-- Confronto tra **pagine diverse**
-- Focus su un **periodo specifico**
+- Focus sull'**uso del sound** (sound-as-meme, deceptive sound)
+- Focus sui video con **più views**
+- Confronto tra **account diversi**
+- Focus sui video legati a un **hashtag/trend** specifico
 :::
 
 ::: {.column width="50%"}
@@ -329,10 +364,10 @@ Angoli possibili:
 
 Angoli possibili:
 
-- Confronto tra **pagine diverse** lungo il continuum
-- Confronto tra **periodi diversi**
-- Focus sul **contenuto visuale** vs. testuale
-- Analisi dei **commenti** come indicatore di partecipazione
+- Confronto tra **account diversi** lungo il continuum
+- Confronto tra **periodi diversi** (prima/dopo un evento)
+- Focus su **trend** vs. video originali
+- Analisi del **rapporto views/shares** come indicatore di amplificazione
 :::
 :::
 

@@ -36,38 +36,39 @@ csl: ../apa.csl
 
 ## Momento collettivo: organizzare la codifica {background-color="#C5612E"}
 
-## Il foglio di codifica
+## I tab di codifica
 
 ::: {.orange-box}
-### Struttura del foglio Google
-
-- **Una riga** per ciascun post del campione
-- **Colonne fisse:** ID del post, testo, tipo di contenuto, link al multimedia
-- **Colonne di codifica:** una per ciascuna categoria del codebook
-- **Colonna "Note":** per annotare i casi ambigui
+### Già pre-popolati nel vostro Foglio
+- **Tab `04_Codifica_coderN`** (uno per membro): contiene già i video assegnati a quel coder, con `video_id`, `watch_url`, `video_description` pre-popolati
+- **Colonna `categoria_assegnata`:** dropdown alimentato dal vostro `03_Codebook`
+- **Colonna `confidenza`:** dropdown 1–5
+- **Colonna `note`:** testo libero per casi particolari
+- **Tab `05_Sottocampione_affidabilità`:** 30 video da codificare da TUTTI i membri (una colonna `cod_coderN` per ciascuno)
 :::
 
-| ID | Testo | Tipo | Categoria assegnata | Note |
-|----|-------|------|---------------------|------|
-| 001 | "Testo del post..." | Foto | Meme warfare | Ironia evidente ma info non verificata |
-| 002 | "Altro post..." | Video | Contenuto neutro | |
+| `video_id` | `watch_url` | `video_description` | `categoria_assegnata` ▾ | `confidenza` ▾ | `note` |
+|------------|-------------|---------------------|------------------------|----------------|--------|
+| 7239... | [link] | "Quando il governo..." | meme_warfare | 4 | sound politico |
+| 7244... | [link] | "Ragazzi guardate qua" | informativo_neutro | 5 | |
 
 ::: {.notes}
-Momento collettivo breve (15 min). Mostrare il template del foglio di codifica proiettato. Ogni gruppo ha il proprio foglio nel Google Sheet condiviso. Sottolineare: i casi ambigui vanno annotati, non forzati in una categoria. Saranno discussi in gruppo e useranno le regole di decisione del codebook.
+Momento collettivo breve (15 min). Mostrare i tab proiettati. Sottolineare: niente formule da scrivere, solo dropdown. Per vedere il video, click sul `watch_url` (apre TikTok in nuova scheda). I casi ambigui vanno annotati nel tab `09_Log_decisioni` (data, video_id, caso, decisione, motivazione) — saranno la base per Appendice B del saggio.
 :::
 
 ## Regole d'oro per la codifica
 
 ::: {.highlight-box}
-1. **Prima il sottoinsieme comune** — tutti codificano gli stessi 20–30 post indipendentemente
-2. **Non consultarsi** durante la codifica del sottoinsieme — l'affidabilità misura l'accordo *indipendente*
-3. **Guardare tutto** — testo E contenuto multimediale (immagine/video)
-4. **Annotare** i casi ambigui — non forzare una classificazione
+1. **Prima il sotto-campione comune** (tab `05_Sottocampione_affidabilità`) — tutti codificano gli stessi 30 video indipendentemente
+2. **Non consultarsi** durante la codifica del sotto-campione — l'affidabilità misura l'accordo *indipendente*
+3. **Guardare il video** — caption + `voice_to_text` + cliccare `watch_url` per il video stesso. Il video aggiunge informazione che il testo non cattura
+4. **Annotare** i casi ambigui nel tab `09_Log_decisioni` — non forzare una classificazione
 5. **Seguire il codebook** — se la definizione non copre il caso, annotarlo per la revisione
+6. **Gemini come supporto, non come giudice** — potete chiedere "questo sound è ironico o serio?" ma la decisione resta vostra (e va dichiarata)
 :::
 
 ::: {.notes}
-Il punto 2 è fondamentale: se i codificatori si consultano durante la codifica del sottoinsieme comune, il Kappa è artificialmente alto e il codebook non viene testato davvero. La codifica del sottoinsieme deve essere indipendente. Dopo, si confrontano i risultati e si discutono le discrepanze.
+Il punto 2 è fondamentale: se i codificatori si consultano durante la codifica del sotto-campione comune, il κ è artificialmente alto e il codebook non viene testato davvero. La codifica del sotto-campione deve essere indipendente. Dopo, si confrontano i risultati e si discutono le discrepanze. Il punto 6 va sottolineato: Gemini può aiutare a chiarire un dubbio (es. "questo testo è satirico?") ma non sostituisce il giudizio del coder. E ogni uso va dichiarato nella sezione "Dichiarazione d'uso dell'IA" del saggio.
 :::
 
 ## Lavoro di gruppo: codifica {background-color="#C5612E"}
@@ -75,14 +76,15 @@ Il punto 2 è fondamentale: se i codificatori si consultano durante la codifica 
 ::: {.highlight-box}
 **Oggi (90 minuti):**
 
-1. Ogni membro codifica **indipendentemente** il **sottoinsieme comune** (20–30 post)
-2. Poi procede con i **post assegnati individualmente**
-3. La codifica include sia il **testo** sia il **contenuto multimediale**
-4. Il docente passa tra i gruppi per risolvere dubbi sulle categorie
+1. Ogni membro codifica **indipendentemente** il **sotto-campione comune** di 30 video nel tab `05_Sottocampione_affidabilità` (la propria colonna `cod_coderN`)
+2. Poi procede con i **video assegnati** nel proprio tab `04_Codifica_coderN`
+3. Cuffie utili — l'audio TikTok è centrale per la classificazione
+4. Annotare i casi ambigui nel tab `09_Log_decisioni`
+5. Il docente passa tra i gruppi per risolvere dubbi sulle categorie
 :::
 
 ::: {.notes}
-La maggior parte della lezione è lavoro silenzioso e individuale. I membri del gruppo codificano indipendentemente — non discutono tra loro durante la codifica del sottoinsieme comune. Dopo aver completato il sottoinsieme, possono iniziare i post individuali e a quel punto possono confrontarsi su casi specifici. Passare tra i gruppi: verificare che stiano effettivamente guardando il contenuto multimediale (non solo il testo) e che annotino i casi ambigui.
+La maggior parte della lezione è lavoro silenzioso e individuale. I membri del gruppo codificano indipendentemente — non discutono tra loro durante la codifica del sotto-campione comune. Dopo aver completato il sotto-campione, possono iniziare i video individuali e a quel punto possono confrontarsi su casi specifici. Passare tra i gruppi: verificare che stiano effettivamente aprendo il `watch_url` (non codificando solo dalla caption) e che annotino i casi ambigui nel `09_Log_decisioni`.
 :::
 
 ## Discussione intergruppo

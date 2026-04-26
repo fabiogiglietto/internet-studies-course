@@ -28,8 +28,28 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
-  <link rel="stylesheet" href="lez11-analisi-contenuto_files/libs/revealjs/dist/theme/quarto-7e00b0553a54811f55212491940a2ab0.css">
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="lez11-analisi-contenuto_files/libs/revealjs/dist/theme/quarto-d3c2a5122366430a435f087ef7f59611.css">
   <link href="lez11-analisi-contenuto_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="lez11-analisi-contenuto_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="lez11-analisi-contenuto_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -145,10 +165,10 @@ Fabio Giglietto
 </section>
 <section id="recap-dal-dataset-allanalisi" class="slide level2">
 <h2>Recap: dal dataset all’analisi</h2>
-<p>Giovedì avete esplorato il dataset MCL con filtri, CONTA.SE e tabelle pivot.</p>
-<p>Quelle domande erano <strong>descrittive</strong>: quanti post, quale pagina ha più engagement, che distribuzione temporale.</p>
+<p>Giovedì avete esplorato il dataset TikTok nel <strong>Foglio Google master</strong> con filtri, ordinamenti e i pivot pre-costruiti.</p>
+<p>Quelle domande erano <strong>descrittive</strong>: quanti video, quale account ha più views, che distribuzione temporale.</p>
 <div class="highlight-box">
-<p>Oggi aggiungiamo la <strong>dimensione qualitativa</strong>: come si <strong>classifica</strong> il contenuto dei post? E come si costruisce lo strumento per farlo — il <strong>codebook</strong>?</p>
+<p>Oggi aggiungiamo la <strong>dimensione qualitativa</strong>: come si <strong>classifica</strong> il contenuto dei video TikTok? E come si costruisce lo strumento per farlo — il <strong>codebook</strong>?</p>
 <p>Inoltre, oggi formerete i <strong>gruppi di lavoro</strong> per il laboratorio.</p>
 </div>
 <aside class="notes">
@@ -267,15 +287,15 @@ Fabio Giglietto
 <tbody>
 <tr class="odd">
 <td><strong>Unità di analisi</strong></td>
-<td>Il singolo post con il suo contenuto multimediale (testo + immagine/video)</td>
+<td>Il singolo video TikTok (caption + audio/voice_to_text + video stesso, aperto via <code>watch_url</code>)</td>
 </tr>
 <tr class="even">
 <td><strong>Codebook</strong></td>
-<td>Il documento che definisce le categorie e le regole</td>
+<td>Il documento che definisce le categorie e le regole — vivrà nel tab <code>03_Codebook</code> del Foglio</td>
 </tr>
 <tr class="odd">
 <td><strong>Codifica</strong></td>
-<td>Il processo di assegnazione di ciascun post a una categoria</td>
+<td>Il processo di assegnazione di ciascun video a una categoria, via dropdown nei tab <code>04_Codifica_coderN</code></td>
 </tr>
 <tr class="even">
 <td><strong>Codificatori</strong></td>
@@ -283,7 +303,7 @@ Fabio Giglietto
 </tr>
 <tr class="odd">
 <td><strong>Affidabilità</strong></td>
-<td>La misura dell’accordo tra codificatori</td>
+<td>La misura dell’accordo tra codificatori (κ di Cohen, calcolato dal tab <code>06_Kappa</code>)</td>
 </tr>
 </tbody>
 </table>
@@ -343,45 +363,45 @@ Fabio Giglietto
 </section>
 <section id="esempio-1-codebook-per-la-rq1" class="slide level2">
 <h2>Esempio 1: codebook per la RQ1</h2>
-<p><strong>RQ1 — Tattiche di manipolazione mediatica:</strong></p>
+<p><strong>RQ1 — Tattiche di manipolazione mediatica adattate a TikTok</strong> <span class="citation" data-cites="marwick2017">(<a href="#/grazie" role="doc-biblioref" onclick="">Marwick &amp; Lewis, 2017</a>)</span>:</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 34%">
-<col style="width: 37%">
 <col style="width: 28%">
+<col style="width: 30%">
+<col style="width: 41%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Categoria</th>
 <th>Definizione</th>
-<th>Esempio</th>
+<th>Esempio TikTok</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong><em>Meme warfare</em></strong></td>
-<td>Immagine con testo sovrapposto che veicola un messaggio politico in forma satirica/ironica</td>
-<td>Meme che deride un politico con informazioni decontestualizzate</td>
+<td><strong><em>Meme warfare</em></strong> (sound-as-meme)</td>
+<td>Riuso ironico/satirico di un sound o trend per veicolare un messaggio politico</td>
+<td>Sound virale usato per deridere un politico in voiceover</td>
 </tr>
 <tr class="even">
-<td><strong><em>Astroturfing</em></strong></td>
-<td>Contenuto che simula consenso spontaneo con pattern ripetitivi tra pagine diverse</td>
-<td>Post identico pubblicato da 3+ pagine in 24 ore</td>
+<td><strong><em>Trend hijacking</em></strong></td>
+<td>Uso di un trend popolare per veicolare un’agenda non collegata al trend originale</td>
+<td>Hashtag challenge “innocuo” cooptato per diffondere narrazione politica</td>
 </tr>
 <tr class="odd">
 <td><strong>Contenuto emotivo strumentale</strong></td>
-<td>Post progettato per generare reazione emotiva forte (indignazione, paura) attraverso semplificazione</td>
-<td>Titolo allarmistico con dati decontestualizzati</td>
+<td>Video progettato per generare reazione emotiva forte (indignazione, paura) attraverso semplificazione</td>
+<td>Voiceover allarmistico su tema migratorio con sound drammatico</td>
 </tr>
 <tr class="even">
 <td><strong>Contenuto informativo neutro</strong></td>
-<td>Post che riporta fatti senza evidente manipolazione</td>
-<td>Articolo di cronaca condiviso con commento neutro</td>
+<td>Video che riporta fatti senza evidente manipolazione</td>
+<td>Spiegazione di un evento senza framing emotivo o ironico</td>
 </tr>
 </tbody>
 </table>
 <aside class="notes">
-<p>Questo è un esempio semplificato — il codebook reale sarà più dettagliato. Mostrare come ogni categoria nasce da un concetto di Marwick &amp; Lewis e viene operazionalizzata con una definizione e un esempio. La categoria “contenuto informativo neutro” serve come baseline: non tutto nel dataset è manipolazione. Senza una categoria residuale, il codificatore è forzato ad assegnare una tattica anche a post innocui.</p>
+<p>Questo è un esempio semplificato — il codebook reale del vostro gruppo sarà più dettagliato e adattato al tema specifico del dataset. Mostrare come ogni categoria nasce da un concetto di Marwick &amp; Lewis e viene operazionalizzata in <strong>forme TikTok-native</strong> (sound, hashtag challenge, duet, voiceover). Sottolineare l’importanza dell’audio: su TikTok il <em>sound</em> è centrale per il framing, e <code>voice_to_text</code> quando presente aiuta a codificarlo. La categoria “contenuto informativo neutro” serve come baseline: non tutto è manipolazione.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -396,40 +416,40 @@ Fabio Giglietto
 </section>
 <section id="esempio-2-codebook-per-la-rq2" class="slide level2">
 <h2>Esempio 2: codebook per la RQ2</h2>
-<p><strong>RQ2 — Partecipazione genuina vs.&nbsp;strumentalizzata:</strong></p>
+<p><strong>RQ2 — Partecipazione genuina</strong> <span class="citation" data-cites="jenkins2008">(<a href="#/grazie" role="doc-biblioref" onclick="">Jenkins, 2008</a>)</span> <strong>vs.&nbsp;strumentalizzata</strong> <span class="citation" data-cites="marwick2017">(<a href="#/grazie" role="doc-biblioref" onclick="">Marwick &amp; Lewis, 2017</a>)</span>:</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 34%">
-<col style="width: 37%">
 <col style="width: 28%">
+<col style="width: 30%">
+<col style="width: 41%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Categoria</th>
 <th>Definizione</th>
-<th>Esempio</th>
+<th>Esempio TikTok</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>Partecipazione genuina</strong></td>
-<td>Contenuto che esprime opinione/creatività autentica senza coordinamento strategico visibile</td>
-<td>Commento personale su un evento, racconto di un’esperienza</td>
+<td>Video che esprime opinione/creatività autentica senza coordinamento strategico visibile</td>
+<td>Reaction personale a un evento; remix originale di un sound</td>
 </tr>
 <tr class="even">
 <td><strong>Partecipazione strumentalizzata</strong></td>
-<td>Contenuto che usa le forme della partecipazione (meme, commento personale) per veicolare un’agenda strategica</td>
-<td>Meme “spontaneo” che ricicla argomenti di una campagna coordinata</td>
+<td>Video che usa le forme della partecipazione TikTok (trend, sound, hashtag challenge, duet) per veicolare un’agenda strategica</td>
+<td>Trend “innocuo” usato in modo coordinato da più account allineati per spingere un messaggio politico</td>
 </tr>
 <tr class="odd">
 <td><strong>Ambiguo/indeterminabile</strong></td>
-<td>Post in cui non è possibile distinguere tra le due categorie sulla base del contenuto visibile</td>
-<td>Post con opinione forte ma senza indizi di coordinamento</td>
+<td>Video in cui non è possibile distinguere sulla base del contenuto visibile</td>
+<td>Voce forte personale che però segue uno script ricorrente</td>
 </tr>
 </tbody>
 </table>
 <aside class="notes">
-<p>La RQ2 lavora su un continuum, non su categorie discrete. La classificazione a tre livelli (genuina / strumentalizzata / ambigua) è una semplificazione operativa. Sottolineare che la categoria “ambiguo” non è un fallimento — è un dato informativo. Se molti post sono ambigui, questo dice qualcosa sulla difficoltà di distinguere tra partecipazione genuina e strumentalizzata — che è esattamente il punto teorico di Jenkins e Marwick &amp; Lewis.</p>
+<p>La RQ2 lavora su un continuum, non su categorie discrete. Su TikTok il continuum è particolarmente sottile: l’API ci dà solo le metriche aggregate (non i pattern di coordinamento), quindi la classificazione si basa su segnali interni al video (script ricorrenti, sound usati in modo identico, hashtag bundle ripetuti). La categoria “ambiguo” non è un fallimento — è un dato informativo. Se molti video sono ambigui, questo dice qualcosa sulla difficoltà di distinguere tra partecipazione genuina e strumentalizzata — che è esattamente il punto teorico di Jenkins e Marwick &amp; Lewis.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -450,8 +470,8 @@ Fabio Giglietto
 <section id="codifica-pilota-collettiva-35-minuti" class="orange-box">
 <h3>Codifica pilota collettiva (35 minuti)</h3>
 <ol type="1">
-<li>Il docente proietta <strong>10 post</strong> dal dataset MCL (testo + immagine)</li>
-<li>Per ciascun post, usando la bozza di codebook proiettata:
+<li>Il docente proietta <strong>10 video TikTok</strong> dal dataset (apertura via <code>watch_url</code> + caption + <code>voice_to_text</code>)</li>
+<li>Per ciascun video, usando la bozza di codebook proiettata:
 <ul>
 <li>Ciascuno <strong>annota individualmente</strong> la propria codifica</li>
 <li>Poi si <strong>confronta con il vicino</strong></li>
@@ -462,7 +482,7 @@ Fabio Giglietto
 </ol>
 </section>
 <aside class="notes">
-<p>Proiettare il codebook di riferimento (una versione semplificata con 4-5 categorie). Per ogni post, dare 1 minuto per la codifica individuale, 1 minuto per il confronto con il vicino, poi raccogliere le risposte. I post dovrebbero essere scelti per coprire casi chiari (2-3), casi ambigui (4-5) e casi difficili (2-3). Il disaccordo è il dato più importante: indica dove il codebook va migliorato.</p>
+<p>Proiettare il codebook di riferimento (una versione semplificata con 4-5 categorie). Per ogni video, dare 60-90 secondi per la visione collettiva (riprodurre il video proiettato), 1 minuto per la codifica individuale, 1 minuto per il confronto con il vicino, poi raccogliere le risposte. I video dovrebbero coprire casi chiari (2-3), casi ambigui (4-5) e casi difficili (2-3). Il disaccordo è il dato più importante: indica dove il codebook va migliorato.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -475,19 +495,20 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
-<section id="post-1" class="slide level2">
-<h2>Post 1</h2>
-<!-- Il docente inserirà qui il contenuto del primo post dal dataset MCL -->
+<section id="video-1" class="slide level2">
+<h2>Video 1</h2>
+<!-- Il docente apre qui il primo video dal dataset TikTok via watch_url -->
 <div class="highlight-box">
-<p><strong>Il docente proietta il post (testo + immagine).</strong></p>
+<p><strong>Il docente apre il video TikTok proiettato (visione collettiva).</strong></p>
 <ol type="1">
+<li>Guardate il video (con audio)</li>
 <li>Codificate individualmente: quale categoria?</li>
 <li>Confrontate con il vicino</li>
 <li>Alzata di mano</li>
 </ol>
 </div>
 <aside class="notes">
-<p>Il docente deve preparare 10 post prima della lezione, selezionandoli dal dataset reale. I post devono includere sia testo che contenuto multimediale. Scegliere post che coprano categorie diverse e includano casi ambigui.</p>
+<p>Il docente deve preparare 10 video prima della lezione, selezionandoli dal dataset reale. I video devono coprire categorie diverse e includere casi ambigui. Importante: collegare l’aula a casse o scegliere video con <code>voice_to_text</code> significativo, perché su TikTok l’audio è centrale.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -553,8 +574,21 @@ Fabio Giglietto
 </ul>
 </section>
 <p><strong>Concettualmente:</strong> la differenza tra l’accordo <strong>osservato</strong> e l’accordo che ci si aspetterebbe <strong>per caso</strong>.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Consiglio</strong></p>
+</div>
+<div class="callout-content">
+<p>Nel <strong>Foglio Google master</strong>, il tab <strong><code>06_Kappa</code></strong> calcola κ automaticamente non appena tutti i membri del gruppo hanno codificato il sotto-campione comune nel tab <code>05_Sottocampione_affidabilità</code>. Voi non scrivete formule.</p>
+</div>
+</div>
+</div>
 <aside class="notes">
-<p>Non serve la formula matematica — il concetto è sufficiente. Se due codificatori lanciano un dado a 4 facce, per puro caso saranno d’accordo il 25% delle volte. Il Kappa misura quanto l’accordo osservato supera questo livello casuale. Un Kappa di 0.80 significa che l’accordo è molto superiore al caso — il codebook funziona. Un Kappa di 0.40 significa che c’è troppo disaccordo — il codebook va rivisto. Il template Google Sheets che verrà fornito calcola il Kappa automaticamente.</p>
+<p>Non serve la formula matematica — il concetto è sufficiente. Se due codificatori lanciano un dado a 4 facce, per puro caso saranno d’accordo il 25% delle volte. Il Kappa misura quanto l’accordo osservato supera questo livello casuale. Un Kappa di 0.80 significa che l’accordo è molto superiore al caso — il codebook funziona. Un Kappa di 0.40 significa che c’è troppo disaccordo — il codebook va rivisto. Il tab <code>06_Kappa</code> del Foglio è già pre-costruito con la formula, le matrici di confusione pairwise e il colore di sintesi (rosso/giallo/verde).</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -593,6 +627,43 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
+<section id="gemini-come-strumento-di-supporto" class="slide level2">
+<h2>Gemini come strumento di supporto</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="cosa-potete-fare-con-gemini">Cosa <strong>potete</strong> fare con Gemini</h3>
+<ul>
+<li>Far <strong>draftare definizioni</strong> di categoria a partire dai concetti dei testi</li>
+<li><strong>Discutere</strong> un caso ambiguo prima di prendere una decisione</li>
+<li><strong>Riformulare</strong> una regola di decisione che non funziona</li>
+<li>Far <strong>revisionare la prosa</strong> di una sezione del saggio</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="cosa-non-potete-fare">Cosa <strong>NON potete</strong> fare</h3>
+<ul>
+<li>Far classificare i video al posto vostro</li>
+<li>Far scrivere intere sezioni del saggio</li>
+<li>Sostituire la lettura dei 5 testi del corso</li>
+<li>Accettare l’output senza verifica</li>
+</ul>
+</div></div>
+<div class="highlight-box">
+<p><strong>Ogni uso di Gemini va dichiarato</strong> nella sezione “Dichiarazione d’uso dell’IA generativa” del saggio finale (template: <code>templates/paper_template.md</code>).</p>
+</div>
+<aside class="notes">
+<p>Spiegare la logica: l’IA è un assistente, non un sostituto. Può accelerare il drafting iniziale e aiutare nelle decisioni difficili, ma la responsabilità intellettuale resta del gruppo. La codifica deve essere fatta da esseri umani perché il progetto valuta la <strong>vostra</strong> comprensione dei concetti dei 5 testi. Se Gemini codifica al posto vostro, non state dimostrando di aver capito Marwick &amp; Lewis — state dimostrando che sapete usare Gemini. La dichiarazione d’uso non è una formalità: è una pratica di trasparenza scientifica.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="formazione-dei-gruppi" class="slide level2" data-background-color="#C5612E">
 <h2>Formazione dei gruppi</h2>
 </section>
@@ -607,10 +678,10 @@ Fabio Giglietto
 <li>Il docente passa tra i gruppi per verificare la fattibilità</li>
 </ul>
 </section>
-<p><strong>Ricordate le due RQ:</strong></p>
+<p><strong>Ricordate le due RQ (entrambe sul dataset TikTok):</strong></p>
 <ul>
-<li><strong>RQ1:</strong> Quali tattiche di manipolazione mediatica (Marwick &amp; Lewis) sono riconoscibili nel dataset? Quali pattern di engagement generano?</li>
-<li><strong>RQ2:</strong> In che misura il contenuto mostra partecipazione genuina (Jenkins) vs.&nbsp;strumentalizzata (Marwick &amp; Lewis)?</li>
+<li><strong>RQ1:</strong> Quali tattiche di manipolazione mediatica <span class="citation" data-cites="marwick2017">(<a href="#/grazie" role="doc-biblioref" onclick="">Marwick &amp; Lewis, 2017</a>)</span> sono riconoscibili nei video TikTok del dataset? Quali pattern di engagement (views, likes, shares, comments) generano?</li>
+<li><strong>RQ2:</strong> In che misura i video mostrano partecipazione genuina <span class="citation" data-cites="jenkins2008">(<a href="#/grazie" role="doc-biblioref" onclick="">Jenkins, 2008</a>)</span> vs.&nbsp;strumentalizzata <span class="citation" data-cites="marwick2017">(<a href="#/grazie" role="doc-biblioref" onclick="">Marwick &amp; Lewis, 2017</a>)</span>?</li>
 </ul>
 <aside class="notes">
 <p>Dare 15 minuti per la formazione e 5 minuti per la verifica rapida. Passare tra i gruppi per verificare: (1) la dimensione (max 6); (2) la fattibilità dell’angolo scelto; (3) che non ci siano sovrapposizioni eccessive tra gruppi. Se un gruppo è indeciso tra le due RQ, suggerire di pensare a quale si sente più affine in base alla codifica pilota appena fatta: chi ha trovato più facile classificare le tattiche sceglierà la RQ1; chi ha trovato più interessante il continuum genuino/strumentalizzato sceglierà la RQ2.</p>
@@ -633,19 +704,19 @@ Fabio Giglietto
 <h3 id="rq1-tattiche">RQ1 — Tattiche</h3>
 <p>Angoli possibili:</p>
 <ul>
-<li>Focus solo sui <strong>meme</strong> (contenuto visuale)</li>
-<li>Focus sui post con <strong>più engagement</strong></li>
-<li>Confronto tra <strong>pagine diverse</strong></li>
-<li>Focus su un <strong>periodo specifico</strong></li>
+<li>Focus sull’<strong>uso del sound</strong> (sound-as-meme, deceptive sound)</li>
+<li>Focus sui video con <strong>più views</strong></li>
+<li>Confronto tra <strong>account diversi</strong></li>
+<li>Focus sui video legati a un <strong>hashtag/trend</strong> specifico</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="rq2-partecipazione">RQ2 — Partecipazione</h3>
 <p>Angoli possibili:</p>
 <ul>
-<li>Confronto tra <strong>pagine diverse</strong> lungo il continuum</li>
-<li>Confronto tra <strong>periodi diversi</strong></li>
-<li>Focus sul <strong>contenuto visuale</strong> vs.&nbsp;testuale</li>
-<li>Analisi dei <strong>commenti</strong> come indicatore di partecipazione</li>
+<li>Confronto tra <strong>account diversi</strong> lungo il continuum</li>
+<li>Confronto tra <strong>periodi diversi</strong> (prima/dopo un evento)</li>
+<li>Focus su <strong>trend</strong> vs.&nbsp;video originali</li>
+<li>Analisi del <strong>rapporto views/shares</strong> come indicatore di amplificazione</li>
 </ul>
 </div></div>
 <aside class="notes">
@@ -728,12 +799,20 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
-<section id="grazie" class="slide level2" data-background-color="#C5612E">
+<section id="grazie" class="slide level2 smaller scrollable" data-background-color="#C5612E">
 <h2>Grazie!</h2>
 <p><strong>Prossima lezione:</strong> IMRAD e codebook di gruppo — Mer 29 aprile</p>
 <p>📧 fabio.giglietto@uniurb.it</p>
 <p>🌐 blended.uniurb.it</p>
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-jenkins2008" class="csl-entry" role="listitem">
+Jenkins, H. (2008). <em>Fan, Blogger e Videogamers: L’emergere delle Culture Partecipative nell’Era Digitale</em>. FrancoAngeli.
+</div>
+<div id="ref-marwick2017" class="csl-entry" role="listitem">
+Marwick, A., &amp; Lewis, R. (2017). <em>Media Manipulation and Disinformation Online</em>. Data &amp; Society Research Institute.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

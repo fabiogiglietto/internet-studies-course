@@ -38,27 +38,31 @@ csl: ../apa.csl
 
 ## Results = descrizione, non interpretazione
 
+I Results vanno strutturati nelle **3 sotto-sezioni** del template:
+
+1. **3.1 Distribuzione delle categorie** (frequency table)
+2. **3.2 Affidabilità** (tabella κ + commento sulla matrice di confusione)
+3. **3.3 Pattern di engagement per categoria** (mediana e IQR per views/likes/comments/shares + grafici)
+
 ::: {.columns}
 ::: {.column width="50%"}
 ### Cosa fare
-
-- Ogni tabella/grafico deve essere **introdotto** e **commentato** nel testo
-- Guidare il lettore: **descrivere** cosa mostra la tabella
-- Presentare i dati in **ordine logico** (es. dalla categoria più frequente alla meno)
+- Ogni tabella/grafico **introdotto** e **commentato**
+- **Mediana**, non media (TikTok è asimmetrico)
+- Ordine logico (categoria più frequente → meno)
 :::
 
 ::: {.column width="50%"}
 ### Cosa NON fare
-
 - ~~"Vedi Tabella 1"~~ senza commento
-- ~~"Questo dimostra che..."~~ → interpretazione, va nella Discussion
-- ~~Tabelle senza titolo~~ o con intestazioni ambigue
+- ~~"Questo dimostra che..."~~ → Discussion
+- ~~Tabelle senza titolo~~
 - ~~Grafici senza etichette~~ sugli assi
 :::
 :::
 
 ::: {.notes}
-Momento collettivo breve (15 min). La separazione Results/Discussion è il punto più critico. Dare un esempio: "La Tabella 1 mostra la distribuzione delle categorie nel campione. I post classificati come meme warfare rappresentano il 35% del campione (n=52), seguiti dal contenuto informativo neutro (28%, n=42)." — Questo è Results. "La prevalenza dei meme warfare è coerente con quanto osservato da Marwick e Lewis (2017) riguardo al ruolo dei meme come 'gateway drug'" — Questo è Discussion.
+Momento collettivo breve (15 min). La separazione Results/Discussion è il punto più critico. Dare un esempio TikTok: "La Tabella 1 mostra la distribuzione delle categorie nel campione di 120 video. I video classificati come meme warfare rappresentano il 35% (n=42), seguiti dal contenuto informativo neutro (28%, n=34). La Tabella 2 mostra il κ di Cohen complessivo (κ = 0.71) e per coppia di codificatori. La Tabella 3 mostra che la mediana di views per i video di trend hijacking è 2.450, contro 890 per i video informativi neutri." — Tutto questo è Results. "Questa differenza è coerente con quanto osservato da Marwick e Lewis (2017)..." — Questo è Discussion.
 :::
 
 ## Formattazione delle tabelle
@@ -72,11 +76,12 @@ Ogni tabella nel saggio deve avere:
 4. Un **commento nel testo** che descrive cosa mostra
 :::
 
-| Categoria | n | % | Mediana reazioni | Mediana commenti |
-|-----------|---|---|-----------------|-----------------|
-| Meme warfare | 52 | 35% | 245 | 18 |
-| Contenuto neutro | 42 | 28% | 89 | 7 |
-| ... | ... | ... | ... | ... |
+| Categoria | n | % | Mediana views | Mediana likes | Mediana comments | Mediana shares |
+|-----------|---|---|---------------|---------------|------------------|----------------|
+| Meme warfare | 42 | 35% | 1.250 | 87 | 14 | 22 |
+| Trend hijacking | 24 | 20% | 2.450 | 145 | 31 | 48 |
+| Contenuto emotivo | 20 | 17% | 890 | 62 | 22 | 9 |
+| Contenuto neutro | 34 | 28% | 540 | 31 | 6 | 4 |
 
 ::: {.notes}
 Mostrare un esempio di tabella ben formattata. Le tabelle devono essere leggibili senza dover leggere il testo — e il testo deve descrivere la tabella senza costringere il lettore a guardarla. Le due cose si complementano.
@@ -87,8 +92,8 @@ Mostrare un esempio di tabella ben formattata. Le tabelle devono essere leggibil
 ::: {.highlight-box}
 **Oggi (95 minuti):**
 
-- Integrate **tabelle e grafici** nel documento condiviso
-- Scrivete il **testo descrittivo** che accompagna ciascuna tabella/grafico
+- Copiate **tabelle e grafici** dai tab `06_Kappa` e `08_Engagement` nel Google Doc (tasto destro → Copia → Incolla scollegato)
+- Scrivete il **testo descrittivo** che accompagna ciascuna tabella/grafico, organizzato nelle 3 sotto-sezioni Results
 - Il docente verifica che non ci sia **interpretazione prematura** nei Results
 :::
 

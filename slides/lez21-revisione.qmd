@@ -61,16 +61,20 @@ Questa sessione è il buffer previsto nel piano del corso. Il docente valuta lo 
 ::: {.orange-box}
 ### Verificate punto per punto
 
-1. La **RQ** nell'Introduction è esattamente la stessa a cui si risponde nella Discussion?
-2. I **Methods** descrivono ciò che è stato **effettivamente** fatto? (non ciò che si intendeva fare)
-3. I **Results** presentano tutti e soli i dati **rilevanti** per la RQ?
-4. La **Discussion** torna ai concetti del **quadro teorico**?
-5. Le fonti sono citate correttamente in **stile APA** o equivalente?
-6. Il saggio è tra **4.000 e 6.000 parole**?
+1. **Abstract** presente, 150–200 parole, con 3–5 parole chiave?
+2. La **RQ** nell'Introduction è esattamente la stessa a cui si risponde in Discussion e Conclusioni?
+3. I **Methods** sono in **4 sotto-sezioni** (Dataset, Codebook, Procedura, Affidabilità) e descrivono ciò che è stato **effettivamente** fatto?
+4. I **Results** sono in **3 sotto-sezioni** (Distribuzione, Affidabilità, Engagement) con dati rilevanti per la RQ?
+5. La **Discussion** ha i **5 momenti** (sintesi, 5 testi, riflessione, limiti, implicazioni)?
+6. **Conclusioni** brevi (1–2 paragrafi)?
+7. **Dichiarazione d'uso dell'IA generativa** presente e specifica?
+8. **Appendice A** (codebook completo) e **Appendice B** (log decisioni) presenti?
+9. Fonti in **APA 7** + i 5 testi del corso citati?
+10. Saggio **4.000–6.000 parole** (esclusi Bibliografia e Appendici)?
 :::
 
 ::: {.notes}
-Proiettare la checklist e lasciarla visibile durante il lavoro. Ogni punto corrisponde a un errore comune: (1) RQ che cambia tra Introduction e Discussion; (2) Methods che descrivono il piano originale anziché ciò che è stato fatto (es. "abbiamo codificato 150 post" quando ne hanno codificati 120); (3) Results con tabelle irrilevanti per la RQ; (4) Discussion generica che non cita i testi; (5) citazioni inconsistenti; (6) saggio troppo corto o troppo lungo.
+Proiettare la checklist e lasciarla visibile durante il lavoro. Ogni punto corrisponde a un errore comune: (1) Abstract dimenticato o troppo lungo; (2) RQ che cambia tra Introduction e Discussion; (3) Methods senza sotto-sezioni o che descrivono il piano originale anziché ciò che è stato fatto; (4) Results senza sotto-sezioni o con tabelle irrilevanti; (5) Discussion che salta uno dei 5 momenti (tipicamente la riflessione metodologica o i limiti); (6) Conclusioni che ripetono l'Abstract invece di rispondere alla RQ; (7) Dichiarazione vaga ("abbiamo usato Gemini") invece che specifica; (8) Appendici mancanti; (9) citazioni inconsistenti; (10) saggio troppo corto o troppo lungo.
 :::
 
 ## Lavoro di gruppo {background-color="#C5612E"}
@@ -78,9 +82,9 @@ Proiettare la checklist e lasciarla visibile durante il lavoro. Ogni punto corri
 ::: {.highlight-box}
 **Oggi (90 minuti):**
 
-**Per chi revisiona:** ogni membro legge il saggio **intero** (non solo la sezione che ha scritto). Discutete le incongruenze e risolvetele.
+**Per chi revisiona:** ogni membro legge il saggio **intero** (non solo la sezione che ha scritto). Verifica i 10 punti della checklist. Discutete le incongruenze e risolvetele. **Scrivete l'Abstract ora**, dopo aver letto tutto.
 
-**Per chi completa:** finalizzate le sezioni mancanti. Priorità: se manca la Discussion, scrivetela ora.
+**Per chi completa:** finalizzate le sezioni mancanti. Priorità: Discussion, poi Conclusioni, poi Dichiarazione IA, poi Appendice A.
 :::
 
 **Ultimi 15 minuti:** consultazione finale con il docente — ogni gruppo può porre un'ultima domanda.

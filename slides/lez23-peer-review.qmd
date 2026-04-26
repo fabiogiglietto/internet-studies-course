@@ -42,12 +42,15 @@ La peer review usa gli **stessi criteri** della griglia di valutazione:
 
 | Criterio | Cosa cercare |
 |----------|-------------|
-| **Chiarezza della RQ** | È formulata esplicitamente? È coerente con la Discussion? |
+| **Abstract** | 150–200 parole, autonomo, con parole chiave |
+| **Chiarezza della RQ** | Formulata esplicitamente? Coerente con Discussion e Conclusioni? |
 | **Quadro teorico** | Quanti testi sono usati? Sono collegati tra loro? |
-| **Metodo** | La procedura è replicabile? L'affidabilità è documentata? |
-| **Risultati** | Tabelle e grafici sono chiari? C'è interpretazione prematura? |
-| **Discussion** | Torna ai testi? I limiti sono discussi? |
-| **Scrittura** | Stile coerente? Citazioni corrette? |
+| **Metodo** | 4 sotto-sezioni? Procedura replicabile? κ documentato? |
+| **Risultati** | 3 sotto-sezioni? Mediana usata per l'engagement? Niente interpretazione prematura? |
+| **Discussion** | 5 momenti? Limiti TikTok-specifici? Implicazioni? |
+| **Dichiarazione IA** | Presente, specifica, onesta? |
+| **Appendici** | A (codebook completo) e B (log decisioni) presenti? |
+| **Scrittura** | Stile coerente? Citazioni APA 7? |
 
 Per ciascun criterio: **(a)** punto di forza / da migliorare + **(b)** suggerimento specifico.
 
@@ -91,7 +94,7 @@ Le criticità ricorrenti sono particolarmente preziose: se più gruppi hanno lo 
 ## Scadenze
 
 - **Domani (Lezione 24, mercoledì 27 maggio):** revisione finale e presentazioni
-- **Mercoledì 3 giugno, ore 23:59:** consegna definitiva del saggio IMRAD
+- **Lunedì 1 giugno, ore 23:59:** consegna definitiva del saggio IMRAD
 - Insieme al saggio: **modulo di peer evaluation** intra-gruppo (individuale, anonimo)
 :::
 

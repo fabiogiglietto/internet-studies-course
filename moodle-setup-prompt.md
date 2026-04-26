@@ -8,7 +8,7 @@ Copia e incolla questo prompt in Claude for Chrome mentre sei sulla pagina Moodl
 
 Devo configurare la pagina Moodle del corso "Internet Studies — A.A. 2025/2026" (Docente: Prof. Fabio Giglietto, DISCUI, Università di Urbino). Aiutami a popolarla con tutte le sezioni, le attività e le risorse necessarie.
 
-Il formato del corso è **settimanale** (Weekly format). Il corso inizia il **31 marzo 2026** e termina il **27 maggio 2026** (ultima lezione). Le lezioni si tengono: Mar 9–11 (C1), Mer 11–13 (D3), Gio 11–13 (C2). Sospensione: 3–8 aprile (Pasqua). La consegna definitiva del saggio è il 3 giugno 2026.
+Il formato del corso è **settimanale** (Weekly format). Il corso inizia il **31 marzo 2026** e termina il **27 maggio 2026** (ultima lezione). Le lezioni si tengono: Mar 9–11 (C1), Mer 11–13 (D3), Gio 11–13 (C2). Sospensione: 3–8 aprile (Pasqua). La consegna definitiva del saggio è il 1 giugno 2026.
 
 Le slide HTML sono pubblicate su GitHub Pages all'indirizzo base:
 **https://fabiogiglietto.github.io/internet-studies-course/slides/**
@@ -253,7 +253,7 @@ Configura il corso con le date di inizio 31 marzo 2026 in modo che le settimane 
 ### SETTIMANA 9 — 26 maggio – 1 giugno 2026
 **Peer Review, Presentazioni e Consegna Definitiva**
 
-1. **Etichetta**: "Lezioni 23–24 · Peer review (26 mag) · Presentazioni (27 mag) · **Consegna definitiva: 3 giugno**"
+1. **Etichetta**: "Lezioni 23–24 · Peer review (26 mag) · Presentazioni (27 mag) · **Consegna definitiva: 1 giugno**"
 
 2. **URL** — "Lezione 23 — Peer review incrociata (26 mag)"
    - URL: https://fabiogiglietto.github.io/internet-studies-course/slides/lez23-peer-review.html
@@ -269,8 +269,8 @@ Configura il corso con le date di inizio 31 marzo 2026 in modo che le settimane 
 5. **Compito** — "Consegna definitiva del saggio IMRAD"
    - Descrizione: "Consegnate la versione definitiva del saggio IMRAD (**4.000–6.000 parole**) in formato PDF. Insieme al saggio, ciascun membro del gruppo compila individualmente il modulo di peer evaluation intra-gruppo (link sotto). Penalità per ritardo: –1 punto/ora nelle prime 24 ore. Oltre le 24 ore dalla scadenza, la consegna non è accettata."
    - Data apertura: mercoledì 27 maggio 2026, 13:00
-   - Data di consegna: mercoledì 3 giugno 2026, 23:59
-   - Consegne in ritardo: Sì, con penalità (-1 punto/ora, cutoff 24 ore: 4 giugno 23:59)
+   - Data di consegna: lunedì 1 giugno 2026, 23:59
+   - Consegne in ritardo: Sì, con penalità (-1 punto/ora, cutoff 24 ore: 2 giugno 23:59)
    - Tipo di consegna: File (PDF)
    - Numero massimo di file: 1
    - Consegna per gruppi: Sì (un file per gruppo)
@@ -283,7 +283,7 @@ Configura il corso con le date di inizio 31 marzo 2026 in modo che le settimane 
 
 ### NOTE PER L'IMPLEMENTAZIONE
 
-- **Formato del corso**: Settimanale (Weekly format), data di inizio: 31 marzo 2026, data di fine: 1 giugno 2026 (9 settimane). L'ultima lezione è il 27 maggio; la consegna definitiva (3 giugno) cade nell'ultima settimana.
+- **Formato del corso**: Settimanale (Weekly format), data di inizio: 31 marzo 2026, data di fine: 1 giugno 2026 (9 settimane). L'ultima lezione è il 27 maggio; la consegna definitiva (1 giugno) cade nell'ultima settimana.
 - **Tutti i link alle slide** devono aprirsi in una **nuova finestra**.
 - **I PDF dei testi** vanno caricati dal docente manualmente — Claude non può caricare file.
 - **I placeholder** contrassegnati con [IL DOCENTE INSERIRÀ...] indicano risorse da predisporre separatamente: dataset Google Sheets, template Kappa, linee guida IMRAD, griglia di valutazione, saggi esempio, griglia peer review, Google Form per la peer evaluation.

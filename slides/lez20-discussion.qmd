@@ -42,13 +42,13 @@ csl: ../apa.csl
 ::: {.column width="50%"}
 ### Results (fatto)
 
-"I post classificati come meme warfare hanno una mediana di reazioni **doppia** rispetto ai post informativi neutri (245 vs. 89)."
+"I video classificati come *trend hijacking* hanno una mediana di views **doppia** rispetto ai video informativi neutri (2.450 vs. 890)."
 :::
 
 ::: {.column width="50%"}
 ### Discussion (da fare oggi)
 
-"Questo pattern è coerente con l'analisi di Marwick e Lewis [-@marwick2017] sulla *meme warfare* come tattica progettata per la viralità: le affordance di **replicabilità** [@boyd2018] favoriscono contenuti emotivi e semplificati."
+"Questo pattern è coerente con l'analisi di Marwick e Lewis [-@marwick2017] sulla cooptazione strategica delle pratiche partecipative: le affordance di **replicabilità** del sound TikTok [@boyd2018] favoriscono la viralità di contenuti che si innestano su trend pre-esistenti."
 :::
 :::
 
@@ -75,16 +75,16 @@ Momento collettivo (25 min). La Discussion è dove il saggio "chiude il cerchio"
 La Discussion non deve citare tutti e 5 i testi — solo quelli rilevanti per i risultati specifici. Ma almeno 3-4 testi dovrebbero essere richiamati nell'interpretazione. Se un risultato è sorprendente (contraddice le aspettative), questo è particolarmente interessante da discutere: perché? I dati sono affidabili? Il dataset ha caratteristiche particolari? La teoria ha dei limiti?
 :::
 
-## I limiti dello studio
+## I limiti dello studio TikTok
 
 Discutere i limiti **onestamente ma senza svalutare** il lavoro:
 
 | Tipo di limite | Come formularlo |
 |---------------|----------------|
-| **Campione** | "Il campione di N post non consente generalizzazioni, ma i pattern osservati sono coerenti con..." |
-| **Periodo** | "I risultati riflettono un periodo specifico e potrebbero variare in contesti diversi" |
-| **Soggettività** | "La codifica manuale comporta un grado di soggettività, mitigato dal Kappa di κ = 0.XX" |
-| **Dataset** | "Il dataset include solo contenuti da pagine pubbliche Facebook, escludendo gruppi chiusi e profili personali" |
+| **Campione** | "Il campione di 120 video non consente generalizzazioni a tutto TikTok, ma i pattern osservati sono coerenti con..." |
+| **Query thematica** | "La query di raccolta vincola tematicamente il dataset; pattern diversi potrebbero emergere su altri argomenti" |
+| **Soggettività** | "La codifica manuale comporta un grado di soggettività, mitigato dal κ di Cohen pari a 0.XX (accettabile)" |
+| **Limiti API** | "L'API non restituisce il testo dei singoli commenti né dati sulla FYP, limitando l'analisi dell'audience" |
 
 ::: {.notes}
 I limiti non sono un'ammissione di colpa: sono trasparenza scientifica. Ogni studio ha limiti — l'importante è riconoscerli e spiegare perché non invalidano i risultati. "Lo studio ha molti limiti e non prova nulla" è troppo pessimista; "I risultati dimostrano definitivamente che..." è troppo ottimista. La via giusta: "Nonostante i limiti del campione, i pattern osservati sono coerenti con il quadro teorico e suggeriscono che..."
@@ -95,16 +95,17 @@ I limiti non sono un'ammissione di colpa: sono trasparenza scientifica. Ogni stu
 ::: {.highlight-box}
 **Oggi (85 minuti):**
 
-- Redigete la sezione **Discussion** (~800–1.200 parole)
-- Collegate i risultati al **quadro teorico**
-- Discutete i **limiti** dello studio
-- Formulate le **implicazioni** dei risultati
+Redigere nel Google Doc tre sezioni del template:
+
+- **Discussion** (~800–1.200 parole), nei 5 momenti: sintesi, collegamento ai 5 testi, riflessione metodologica, limiti, implicazioni
+- **Conclusioni** (1–2 paragrafi): risposta diretta alla RQ
+- **Dichiarazione d'uso dell'IA generativa**: quale strumento, per cosa, come avete verificato
 :::
 
 **Status check** negli ultimi 10 minuti.
 
 ::: {.notes}
-Il docente passa tra i gruppi verificando che la Discussion torni effettivamente ai testi del corso. Se un gruppo scrive una Discussion generica ("la manipolazione è un problema") senza citare gli autori, segnalarlo: la Discussion deve essere ancorata al quadro teorico dell'Introduction.
+Il docente passa tra i gruppi verificando che la Discussion torni effettivamente ai testi del corso. Se un gruppo scrive una Discussion generica ("la manipolazione è un problema") senza citare gli autori, segnalarlo: la Discussion deve essere ancorata al quadro teorico dell'Introduction. La Dichiarazione d'uso dell'IA è obbligatoria — anche se vuota ("Nessun uso di IA generativa") va compilata.
 :::
 
 ## Prossimi passi
@@ -115,7 +116,7 @@ Il docente passa tra i gruppi verificando che la Discussion torni effettivamente
 
 ::: {.callout-tip}
 ## Obiettivo per mercoledì
-Arrivare con una **bozza completa** di tutte e 4 le sezioni IMRAD, anche se incompleta. La revisione interna funziona solo se c'è materiale da rivedere.
+Arrivare con una **bozza completa** di tutte le sezioni del template (Abstract escluso, si scrive alla fine), anche se incomplete. La revisione interna funziona solo se c'è materiale da rivedere.
 :::
 
 ## Grazie! {background-color="#C5612E"}

@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="lez16-engagement_files/libs/revealjs/dist/theme/quarto-7e00b0553a54811f55212491940a2ab0.css">
+  <link rel="stylesheet" href="lez16-engagement_files/libs/revealjs/dist/theme/quarto-d3c2a5122366430a435f087ef7f59611.css">
   <link href="lez16-engagement_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="lez16-engagement_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="lez16-engagement_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -146,21 +146,22 @@ Fabio Giglietto
 <section id="momento-collettivo-analizzare-lengagement" class="slide level2" data-background-color="#C5612E">
 <h2>Momento collettivo: analizzare l’engagement</h2>
 </section>
-<section id="unire-codifica-qualitativa-e-dati-quantitativi" class="slide level2">
-<h2>Unire codifica qualitativa e dati quantitativi</h2>
-<section id="cerca.vert-vlookup" class="orange-box">
-<h3>CERCA.VERT / VLOOKUP</h3>
-<p>Per aggiungere le categorie codificate al foglio con le metriche di engagement:</p>
-<p><code>=CERCA.VERT(A2; Codifica!A:D; 4; FALSO)</code></p>
+<section id="tutto-è-già-pronto-i-tab-07-e-08" class="slide level2">
+<h2>Tutto è già pronto: i tab <code>07</code> e <code>08</code></h2>
+<section id="cosa-accade-automaticamente" class="orange-box">
+<h3>Cosa accade automaticamente</h3>
 <ul>
-<li><strong>A2</strong> = ID del post nel foglio dati</li>
-<li><strong>Codifica!A:D</strong> = intervallo nel foglio di codifica (da ID a categoria)</li>
-<li><strong>4</strong> = numero della colonna con la categoria</li>
-<li><strong>FALSO</strong> = corrispondenza esatta</li>
+<li><strong>Tab <code>07_Codifica_finale</code>:</strong> consolida le codifiche di tutti i coder dai tab <code>04_Codifica_coderN</code> e fa il <code>VLOOKUP</code> con le metriche di engagement dal <code>01_Dataset_master</code>. Niente da scrivere.</li>
+<li><strong>Tab <code>08_Engagement</code>:</strong> legge da <code>07_Codifica_finale</code> e mostra:
+<ul>
+<li>Tabella riassuntiva con <strong>mediana</strong> e IQR di views/likes/comments/shares per categoria</li>
+<li><strong>Grafici a barre</strong> della mediana per ciascuna metrica</li>
+<li><strong>Box plot</strong> delle distribuzioni per categoria</li>
+</ul></li>
 </ul>
 </section>
 <aside class="notes">
-<p>Momento collettivo (25 min). Proiettare il passaggio step by step. Il CERCA.VERT collega i due fogli: il foglio dati (con le metriche di engagement) e il foglio di codifica (con le categorie assegnate). Il risultato: un foglio unico dove ogni post ha sia le metriche sia la categoria.</p>
+<p>Momento collettivo (25 min). Proiettare il tab <code>08_Engagement</code> di un gruppo che ha completato la codifica. Mostrare come i grafici si aggiornano automaticamente quando si aggiungono nuove codifiche. Sottolineare: nessuna formula da scrivere, nessuna pivot table da costruire. Tutto è già rilegato ai dati.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -173,32 +174,41 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
-<section id="confrontare-lengagement-tra-categorie" class="slide level2">
-<h2>Confrontare l’engagement tra categorie</h2>
-<p>Con i dati unificati, usate le <strong>tabelle pivot</strong>:</p>
+<section id="le-4-metriche-tiktok" class="slide level2">
+<h2>Le 4 metriche TikTok</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 71%">
+<col style="width: 21%">
 <col style="width: 28%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Cosa calcolare</th>
-<th>Come</th>
+<th>Metrica</th>
+<th>Cosa misura</th>
+<th>Tipica distribuzione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Engagement mediano per categoria</strong></td>
-<td>Tabella pivot: Righe = categoria, Valori = MEDIANA di reazioni/commenti/condivisioni</td>
+<td><code>view_count</code></td>
+<td>Visualizzazioni</td>
+<td>Estremamente asimmetrica (pochi viral)</td>
 </tr>
 <tr class="even">
-<td><strong>Distribuzione per categoria</strong></td>
-<td>Tabella pivot: conteggio per categoria</td>
+<td><code>like_count</code></td>
+<td>Like</td>
+<td>Asimmetrica, correlata con views</td>
 </tr>
 <tr class="odd">
-<td><strong>Grafico a barre</strong></td>
-<td>Selezionate la tabella pivot → Inserisci → Grafico</td>
+<td><code>comment_count</code></td>
+<td>Commenti</td>
+<td>Più rara, indica engagement attivo</td>
+</tr>
+<tr class="even">
+<td><code>share_count</code></td>
+<td>Condivisioni esterne</td>
+<td>Indica replicabilità del contenuto</td>
 </tr>
 </tbody>
 </table>
@@ -211,12 +221,12 @@ Fabio Giglietto
 <p><strong>Ricordate</strong></p>
 </div>
 <div class="callout-content">
-<p>Usate la <strong>mediana</strong>, non la media. Le distribuzioni di engagement sono asimmetriche — la media è distorta dagli outlier.</p>
+<p><strong>Mediana, non media.</strong> Le distribuzioni TikTok sono ancora più asimmetriche di quelle di altre piattaforme: pochissimi video virali “tirano” la media verso l’alto, la mediana descrive il video tipico.</p>
 </div>
 </div>
 </div>
 <aside class="notes">
-<p>Dimostrazione dal vivo: creare una tabella pivot con le categorie nelle righe e la mediana delle reazioni nei valori. Poi trasformarla in un grafico a barre. Mostrare anche la media come confronto — far notare quanto è più alta a causa degli outlier. Questi grafici e tabelle andranno direttamente nella sezione Results del saggio.</p>
+<p>Le 4 metriche raccontano cose diverse. Views = visibilità (quante volte il video è stato riprodotto). Like = approvazione passiva (un tap). Comments = engagement attivo (richiede sforzo). Shares = replicabilità (il contenuto esce da TikTok). Categorie diverse possono avere pattern molto diversi: un video meme può avere alti views ma pochi commenti; un video politico può avere pochi views ma molti commenti polarizzati. La sezione Results del saggio deve raccontare questi pattern, non solo riportare i numeri.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -234,14 +244,15 @@ Fabio Giglietto
 <div class="highlight-box">
 <p><strong>Oggi (75 minuti):</strong></p>
 <ol type="1">
-<li><strong>Unire</strong> la codifica al dataset originale con CERCA.VERT</li>
-<li><strong>Calcolare</strong> le statistiche descrittive per categoria con tabelle pivot</li>
-<li><strong>Produrre</strong> le prime tabelle e grafici</li>
+<li>Verificare che le codifiche siano fluite correttamente in <code>07_Codifica_finale</code></li>
+<li><strong>Leggere</strong> le tabelle e i grafici del tab <code>08_Engagement</code></li>
+<li>Identificare i <strong>pattern principali</strong> (quali categorie hanno più views? Più comments? Più shares?)</li>
+<li><strong>Copiare</strong> i grafici scelti per il saggio: tasto destro sul grafico → Copia → Incolla nel Google Doc come immagine PNG</li>
 </ol>
 <p><strong>Ultimi 20 minuti — condivisione rapida:</strong> ogni gruppo mostra il grafico o la tabella più interessante.</p>
 </div>
 <aside class="notes">
-<p>Il lavoro oggi è tecnico: collegare i fogli, creare tabelle pivot, produrre grafici. Passare tra i gruppi per aiutare con problemi tecnici (CERCA.VERT che non trova corrispondenze, tabelle pivot mal configurate). Il momento di condivisione finale è importante: ogni gruppo vede cosa stanno trovando gli altri.</p>
+<p>Il lavoro oggi è di <strong>lettura analitica</strong>, non di costruzione tecnica. Passare tra i gruppi per aiutare a interpretare i grafici (cosa dice questa box plot? Perché la mediana è bassa ma l’outlier alto?). Per copiare i grafici nel Google Doc: tasto destro sul grafico nel Foglio → “Copia grafico” → nel Doc → Incolla → scegliere “Incolla scollegato” per evitare che eventuali modifiche al Foglio cambino il grafico già nel saggio.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

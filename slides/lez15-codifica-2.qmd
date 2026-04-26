@@ -36,21 +36,23 @@ csl: ../apa.csl
 
 ## Momento collettivo: calcolare l'accordo {background-color="#C5612E"}
 
-## Come calcolare la percentuale di accordo
+## Aprite il tab `06_Kappa`
 
 ::: {.orange-box}
-### In Google Sheets
+### Tutto è già calcolato
 
-1. Affiancate le **colonne di codifica** di due codificatori (es. colonne E e F)
-2. In una nuova colonna, formula: `=SE(E2=F2;1;0)` oppure `=IF(E2=F2,1,0)`
-3. Copiate la formula per tutte le righe del sottoinsieme comune
-4. In fondo: `=MEDIA(G2:G31)` → percentuale di accordo
+Nel vostro Foglio Google, il tab **`06_Kappa`** è collegato al tab `05_Sottocampione_affidabilità` e mostra:
+
+1. **Concordanza osservata** (% di accordo): quante volte due coder hanno scelto la stessa categoria
+2. **Concordanza attesa per caso** (calcolata dalle distribuzioni marginali)
+3. **κ di Cohen** = (osservata − attesa) / (1 − attesa) — per ogni coppia di codificatori
+4. **κ medio** del gruppo, con cella colorata (rosso/giallo/verde)
 :::
 
-**Esempio:** se su 30 post, 24 hanno la stessa codifica → accordo = **80%**
+**Esempio:** se su 30 video due coder concordano su 24 → accordo grezzo = **80%**, κ ≈ 0.72 (a seconda della distribuzione delle categorie).
 
 ::: {.notes}
-Momento collettivo (20 min). Proiettare il template Google Sheets con le formule già predisposte. Mostrare il passaggio step by step. La percentuale di accordo è il primo indicatore, ma non tiene conto del caso: se ci sono solo 2 categorie, il caso da solo produce il 50% di accordo. Per questo serve il Kappa.
+Momento collettivo (20 min). Proiettare il tab `06_Kappa` di un gruppo (con permesso) o un gruppo demo. Mostrare la matrice di confusione: dove ci sono cluster fuori dalla diagonale = categorie confuse tra loro. Sottolineare: la percentuale di accordo da sola è ingannevole. Con 2 categorie, il caso produce 50% di accordo. Con 4 categorie equiprobabili, 25%. Il κ corregge per questo. Tutto già calcolato — gli studenti non scrivono formule.
 :::
 
 ## Il Kappa di Cohen
@@ -65,19 +67,19 @@ Momento collettivo (20 min). Proiettare il template Google Sheets con le formule
 | **< 0.60** | Accordo **insufficiente** — rivedere il codebook |
 :::
 
-Il template Google Sheets fornito dal docente calcola il Kappa automaticamente.
+Il tab `06_Kappa` del Foglio Google master calcola κ automaticamente. Voi non scrivete formule.
 
 ::: {.notes}
 Non serve la formula matematica — basta capire il concetto. Se due codificatori lanciano un dado a 4 facce, per caso saranno d'accordo il 25% delle volte. Un accordo osservato del 50% con 4 categorie non è buono come sembra: il Kappa lo corregge. Il template calcola tutto: gli studenti devono solo inserire le codifiche nelle colonne corrette.
 :::
 
-## Cosa fare se il Kappa è basso
+## Cosa fare se il κ è basso (< 0.60)
 
-1. **Identificare** le categorie con più disaccordo
-2. **Discutere** caso per caso: perché avete codificato diversamente?
-3. **Rivedere** le definizioni nel codebook
+1. **Identificare** le categorie con più disaccordo dalla **matrice di confusione** del tab `06_Kappa`
+2. **Discutere** caso per caso (consultate il tab `09_Log_decisioni`): perché avete codificato diversamente?
+3. **Rivedere** le definizioni nel tab `03_Codebook` (eventualmente con drafting Gemini, sempre rivisto)
 4. **Aggiungere** regole di decisione ed esempi
-5. **Ricodificare** il sottoinsieme e ricalcolare
+5. **Ricodificare** il sotto-campione e rileggere κ — si aggiorna automaticamente
 
 ::: {.highlight-box}
 Il processo è **iterativo**. Un primo Kappa basso è normale — indica che il codebook va affinato, non che il gruppo ha sbagliato.
@@ -92,11 +94,11 @@ Il Kappa basso è un dato, non un fallimento. L'iterazione (codifica → verific
 ::: {.highlight-box}
 **Oggi (60 minuti):**
 
-1. **Confrontare** le codifiche del sottoinsieme comune
-2. **Calcolare** l'accordo (percentuale + Kappa) usando il template
-3. **Discutere** le discrepanze caso per caso
-4. **Rivedere** il codebook se necessario
-5. **Proseguire** la codifica dei post rimanenti
+1. Verificare che tutti i membri abbiano completato la propria colonna nel tab `05_Sottocampione_affidabilità`
+2. **Leggere** κ nel tab `06_Kappa`
+3. **Discutere** le discrepanze caso per caso (matrice di confusione + log decisioni)
+4. **Rivedere** il codebook se necessario (κ < 0.60) e ricodificare il sotto-campione
+5. **Proseguire** la codifica dei video rimanenti nei tab `04_Codifica_coderN`
 :::
 
 ::: {.notes}
@@ -110,12 +112,12 @@ Il lavoro oggi è misto: prima collaborativo (confronto e discussione delle disc
 
 Ogni gruppo comunica:
 
-1. Il **valore di Kappa** ottenuto
-2. Le **categorie problematiche** (quelle con più disaccordo)
-3. Le **modifiche** apportate al codebook
-4. Lo **stato** della codifica (quanti post codificati su quanti totali)
+1. Il **valore di κ** finale (dal tab `06_Kappa`)
+2. Le **categorie problematiche** identificate dalla matrice di confusione
+3. Le **modifiche** apportate al codebook (versione e log)
+4. Lo **stato** della codifica (quanti video codificati su 120 totali)
 
-Se il Kappa è insufficiente, il docente suggerisce **strategie correttive**.
+Se κ è insufficiente, il docente suggerisce **strategie correttive**.
 :::
 
 **Prossima lezione:** Giovedì 7 maggio — *Analisi quantitativa dell'engagement*

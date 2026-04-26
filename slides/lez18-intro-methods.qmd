@@ -36,27 +36,31 @@ csl: ../apa.csl
 
 ## Momento collettivo: scrivere Introduction e Methods {background-color="#C5612E"}
 
-## L'Introduction: struttura a imbuto
+## Abstract e Introduction
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Dal generale al particolare
+### Abstract (150–200 parole — alla fine)
 
-1. **Tema ampio** — le piattaforme digitali e la manipolazione/partecipazione
-2. **Quadro teorico** — i 5 testi del corso, collegati tra loro
-3. **Lacuna/domanda** — cosa non sappiamo ancora
-4. **La vostra RQ** — formulata esplicitamente
+4 frasi: obiettivo + dataset/metodo + risultati principali + conclusione sintetica. Più 3–5 parole chiave.
 :::
 
 ::: {.column width="50%"}
-### Come usare i 5 testi
+### Introduction: struttura a imbuto
 
-- **Boyd (2018)** → affordance come punto di partenza
-- **Jenkins** → le pratiche partecipative
-- **Shirky** → il meccanismo dei costi
-- **Marwick & Lewis** → la strumentalizzazione
-- **Boyd (2017)** → il filo storico che lega tutto
+1. **Fenomeno TikTok** che indagate
+2. **Rilevanza** (perché conta)
+3. **Quadro teorico** — i 5 testi collegati
+4. **La vostra RQ** — esplicita
 :::
+:::
+
+::: {.highlight-box}
+**Non servono fonti esterne.** I cinque testi forniscono tutto il necessario per il quadro teorico. Boyd 2018 (affordance) — Jenkins (partecipazione) — Shirky (costi) — Marwick & Lewis (strumentalizzazione) — Boyd 2017 (filo storico).
+:::
+
+::: {.notes}
+Momento collettivo (25 min). Richiamare la mappa concettuale della Lezione 8: quella mappa è la struttura dell'Introduction. Non tutti i testi avranno lo stesso peso: per la RQ1, Marwick & Lewis e Boyd 2017 saranno centrali; per la RQ2, Jenkins e il suo rapporto con Marwick & Lewis saranno al centro. Ma tutti e cinque devono comparire. L'Abstract si scrive **per ultimo**, dopo aver finito tutto il resto.
 :::
 
 ::: {.highlight-box}
@@ -67,19 +71,41 @@ csl: ../apa.csl
 Momento collettivo (25 min). Richiamare la mappa concettuale della Lezione 8: quella mappa è la struttura dell'Introduction. Non tutti i testi avranno lo stesso peso: per la RQ1, Marwick & Lewis e Boyd 2017 saranno centrali; per la RQ2, Jenkins e il suo rapporto con Marwick & Lewis saranno al centro. Ma tutti e cinque devono comparire.
 :::
 
-## I Methods: cosa descrivere
+## I Methods in 4 sotto-sezioni
 
-| Elemento | Esempio di formulazione |
-|----------|------------------------|
-| **Dataset** | "Il dataset è stato estratto dalla Meta Content Library e comprende N post pubblicati da X pagine Facebook nel periodo Y–Z" |
-| **Campione** | "È stato estratto un campione stratificato di N post, proporzionale al numero di post per pagina" |
-| **Codebook** | "Le categorie di codifica sono state derivate dalla tassonomia di Marwick e Lewis (2017): [elenco]" |
-| **Procedura** | "Ciascun membro del gruppo ha codificato indipendentemente N post. Un sottoinsieme di N post è stato codificato da tutti per calcolare l'affidabilità" |
-| **Affidabilità** | "Il Kappa di Cohen è risultato pari a κ = 0.XX, indicando un accordo [buono/accettabile]" |
-| **Strumenti** | "L'analisi è stata condotta in Google Sheets utilizzando tabelle pivot e la funzione CERCA.VERT" |
+::: {style="font-size: 0.85em"}
+| Sotto-sezione | Esempio di formulazione |
+|---------------|------------------------|
+| **2.1 Dataset** | "Il dataset è stato raccolto via TikTok Research API e comprende N video pubblicati nel periodo Y–Z, filtrati per la query [...]. I campi disponibili includono `video_description`, `voice_to_text` (parziale), metriche di engagement (`view_count`, `like_count`, `comment_count`, `share_count`) e `watch_url`. Non sono disponibili: testo dei singoli commenti, impressioni FYP, dati socio-demografici." |
+| **2.2 Codebook** | "Le categorie di codifica sono state derivate dalla tassonomia di Marwick e Lewis (2017), adattate alle affordance TikTok-native (sound, hashtag challenge): [elenco sintetico]. Codebook completo in Appendice A." |
+| **2.3 Procedura** | "Ciascun membro del gruppo ha codificato indipendentemente N video. Un sotto-campione comune di 30 video è stato codificato da tutti per calcolare l'affidabilità. Casi ambigui registrati nel log decisioni (Appendice B)." |
+| **2.4 Affidabilità** | "Il κ di Cohen complessivo è risultato pari a κ = 0.XX, indicando un accordo [buono/accettabile]. Le categorie [X] hanno mostrato il κ più basso; sono state ridefinite e ricodificate." |
+:::
 
 ::: {.notes}
-Proiettare questa tabella come guida. I Methods devono essere sufficientemente dettagliati perché qualcuno possa replicare lo studio. Se il gruppo ha usato l'IA generativa (es. per generare formule), deve dichiararlo qui.
+Proiettare questa tabella come guida. I Methods devono essere sufficientemente dettagliati perché qualcuno possa replicare lo studio. Se il gruppo ha usato Gemini, lo dichiara nella sezione **6 (Dichiarazione d'uso dell'IA generativa)** del template, non nei Methods. Citare invece esplicitamente gli **strumenti**: Foglio Google master con tab specifici, formule κ pre-costruite.
+:::
+
+## La Dichiarazione d'uso dell'IA generativa
+
+::: {.orange-box}
+### Sezione 6 del template (obbligatoria)
+
+Per ogni uso di Gemini (o altri strumenti IA), dichiarate:
+
+- **Quale** strumento (Gemini chat, NotebookLM, ecc.)
+- **Per cosa** (drafting di definizioni, edge case, revisione prosa)
+- **Come avete verificato** l'output (riformulato, accettato dopo discussione di gruppo, ...)
+:::
+
+**Esempio di formulazione:**
+
+> *"Gemini chat è stato usato in due momenti: (1) per draftare 3 definizioni di codebook, poi tutte riformulate dal gruppo; (2) per discutere 5 casi ambigui registrati nel log decisioni. Le decisioni finali sono state prese dai codificatori umani."*
+
+**Se non avete usato IA:** scrivete *"Nessun uso di IA generativa."*
+
+::: {.notes}
+La Dichiarazione è una pratica di trasparenza scientifica, non una formalità. Sottolineare: dichiarare l'uso non penalizza il voto — nasconderlo (e farsi scoprire) sì. Gli usi accettati sono: drafting iniziale che il gruppo poi rivede, supporto a decisioni che restano del gruppo, revisione di prosa già scritta. Gli usi NON accettati: codificare al posto vostro, scrivere intere sezioni, sostituire la lettura dei testi.
 :::
 
 ## Lavoro di gruppo: scrittura {background-color="#C5612E"}
@@ -87,14 +113,13 @@ Proiettare questa tabella come guida. I Methods devono essere sufficientemente d
 ::: {.highlight-box}
 **Oggi (85 minuti):**
 
-Suddividetevi nel gruppo:
+Suddividetevi nel gruppo. Lavorate sul **Google Doc** creato dal template `templates/paper_template.md`:
 
 - Alcuni scrivono l'**Introduction**
-- Altri scrivono i **Methods**
+- Altri scrivono i **Methods** (4 sotto-sezioni)
+- Eventualmente uno inizia a draftare la **Dichiarazione d'uso dell'IA**
 
-Lavorate sul **documento condiviso** (Google Docs).
-
-Il docente è disponibile per **consultazioni**.
+Gemini ammesso per revisione di prosa, mai per scrivere intere sezioni. Il docente è disponibile per **consultazioni**.
 :::
 
 **Status check** negli ultimi 10 minuti: ogni gruppo comunica lo stato di avanzamento.

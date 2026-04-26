@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="lez13-campionamento_files/libs/revealjs/dist/theme/quarto-3a5714e8aa771ffbbce897ca5edd91d0.css">
+  <link rel="stylesheet" href="lez13-campionamento_files/libs/revealjs/dist/theme/quarto-d3c2a5122366430a435f087ef7f59611.css">
   <link href="lez13-campionamento_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="lez13-campionamento_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="lez13-campionamento_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -193,16 +193,16 @@ Fabio Giglietto
 </section>
 <section id="quanto-campionare" class="slide level2">
 <h2>Quanto campionare?</h2>
-<section id="regola-pratica" class="orange-box">
-<h3>Regola pratica</h3>
+<section id="la-regola-del-corso-già-implementata-nel-foglio" class="orange-box">
+<h3>La regola del corso (già implementata nel Foglio)</h3>
 <ul>
-<li>Almeno <strong>100–150 post</strong> per un’analisi del contenuto di gruppo</li>
-<li>Di cui <strong>20–30 codificati da tutti</strong> i membri per calcolare l’affidabilità inter-codificatore</li>
+<li><strong>120 video TikTok</strong> per gruppo</li>
+<li>Di cui <strong>30 codificati da tutti</strong> i membri per calcolare l’affidabilità inter-codificatore (κ di Cohen)</li>
 </ul>
 </section>
-<p>Il campione deve essere <strong>rappresentativo</strong> del dataset — non scelto a caso in senso colloquiale, ma estratto con un metodo sistematico.</p>
+<p>Il campione è <strong>già pre-popolato</strong> nel tab <code>02_Campione_gruppo</code> del vostro Foglio Google. Estratto con campionamento casuale dal dataset master tramite formula <code>RANDBETWEEN</code>.</p>
 <aside class="notes">
-<p>100-150 post è un numero gestibile per un gruppo di 4-6 persone in 3 settimane. Il sottoinsieme comune (20-30 post) serve per calcolare il Kappa di Cohen: tutti i codificatori devono codificare gli stessi post indipendentemente. Il resto viene diviso tra i membri.</p>
+<p>120 video è un numero gestibile per un gruppo di 4-6 persone in 3 settimane. Il sotto-campione comune (30 video) serve per calcolare il κ di Cohen: tutti i codificatori devono codificare gli stessi video indipendentemente. Il resto viene diviso tra i membri. Oggi non si scrive <code>RAND</code> — il campione esiste già nel Foglio. Si <strong>verifica</strong> che sia accettabile, eventualmente si discute con il docente se serve un campionamento stratificato diverso.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -215,32 +215,22 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
-<section id="due-strategie-di-campionamento" class="slide level2">
-<h2>Due strategie di campionamento</h2>
+<section id="due-strategie-di-campionamento-concettuali" class="slide level2">
+<h2>Due strategie di campionamento (concettuali)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="casuale-semplice">Casuale semplice</h3>
-<p>Ogni post ha la <strong>stessa probabilità</strong> di essere selezionato.</p>
-<p><strong>In Google Sheets:</strong></p>
-<ol type="1">
-<li>Aggiungete una colonna “Casuale”</li>
-<li>Formula: <code>=CASUALE()</code> o <code>=RAND()</code></li>
-<li>Ordinate per quella colonna</li>
-<li>Selezionate le prime N righe</li>
-</ol>
+<p>Ogni video ha la <strong>stessa probabilità</strong> di essere selezionato.</p>
+<p><strong>Nel vostro Foglio:</strong></p>
+<p>Il tab <code>02_Campione_gruppo</code> è già pre-popolato con un campione casuale di 120 video del dataset master.</p>
 </div><div class="column" style="width:50%;">
 <h3 id="stratificato">Stratificato</h3>
-<p>Si campiona <strong>proporzionalmente</strong> da ciascun sottoinsieme (pagina, periodo, tipo).</p>
-<p><strong>In Google Sheets:</strong></p>
-<ol type="1">
-<li>Filtrate per pagina/periodo</li>
-<li>Applicate <code>=CASUALE()</code> al sottoinsieme</li>
-<li>Selezionate le prime N righe da ciascuno</li>
-<li>Unite i sottocampioni</li>
-</ol>
+<p>Si campiona <strong>proporzionalmente</strong> da ciascun sottoinsieme (account, periodo, durata).</p>
+<p><strong>Nel vostro Foglio:</strong></p>
+<p>Se il vostro angolo richiede una stratificazione specifica (es. solo video di un periodo), chiedete al docente: estrarrà un nuovo campione stratificato.</p>
 </div></div>
 <aside class="notes">
-<p>Il campionamento casuale semplice è il più semplice ma può produrre campioni sbilanciati (es. una pagina molto attiva domina il campione). Il campionamento stratificato garantisce rappresentatività: se il dataset ha 5 pagine, il campione include post da tutte e 5. Consigliare ai gruppi di usare il campionamento stratificato per pagina — a meno che il loro angolo specifico non giustifichi un altro approccio.</p>
+<p>Il campionamento casuale semplice è il più semplice ma può produrre campioni sbilanciati (es. un account molto attivo domina il campione). Il campionamento stratificato garantisce rappresentatività su una variabile chiave. Per la maggior parte dei gruppi va bene il casuale semplice già pre-popolato. Se un gruppo ha un angolo che richiede stratificazione (es. focus solo su un hashtag, o confronto pre/post-evento), il docente prepara un campione ad hoc oggi stesso. Una volta approvato il campione (Checkpoint 1), il docente lo “congela” (Copia → Incolla speciale → solo valori) per evitare che <code>RANDBETWEEN</code> lo ricalcoli ogni volta.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -256,32 +246,36 @@ Fabio Giglietto
 <section id="pianificare-la-codifica" class="slide level2">
 <h2>Pianificare la codifica</h2>
 <table class="caption-top">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 77%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Elemento</th>
-<th>Cosa decidere</th>
+<th>Cosa è già pronto / Cosa decidere</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>Campione totale</strong></td>
-<td>Quanti post? (100–150)</td>
+<td>120 video, già nel tab <code>02_Campione_gruppo</code></td>
 </tr>
 <tr class="even">
-<td><strong>Sottoinsieme comune</strong></td>
-<td>Quali 20–30 post codificano tutti?</td>
+<td><strong>Sotto-campione comune</strong></td>
+<td>30 video, già nel tab <code>05_Sottocampione_affidabilità</code></td>
 </tr>
 <tr class="odd">
 <td><strong>Suddivisione</strong></td>
-<td>Chi codifica quali post?</td>
+<td><strong>Da decidere oggi:</strong> chi è coder1, coder2, …? Si rinominano i tab <code>04_Codifica_coderN</code> con i nomi reali</td>
 </tr>
 <tr class="even">
 <td><strong>Ordine</strong></td>
-<td>Prima il sottoinsieme comune, poi i post individuali</td>
+<td>Prima il sotto-campione comune (per κ), poi i video individuali</td>
 </tr>
 <tr class="odd">
 <td><strong>Gestione ambiguità</strong></td>
-<td>Annotare i casi dubbi, non forzare</td>
+<td>Annotare nel tab <code>09_Log_decisioni</code> (data, video_id, caso, decisione, motivazione)</td>
 </tr>
 </tbody>
 </table>
@@ -304,10 +298,11 @@ Fabio Giglietto
 <div class="highlight-box">
 <p><strong>Ogni gruppo (80 minuti):</strong></p>
 <ol type="1">
-<li><strong>Finalizzare</strong> il codebook — categorie, definizioni, esempi, regole per i casi ambigui</li>
-<li><strong>Estrarre</strong> il campione dal dataset nel foglio Google condiviso</li>
-<li><strong>Suddividere</strong> i post da codificare tra i membri</li>
-<li><strong>Identificare</strong> il sottoinsieme comune per il test di affidabilità</li>
+<li><strong>Finalizzare</strong> il codebook nel tab <code>03_Codebook</code> — categorie, definizioni, esempi (con <code>video_id</code>), regole per i casi ambigui (eventualmente Gemini per drafting iniziale)</li>
+<li><strong>Verificare</strong> il campione di 120 video nel tab <code>02_Campione_gruppo</code>; se necessario chiedere al docente una stratificazione diversa</li>
+<li><strong>Assegnare</strong> ciascun video del campione a un coder (popolare la colonna <code>coder_assegnato</code>)</li>
+<li><strong>Verificare</strong> la presenza del sotto-campione comune di 30 video nel tab <code>05_Sottocampione_affidabilità</code></li>
+<li><strong>Rinominare</strong> i tab <code>04_Codifica_coderN</code> con i nomi reali dei membri</li>
 </ol>
 </div>
 <p>Il docente passa tra i gruppi per verificare e rispondere ai dubbi.</p>

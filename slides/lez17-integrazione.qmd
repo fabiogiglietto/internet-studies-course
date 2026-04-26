@@ -42,9 +42,9 @@ csl: ../apa.csl
 ::: {.column width="50%"}
 ### I pattern qualitativi
 
-**Cosa dicono i post?**
+**Cosa dicono i video?**
 
-La codifica vi dice *che tipo* di contenuto c'è nel campione: tattiche (RQ1) o forme di partecipazione (RQ2).
+La codifica nel `07_Codifica_finale` vi dice *che tipo* di contenuto c'è nel campione: tattiche (RQ1) o forme di partecipazione (RQ2).
 :::
 
 ::: {.column width="50%"}
@@ -52,7 +52,7 @@ La codifica vi dice *che tipo* di contenuto c'è nel campione: tattiche (RQ1) o 
 
 **Come performano?**
 
-Le tabelle pivot vi dicono *come* ciascuna categoria si comporta in termini di engagement.
+Le pivot del `08_Engagement` vi dicono *come* ciascuna categoria si comporta in termini di views, likes, comments, shares.
 :::
 :::
 
@@ -105,7 +105,7 @@ Il Checkpoint 3 è l'ultimo momento di verifica prima della scrittura. Se i risu
 
 ::: {.callout-tip}
 ## Preparatevi a scrivere
-Da domani lavorerete su un **documento condiviso** (Google Docs). Create il documento e condividetelo con tutti i membri del gruppo e con il docente.
+Da domani lavorerete su un **Google Doc condiviso**, creato a partire dal template `templates/paper_template.md`. Create il documento, copiate il template, e condividetelo con tutti i membri e con il docente.
 :::
 
 ## Grazie! {background-color="#C5612E"}

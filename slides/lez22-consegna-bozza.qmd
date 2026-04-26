@@ -51,16 +51,19 @@ Tutta la lezione (110 minuti) è dedicata al lavoro di gruppo. Nessun momento co
 ::: {.orange-box}
 ### Prima di consegnare, verificate
 
+- [ ] **Frontespizio** completo (titolo, gruppo, RQ)
+- [ ] **Abstract** (150–200 parole) + 3–5 parole chiave
 - [ ] La **RQ** è formulata esplicitamente nell'Introduction
 - [ ] Tutti e **5 i testi** del corso sono citati nel quadro teorico
-- [ ] I **Methods** descrivono ciò che avete effettivamente fatto
-- [ ] Il **Kappa** è riportato nei Methods
-- [ ] Ogni **tabella e grafico** è introdotto e commentato nei Results
-- [ ] La **Discussion** torna al quadro teorico
-- [ ] I **limiti** sono discussi
-- [ ] Le **citazioni** sono in stile APA
-- [ ] Il saggio è tra **4.000 e 6.000 parole**
-- [ ] L'eventuale uso di **IA generativa** è dichiarato nei Methods
+- [ ] I **Methods** sono in 4 sotto-sezioni e citano l'origine TikTok Research API + i campi non disponibili
+- [ ] **κ di Cohen** riportato nei Results (non nei Methods)
+- [ ] **Results** in 3 sotto-sezioni; ogni tabella/grafico introdotto e commentato (mediana, non media)
+- [ ] **Discussion** nei 5 momenti, con limiti specifici TikTok
+- [ ] **Conclusioni** brevi che rispondono alla RQ
+- [ ] **Dichiarazione d'uso dell'IA generativa** presente
+- [ ] **Bibliografia** in APA 7
+- [ ] **Appendice A** (codebook completo) e **Appendice B** (log decisioni)
+- [ ] Saggio **4.000–6.000 parole** (esclusi Bibliografia e Appendici)
 :::
 
 ::: {.notes}
@@ -112,7 +115,7 @@ Spiegare la logistica: le bozze vengono consegnate venerdì sera, il docente le 
 
 - Venerdì **22 maggio**, ore **23:59**
 - Formato **PDF**, su **Moodle**
-- La bozza non deve essere perfetta — ma deve essere **completa** (tutte e 4 le sezioni IMRAD)
+- La bozza non deve essere perfetta — ma deve essere **completa**: Abstract, Introduction, Methods (4 sotto-sezioni), Results (3 sotto-sezioni), Discussion (5 momenti), Conclusioni, Dichiarazione IA, Bibliografia, Appendici A e B
 :::
 
 ## Grazie! {background-color="#C5612E"}

@@ -18,3 +18,19 @@ Thumbs.db
 # Dataset and student project data (large files, copyrighted content)
 data/
 
+# Raw TikTok Research API responses + curated cluster lists + master CSV.
+# All in-repo data is generated; canonical copies live in the course Drive folder.
+data-raw/
+
+# Local environment (TikTok API credentials etc.)
+.Renviron
+.env
+
+# Probe + setup scripts that hit the live API or rotate credentials —
+# kept locally for reproducibility, not committed to keep the repo clean.
+scripts/_probe_*.R
+scripts/_probes.sh
+scripts/_overnight_run.sh
+scripts/_solovyov_pull.R
+scripts/_write_report.R
+

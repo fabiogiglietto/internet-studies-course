@@ -30,7 +30,7 @@
 ## Struttura generale
 
 - **Blocco 1 — Fondamenti** (lezioni 1–12, 31 marzo – 29 aprile): lezioni frontali, seminari e brevi esercitazioni in aula.
-- **Blocco 2 — Laboratorio di ricerca** (lezioni 13–24, 30 aprile – 27 maggio): lavoro di gruppo supervisionato su un dataset MCL, finalizzato alla produzione di un saggio empirico IMRAD (4.000–6.000 parole, gruppi di max 6).
+- **Blocco 2 — Laboratorio di ricerca** (lezioni 13–24, 30 aprile – 27 maggio): lavoro di gruppo supervisionato su un dataset TikTok (raccolto via TikTok Research API), finalizzato alla produzione di un saggio empirico IMRAD (4.000–6.000 parole, gruppi di max 6).
 
 ---
 
@@ -62,7 +62,7 @@ L'uso di strumenti di IA generativa (ChatGPT, Claude, Gemini, ecc.) è **consent
 - Sostituire la lettura e la comprensione dei testi in programma.
 - Produrre la codifica del contenuto (che deve essere effettuata manualmente).
 
-**Obbligo di trasparenza:** Ogni utilizzo di IA generativa deve essere dichiarato nella sezione Methods del saggio, specificando lo strumento usato e per quale scopo. L'IA generativa può produrre errori, informazioni non verificate e "allucinazioni": la responsabilità del contenuto finale resta interamente degli studenti.
+**Obbligo di trasparenza:** Ogni utilizzo di IA generativa deve essere dichiarato nella sezione **Dichiarazione d'uso dell'IA generativa** del saggio (sezione dedicata, distinta dai Methods), specificando lo strumento usato, lo scopo e il modo in cui l'output è stato verificato. L'IA generativa può produrre errori, informazioni non verificate e "allucinazioni": la responsabilità del contenuto finale resta interamente degli studenti.
 
 ### Consegne in ritardo
 
@@ -104,6 +104,13 @@ Gli studenti che non raggiungono la soglia di 18 presenze sostengono l'esame sui
 | **Risultati** | 20% | Assenti o non coerenti con la RQ | Presentati ma incompleti o confusi | Chiari, con tabelle/grafici adeguati | Completi, ben organizzati, tabelle/grafici efficaci |
 | **Discussione** | 15% | Assente o ripetizione dei risultati | Interpretazione superficiale | Collegamento ai testi del corso, limiti riconosciuti | Interpretazione approfondita, implicazioni, limiti discussi onestamente |
 | **Qualità della scrittura** | 15% | Errori frequenti, struttura confusa | Comprensibile ma disomogeneo | Chiaro, coerente, stile accademico | Fluido, preciso, voce accademica coerente |
+
+**Come si mappano gli elementi aggiuntivi del template** (Abstract, Conclusioni, Dichiarazione IA, Appendici A/B):
+
+- **Abstract** e **Conclusioni** → contribuiscono al criterio *Qualità della scrittura* (un Abstract assente o privo di parole chiave e Conclusioni che ripetono l'Abstract abbassano il giudizio).
+- **Appendice A — Codebook completo** → contribuisce al criterio *Metodo* (assenza dell'Appendice = Metodo "con lacune", anche se il corpo del saggio è chiaro).
+- **Appendice B — Log delle decisioni** → contribuisce al criterio *Metodo* (dimostra rigore della procedura).
+- **Dichiarazione d'uso dell'IA generativa** → requisito di *compliance* (pass/fail), non pesato nel voto: assenza = saggio non valutabile, da rivedere e ripresentare.
 
 ### Griglia per la peer review (Lezione 23)
 
@@ -155,13 +162,14 @@ Su Moodle saranno disponibili 2–3 saggi IMRAD anonimizzati degli anni preceden
 
 **⚠ Il tema del dataset è da definire a cura del docente prima dell'inizio del corso.**
 
-Requisiti per il dataset MCL:
+Requisiti per il dataset TikTok (raccolto via **TikTok Research API**):
 
 - Dimensione sufficiente (almeno 500–1.000 post) per consentire campionamenti diversificati tra i gruppi.
-- Contenuto multimediale (immagini e/o video) presente per una quota significativa dei post.
 - Tema che consenta l'applicazione di entrambe le RQ (tattiche di manipolazione E pratiche partecipative).
-- Varietà di pagine/gruppi fonte per consentire confronti.
-- Predisporre e testare i template Google Sheets (foglio dati, foglio codifica, template Kappa di Cohen, tabelle pivot, grafici) con dati reali prima della Lezione 10.
+- Varietà di account fonte per consentire confronti.
+- Trascrizione audio (`voice_to_text`) presente per una quota rilevante dei post quando disponibile.
+- Disponibilità di `watch_url` cliccabile per la visione dei video (i video stessi non vengono scaricati: si visualizzano via browser).
+- Predisporre e testare il **Foglio Google master** (10 tab, formule pre-costruite, κ di Cohen, tabelle pivot, grafici) prima della Lezione 10. Specifica completa in `templates/google_sheet_structure.md`.
 
 ---
 
@@ -169,30 +177,47 @@ Requisiti per il dataset MCL:
 
 ### Dataset
 
-Il docente fornisce a tutti i gruppi lo stesso dataset: un export CSV dalla **Meta Content Library (MCL)**, comprensivo di contenuto multimediale (immagini e/o video). Il dataset include post pubblicati da un insieme definito di pagine e/o gruppi Facebook su un tema specifico [da definire a cura del docente], con le variabili standard MCL: testo, tipo di contenuto, metriche di engagement, info sulla pagina/gruppo, data, URL, contenuto multimediale.
+Il docente fornisce a tutti i gruppi lo stesso dataset: un export di post **TikTok** raccolti via **TikTok Research API** su un tema specifico [da definire a cura del docente]. I dati sono caricati nel **Foglio Google master** (tab `01_Dataset_master`, sola lettura) con i campi: `video_id`, `create_time`, `username`, `video_description`, `voice_to_text` (quando disponibile), `hashtag_names`, `view_count`, `like_count`, `comment_count`, `share_count`, `video_duration`, `watch_url`. Per visualizzare i video, gli studenti cliccano su `watch_url` (apertura in browser su TikTok).
+
+**Campi NON disponibili** (vincolo dell'API, da dichiarare in Methods): testo dei singoli commenti (solo conteggio), impressioni dalla FYP (solo `view_count`), dati socio-demografici sull'utenza, dati su duet/stitch (solo aggregati).
+
+### Strumenti di lavoro
+
+- **Foglio Google master** clonato per ciascun gruppo, con 10 tab pre-costruiti (campione, codebook, codifica per coder, sotto-campione di affidabilità, κ di Cohen, codifica finale, engagement, log decisioni). Specifica completa in `templates/google_sheet_structure.md`.
+- **Google Docs** per la stesura del saggio. Template completo in `templates/paper_template.md`.
+- **Gemini chat** è ammesso come **strumento di supporto** (drafting di definizioni di codebook, discussione di casi ambigui, revisione di prosa). **Non è ammesso** come classificatore al posto dei codificatori umani, né per scrivere intere sezioni del saggio. Ogni uso va dichiarato nella sezione **Dichiarazione d'uso dell'IA generativa** del saggio.
 
 ### Domande di ricerca guidate
 
 Ogni gruppo sceglie **una** delle seguenti RQ. Gruppi diversi possono scegliere la stessa, purché adottino focus distinti.
 
-**RQ1 — Tattiche di manipolazione mediatica e contenuto visuale**
+**RQ1 — Tattiche di manipolazione mediatica e contenuto su TikTok**
 
-*Quali tattiche di manipolazione mediatica, tra quelle identificate da Marwick e Lewis (2017), sono riconoscibili nel contenuto multimediale delle pagine/gruppi Facebook presenti nel dataset? Come si distribuiscono queste tattiche e quali pattern di engagement generano?*
+*Quali tattiche di manipolazione mediatica, tra quelle identificate da Marwick e Lewis (2017), sono riconoscibili nei video TikTok del dataset? Come si distribuiscono queste tattiche e quali pattern di engagement (visualizzazioni, like, condivisioni, commenti) generano?*
 
-I gruppi sviluppano un codebook basato su Marwick e Lewis, lo applicano a un campione di contenuti multimediali, e analizzano la relazione tra tattiche ed engagement. Il quadro teorico collega le tattiche alle proprietà dei Networked Publics (Boyd, 2018) e al percorso storico di strumentalizzazione dell'economia dell'attenzione (Boyd, 2017).
+I gruppi sviluppano un codebook adattato alla tassonomia di Marwick e Lewis e alle affordance specifiche di TikTok (sound-as-meme, hashtag challenge, duet/stitch, FYP algoritmica), lo applicano a un campione di post, e analizzano la relazione tra tattiche ed engagement. Il quadro teorico collega le tattiche alle proprietà dei Networked Publics (Boyd, 2018) e al percorso storico di strumentalizzazione dell'economia dell'attenzione (Boyd, 2017).
 
-**RQ2 — Cultura partecipativa genuina e pratiche partecipative strumentalizzate**
+**RQ2 — Partecipazione genuina vs. partecipazione strumentalizzata su TikTok**
 
-*In che misura i contenuti presenti nel dataset presentano caratteristiche di cultura partecipativa genuina (Jenkins, 2008) rispetto a pratiche partecipative strumentalizzate a fini di manipolazione mediatica (Marwick & Lewis, 2017)? Quali differenze emergono nei pattern di engagement?*
+*In che misura i video TikTok del dataset presentano caratteristiche di cultura partecipativa genuina (Jenkins, 2008) rispetto a pratiche partecipative strumentalizzate a fini di manipolazione mediatica (Marwick & Lewis, 2017)? Quali differenze emergono nei pattern di engagement?*
 
-I gruppi classificano un campione lungo un continuum dalla partecipazione genuina alla strumentalizzazione. Il punto teorico chiave è che la manipolazione di Marwick e Lewis non è top-down: sfrutta le stesse dinamiche reticolari e dal basso che Jenkins descrive come emancipatorie — un passaggio tracciato storicamente da Boyd (2017). Le affordance di Boyd (2018) abilitano entrambi gli usi; l'abbattimento dei costi di coordinamento di Shirky (2009) vale per entrambi. La differenza è nell'intenzionalità, non nella direzione del flusso.
+I gruppi classificano un campione lungo un continuum dalla partecipazione genuina (es. partecipazione organica a un trend, remix creativo) alla strumentalizzazione (es. partecipazione coordinata a un trend per fini di campagna, riuso di sound deceptivo). Il punto teorico chiave è che la manipolazione di Marwick e Lewis non è top-down: sfrutta le stesse dinamiche reticolari e dal basso che Jenkins descrive come emancipatorie — un passaggio tracciato storicamente da Boyd (2017). Le affordance di Boyd (2018) abilitano entrambi gli usi; l'abbattimento dei costi di coordinamento di Shirky (2009) vale per entrambi. La differenza è nell'intenzionalità, non nella direzione del flusso.
 
 ### Struttura del saggio IMRAD
 
-- **Introduction** (~800–1.200 parole): tema, rilevanza, quadro teorico dai testi del corso, RQ.
-- **Methods** (~600–1.000 parole): dataset, campionamento, codebook, procedura, strumenti.
-- **Results** (~1.000–1.500 parole): risultati con tabelle e grafici.
-- **Discussion** (~800–1.200 parole): interpretazione, collegamento al quadro teorico, limiti.
+Template di riferimento: `templates/paper_template.md`. Sezioni:
+
+- **Frontespizio** (titolo, gruppo, RQ scelta, data).
+- **Abstract** (150–200 parole) con 3–5 parole chiave.
+- **Introduction** (~800–1.200 parole): fenomeno → rilevanza → quadro teorico dai 5 testi del corso → RQ.
+- **Methods** (~800–1.200 parole), in 4 sotto-sezioni: *Dataset* (TikTok Research API, query, periodo, N, campi disponibili e non), *Codebook* (sintesi; versione completa in Appendice A), *Procedura di codifica* (campione, allocazione, sotto-campione di affidabilità), *Affidabilità* (κ di Cohen, soglia, eventuali ricodifiche).
+- **Results** (~1.000–1.500 parole), in 3 sotto-sezioni: *Distribuzione delle categorie*, *Affidabilità* (tabella κ + commento), *Pattern di engagement per categoria* (mediana e IQR per views/likes/comments/shares; tabelle e grafici dal tab `08_Engagement` del Foglio).
+- **Discussion** (~800–1.200 parole), in 5 momenti: sintesi → collegamento ai 5 testi → riflessione metodologica → limiti → implicazioni.
+- **Conclusioni** (1–2 paragrafi).
+- **Dichiarazione d'uso dell'IA generativa** (obbligatoria, anche se non è stata usata).
+- **Bibliografia** in stile APA 7.
+- **Appendice A — Codebook completo** (definizioni operative, esempi, regole di decisione).
+- **Appendice B — Log delle decisioni di codifica** (5–10 voci esemplificative).
 
 ---
 
@@ -210,7 +235,7 @@ I gruppi classificano un campione lungo un continuum dalla partecipazione genuin
 | 7    | 16 aprile      | Gio    | 1      | Media manipulation e disinformazione (II)              |
 | 8    | 21 aprile      | Mar    | 1      | Sintesi: hackerare l'economia dell'attenzione          |
 | 9    | 22 aprile      | Mer    | 1      | Fare ricerca con i dati delle piattaforme              |
-| 10   | 23 aprile      | Gio    | 1      | Il dataset MCL: esplorazione guidata                   |
+| 10   | 23 aprile      | Gio    | 1      | Il dataset TikTok: esplorazione guidata                |
 | 11   | 28 aprile      | Mar    | 1      | Analisi del contenuto, codebook e formazione gruppi    |
 | 12   | 29 aprile      | Mer    | 1      | Il formato IMRAD, le RQ e avvio codebook di gruppo     |
 | 13   | 30 aprile      | Gio    | 2      | Campionamento e pianificazione della codifica          |
@@ -226,7 +251,7 @@ I gruppi classificano un campione lungo un continuum dalla partecipazione genuin
 | 23   | 26 maggio      | Mar    | 2      | Peer review incrociata                                 |
 | 24   | 27 maggio      | Mer    | 2      | Revisione finale e presentazioni                       |
 
-**Consegna definitiva del saggio:** entro mercoledì 3 giugno 2026.
+**Consegna definitiva del saggio:** entro lunedì 1 giugno 2026.
 
 ---
 
@@ -241,7 +266,7 @@ I gruppi classificano un campione lungo un continuum dalla partecipazione genuin
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 9:00–9:30 | Presentazione del corso | Struttura a due blocchi, materiali, progetto IMRAD, modalità di valutazione. Il docente mostra il dataset MCL che verrà usato nel Blocco 2, senza entrare nel dettaglio: l'obiettivo è far capire verso cosa si lavora. |
+| 9:00–9:30 | Presentazione del corso | Struttura a due blocchi, materiali, progetto IMRAD, modalità di valutazione. Il docente mostra il dataset TikTok che verrà usato nel Blocco 2, senza entrare nel dettaglio: l'obiettivo è far capire verso cosa si lavora. |
 | 9:30–10:15 | Lezione frontale: Networked Publics | A partire da Boyd (2018, pp. 29–43). Le quattro proprietà strutturali (persistenza, replicabilità, scalabilità, ricercabilità) e le tre dinamiche sociali (pubblici invisibili, collasso dei contesti, confine pubblico/privato). Il docente illustra ciascuna proprietà con un esempio tratto dall'esperienza quotidiana sulle piattaforme. |
 | 10:15–10:55 | Esercitazione individuale + discussione | Ogni studente sceglie un proprio post recente su un social (o un post pubblico) e lo analizza alla luce delle quattro proprietà: quale proprietà è più evidente? Quale dinamica sociale si attiva? Condivisione in plenaria di 4–5 casi. Il docente evidenzia come le stesse proprietà possano avere effetti positivi e problematici. |
 | 10:55–11:00 | Chiusura e assegnazione lettura | Assegnazione lettura lez. 2: Jenkins (2008), pp. 7–22. |
@@ -376,33 +401,33 @@ I gruppi classificano un campione lungo un continuum dalla partecipazione genuin
 ### Lezione 9 — Mercoledì 22 aprile (11–13, Aula D3)
 **Fare ricerca con i dati delle piattaforme**
 
-**Obiettivi di apprendimento:** Al termine della lezione, lo studente sarà in grado di: (1) descrivere l'evoluzione dell'accesso ai dati delle piattaforme (dalle API aperte alla Meta Content Library); (2) identificare le principali questioni etiche della ricerca digitale (consenso, GDPR, anonimizzazione); (3) distinguere tra analisi del contenuto qualitativa e analisi descrittiva quantitativa dell'engagement.
+**Obiettivi di apprendimento:** Al termine della lezione, lo studente sarà in grado di: (1) descrivere l'evoluzione dell'accesso ai dati delle piattaforme (dalle API aperte alle attuali Research API), inquadrando la **TikTok Research API** come fonte del laboratorio; (2) identificare le principali questioni etiche della ricerca digitale (consenso, GDPR, anonimizzazione); (3) distinguere tra analisi del contenuto qualitativa e analisi descrittiva quantitativa dell'engagement.
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 11:00–11:40 | Lezione frontale: il panorama dell'accesso ai dati | Come si studia ciò che accade sulle piattaforme? Breve storia dell'accesso ai dati: dalle API aperte (Twitter, Facebook Graph API) alla chiusura progressiva (caso Twitter/X 2023, fine di CrowdTangle 2024). La Meta Content Library: cos'è, come funziona, cosa contiene, chi può accedervi, quali sono i limiti. Altre fonti: TikTok Research API, AT Protocol/Bluesky, archivi web. |
-| 11:40–12:10 | Lezione frontale: etica della ricerca digitale | Il consenso informato su dati tecnicamente pubblici: un post su Facebook è "pubblico" ai fini della ricerca? Il GDPR e le sue implicazioni per la ricerca sociale. I termini di servizio come vincolo. Le responsabilità del ricercatore: anonimizzazione, proporzionalità, rispetto delle persone dietro i dati. |
-| 12:10–12:50 | Lezione frontale: i metodi del laboratorio | Introduzione ai due approcci che verranno usati: (1) analisi del contenuto qualitativa (codifica manuale di un campione di post e immagini), (2) analisi descrittiva quantitativa delle metriche di engagement (distribuzioni, confronti tra categorie). Non ci si aspetta che facciano statistica inferenziale: il focus è descrittivo. |
-| 12:50–13:00 | Chiusura | Annuncio: la prossima lezione prevede lavoro pratico sui dati. Il docente distribuirà il dataset via Google Sheets. |
+| 11:00–11:40 | Lezione frontale: il panorama dell'accesso ai dati | Come si studia ciò che accade sulle piattaforme? Breve storia dell'accesso ai dati: dalle API aperte (Twitter, Facebook Graph API) alla chiusura progressiva (caso Twitter/X 2023, fine di CrowdTangle 2024). Il panorama attuale: Meta Content Library, TikTok Research API, AT Protocol/Bluesky, archivi web. **Focus sulla TikTok Research API** (fonte del Blocco 2): cos'è, chi può accedervi, quali campi restituisce, quali no (commenti come testo, impressioni FYP, dati socio-demografici). |
+| 11:40–12:10 | Lezione frontale: etica della ricerca digitale | Il consenso informato su dati tecnicamente pubblici: un post su TikTok è "pubblico" ai fini della ricerca? Il GDPR e le sue implicazioni per la ricerca sociale. I termini di servizio come vincolo. Le responsabilità del ricercatore: anonimizzazione (specie per account non-istituzionali), proporzionalità, rispetto delle persone dietro i dati. |
+| 12:10–12:50 | Lezione frontale: i metodi del laboratorio | Introduzione ai due approcci che verranno usati: (1) analisi del contenuto qualitativa (codifica manuale di un campione di video TikTok), (2) analisi descrittiva quantitativa delle metriche di engagement (views, likes, comments, shares; distribuzioni, confronti tra categorie). Non ci si aspetta che facciano statistica inferenziale: il focus è descrittivo. Cenno a **Gemini chat** come strumento di supporto ammesso (drafting, edge case), non sostitutivo della codifica umana. |
+| 12:50–13:00 | Chiusura | Annuncio: la prossima lezione prevede lavoro pratico sui dati. Il docente distribuirà il **Foglio Google master** con il dataset TikTok già caricato. |
 
 **Nessuna lettura assegnata.** Materiale integrativo fornito dal docente. Il docente restituisce un feedback sintetico sui compiti individuali consegnati.
 
 ---
 
 ### Lezione 10 — Giovedì 23 aprile (11–13, Aula C2)
-**Il dataset MCL: esplorazione guidata**
+**Il dataset TikTok: esplorazione guidata**
 
-**Obiettivi di apprendimento:** Al termine della lezione, lo studente sarà in grado di: (1) orientarsi nella struttura del dataset MCL (variabili, tipi, valori mancanti); (2) utilizzare filtri, CONTA.SE e tabelle pivot in Google Sheets per esplorare i dati; (3) formulare domande esplorative e rispondervi con strumenti descrittivi.
+**Obiettivi di apprendimento:** Al termine della lezione, lo studente sarà in grado di: (1) orientarsi nella struttura del dataset TikTok caricato nel **Foglio Google master** (campi disponibili e non disponibili); (2) usare filtri e ordinamenti per esplorare il tab `01_Dataset_master`; (3) leggere le tabelle pivot pre-costruite e formulare domande esplorative descrittive.
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 11:00–11:20 | Distribuzione e orientamento | Il docente distribuisce il dataset (file CSV + cartella con contenuti multimediali). Presentazione della struttura: colonne del CSV, significato di ciascuna variabile, come si collegano i record ai file multimediali. |
-| 11:20–12:00 | Esplorazione guidata in Google Sheets (hands-on) | Il docente proietta e gli studenti seguono su una copia del foglio Google condiviso. Step: (1) orientarsi tra le colonne del CSV importato: variabili, tipi, valori mancanti; (2) ordinare e filtrare per pagina/gruppo; (3) usare CONTA.SE / COUNTIF per contare i post per tipo di contenuto; (4) usare tabelle pivot per calcolare le metriche di engagement (mediana delle reazioni, dei commenti, delle condivisioni) per pagina/gruppo; (5) creare un primo grafico (istogramma o a barre) della distribuzione temporale dei post. |
-| 12:00–12:30 | Esplorazione autonoma a coppie | Ogni coppia sceglie una domanda esplorativa (es. "quale pagina ha più engagement per post?", "i post con foto hanno più reazioni di quelli senza?", "c'è un pattern temporale?") e prova a rispondere usando filtri, tabelle pivot e grafici nel foglio Google. |
+| 11:00–11:20 | Distribuzione e orientamento | Il docente apre il **Foglio Google master** condiviso. Presentazione della struttura a 10 tab (mappa nel tab `00_README`). Focus sul tab `01_Dataset_master`: colonne del dataset TikTok, significato di ciascun campo, come cliccare `watch_url` per vedere il video. |
+| 11:20–12:00 | Esplorazione guidata sul Foglio (hands-on) | Il docente proietta e gli studenti seguono su una copia del Foglio condiviso. Step: (1) orientarsi tra le colonne (`video_id`, `username`, `video_description`, `voice_to_text`, hashtag, metriche di engagement, `watch_url`); (2) ordinare per `view_count` decrescente e cliccare 3–4 video per familiarizzare; (3) filtrare per `username` o per intervallo di date; (4) **leggere** (non costruire) una tabella pivot già pre-impostata che mostra mediana di views per account; (5) leggere un grafico a barre già pre-costruito sulla distribuzione temporale dei post. |
+| 12:00–12:30 | Esplorazione autonoma a coppie | Ogni coppia sceglie una domanda esplorativa (es. "quale account ha più engagement per post?", "i post più lunghi di 30 secondi hanno più views?", "c'è un pattern temporale?") e prova a rispondere usando filtri e le tabelle pivot pre-costruite. **Nessuna formula da scrivere.** |
 | 12:30–12:50 | Condivisione in plenaria | 3–4 coppie condividono lo schermo e mostrano quello che hanno trovato. Il docente sottolinea: queste sono le domande descrittive; il laboratorio aggiungerà la dimensione qualitativa (codifica del contenuto). |
 | 12:50–13:00 | Chiusura | Nessuna lettura. |
 
-**Materiale:** dataset MCL in Google Sheets (foglio condiviso predisposto dal docente).
+**Materiale:** Foglio Google master con dataset TikTok caricato e tutti i tab pre-costruiti (specifica in `templates/google_sheet_structure.md`).
 
 ---
 
@@ -415,7 +440,7 @@ I gruppi classificano un campione lungo un continuum dalla partecipazione genuin
 |-------|----------|-----------|
 | 9:00–9:30 | Lezione frontale: cos'è l'analisi del contenuto | Definizione. Approccio qualitativo vs. quantitativo. Unità di analisi (il singolo post con il suo contenuto multimediale). Il codebook: definizione delle categorie, regole di codifica, esempi e contro-esempi. |
 | 9:30–9:50 | Lezione frontale: dalle teorie alle categorie | Come si trasforma un concetto teorico in una categoria di codifica? Esempio 1: dalla tassonomia di Marwick e Lewis (brigading, astroturfing, meme warfare...) a un codebook per la RQ1. Esempio 2: dalle forme di partecipazione di Jenkins (espressione creativa, circolazione spontanea...) e dalle tattiche di Marwick e Lewis a un codebook per la RQ2. |
-| 9:50–10:25 | Esercitazione collettiva: codifica pilota | Il docente proietta 10 post dal dataset MCL (testo + immagine). La classe prova a codificarli collettivamente usando una bozza di codebook proiettata. Ogni studente annota la propria codifica individualmente, poi si confronta con il vicino. Il docente raccoglie le risposte a mano alzata: dove c'è accordo? Dove disaccordo? Perché? Revisione delle definizioni delle categorie in base ai problemi emersi. |
+| 9:50–10:25 | Esercitazione collettiva: codifica pilota | Il docente proietta 10 video TikTok dal dataset (descrizione + apertura del `watch_url`). La classe prova a codificarli collettivamente usando una bozza di codebook proiettata (una per RQ). Ogni studente annota la propria codifica individualmente, poi si confronta con il vicino. Il docente raccoglie le risposte a mano alzata: dove c'è accordo? Dove disaccordo? Perché? Revisione delle definizioni delle categorie in base ai problemi emersi. Cenno: in caso di dubbio sulla definizione di una categoria, **Gemini chat** può essere consultato per riformulare la definizione operativa, ma la decisione resta del gruppo. |
 | 10:25–10:35 | Introduzione all'affidabilità inter-codificatore | Perché è necessario misurare l'accordo. Il concetto di Kappa di Cohen (senza formula: concettualmente, la differenza tra l'accordo osservato e quello casuale). Cosa fare quando l'accordo è basso: rivedere le definizioni, aggiungere esempi, discutere i casi ambigui. |
 | 10:35–10:55 | Formazione dei gruppi | I gruppi si formano (max 6 persone). Ogni gruppo sceglie preliminarmente una RQ (1 o 2) e discute internamente quale angolo specifico adottare. Il docente verifica la fattibilità e suggerisce aggiustamenti per evitare sovrapposizioni eccessive. |
 | 10:55–11:00 | Chiusura | Prossima lezione: il formato IMRAD, le RQ nel dettaglio e raffinamento del codebook di gruppo. I gruppi sono invitati a confrontarsi informalmente prima della prossima lezione sulla scelta della RQ e dell'angolo. |
@@ -458,8 +483,8 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 11:00–11:20 | Momento collettivo: strategie di campionamento | Come estrarre un campione dal dataset. Campionamento casuale semplice vs. stratificato (per pagina, per periodo, per tipo di contenuto). Quanti post codificare? Regola pratica: almeno 100–150 post per un'analisi del contenuto di gruppo, di cui 20–30 codificati da tutti per calcolare l'affidabilità. Dimostrazione in Google Sheets: usare la funzione CASUALE / RAND per assegnare un numero casuale a ogni riga, poi ordinare e selezionare le prime N righe; oppure filtrare per pagina/periodo e campionare da ciascun sottoinsieme. |
-| 11:20–12:40 | Lavoro di gruppo | Ogni gruppo: (1) finalizza il codebook adattando quello sviluppato in lez. 11 alla propria RQ e al proprio angolo; (2) estrae il campione dal dataset nel foglio Google condiviso; (3) si suddivide i post da codificare; (4) identifica il sottoinsieme comune per il test di affidabilità. Il docente passa tra i gruppi. |
+| 11:00–11:20 | Momento collettivo: strategie di campionamento | Come si estrae un campione dal dataset. Campionamento casuale semplice vs. stratificato (per account, per periodo, per durata video). Quanti post codificare? Regola pratica: **N=120 post** per gruppo (di cui 30 codificati da tutti per il calcolo dell'affidabilità). Dimostrazione: nel **Foglio Google master** clonato per ogni gruppo, il tab `02_Campione_gruppo` è già pre-popolato con un campione casuale di 120 post via formula `RANDBETWEEN`. Oggi i gruppi **rivedono** il campione (controllano che sia rappresentativo) e poi il docente lo congela (Copia → Incolla speciale → solo valori) e lo protegge. |
+| 11:20–12:40 | Lavoro di gruppo | Ogni gruppo: (1) finalizza il codebook adattando quello sviluppato in lez. 11 alla propria RQ e al proprio angolo, scrivendolo nel tab `03_Codebook` del proprio Foglio (eventualmente con drafting iniziale via Gemini, sempre rivisto dal gruppo); (2) verifica il campione pre-popolato nel tab `02_Campione_gruppo`; (3) si suddivide i post da codificare assegnando il `coder_assegnato`; (4) verifica la presenza del sotto-campione comune di 30 post nel tab `05_Sottocampione_affidabilità`. Il docente passa tra i gruppi. |
 | 12:40–13:00 | Consultazione rapida per gruppo | Ogni gruppo presenta il codebook e il campione al docente (3 min a gruppo). |
 
 **▸ Checkpoint 1:** campione estratto e codebook adattato, approvati dal docente.
@@ -473,22 +498,22 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 9:00–9:15 | Momento collettivo: organizzare la codifica | Come organizzare il foglio di codifica in Google Sheets. Un record per post, colonne per ciascuna categoria del codebook. Come gestire i post ambigui: annotarli per la discussione, non forzare una classificazione. |
-| 9:15–10:45 | Lavoro di gruppo: codifica | Ogni membro del gruppo codifica indipendentemente: prima il sottoinsieme comune (per l'affidabilità), poi i post assegnati individualmente. La codifica include sia il testo sia il contenuto multimediale. Il docente passa tra i gruppi per risolvere dubbi sulle categorie. |
-| 10:45–11:00 | Discussione intergruppo | Due gruppi che lavorano sulla stessa RQ confrontano brevemente i casi più ambigui. Come li hanno classificati? Ci sono differenze? |
+| 9:00–9:15 | Momento collettivo: organizzare la codifica | I tab `04_Codifica_coderN` sono già pre-popolati con i video assegnati a ciascun coder; `categoria_assegnata` è un dropdown alimentato dal codebook del gruppo. Per vedere il video, cliccare `watch_url`. I casi ambigui vanno **annotati nel tab `09_Log_decisioni`** (data, video_id, caso, decisione, motivazione) — diventeranno materiale per Appendice B del saggio. **Gemini chat** può essere consultato per discutere un caso ambiguo (es. "questo video sembra ironico ma usa un sound politico — è meme satirico o è propaganda?"); la decisione finale resta del codificatore umano. |
+| 9:15–10:45 | Lavoro di gruppo: codifica | Ogni membro del gruppo codifica indipendentemente: prima il sotto-campione comune nel tab `05_Sottocampione_affidabilità` (la propria colonna `cod_coderN`), poi i video assegnati individualmente nel proprio tab `04_Codifica_coderN`. La codifica include `video_description`, `voice_to_text` (quando disponibile) e il video stesso (via `watch_url`). Il docente passa tra i gruppi per risolvere dubbi sulle categorie. |
+| 10:45–11:00 | Discussione intergruppo | Due gruppi che lavorano sulla stessa RQ confrontano brevemente i casi più ambigui registrati nel `09_Log_decisioni`. Come li hanno classificati? Ci sono differenze? |
 
 ---
 
 ### Lezione 15 — Mercoledì 6 maggio (11–13, Aula D3)
 **Codifica del contenuto (II) e verifica dell'affidabilità**
 
-**Obiettivi di apprendimento:** Al termine della lezione, lo studente sarà in grado di: (1) calcolare la percentuale di accordo e il Kappa di Cohen in Google Sheets; (2) interpretare i valori di Kappa (soglie di accettabilità); (3) identificare le categorie problematiche e rivedere il codebook per migliorare l'affidabilità.
+**Obiettivi di apprendimento:** Al termine della lezione, lo studente sarà in grado di: (1) **leggere** il valore del κ di Cohen calcolato dal tab `06_Kappa` del Foglio; (2) interpretare le soglie di accettabilità (κ > 0.60 accettabile, κ > 0.80 buono); (3) identificare le categorie problematiche dalla matrice di confusione e rivedere il codebook per migliorare l'affidabilità.
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 11:00–11:20 | Momento collettivo: calcolare l'accordo | Come calcolare la percentuale di accordo in Google Sheets: confrontare le colonne di codifica di due codificatori con SE / IF e CONTA.SE / COUNTIF. Il docente fornisce un foglio-template con le formule già predisposte. Cenno al Kappa di Cohen: concettualmente, la differenza tra l'accordo osservato e quello casuale (il template calcola anche questo). Soglie indicative: K > 0.60 accettabile, K > 0.80 buono. Cosa fare se è basso: rivedere le definizioni problematiche, aggiungere regole di decisione, ricodificare. |
-| 11:20–12:20 | Lavoro di gruppo: verifica e discussione | Ogni gruppo: (1) confronta le codifiche del sottoinsieme comune; (2) calcola l'accordo; (3) discute le discrepanze caso per caso; (4) rivede il codebook se necessario; (5) prosegue la codifica dei post rimanenti. |
-| 12:20–13:00 | Report al docente | Ogni gruppo comunica al docente il valore di Kappa ottenuto e le modifiche apportate al codebook. Se il Kappa è insufficiente, il docente suggerisce strategie correttive. |
+| 11:00–11:20 | Momento collettivo: leggere l'affidabilità | Il tab `06_Kappa` calcola **automaticamente** la concordanza osservata, quella attesa e il κ di Cohen per ogni coppia di codificatori, più il κ medio del gruppo. Cella di sintesi colorata (rosso/giallo/verde) in base alla soglia. Cenno concettuale: κ è la differenza tra accordo osservato e accordo casuale (la formula è nel tab, non va riscritta). Cosa fare se κ < 0.60: leggere la matrice di confusione (quale coppia di categorie è confusa?), rivedere le definizioni problematiche, aggiungere regole di decisione nel tab `03_Codebook`, ricodificare il sotto-campione. |
+| 11:20–12:20 | Lavoro di gruppo: verifica e discussione | Ogni gruppo: (1) verifica nel tab `06_Kappa` il valore di κ; (2) se κ < 0.60, identifica le categorie problematiche dalla matrice di confusione e discute le discrepanze caso per caso (eventuale supporto di Gemini per riformulare definizioni); (3) ricodifica il sotto-campione e rilegge κ; (4) prosegue la codifica dei post rimanenti nei propri tab `04_Codifica_coderN`. |
+| 12:20–13:00 | Report al docente | Ogni gruppo comunica al docente il valore di κ finale e le modifiche apportate al codebook. Se κ resta insufficiente, il docente suggerisce strategie correttive. |
 
 **▸ Checkpoint 2:** affidabilità inter-codificatore calcolata e documentata.
 
@@ -501,12 +526,12 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 ### Lezione 16 — Giovedì 7 maggio (11–13, Aula C2)
 **Analisi quantitativa dell'engagement**
 
-**Obiettivi di apprendimento:** Al termine della lezione, lo studente sarà in grado di: (1) unire la codifica qualitativa al dataset quantitativo con CERCA.VERT; (2) calcolare statistiche descrittive per categoria con tabelle pivot; (3) produrre grafici (a barre, box plot) che confrontino l'engagement tra categorie.
+**Obiettivi di apprendimento:** Al termine della lezione, lo studente sarà in grado di: (1) leggere le tabelle pivot e i grafici pre-costruiti del tab `08_Engagement`; (2) interpretare le statistiche descrittive (mediana, IQR) per le quattro metriche TikTok (views, likes, comments, shares); (3) selezionare i grafici da copiare nel saggio.
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 11:00–11:25 | Momento collettivo: analizzare l'engagement | Come unire la codifica qualitativa al dataset quantitativo in Google Sheets: usare CERCA.VERT / VLOOKUP per aggiungere le categorie codificate al foglio con le metriche di engagement. Come confrontare l'engagement tra categorie: tabelle pivot per calcolare mediane e medie per ciascuna categoria, grafici a barre e box plot (con il componente aggiuntivo di Sheets o tramite grafici a candela). Dimostrazione: engagement medio per tipo di tattica (RQ1) o per tipo di partecipazione (RQ2). Attenzione: si lavora in descrittivo, non in inferenziale. |
-| 11:25–12:40 | Lavoro di gruppo: analisi | Ogni gruppo: (1) unisce la codifica al dataset originale nel foglio Google; (2) calcola le statistiche descrittive per le proprie categorie con tabelle pivot; (3) produce le prime tabelle e grafici. |
+| 11:00–11:25 | Momento collettivo: analizzare l'engagement | Il tab `07_Codifica_finale` consolida automaticamente le codifiche di tutti i coder e fa il `VLOOKUP` con le metriche di engagement. Il tab `08_Engagement` contiene già: (1) una tabella riassuntiva con **mediana** (non media — le distribuzioni di engagement sono fortemente asimmetriche) e IQR per views/likes/comments/shares per categoria; (2) **grafici a barre** della mediana per ciascuna metrica, già rilegati ai dati e auto-aggiornati. Si lavora in descrittivo, non in inferenziale. **Nessuna formula da scrivere.** |
+| 11:25–12:40 | Lavoro di gruppo: analisi | Ogni gruppo: (1) verifica che le proprie codifiche siano fluite correttamente in `07_Codifica_finale`; (2) **legge** le tabelle e i grafici di `08_Engagement`; (3) identifica i pattern principali e annota osservazioni; (4) seleziona i grafici da copiare nel saggio (tasto destro → Copia → Incolla nel Doc come immagine). |
 | 12:40–13:00 | Condivisione rapida | Ogni gruppo condivide sullo schermo il grafico o la tabella più interessante. Breve commento collettivo. |
 
 ---
@@ -537,8 +562,8 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 11:00–11:25 | Momento collettivo: come scrivere Introduction e Methods | **Introduction:** struttura a imbuto — dal tema ampio alla domanda specifica. Come usare i cinque testi del corso: Boyd (2018) per le affordance, Jenkins per la partecipazione, Shirky per il meccanismo, Marwick & Lewis per la manipolazione, Boyd (2017) come ponte. Non serve cercare fonti esterne. **Methods:** descrivere dataset (fonte, periodo, dimensioni), campione (come e perché), codebook (riassumere le categorie), procedura (chi ha codificato cosa, come), affidabilità (Kappa), strumenti (Google Sheets, formule e tabelle pivot utilizzate). |
-| 11:25–12:50 | Lavoro di gruppo: scrittura | I gruppi si suddividono: alcuni scrivono l'Introduction, altri i Methods. Lavorano su un documento condiviso (Google Docs o simile). Il docente è disponibile per consultazioni. |
+| 11:00–11:25 | Momento collettivo: come scrivere Abstract, Introduction, Methods | Si parte dal **template del saggio** (`templates/paper_template.md`, in Google Docs). **Abstract** (150–200 parole): da scrivere alla fine. **Introduction:** struttura a imbuto — dal fenomeno TikTok alla RQ specifica, attraverso i cinque testi del corso (Boyd 2018 per le affordance, Jenkins per la partecipazione, Shirky per il meccanismo, Marwick & Lewis per la manipolazione, Boyd 2017 come ponte). Non serve cercare fonti esterne. **Methods**, in 4 sotto-sezioni come da template: *Dataset* (TikTok Research API, query, periodo, N, campi disponibili e non), *Codebook* (sintetico, completo in Appendice A), *Procedura* (campione, allocazione, sotto-campione comune), *Affidabilità* (κ di Cohen, soglia, eventuali ricodifiche). Citare gli strumenti usati (Foglio Google) e dichiarare gli usi di Gemini nella sezione **Dichiarazione d'uso dell'IA generativa**. |
+| 11:25–12:50 | Lavoro di gruppo: scrittura | I gruppi si suddividono: alcuni scrivono l'Introduction, altri i Methods (4 sotto-sezioni). Lavorano sul Google Doc condiviso ottenuto dal template. Gemini può essere consultato per revisione di prosa, mai per scrivere intere sezioni. Il docente è disponibile per consultazioni. |
 | 12:50–13:00 | Status check | Ogni gruppo comunica lo stato di avanzamento. |
 
 ---
@@ -550,8 +575,8 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 11:00–11:15 | Momento collettivo: come scrivere i Results | La sezione Results descrive, non interpreta. Le tabelle e i grafici sono il cuore: ogni tabella/grafico deve essere introdotto e commentato nel testo. Formattazione delle tabelle: titolo, intestazioni chiare, note a piè di tabella. Guidare il lettore: non scrivere solo "vedi Tabella 1", ma descrivere cosa mostra. |
-| 11:15–12:50 | Lavoro di gruppo: scrittura Results | I gruppi integrano tabelle e grafici nel testo. Il docente verifica che non ci sia interpretazione prematura nei Results. |
+| 11:00–11:15 | Momento collettivo: come scrivere i Results | I Results sono in 3 sotto-sezioni come da template: *Distribuzione delle categorie* (frequency table), *Affidabilità* (tabella κ + commento sulla matrice di confusione del tab `06_Kappa`), *Pattern di engagement per categoria* (tabelle e grafici dal tab `08_Engagement`). I Results **descrivono**, non interpretano. Ogni tabella e grafico va introdotto e commentato nel testo: non scrivere solo "vedi Tabella 1" ma descrivere cosa mostra. **Mediana**, non media, per le metriche di engagement (distribuzioni asimmetriche). |
+| 11:15–12:50 | Lavoro di gruppo: scrittura Results | I gruppi copiano grafici e tabelle dai tab `06_Kappa` e `08_Engagement` nel Google Doc e li commentano. Il docente verifica che non ci sia interpretazione prematura nei Results. |
 | 12:50–13:00 | Status check | |
 
 ---
@@ -563,8 +588,8 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 9:00–9:25 | Momento collettivo: come scrivere la Discussion | Differenza tra risultati e interpretazione. Come collegare i findings al quadro teorico: i risultati confermano, complicano o contraddicono quanto previsto da Boyd, Jenkins, Shirky, Marwick & Lewis? Esempio: se i meme manipolatori hanno più engagement di quelli genuini, cosa dice questo sulle affordance della scalabilità (Boyd)? Limiti dello studio: campione, periodo, soggettività della codifica — discuterli onestamente senza svalutare il lavoro. |
-| 9:25–10:50 | Lavoro di gruppo: scrittura Discussion | I gruppi redigono la Discussion. |
+| 9:00–9:25 | Momento collettivo: come scrivere Discussion, Conclusioni e Dichiarazione IA | **Discussion** in 5 momenti come da template: sintesi → collegamento ai 5 testi → riflessione metodologica → limiti → implicazioni. Come collegare i findings al quadro teorico: i risultati confermano, complicano o contraddicono quanto previsto da Boyd, Jenkins, Shirky, Marwick & Lewis? Esempio: se i video di trend hijacking hanno più views di quelli organici, cosa dice questo sulla scalabilità delle affordance (Boyd 2018) e sulle tattiche di Marwick & Lewis? **Limiti specifici del dataset TikTok**: assenza di testo dei commenti, nessun dato FYP, query che vincola tematicamente il campione, soggettività residua della codifica. **Conclusioni** (1–2 paragrafi): risposta diretta alla RQ + contributo principale. **Dichiarazione d'uso dell'IA generativa**: obbligatoria — quale strumento, per cosa, come l'output è stato verificato. |
+| 9:25–10:50 | Lavoro di gruppo: scrittura Discussion + Conclusioni + Dichiarazione IA | I gruppi redigono Discussion, Conclusioni e la Dichiarazione d'uso dell'IA. |
 | 10:50–11:00 | Status check | |
 
 ---
@@ -578,7 +603,7 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 11:00–11:15 | Momento collettivo: checklist per la revisione interna | Il docente proietta una checklist: (1) La RQ nell'Introduction è esattamente la stessa a cui si risponde nella Discussion? (2) I Methods descrivono ciò che è stato effettivamente fatto? (3) I Results presentano tutti e soli i dati rilevanti? (4) La Discussion torna ai concetti del quadro teorico? (5) Le fonti sono citate correttamente in stile APA o equivalente? (6) Il saggio è tra 4.000 e 6.000 parole? |
+| 11:00–11:15 | Momento collettivo: checklist per la revisione interna | Il docente proietta una checklist: (1) **Abstract** presente, 150–200 parole, con 3–5 parole chiave? (2) La RQ nell'Introduction è esattamente la stessa a cui si risponde nella Discussion e nelle Conclusioni? (3) I Methods sono in 4 sotto-sezioni e descrivono ciò che è stato effettivamente fatto? (4) I Results sono in 3 sotto-sezioni e presentano tutti e soli i dati rilevanti? (5) La Discussion torna ai concetti del quadro teorico (5 testi) e discute i limiti? (6) **Dichiarazione d'uso dell'IA generativa** presente e specifica? (7) **Appendice A** contiene il codebook completo? (8) **Appendice B** contiene un estratto del log delle decisioni? (9) Le fonti sono citate in APA 7? (10) Il saggio è tra 4.000 e 6.000 parole (esclusi Bibliografia e Appendici)? |
 | 11:15–12:45 | Lavoro di gruppo: revisione incrociata interna / completamento | I gruppi in pari: ogni membro legge il saggio intero (non solo la sezione che ha scritto), discutono le incongruenze e le risolvono. I gruppi in ritardo: finalizzano le sezioni mancanti con supervisione del docente. |
 | 12:45–13:00 | Consultazione finale con il docente | Ogni gruppo può porre un'ultima domanda o chiedere un parere su un punto critico. |
 
@@ -609,10 +634,10 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 
 | Tempo | Attività | Dettaglio |
 |-------|----------|-----------|
-| 9:00–9:10 | Istruzioni | Il docente ricorda i criteri della griglia di peer review (chiarezza della RQ, uso del quadro teorico, rigore della codifica, qualità dell'analisi, coerenza argomentativa, rispetto del formato IMRAD, qualità della scrittura). |
+| 9:00–9:10 | Istruzioni | Il docente ricorda i criteri della griglia di peer review (chiarezza della RQ, presenza e qualità dell'Abstract, uso del quadro teorico, rigore della codifica, qualità dell'analisi, coerenza argomentativa, rispetto del formato IMRAD esteso (Abstract + 4 sezioni + Conclusioni + Dichiarazione IA + Appendici), qualità della scrittura). |
 | 9:10–10:10 | Presentazione del feedback | Ogni gruppo revisore presenta il proprio feedback alla classe (8–10 min per gruppo): punti di forza, criticità, suggerimenti specifici. Il gruppo autore ascolta senza intervenire inizialmente. |
 | 10:10–10:50 | Discussione e risposta | Dopo tutti i feedback, ogni gruppo autore ha 5 minuti per porre domande ai revisori e chiarire dubbi. Discussione collettiva delle criticità ricorrenti. |
-| 10:50–11:00 | Istruzioni per la revisione finale | Il docente ricorda la scadenza: saggio definitivo entro il 3 giugno. |
+| 10:50–11:00 | Istruzioni per la revisione finale | Il docente ricorda la scadenza: saggio definitivo entro il 1 giugno. |
 
 **Materiale:** griglia di peer review (fornita dal docente con la bozza assegnata).
 
@@ -629,7 +654,7 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 | 11:50–12:45 | Presentazioni | Ogni gruppo presenta i propri risultati principali alla classe (8–10 min). Formato libero: slide, poster, condivisione dello schermo con il foglio Google, o anche solo racconto orale con proiezione delle tabelle chiave. |
 | 12:45–13:00 | Chiusura del corso | Riflessione collettiva: cos'è cambiato nella vostra comprensione delle piattaforme dopo questo percorso? Cosa avete imparato dal processo di ricerca che non avreste imparato solo dalle lezioni? |
 
-**▸ Consegna definitiva del saggio:** entro mercoledì 3 giugno 2026, ore 23:59.
+**▸ Consegna definitiva del saggio:** entro lunedì 1 giugno 2026, ore 23:59.
 
 ---
 
@@ -642,7 +667,7 @@ Ogni lezione prevede un **momento collettivo** (15–30 min) + **lavoro di grupp
 | 3           | 17      | 12 maggio   | Risultati principali presentati al docente            |
 | 4           | 22      | 21 maggio   | Bozza completa consegnata (entro il 22/5)             |
 | Peer review | 23      | 26 maggio   | Revisione incrociata completata                       |
-| Consegna    | —       | 3 giugno    | Saggio IMRAD definitivo (4.000–6.000 parole)          |
+| Consegna    | —       | 1 giugno    | Saggio IMRAD definitivo (4.000–6.000 parole)          |
 
 ---
 

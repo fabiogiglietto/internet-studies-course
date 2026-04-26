@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="lez14-codifica-1_files/libs/revealjs/dist/theme/quarto-7e00b0553a54811f55212491940a2ab0.css">
+  <link rel="stylesheet" href="lez14-codifica-1_files/libs/revealjs/dist/theme/quarto-d3c2a5122366430a435f087ef7f59611.css">
   <link href="lez14-codifica-1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="lez14-codifica-1_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="lez14-codifica-1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -146,53 +146,58 @@ Fabio Giglietto
 <section id="momento-collettivo-organizzare-la-codifica" class="slide level2" data-background-color="#C5612E">
 <h2>Momento collettivo: organizzare la codifica</h2>
 </section>
-<section id="il-foglio-di-codifica" class="slide level2">
-<h2>Il foglio di codifica</h2>
-<section id="struttura-del-foglio-google" class="orange-box">
-<h3>Struttura del foglio Google</h3>
+<section id="i-tab-di-codifica" class="slide level2">
+<h2>I tab di codifica</h2>
+<section id="già-pre-popolati-nel-vostro-foglio" class="orange-box">
+<h3>Già pre-popolati nel vostro Foglio</h3>
 <ul>
-<li><strong>Una riga</strong> per ciascun post del campione</li>
-<li><strong>Colonne fisse:</strong> ID del post, testo, tipo di contenuto, link al multimedia</li>
-<li><strong>Colonne di codifica:</strong> una per ciascuna categoria del codebook</li>
-<li><strong>Colonna “Note”:</strong> per annotare i casi ambigui</li>
+<li><strong>Tab <code>04_Codifica_coderN</code></strong> (uno per membro): contiene già i video assegnati a quel coder, con <code>video_id</code>, <code>watch_url</code>, <code>video_description</code> pre-popolati</li>
+<li><strong>Colonna <code>categoria_assegnata</code>:</strong> dropdown alimentato dal vostro <code>03_Codebook</code></li>
+<li><strong>Colonna <code>confidenza</code>:</strong> dropdown 1–5</li>
+<li><strong>Colonna <code>note</code>:</strong> testo libero per casi particolari</li>
+<li><strong>Tab <code>05_Sottocampione_affidabilità</code>:</strong> 30 video da codificare da TUTTI i membri (una colonna <code>cod_coderN</code> per ciascuno)</li>
 </ul>
 </section>
 <table class="caption-top">
 <colgroup>
-<col style="width: 9%">
-<col style="width: 15%">
+<col style="width: 12%">
 <col style="width: 13%">
-<col style="width: 47%">
-<col style="width: 13%">
+<col style="width: 22%">
+<col style="width: 25%">
+<col style="width: 17%">
+<col style="width: 8%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>ID</th>
-<th>Testo</th>
-<th>Tipo</th>
-<th>Categoria assegnata</th>
-<th>Note</th>
+<th><code>video_id</code></th>
+<th><code>watch_url</code></th>
+<th><code>video_description</code></th>
+<th><code>categoria_assegnata</code> ▾</th>
+<th><code>confidenza</code> ▾</th>
+<th><code>note</code></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>001</td>
-<td>“Testo del post…”</td>
-<td>Foto</td>
-<td>Meme warfare</td>
-<td>Ironia evidente ma info non verificata</td>
+<td>7239…</td>
+<td>[link]</td>
+<td>“Quando il governo…”</td>
+<td>meme_warfare</td>
+<td>4</td>
+<td>sound politico</td>
 </tr>
 <tr class="even">
-<td>002</td>
-<td>“Altro post…”</td>
-<td>Video</td>
-<td>Contenuto neutro</td>
+<td>7244…</td>
+<td>[link]</td>
+<td>“Ragazzi guardate qua”</td>
+<td>informativo_neutro</td>
+<td>5</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <aside class="notes">
-<p>Momento collettivo breve (15 min). Mostrare il template del foglio di codifica proiettato. Ogni gruppo ha il proprio foglio nel Google Sheet condiviso. Sottolineare: i casi ambigui vanno annotati, non forzati in una categoria. Saranno discussi in gruppo e useranno le regole di decisione del codebook.</p>
+<p>Momento collettivo breve (15 min). Mostrare i tab proiettati. Sottolineare: niente formule da scrivere, solo dropdown. Per vedere il video, click sul <code>watch_url</code> (apre TikTok in nuova scheda). I casi ambigui vanno annotati nel tab <code>09_Log_decisioni</code> (data, video_id, caso, decisione, motivazione) — saranno la base per Appendice B del saggio.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -209,15 +214,16 @@ Fabio Giglietto
 <h2>Regole d’oro per la codifica</h2>
 <div class="highlight-box">
 <ol type="1">
-<li><strong>Prima il sottoinsieme comune</strong> — tutti codificano gli stessi 20–30 post indipendentemente</li>
-<li><strong>Non consultarsi</strong> durante la codifica del sottoinsieme — l’affidabilità misura l’accordo <em>indipendente</em></li>
-<li><strong>Guardare tutto</strong> — testo E contenuto multimediale (immagine/video)</li>
-<li><strong>Annotare</strong> i casi ambigui — non forzare una classificazione</li>
+<li><strong>Prima il sotto-campione comune</strong> (tab <code>05_Sottocampione_affidabilità</code>) — tutti codificano gli stessi 30 video indipendentemente</li>
+<li><strong>Non consultarsi</strong> durante la codifica del sotto-campione — l’affidabilità misura l’accordo <em>indipendente</em></li>
+<li><strong>Guardare il video</strong> — caption + <code>voice_to_text</code> + cliccare <code>watch_url</code> per il video stesso. Il video aggiunge informazione che il testo non cattura</li>
+<li><strong>Annotare</strong> i casi ambigui nel tab <code>09_Log_decisioni</code> — non forzare una classificazione</li>
 <li><strong>Seguire il codebook</strong> — se la definizione non copre il caso, annotarlo per la revisione</li>
+<li><strong>Gemini come supporto, non come giudice</strong> — potete chiedere “questo sound è ironico o serio?” ma la decisione resta vostra (e va dichiarata)</li>
 </ol>
 </div>
 <aside class="notes">
-<p>Il punto 2 è fondamentale: se i codificatori si consultano durante la codifica del sottoinsieme comune, il Kappa è artificialmente alto e il codebook non viene testato davvero. La codifica del sottoinsieme deve essere indipendente. Dopo, si confrontano i risultati e si discutono le discrepanze.</p>
+<p>Il punto 2 è fondamentale: se i codificatori si consultano durante la codifica del sotto-campione comune, il κ è artificialmente alto e il codebook non viene testato davvero. La codifica del sotto-campione deve essere indipendente. Dopo, si confrontano i risultati e si discutono le discrepanze. Il punto 6 va sottolineato: Gemini può aiutare a chiarire un dubbio (es. “questo testo è satirico?”) ma non sostituisce il giudizio del coder. E ogni uso va dichiarato nella sezione “Dichiarazione d’uso dell’IA” del saggio.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -235,14 +241,15 @@ Fabio Giglietto
 <div class="highlight-box">
 <p><strong>Oggi (90 minuti):</strong></p>
 <ol type="1">
-<li>Ogni membro codifica <strong>indipendentemente</strong> il <strong>sottoinsieme comune</strong> (20–30 post)</li>
-<li>Poi procede con i <strong>post assegnati individualmente</strong></li>
-<li>La codifica include sia il <strong>testo</strong> sia il <strong>contenuto multimediale</strong></li>
+<li>Ogni membro codifica <strong>indipendentemente</strong> il <strong>sotto-campione comune</strong> di 30 video nel tab <code>05_Sottocampione_affidabilità</code> (la propria colonna <code>cod_coderN</code>)</li>
+<li>Poi procede con i <strong>video assegnati</strong> nel proprio tab <code>04_Codifica_coderN</code></li>
+<li>Cuffie utili — l’audio TikTok è centrale per la classificazione</li>
+<li>Annotare i casi ambigui nel tab <code>09_Log_decisioni</code></li>
 <li>Il docente passa tra i gruppi per risolvere dubbi sulle categorie</li>
 </ol>
 </div>
 <aside class="notes">
-<p>La maggior parte della lezione è lavoro silenzioso e individuale. I membri del gruppo codificano indipendentemente — non discutono tra loro durante la codifica del sottoinsieme comune. Dopo aver completato il sottoinsieme, possono iniziare i post individuali e a quel punto possono confrontarsi su casi specifici. Passare tra i gruppi: verificare che stiano effettivamente guardando il contenuto multimediale (non solo il testo) e che annotino i casi ambigui.</p>
+<p>La maggior parte della lezione è lavoro silenzioso e individuale. I membri del gruppo codificano indipendentemente — non discutono tra loro durante la codifica del sotto-campione comune. Dopo aver completato il sotto-campione, possono iniziare i video individuali e a quel punto possono confrontarsi su casi specifici. Passare tra i gruppi: verificare che stiano effettivamente aprendo il <code>watch_url</code> (non codificando solo dalla caption) e che annotino i casi ambigui nel <code>09_Log_decisioni</code>.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

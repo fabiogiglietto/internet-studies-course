@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="lez15-codifica-2_files/libs/revealjs/dist/theme/quarto-7e00b0553a54811f55212491940a2ab0.css">
+  <link rel="stylesheet" href="lez15-codifica-2_files/libs/revealjs/dist/theme/quarto-d3c2a5122366430a435f087ef7f59611.css">
   <link href="lez15-codifica-2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="lez15-codifica-2_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="lez15-codifica-2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -146,20 +146,21 @@ Fabio Giglietto
 <section id="momento-collettivo-calcolare-laccordo" class="slide level2" data-background-color="#C5612E">
 <h2>Momento collettivo: calcolare l’accordo</h2>
 </section>
-<section id="come-calcolare-la-percentuale-di-accordo" class="slide level2">
-<h2>Come calcolare la percentuale di accordo</h2>
-<section id="in-google-sheets" class="orange-box">
-<h3>In Google Sheets</h3>
+<section id="aprite-il-tab-06_kappa" class="slide level2">
+<h2>Aprite il tab <code>06_Kappa</code></h2>
+<section id="tutto-è-già-calcolato" class="orange-box">
+<h3>Tutto è già calcolato</h3>
+<p>Nel vostro Foglio Google, il tab <strong><code>06_Kappa</code></strong> è collegato al tab <code>05_Sottocampione_affidabilità</code> e mostra:</p>
 <ol type="1">
-<li>Affiancate le <strong>colonne di codifica</strong> di due codificatori (es. colonne E e F)</li>
-<li>In una nuova colonna, formula: <code>=SE(E2=F2;1;0)</code> oppure <code>=IF(E2=F2,1,0)</code></li>
-<li>Copiate la formula per tutte le righe del sottoinsieme comune</li>
-<li>In fondo: <code>=MEDIA(G2:G31)</code> → percentuale di accordo</li>
+<li><strong>Concordanza osservata</strong> (% di accordo): quante volte due coder hanno scelto la stessa categoria</li>
+<li><strong>Concordanza attesa per caso</strong> (calcolata dalle distribuzioni marginali)</li>
+<li><strong>κ di Cohen</strong> = (osservata − attesa) / (1 − attesa) — per ogni coppia di codificatori</li>
+<li><strong>κ medio</strong> del gruppo, con cella colorata (rosso/giallo/verde)</li>
 </ol>
 </section>
-<p><strong>Esempio:</strong> se su 30 post, 24 hanno la stessa codifica → accordo = <strong>80%</strong></p>
+<p><strong>Esempio:</strong> se su 30 video due coder concordano su 24 → accordo grezzo = <strong>80%</strong>, κ ≈ 0.72 (a seconda della distribuzione delle categorie).</p>
 <aside class="notes">
-<p>Momento collettivo (20 min). Proiettare il template Google Sheets con le formule già predisposte. Mostrare il passaggio step by step. La percentuale di accordo è il primo indicatore, ma non tiene conto del caso: se ci sono solo 2 categorie, il caso da solo produce il 50% di accordo. Per questo serve il Kappa.</p>
+<p>Momento collettivo (20 min). Proiettare il tab <code>06_Kappa</code> di un gruppo (con permesso) o un gruppo demo. Mostrare la matrice di confusione: dove ci sono cluster fuori dalla diagonale = categorie confuse tra loro. Sottolineare: la percentuale di accordo da sola è ingannevole. Con 2 categorie, il caso produce 50% di accordo. Con 4 categorie equiprobabili, 25%. Il κ corregge per questo. Tutto già calcolato — gli studenti non scrivono formule.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -203,7 +204,7 @@ Fabio Giglietto
 </tbody>
 </table>
 </div>
-<p>Il template Google Sheets fornito dal docente calcola il Kappa automaticamente.</p>
+<p>Il tab <code>06_Kappa</code> del Foglio Google master calcola κ automaticamente. Voi non scrivete formule.</p>
 <aside class="notes">
 <p>Non serve la formula matematica — basta capire il concetto. Se due codificatori lanciano un dado a 4 facce, per caso saranno d’accordo il 25% delle volte. Un accordo osservato del 50% con 4 categorie non è buono come sembra: il Kappa lo corregge. Il template calcola tutto: gli studenti devono solo inserire le codifiche nelle colonne corrette.</p>
 <style type="text/css">
@@ -218,14 +219,14 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
-<section id="cosa-fare-se-il-kappa-è-basso" class="slide level2">
-<h2>Cosa fare se il Kappa è basso</h2>
+<section id="cosa-fare-se-il-κ-è-basso-0.60" class="slide level2">
+<h2>Cosa fare se il κ è basso (&lt; 0.60)</h2>
 <ol type="1">
-<li><strong>Identificare</strong> le categorie con più disaccordo</li>
-<li><strong>Discutere</strong> caso per caso: perché avete codificato diversamente?</li>
-<li><strong>Rivedere</strong> le definizioni nel codebook</li>
+<li><strong>Identificare</strong> le categorie con più disaccordo dalla <strong>matrice di confusione</strong> del tab <code>06_Kappa</code></li>
+<li><strong>Discutere</strong> caso per caso (consultate il tab <code>09_Log_decisioni</code>): perché avete codificato diversamente?</li>
+<li><strong>Rivedere</strong> le definizioni nel tab <code>03_Codebook</code> (eventualmente con drafting Gemini, sempre rivisto)</li>
 <li><strong>Aggiungere</strong> regole di decisione ed esempi</li>
-<li><strong>Ricodificare</strong> il sottoinsieme e ricalcolare</li>
+<li><strong>Ricodificare</strong> il sotto-campione e rileggere κ — si aggiorna automaticamente</li>
 </ol>
 <div class="highlight-box">
 <p>Il processo è <strong>iterativo</strong>. Un primo Kappa basso è normale — indica che il codebook va affinato, non che il gruppo ha sbagliato.</p>
@@ -249,11 +250,11 @@ Fabio Giglietto
 <div class="highlight-box">
 <p><strong>Oggi (60 minuti):</strong></p>
 <ol type="1">
-<li><strong>Confrontare</strong> le codifiche del sottoinsieme comune</li>
-<li><strong>Calcolare</strong> l’accordo (percentuale + Kappa) usando il template</li>
-<li><strong>Discutere</strong> le discrepanze caso per caso</li>
-<li><strong>Rivedere</strong> il codebook se necessario</li>
-<li><strong>Proseguire</strong> la codifica dei post rimanenti</li>
+<li>Verificare che tutti i membri abbiano completato la propria colonna nel tab <code>05_Sottocampione_affidabilità</code></li>
+<li><strong>Leggere</strong> κ nel tab <code>06_Kappa</code></li>
+<li><strong>Discutere</strong> le discrepanze caso per caso (matrice di confusione + log decisioni)</li>
+<li><strong>Rivedere</strong> il codebook se necessario (κ &lt; 0.60) e ricodificare il sotto-campione</li>
+<li><strong>Proseguire</strong> la codifica dei video rimanenti nei tab <code>04_Codifica_coderN</code></li>
 </ol>
 </div>
 <aside class="notes">
@@ -276,12 +277,12 @@ Fabio Giglietto
 <h3>Report al docente (ultimi 40 minuti)</h3>
 <p>Ogni gruppo comunica:</p>
 <ol type="1">
-<li>Il <strong>valore di Kappa</strong> ottenuto</li>
-<li>Le <strong>categorie problematiche</strong> (quelle con più disaccordo)</li>
-<li>Le <strong>modifiche</strong> apportate al codebook</li>
-<li>Lo <strong>stato</strong> della codifica (quanti post codificati su quanti totali)</li>
+<li>Il <strong>valore di κ</strong> finale (dal tab <code>06_Kappa</code>)</li>
+<li>Le <strong>categorie problematiche</strong> identificate dalla matrice di confusione</li>
+<li>Le <strong>modifiche</strong> apportate al codebook (versione e log)</li>
+<li>Lo <strong>stato</strong> della codifica (quanti video codificati su 120 totali)</li>
 </ol>
-<p>Se il Kappa è insufficiente, il docente suggerisce <strong>strategie correttive</strong>.</p>
+<p>Se κ è insufficiente, il docente suggerisce <strong>strategie correttive</strong>.</p>
 </section>
 <p><strong>Prossima lezione:</strong> Giovedì 7 maggio — <em>Analisi quantitativa dell’engagement</em></p>
 <aside class="notes">

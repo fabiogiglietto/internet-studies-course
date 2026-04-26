@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="lez09-ricerca-piattaforme_files/libs/revealjs/dist/theme/quarto-7e00b0553a54811f55212491940a2ab0.css">
+  <link rel="stylesheet" href="lez09-ricerca-piattaforme_files/libs/revealjs/dist/theme/quarto-d3c2a5122366430a435f087ef7f59611.css">
   <link href="lez09-ricerca-piattaforme_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="lez09-ricerca-piattaforme_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="lez09-ricerca-piattaforme_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -174,9 +174,9 @@ Fabio Giglietto
 <div class="highlight-box">
 <p>Al termine della lezione, sarete in grado di:</p>
 <ol type="1">
-<li>Descrivere l’<strong>evoluzione dell’accesso</strong> ai dati delle piattaforme (dalle API aperte alla Meta Content Library)</li>
+<li>Descrivere l’<strong>evoluzione dell’accesso</strong> ai dati delle piattaforme (dalle API aperte alle Research API)</li>
 <li>Identificare le principali <strong>questioni etiche</strong> della ricerca digitale</li>
-<li>Distinguere tra <strong>analisi del contenuto qualitativa</strong> e <strong>analisi descrittiva quantitativa</strong> dell’engagement</li>
+<li>Distinguere tra <strong>analisi del contenuto qualitativa</strong> e <strong>analisi descrittiva quantitativa</strong> dell’engagement, con focus sulla <strong>TikTok Research API</strong> che useremo nel laboratorio</li>
 </ol>
 </div>
 <aside class="notes">
@@ -197,7 +197,7 @@ Fabio Giglietto
 <h2>Roadmap della lezione</h2>
 <ul>
 <li><strong>Accesso ai dati:</strong> breve storia, dalle API aperte alla chiusura</li>
-<li><strong>La Meta Content Library:</strong> cos’è e come funziona</li>
+<li><strong>Le Research API attuali:</strong> MCL, TikTok Research API, AT Protocol</li>
 <li><strong>Etica della ricerca digitale:</strong> consenso, GDPR, anonimizzazione</li>
 <li><strong>I metodi del laboratorio:</strong> analisi qualitativa + analisi quantitativa</li>
 <li><strong>Chiusura:</strong> cosa vi aspetta domani</li>
@@ -265,13 +265,13 @@ Fabio Giglietto
 </tr>
 <tr class="even">
 <td><strong>2024–oggi</strong></td>
-<td>Fine di CrowdTangle, lancio della MCL</td>
+<td>Fine di CrowdTangle, MCL, TikTok Research API, DSA Article 40</td>
 <td>Selettivo — accesso solo per ricercatori accreditati</td>
 </tr>
 </tbody>
 </table>
 <aside class="notes">
-<p>La storia dell’accesso ai dati è cruciale per capire perché usiamo la Meta Content Library e non altre fonti. Negli anni d’oro (2006-2014), i ricercatori potevano raccogliere milioni di tweet o post Facebook con poche righe di codice. Lo scandalo Cambridge Analytica (2018) ha cambiato tutto: le piattaforme hanno capito che i dati potevano essere usati per la manipolazione, e hanno iniziato a chiudere gli accessi. Twitter/X nel 2023 ha reso l’API a pagamento (42.000 $/mese per l’accesso accademico). CrowdTangle (lo strumento di Meta per monitorare i contenuti pubblici) è stato chiuso nel 2024 e sostituito dalla Meta Content Library.</p>
+<p>La storia dell’accesso ai dati è cruciale per capire perché oggi si lavora con Research API regolamentate. Negli anni d’oro (2006-2014), i ricercatori potevano raccogliere milioni di tweet o post Facebook con poche righe di codice. Lo scandalo Cambridge Analytica (2018) ha cambiato tutto: le piattaforme hanno capito che i dati potevano essere usati per la manipolazione, e hanno iniziato a chiudere gli accessi. Twitter/X nel 2023 ha reso l’API a pagamento (42.000 $/mese per l’accesso accademico). CrowdTangle è stato chiuso nel 2024. Il panorama attuale offre accesso selettivo via Meta Content Library, <strong>TikTok Research API</strong> (che useremo nel laboratorio) e protocolli aperti come AT/Bluesky.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -319,9 +319,9 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
-<section id="la-meta-content-library-mcl" class="slide level2">
-<h2>La Meta Content Library (MCL)</h2>
-<p>La <strong>MCL</strong> è lo strumento di Meta per fornire accesso ai dati di Facebook e Instagram ai ricercatori accreditati.</p>
+<section id="la-tiktok-research-api" class="slide level2">
+<h2>La TikTok Research API</h2>
+<p>La <strong>TikTok Research API</strong> è lo strumento di TikTok per fornire accesso ai dati pubblici della piattaforma ai ricercatori accreditati. <strong>È la fonte del nostro laboratorio.</strong></p>
 <table class="caption-top">
 <colgroup>
 <col style="width: 57%">
@@ -336,28 +336,28 @@ Fabio Giglietto
 <tbody>
 <tr class="odd">
 <td><strong>Cosa contiene</strong></td>
-<td>Post pubblici da pagine e gruppi Facebook, post Instagram</td>
+<td>Post pubblici (video) cercabili per keyword, hashtag, account</td>
 </tr>
 <tr class="even">
-<td><strong>Variabili</strong></td>
-<td>Testo, tipo di contenuto, metriche di engagement, info sulla pagina, data, URL</td>
+<td><strong>Campi disponibili</strong></td>
+<td><code>video_id</code>, <code>username</code>, <code>video_description</code>, <code>voice_to_text</code>, hashtag, metriche di engagement, <code>watch_url</code></td>
 </tr>
 <tr class="odd">
-<td><strong>Contenuto multimediale</strong></td>
-<td>Immagini e video associati ai post</td>
+<td><strong>Campi NON disponibili</strong></td>
+<td>Testo dei singoli commenti (solo conteggio); impressioni FYP (solo <code>view_count</code>); dati socio-demografici</td>
 </tr>
 <tr class="even">
 <td><strong>Chi può accedere</strong></td>
-<td>Ricercatori accreditati (università, centri di ricerca)</td>
+<td>Ricercatori accreditati (università, centri di ricerca europei e statunitensi)</td>
 </tr>
 <tr class="odd">
-<td><strong>Limiti</strong></td>
-<td>Solo contenuti pubblici; nessun dato sui profili personali; accesso regolamentato</td>
+<td><strong>Quadro normativo</strong></td>
+<td>Disponibile anche in conformità al DSA Article 40 per ricercatori europei</td>
 </tr>
 </tbody>
 </table>
 <aside class="notes">
-<p>La MCL è il successore di CrowdTangle con alcune differenze importanti: è più regolamentata (richiede accreditamento), più ampia (include più dati) ma anche più controllata (Meta può revocare l’accesso). Per il nostro laboratorio, il docente ha estratto un dataset dalla MCL e lo ha reso disponibile in formato CSV — gli studenti non accederanno direttamente alla MCL ma lavoreranno sul dataset pre-estratto.</p>
+<p>La TikTok Research API è stata aperta nel 2023 in risposta a pressioni regolatorie (DSA in UE, audizioni al Congresso US). Restituisce metadati e trascrizione audio dei video pubblici, ma non i video in sé: per visualizzarli si usa il <code>watch_url</code> che apre il video su TikTok web. Per il nostro laboratorio, il docente ha raccolto un dataset via API e lo ha caricato nel <strong>Foglio Google master</strong> (tab <code>01_Dataset_master</code>, sola lettura). Gli studenti non accedono direttamente all’API ma lavorano sul dataset pre-estratto.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -370,14 +370,14 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
-<section id="altre-fonti-di-dati" class="slide level2">
-<h2>Altre fonti di dati</h2>
-<p>Oltre alla MCL, i ricercatori usano diverse fonti:</p>
+<section id="altre-fonti-di-dati-nel-panorama-attuale" class="slide level2">
+<h2>Altre fonti di dati nel panorama attuale</h2>
+<p>Oltre alla TikTok Research API, i ricercatori usano diverse fonti:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="fonti-istituzionali">Fonti istituzionali</h3>
 <ul>
-<li><strong>TikTok Research API</strong> — accesso regolamentato per ricercatori europei</li>
+<li><strong>Meta Content Library (MCL)</strong> — post pubblici di Facebook e Instagram per ricercatori accreditati</li>
 <li><strong>AT Protocol / Bluesky</strong> — dati pubblici e aperti per design</li>
 <li><strong>Archivi web</strong> (Internet Archive, Wayback Machine)</li>
 </ul>
@@ -390,7 +390,7 @@ Fabio Giglietto
 </ul>
 </div></div>
 <aside class="notes">
-<p>AT Protocol (Bluesky) è un caso interessante: è un protocollo aperto dove i dati sono pubblici per design — chiunque può accedervi. È l’opposto del modello di Meta/Twitter. Per il nostro laboratorio non usiamo queste fonti, ma è utile sapere che il panorama è variegato e in evoluzione. Lo scraping (raccolta automatizzata) è in una zona grigia: tecnicamente possibile, spesso vietato dai termini di servizio, legalmente controverso dopo il caso LinkedIn v. hiQ Labs (2022).</p>
+<p>Ogni piattaforma ha il proprio framework di accesso. La MCL (Meta) è simile alla TikTok Research API per filosofia: ricercatori accreditati, contenuti pubblici, vincoli sui dati personali. AT Protocol (Bluesky) è un caso interessante: è un protocollo aperto dove i dati sono pubblici per design. Lo scraping (raccolta automatizzata) è in una zona grigia: tecnicamente possibile, spesso vietato dai termini di servizio, legalmente controverso dopo il caso LinkedIn v. hiQ Labs (2022).</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -419,8 +419,8 @@ Fabio Giglietto
           display:block!important;
       }</style></aside>
 </section>
-<section id="un-post-su-facebook-è-pubblico" class="slide level2">
-<h2>Un post su Facebook è “pubblico”?</h2>
+<section id="un-post-su-tiktok-è-pubblico" class="slide level2">
+<h2>Un post su TikTok è “pubblico”?</h2>
 <p>La domanda centrale dell’etica della ricerca digitale:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -442,7 +442,7 @@ Fabio Giglietto
 <p><strong>Il principio:</strong> la <strong>raggiungibilità tecnica</strong> non equivale al <strong>consenso informato</strong> per la ricerca.</p>
 </div>
 <aside class="notes">
-<p>Boyd (2018) ci ha insegnato il “collasso dei contesti”: le persone pubblicano pensando a un pubblico specifico, ma le affordance dei networked publics rendono quel contenuto visibile a pubblici imprevisti. Un adolescente che scrive un post su Facebook non pensa che un ricercatore universitario lo analizzerà. Il GDPR (Regolamento Generale sulla Protezione dei Dati) introduce ulteriori vincoli: anche i dati “pubblici” sono dati personali se possono identificare un individuo.</p>
+<p>Boyd (2018) ci ha insegnato il “collasso dei contesti”: le persone pubblicano pensando a un pubblico specifico, ma le affordance dei networked publics rendono quel contenuto visibile a pubblici imprevisti. Una creator TikTok che pubblica un video pensando alla propria community di nicchia non pensa che un ricercatore universitario lo analizzerà. Il GDPR (Regolamento Generale sulla Protezione dei Dati) introduce ulteriori vincoli: anche i dati “pubblici” sono dati personali se possono identificare un individuo.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -465,7 +465,7 @@ Fabio Giglietto
 <li>Principio di <strong>proporzionalità</strong>: il beneficio della ricerca deve giustificare il trattamento</li>
 </ul>
 <aside class="notes">
-<p>Il GDPR non vieta la ricerca — la regola. L’articolo 89 prevede deroghe per la ricerca scientifica, ma richiede “garanzie adeguate” come l’anonimizzazione. Per il nostro laboratorio, il dataset è stato pre-elaborato dal docente: i dati provengono da pagine pubbliche (non profili personali), e nell’analisi gli studenti non dovranno identificare singoli utenti. Ma la consapevolezza etica è importante anche quando i vincoli tecnici sono già rispettati.</p>
+<p>Il GDPR non vieta la ricerca — la regola. L’articolo 89 prevede deroghe per la ricerca scientifica, ma richiede “garanzie adeguate” come l’anonimizzazione. Per il nostro laboratorio, il dataset è stato pre-elaborato dal docente: i dati provengono da account pubblici, e nell’analisi gli studenti non dovranno identificare singoli utenti (eventualmente anonimizzando gli <code>username</code> nei report). Ma la consapevolezza etica è importante anche quando i vincoli tecnici sono già rispettati.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -520,12 +520,12 @@ Fabio Giglietto
 <p><strong>Per il nostro laboratorio</strong></p>
 </div>
 <div class="callout-content">
-<p>Il dataset è stato estratto dal docente nell’ambito di un progetto di ricerca autorizzato. Gli studenti lavorano su un <strong>dataset già predisposto</strong> — non accedono direttamente alla MCL.</p>
+<p>Il dataset TikTok è stato raccolto dal docente via Research API nell’ambito di un progetto di ricerca autorizzato. Gli studenti lavorano sul <strong>Foglio Google master già predisposto</strong> — non accedono direttamente all’API.</p>
 </div>
 </div>
 </div>
 <aside class="notes">
-<p>Rassicurare gli studenti: non dovranno affrontare queste complessità direttamente. Il dataset è già estratto e predisposto in Google Sheets. Ma è importante che capiscano da dove vengono i dati e quali vincoli li accompagnano — anche per la sezione Methods del saggio.</p>
+<p>Rassicurare gli studenti: non dovranno affrontare queste complessità direttamente. Il dataset è già caricato nel Foglio Google master, con tutti i tab pre-costruiti (formule, tabelle pivot, grafici, calcolo del κ di Cohen). Ma è importante che capiscano da dove vengono i dati e quali vincoli li accompagnano — anche per la sezione Methods del saggio.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -658,7 +658,7 @@ Fabio Giglietto
 </section>
 <section id="analisi-quantitativa-dellengagement" class="slide level2">
 <h2>Analisi quantitativa dell’engagement</h2>
-<p>Le metriche di engagement nel dataset MCL:</p>
+<p>Le metriche di engagement nel dataset TikTok:</p>
 <table class="caption-top">
 <colgroup>
 <col style="width: 42%">
@@ -672,27 +672,31 @@ Fabio Giglietto
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Reazioni</strong> (like, love, wow, angry…)</td>
-<td>Risposta emotiva immediata</td>
+<td><strong>Visualizzazioni</strong> (<code>view_count</code>)</td>
+<td>Quante volte il video è stato riprodotto</td>
 </tr>
 <tr class="even">
-<td><strong>Commenti</strong></td>
-<td>Engagement più attivo — richiede sforzo</td>
+<td><strong>Like</strong> (<code>like_count</code>)</td>
+<td>Risposta emotiva immediata</td>
 </tr>
 <tr class="odd">
-<td><strong>Condivisioni</strong></td>
-<td>Replicabilità — il contenuto viene diffuso</td>
+<td><strong>Commenti</strong> (<code>comment_count</code>)</td>
+<td>Engagement più attivo — richiede sforzo</td>
+</tr>
+<tr class="even">
+<td><strong>Condivisioni</strong> (<code>share_count</code>)</td>
+<td>Replicabilità — il contenuto viene diffuso fuori da TikTok</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Come le userete:</strong></p>
 <ul>
-<li>Calcolare medie, mediane e distribuzioni <strong>per ciascuna categoria</strong> del codebook</li>
-<li>Confrontare: i post classificati come “meme warfare” hanno più engagement di quelli “genuini”?</li>
-<li>Produrre <strong>tabelle e grafici</strong> (tabelle pivot, grafici a barre)</li>
+<li>Leggere mediane e distribuzioni <strong>per ciascuna categoria</strong> del codebook (le tabelle pivot sono già pre-costruite nel tab <code>08_Engagement</code>)</li>
+<li>Confrontare: i video classificati come “meme warfare” hanno più views di quelli “genuini”?</li>
+<li><strong>Copiare</strong> tabelle e grafici dal Foglio nel saggio</li>
 </ul>
 <aside class="notes">
-<p>L’analisi è strettamente descrittiva — non si chiede statistica inferenziale (test di significatività, regressioni). Il focus è su pattern visibili: le mediane di engagement differiscono tra categorie? Le condivisioni sono concentrate su un tipo di contenuto? Ci sono outlier? Le tabelle pivot di Google Sheets sono lo strumento principale. Domani iniziamo a lavorare con il dataset — vedrete queste metriche dal vivo.</p>
+<p>L’analisi è strettamente descrittiva — non si chiede statistica inferenziale (test di significatività, regressioni). Il focus è su pattern visibili: le <strong>mediane</strong> (non medie — le distribuzioni TikTok sono fortemente asimmetriche) differiscono tra categorie? Le condivisioni sono concentrate su un tipo di contenuto? Ci sono outlier? Le tabelle pivot del tab <code>08_Engagement</code> sono <strong>già pronte</strong>: gli studenti leggono e interpretano, non costruiscono. Domani iniziamo a lavorare con il dataset.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -801,20 +805,20 @@ Fabio Giglietto
 <h3 id="accesso-ai-dati">Accesso ai dati</h3>
 <ul>
 <li>Dalle API aperte alla chiusura</li>
-<li>La MCL come strumento attuale</li>
+<li>Le Research API attuali (TikTok, Meta, AT Protocol)</li>
 <li>Il paradosso: i ricercatori dipendono dalle piattaforme</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="per-il-laboratorio">Per il laboratorio</h3>
 <ul>
-<li><strong>Analisi qualitativa:</strong> codifica manuale con codebook</li>
-<li><strong>Analisi quantitativa:</strong> statistiche descrittive dell’engagement</li>
+<li>Dataset: <strong>TikTok Research API</strong> (raccolto dal docente)</li>
+<li><strong>Analisi qualitativa:</strong> codifica manuale con codebook (Gemini ammesso come supporto, non come classificatore)</li>
+<li><strong>Analisi quantitativa:</strong> mediane di engagement per categoria</li>
 <li>Approccio <strong>descrittivo</strong>, non inferenziale</li>
-<li>Etica: anonimizzazione, proporzionalità, rispetto</li>
 </ul>
 </div></div>
 <aside class="notes">
-<p>Riepilogo. Anticipare domani: lavoro hands-on con il dataset MCL in Google Sheets. Gli studenti devono portare un laptop o un tablet con accesso a Google Sheets. Chi non ha un dispositivo lavorerà in coppia.</p>
+<p>Riepilogo. Anticipare domani: lavoro hands-on sul Foglio Google master con il dataset TikTok già caricato. Gli studenti devono portare un laptop o un tablet con accesso a Google Sheets. Chi non ha un dispositivo lavorerà in coppia.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -831,7 +835,7 @@ Fabio Giglietto
 <h2>Prossimi passi</h2>
 <p><strong>Nessuna lettura assegnata.</strong></p>
 <p><strong>Prossima lezione:</strong> Giovedì 23 aprile, 11:00–13:00, Aula C2</p>
-<p><em>Il dataset MCL: esplorazione guidata</em></p>
+<p><em>Il dataset TikTok: esplorazione guidata</em></p>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -841,7 +845,7 @@ Fabio Giglietto
 <p><strong>Portate un dispositivo</strong></p>
 </div>
 <div class="callout-content">
-<p>Domani lavorerete direttamente in <strong>Google Sheets</strong> sul dataset del corso. Portate un laptop o un tablet.</p>
+<p>Domani lavorerete direttamente sul <strong>Foglio Google master</strong> con il dataset TikTok del corso. Portate un laptop o un tablet.</p>
 </div>
 </div>
 </div>
@@ -861,7 +865,7 @@ Fabio Giglietto
 </section>
 <section id="grazie" class="slide level2" data-background-color="#C5612E">
 <h2>Grazie!</h2>
-<p><strong>Prossima lezione:</strong> Il dataset MCL — Gio 23 aprile</p>
+<p><strong>Prossima lezione:</strong> Il dataset TikTok — Gio 23 aprile</p>
 <p>📧 fabio.giglietto@uniurb.it</p>
 <p>🌐 blended.uniurb.it</p>
 

@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="lez19-results_files/libs/revealjs/dist/theme/quarto-7e00b0553a54811f55212491940a2ab0.css">
+  <link rel="stylesheet" href="lez19-results_files/libs/revealjs/dist/theme/quarto-d3c2a5122366430a435f087ef7f59611.css">
   <link href="lez19-results_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="lez19-results_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="lez19-results_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -148,25 +148,31 @@ Fabio Giglietto
 </section>
 <section id="results-descrizione-non-interpretazione" class="slide level2">
 <h2>Results = descrizione, non interpretazione</h2>
+<p>I Results vanno strutturati nelle <strong>3 sotto-sezioni</strong> del template:</p>
+<ol type="1">
+<li><strong>3.1 Distribuzione delle categorie</strong> (frequency table)</li>
+<li><strong>3.2 Affidabilità</strong> (tabella κ + commento sulla matrice di confusione)</li>
+<li><strong>3.3 Pattern di engagement per categoria</strong> (mediana e IQR per views/likes/comments/shares + grafici)</li>
+</ol>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="cosa-fare">Cosa fare</h3>
 <ul>
-<li>Ogni tabella/grafico deve essere <strong>introdotto</strong> e <strong>commentato</strong> nel testo</li>
-<li>Guidare il lettore: <strong>descrivere</strong> cosa mostra la tabella</li>
-<li>Presentare i dati in <strong>ordine logico</strong> (es. dalla categoria più frequente alla meno)</li>
+<li>Ogni tabella/grafico <strong>introdotto</strong> e <strong>commentato</strong></li>
+<li><strong>Mediana</strong>, non media (TikTok è asimmetrico)</li>
+<li>Ordine logico (categoria più frequente → meno)</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="cosa-non-fare">Cosa NON fare</h3>
 <ul>
 <li><del>“Vedi Tabella 1”</del> senza commento</li>
-<li><del>“Questo dimostra che…”</del> → interpretazione, va nella Discussion</li>
-<li><del>Tabelle senza titolo</del> o con intestazioni ambigue</li>
+<li><del>“Questo dimostra che…”</del> → Discussion</li>
+<li><del>Tabelle senza titolo</del></li>
 <li><del>Grafici senza etichette</del> sugli assi</li>
 </ul>
 </div></div>
 <aside class="notes">
-<p>Momento collettivo breve (15 min). La separazione Results/Discussion è il punto più critico. Dare un esempio: “La Tabella 1 mostra la distribuzione delle categorie nel campione. I post classificati come meme warfare rappresentano il 35% del campione (n=52), seguiti dal contenuto informativo neutro (28%, n=42).” — Questo è Results. “La prevalenza dei meme warfare è coerente con quanto osservato da Marwick e Lewis (2017) riguardo al ruolo dei meme come ‘gateway drug’” — Questo è Discussion.</p>
+<p>Momento collettivo breve (15 min). La separazione Results/Discussion è il punto più critico. Dare un esempio TikTok: “La Tabella 1 mostra la distribuzione delle categorie nel campione di 120 video. I video classificati come meme warfare rappresentano il 35% (n=42), seguiti dal contenuto informativo neutro (28%, n=34). La Tabella 2 mostra il κ di Cohen complessivo (κ = 0.71) e per coppia di codificatori. La Tabella 3 mostra che la mediana di views per i video di trend hijacking è 2.450, contro 890 per i video informativi neutri.” — Tutto questo è Results. “Questa differenza è coerente con quanto osservato da Marwick e Lewis (2017)…” — Questo è Discussion.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -190,37 +196,63 @@ Fabio Giglietto
 <li>Un <strong>commento nel testo</strong> che descrive cosa mostra</li>
 </ol>
 </div>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 22%">
+<col style="width: 19%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Categoria</th>
 <th>n</th>
 <th>%</th>
-<th>Mediana reazioni</th>
-<th>Mediana commenti</th>
+<th>Mediana views</th>
+<th>Mediana likes</th>
+<th>Mediana comments</th>
+<th>Mediana shares</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Meme warfare</td>
-<td>52</td>
+<td>42</td>
 <td>35%</td>
-<td>245</td>
-<td>18</td>
+<td>1.250</td>
+<td>87</td>
+<td>14</td>
+<td>22</td>
+</tr>
+<tr class="even">
+<td>Trend hijacking</td>
+<td>24</td>
+<td>20%</td>
+<td>2.450</td>
+<td>145</td>
+<td>31</td>
+<td>48</td>
+</tr>
+<tr class="odd">
+<td>Contenuto emotivo</td>
+<td>20</td>
+<td>17%</td>
+<td>890</td>
+<td>62</td>
+<td>22</td>
+<td>9</td>
 </tr>
 <tr class="even">
 <td>Contenuto neutro</td>
-<td>42</td>
+<td>34</td>
 <td>28%</td>
-<td>89</td>
-<td>7</td>
-</tr>
-<tr class="odd">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>540</td>
+<td>31</td>
+<td>6</td>
+<td>4</td>
 </tr>
 </tbody>
 </table>
@@ -243,8 +275,8 @@ Fabio Giglietto
 <div class="highlight-box">
 <p><strong>Oggi (95 minuti):</strong></p>
 <ul>
-<li>Integrate <strong>tabelle e grafici</strong> nel documento condiviso</li>
-<li>Scrivete il <strong>testo descrittivo</strong> che accompagna ciascuna tabella/grafico</li>
+<li>Copiate <strong>tabelle e grafici</strong> dai tab <code>06_Kappa</code> e <code>08_Engagement</code> nel Google Doc (tasto destro → Copia → Incolla scollegato)</li>
+<li>Scrivete il <strong>testo descrittivo</strong> che accompagna ciascuna tabella/grafico, organizzato nelle 3 sotto-sezioni Results</li>
 <li>Il docente verifica che non ci sia <strong>interpretazione prematura</strong> nei Results</li>
 </ul>
 </div>

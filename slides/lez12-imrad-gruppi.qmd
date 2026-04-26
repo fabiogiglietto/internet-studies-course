@@ -88,8 +88,56 @@ IMRAD è l'acronimo per la struttura standard del **saggio scientifico empirico*
 | **R**esults | Cosa hai trovato | Quali sono i risultati? |
 | **A**nd **D**iscussion | Cosa significa | Come si interpretano i risultati? |
 
+::: {.callout-tip}
+Il vostro saggio aggiunge intorno a IMRAD: **Abstract** (prima), **Conclusioni**, **Dichiarazione d'uso dell'IA**, **Bibliografia**, **Appendice A** (codebook), **Appendice B** (log decisioni). Template completo: `templates/paper_template.md`.
+:::
+
 ::: {.notes}
-IMRAD non è un'invenzione accademica arbitraria: è una struttura che aiuta il lettore a trovare rapidamente l'informazione che cerca. Uno scienziato può leggere solo la Discussion per capire le implicazioni; un metodologo può leggere solo i Methods; un revisore può concentrarsi sui Results. La struttura serve la comunicazione, non la burocrazia.
+IMRAD non è un'invenzione accademica arbitraria: è una struttura che aiuta il lettore a trovare rapidamente l'informazione che cerca. Uno scienziato può leggere solo la Discussion per capire le implicazioni; un metodologo può leggere solo i Methods; un revisore può concentrarsi sui Results. Il vostro saggio segue una versione **estesa** di IMRAD con Abstract, Conclusioni e Appendici — la struttura completa è nel template del saggio in `templates/paper_template.md`.
+:::
+
+## La struttura completa del saggio
+
+::: {style="font-size: 0.78em"}
+| # | Sezione | Lunghezza |
+|---|---------|-----------|
+| 1 | Frontespizio (titolo, gruppo, RQ) | – |
+| 2 | **Abstract** (+ 3–5 parole chiave) | 150–200 parole |
+| 3 | **Introduction** | ~800–1.200 parole |
+| 4 | **Methods** (Dataset, Codebook, Procedura, Affidabilità) | ~800–1.200 parole |
+| 5 | **Results** (Distribuzione, Affidabilità, Engagement) | ~1.000–1.500 parole |
+| 6 | **Discussion** (sintesi, teoria, riflessione, limiti, implicazioni) | ~800–1.200 parole |
+| 7 | **Conclusioni** | 1–2 paragrafi |
+| 8 | **Dichiarazione d'uso dell'IA generativa** (obbligatoria) | – |
+| 9 | Bibliografia (APA 7) | – |
+| 10 | **Appendice A** — Codebook completo | – |
+| 11 | **Appendice B** — Log decisioni di codifica | – |
+:::
+
+::: {.highlight-box}
+**Totale: 4.000–6.000 parole** (escluse Bibliografia e Appendici).
+:::
+
+::: {.notes}
+Mostrare proiettato il file `templates/paper_template.md`. Sottolineare che ogni sezione del template ha già delle indicazioni in italiano su cosa scrivere — i gruppi non partono da pagina bianca. Il template va copiato in un Google Doc condiviso e compilato sezione per sezione.
+:::
+
+## L'Abstract (150–200 parole)
+
+Si scrive **per ultimo**, dopo aver finito tutte le altre sezioni.
+
+::: {.orange-box}
+### Quattro frasi
+1. **Obiettivo:** quale fenomeno indagate, su TikTok, con quale RQ
+2. **Dataset e metodo:** N video TikTok via Research API; codifica manuale; affidabilità con κ di Cohen
+3. **Risultati principali:** 1–2 pattern empirici (numeri concreti)
+4. **Conclusione sintetica:** cosa ci dice questo del fenomeno, in una frase
+:::
+
+Più **3–5 parole chiave** che descrivono il vostro studio.
+
+::: {.notes}
+L'Abstract è la prima cosa che il lettore vede e spesso l'unica che legge per intero. Deve essere autonomo: chi legge solo l'Abstract deve capire cosa avete fatto, come e cosa avete trovato. Per questo si scrive alla fine — non si può sintetizzare ciò che non è ancora stato scritto. Le parole chiave aiutano i motori di ricerca accademici a indicizzare lo studio.
 :::
 
 ## Introduction (~800–1.200 parole)
@@ -125,69 +173,58 @@ Introduction senza RQ esplicita, o con una RQ che compare solo nell'ultima riga 
 La struttura a imbuto: partire dal tema ampio (le piattaforme digitali e la manipolazione mediatica), restringere con il quadro teorico (Boyd → Jenkins → Shirky → Marwick & Lewis), arrivare alla lacuna o alla domanda specifica (la propria RQ). Non serve cercare fonti esterne: i cinque testi del corso forniscono tutto il necessario. Il collegamento alla mappa concettuale costruita nella Lezione 8: quella mappa è la struttura dell'Introduction.
 :::
 
-## Methods (~600–1.000 parole)
+## Methods (~800–1.200 parole) — 4 sotto-sezioni
 
 **Funzione:** descrivere **cosa avete fatto** in modo sufficientemente dettagliato perché qualcuno possa **replicarlo**.
 
-| Elemento | Cosa scrivere |
-|----------|--------------|
-| **Dataset** | Fonte (MCL), periodo, dimensione, tipo di contenuto |
-| **Campione** | Strategia (casuale/stratificato), dimensione, giustificazione |
-| **Codebook** | Categorie, definizioni (riassunte), processo di sviluppo |
-| **Procedura** | Chi ha codificato cosa, in che ordine |
-| **Affidabilità** | Kappa di Cohen, come calcolato, azioni correttive |
-| **Strumenti** | Google Sheets, formule e tabelle pivot utilizzate |
+::: {style="font-size: 0.85em"}
+| Sotto-sezione | Cosa scrivere |
+|---------------|---------------|
+| **2.1 Dataset** | Origine: TikTok Research API; query, periodo, N video; campi disponibili (`video_id`, `username`, `video_description`, `voice_to_text`, hashtag, metriche, `watch_url`); campi NON disponibili (testo dei commenti, FYP) |
+| **2.2 Codebook** | Categorie con definizione operativa (sintesi; il codebook completo va in Appendice A); processo di sviluppo |
+| **2.3 Procedura di codifica** | Campione (N=120), allocazione per coder, sotto-campione comune di 30 video |
+| **2.4 Affidabilità** | κ di Cohen dal tab `06_Kappa`, soglia (κ > 0.60), eventuali ricodifiche |
+:::
 
 ::: {.callout-warning}
 ## Errore comune
-Methods vaghi ("abbiamo analizzato dei post"). Il lettore deve poter capire **esattamente** cosa avete fatto.
+Methods vaghi ("abbiamo analizzato dei video"). Il lettore deve poter capire **esattamente** cosa avete fatto.
 :::
 
 ::: {.notes}
-La sezione Methods è dove si documenta il "come". Deve essere concreta e specifica: non "abbiamo usato un codebook" ma "abbiamo sviluppato un codebook di 5 categorie basate sulla tassonomia di Marwick e Lewis (2017), raffinato attraverso 3 cicli di codifica pilota." Se avete usato l'IA generativa (es. per le formule di Google Sheets), dichiaratelo qui come richiesto dalla policy del corso.
+La sezione Methods è dove si documenta il "come". Deve essere concreta e specifica. Non "abbiamo usato un codebook" ma "abbiamo sviluppato un codebook di 5 categorie basate sulla tassonomia di Marwick e Lewis (2017), adattate alle affordance TikTok-native (sound, hashtag challenge), raffinato attraverso 2 cicli di codifica pilota." Citare gli **strumenti**: Foglio Google master, tab specifici. Eventuali usi di Gemini si dichiarano nella sezione "Dichiarazione d'uso dell'IA generativa" (sezione 6 del template), non qui.
 :::
 
-## Results (~1.000–1.500 parole)
+## Results (~1.000–1.500 parole) — 3 sotto-sezioni
 
 **Funzione:** presentare i risultati — **descrizione**, non interpretazione.
 
-::: {.columns}
-::: {.column width="50%"}
-### Cosa include
-
-- Distribuzione delle **categorie** nel campione
-- Metriche di engagement **per categoria** (tabelle pivot → tabelle nel saggio)
-- **Grafici** a barre o box plot
-- Descrizione dei **pattern** principali
-:::
-
-::: {.column width="50%"}
-### Come scrivere
-
-- Ogni tabella/grafico deve essere **introdotto** nel testo
-- Non scrivere solo "vedi Tabella 1" — descrivere **cosa mostra**
-- Guidare il lettore attraverso i dati
-- **Non interpretare** ancora
-:::
-:::
+| Sotto-sezione | Cosa include |
+|---------------|--------------|
+| **3.1 Distribuzione delle categorie** | Tabella di frequenze (N e %) + commento di 1–2 paragrafi |
+| **3.2 Affidabilità** | Tabella κ complessivo + per coppia di codificatori + commento sulla matrice di confusione |
+| **3.3 Pattern di engagement per categoria** | Mediana e IQR per views/likes/comments/shares per categoria + grafici dal tab `08_Engagement` + commento |
 
 ::: {.callout-warning}
 ## Errore comune
-Results che mescolano descrizione e interpretazione. "I meme hanno più engagement **perché** sfruttano l'economia dell'attenzione" → il "perché" va nella Discussion, non qui.
+Results che mescolano descrizione e interpretazione. "I video di trend hijacking hanno più views **perché** sfruttano l'algoritmo della FYP" → il "perché" va nella Discussion, non qui.
 :::
 
 ::: {.notes}
-La separazione tra Results e Discussion è la più difficile da rispettare. I Results dicono "cosa": la mediana delle reazioni per i post di tipo X è 150, per i post di tipo Y è 45. La Discussion dice "perché": questa differenza è coerente con quanto previsto da Boyd (2017) perché i contenuti progettati per l'economia dell'attenzione sfruttano la replicabilità. Se vi trovate a scrivere "perché" o "questo dimostra che", state interpretando → spostate nella Discussion.
+La separazione tra Results e Discussion è la più difficile da rispettare. I Results dicono "cosa": la mediana delle views per i video di tipo X è 1.250, per i video di tipo Y è 450. La Discussion dice "perché": questa differenza è coerente con quanto previsto da Boyd (2017) perché i contenuti progettati per l'economia dell'attenzione sfruttano la replicabilità. Se vi trovate a scrivere "perché" o "questo dimostra che", state interpretando → spostate nella Discussion. **Mediana, non media**: le distribuzioni TikTok sono fortemente asimmetriche.
 :::
 
-## Discussion (~800–1.200 parole)
+## Discussion (~800–1.200 parole) — 5 momenti
 
 **Funzione:** interpretare i risultati alla luce del **quadro teorico**.
 
-- I risultati **confermano, complicano o contraddicono** quanto previsto dai testi del corso?
-- Come si collegano alle affordance di Boyd? Alle forme di partecipazione di Jenkins? Al meccanismo di Shirky?
-- Quali sono i **limiti** dello studio? (campione, periodo, soggettività della codifica)
-- **Implicazioni:** cosa significano i risultati per la comprensione della manipolazione/partecipazione online?
+::: {style="font-size: 0.88em"}
+1. **Sintesi dei risultati principali** alla luce della RQ (1 paragrafo)
+2. **Collegamento ai 5 testi:** confermano, complicano o contraddicono Boyd, Jenkins, Shirky, Marwick & Lewis? (2–3 paragrafi)
+3. **Riflessione metodologica:** cosa ha funzionato, cosa è stato difficile (1 paragrafo)
+4. **Limiti dello studio TikTok:** assenza testo commenti, no FYP impressions, query tematicamente vincolata, soggettività residua (1 paragrafo)
+5. **Implicazioni:** cosa significano i risultati per la comprensione della manipolazione/partecipazione su TikTok (1 paragrafo)
+:::
 
 ::: {.callout-warning}
 ## Errore comune
@@ -195,7 +232,65 @@ Discussion che non torna al quadro teorico. I risultati vanno **collegati ai tes
 :::
 
 ::: {.notes}
-La Discussion è dove il saggio "chiude il cerchio": l'Introduction presenta la teoria e la RQ; i Methods spiegano come avete indagato; i Results mostrano cosa avete trovato; la Discussion collega i risultati alla teoria. I limiti vanno discussi onestamente ma senza svalutare il lavoro: "Il campione di 120 post non consente generalizzazioni, ma i pattern osservati sono coerenti con..." è meglio di "Lo studio ha molti limiti e non prova nulla."
+La Discussion è dove il saggio "chiude il cerchio": l'Introduction presenta la teoria e la RQ; i Methods spiegano come avete indagato; i Results mostrano cosa avete trovato; la Discussion collega i risultati alla teoria. I limiti vanno discussi onestamente ma senza svalutare il lavoro: "Il campione di 120 video non consente generalizzazioni, ma i pattern osservati sono coerenti con..." è meglio di "Lo studio ha molti limiti e non prova nulla." I limiti specifici TikTok (no testo commenti, no FYP) sono un punto di forza metodologico se discussi con consapevolezza — dimostrano che il gruppo conosce i vincoli del proprio strumento.
+:::
+
+## Conclusioni e Dichiarazione d'uso dell'IA
+
+::: {.columns}
+::: {.column width="50%"}
+### Conclusioni (1–2 paragrafi)
+
+- Risposta **diretta** alla RQ
+- **Contributo principale** dello studio in una frase
+- **Non riassumere tutto** — lo fa già l'Abstract
+:::
+
+::: {.column width="50%"}
+### Dichiarazione d'uso dell'IA
+
+**Obbligatoria** anche se non avete usato Gemini.
+
+Per ogni uso: (a) **quale** strumento, (b) **per cosa**, (c) **come avete verificato** l'output.
+
+Esempio: *"Gemini chat è stato consultato per riformulare la definizione di 'meme warfare' nel codebook. La definizione adottata è stata riscritta dal gruppo."*
+:::
+:::
+
+::: {.notes}
+Le Conclusioni sono brevi: 1-2 paragrafi. Non ripetete l'Abstract — qui rispondete direttamente alla RQ. La Dichiarazione d'uso dell'IA è una novità del template di quest'anno: deve essere specifica e onesta. Se avete usato Gemini per draftare un paragrafo della Discussion, ditelo. Se l'avete usato solo per consigli sintattici, ditelo. Se non l'avete usato, scrivete "Nessun uso di IA generativa" — è una dichiarazione anch'essa.
+:::
+
+## Le due Appendici
+
+::: {.columns}
+::: {.column width="50%"}
+### Appendice A — Codebook completo
+
+La versione **finale** (post-pilot, post-correzioni di affidabilità) del vostro codebook:
+
+- Categorie con **definizione operativa estesa**
+- Almeno **un esempio positivo** (`video_id`)
+- Almeno **un esempio negativo** (`video_id`)
+- **Regola di decisione** per i casi ambigui
+
+Template: `templates/codebook_template.md`.
+:::
+
+::: {.column width="50%"}
+### Appendice B — Log decisioni
+
+5–10 voci esemplificative dal tab `09_Log_decisioni` del Foglio:
+
+| Data | `video_id` | Caso | Decisione | Motivazione |
+|------|-----------|------|-----------|-------------|
+
+Mostra al lettore come avete gestito l'ambiguità.
+:::
+:::
+
+::: {.notes}
+Le Appendici non contano nel limite delle 4.000-6.000 parole. Sono fondamentali per la **replicabilità**: il codebook completo permette a qualcun altro di rifare la stessa analisi; il log decisioni mostra che non avete applicato il codebook in modo meccanico ma avete pensato ai casi difficili. Il tab `09_Log_decisioni` deve essere alimentato durante la codifica (Lez 14-15), non scritto a posteriori.
 :::
 
 ## La griglia di valutazione
@@ -236,36 +331,36 @@ Proiettare brevemente un esempio, evidenziando la struttura sezione per sezione.
 
 ## Le due RQ nel dettaglio {background-color="#C5612E"}
 
-## RQ1 — Tattiche di manipolazione mediatica
+## RQ1 — Tattiche di manipolazione mediatica su TikTok
 
 ::: {.orange-box}
-*Quali tattiche di manipolazione mediatica, tra quelle identificate da Marwick e Lewis (2017), sono riconoscibili nel contenuto multimediale delle pagine/gruppi Facebook presenti nel dataset? Come si distribuiscono e quali pattern di engagement generano?*
+*Quali tattiche di manipolazione mediatica, tra quelle identificate da Marwick e Lewis (2017), sono riconoscibili nei video TikTok del dataset? Come si distribuiscono e quali pattern di engagement (views, likes, shares, comments) generano?*
 :::
 
-**Quadro teorico:** Marwick & Lewis (tattiche) + Boyd 2018 (affordance che le abilitano) + Boyd 2017 (arco storico)
+**Quadro teorico:** Marwick & Lewis (tattiche) [@marwick2017] + Boyd 2018 (affordance che le abilitano) [@boyd2018] + Boyd 2017 (arco storico) [@boyd2017]
 
-**Categorie di analisi:** dalla tassonomia di Marwick & Lewis (*meme warfare*, *astroturfing*, contenuto emotivo strumentale, contenuto informativo neutro)
+**Categorie di analisi:** tassonomia di Marwick & Lewis adattata a TikTok (*meme warfare* via sound, *trend hijacking*, contenuto emotivo strumentale, contenuto informativo neutro)
 
-**Angoli possibili:** focus sui meme, sui post con più engagement, confronto tra pagine, focus su un periodo
+**Angoli possibili:** focus sull'uso del sound, sui video più visti, confronto tra account, focus su un hashtag/trend specifico
 
 ::: {.notes}
-La RQ1 è più "quantitativa" nello spirito: classificare le tattiche e misurare il loro engagement. Il codebook si basa direttamente sulla tassonomia di Marwick & Lewis, con adattamenti al dataset. Il quadro teorico collega le tattiche alle affordance di Boyd (persistenza, replicabilità) e al percorso storico di Boyd (2017). Jenkins e Shirky entrano come contesto (le competenze partecipative usate per la manipolazione, il crollo dei costi di coordinamento).
+La RQ1 è più "quantitativa" nello spirito: classificare le tattiche e misurare il loro engagement. Il codebook si basa sulla tassonomia di Marwick & Lewis, **adattata alle affordance TikTok** (sound, hashtag challenge, FYP, duet/stitch). Il quadro teorico collega le tattiche alle affordance di Boyd (persistenza, replicabilità, scalabilità) e al percorso storico di Boyd (2017). Jenkins e Shirky entrano come contesto: le competenze partecipative usate anche per la manipolazione, il crollo dei costi di coordinamento.
 :::
 
-## RQ2 — Partecipazione genuina vs. strumentalizzata
+## RQ2 — Partecipazione genuina vs. strumentalizzata su TikTok
 
 ::: {.orange-box}
-*In che misura i contenuti presenti nel dataset presentano caratteristiche di cultura partecipativa genuina (Jenkins, 2008) rispetto a pratiche partecipative strumentalizzate a fini di manipolazione mediatica (Marwick & Lewis, 2017)? Quali differenze emergono nei pattern di engagement?*
+*In che misura i video TikTok del dataset presentano caratteristiche di cultura partecipativa genuina (Jenkins, 2008) rispetto a pratiche partecipative strumentalizzate a fini di manipolazione mediatica (Marwick & Lewis, 2017)? Quali differenze emergono nei pattern di engagement?*
 :::
 
-**Il punto teorico chiave:** la manipolazione non è top-down — sfrutta le **stesse dinamiche dal basso** che Jenkins descrive come emancipatorie [@marwick2017].
+**Il punto teorico chiave:** la manipolazione non è top-down — sfrutta le **stesse dinamiche dal basso** (trend, remix, duet) che Jenkins [@jenkins2008] descrive come emancipatorie [@marwick2017].
 
 **Categorie di analisi:** lungo un continuum genuino ↔ strumentalizzato (+ categoria "ambiguo")
 
-**Angoli possibili:** confronto tra pagine, confronto tra periodi, focus sul contenuto visuale vs. testuale
+**Angoli possibili:** confronto tra account, confronto tra periodi, focus su trend specifici, rapporto views/shares come indicatore di amplificazione
 
 ::: {.notes}
-La RQ2 è più "teorica" nello spirito: lavora sulla tensione tra Jenkins e Marwick & Lewis. Il punto chiave (da esplicitare nell'Introduction) è che le affordance di Boyd abilitano entrambi gli usi, i costi di coordinamento di Shirky crollano per entrambi, e la differenza è nell'intenzionalità, non nella direzione del flusso. Questa è la chiave interpretativa per la Discussion.
+La RQ2 è più "teorica" nello spirito: lavora sulla tensione tra Jenkins e Marwick & Lewis. Il punto chiave (da esplicitare nell'Introduction) è che le affordance di Boyd abilitano entrambi gli usi, i costi di coordinamento di Shirky crollano per entrambi, e la differenza è nell'intenzionalità, non nella direzione del flusso. Su TikTok questa tensione è particolarmente visibile: lo stesso sound o trend può essere usato in modo organico (creator che reagisce) o coordinato (campagna). Questa è la chiave interpretativa per la Discussion.
 :::
 
 ## Negoziazione con il docente {background-color="#C5612E"}
@@ -294,17 +389,18 @@ Dare 2 minuti rigorosi per gruppo. Il docente verifica: (1) l'angolo è fattibil
 ::: {.orange-box}
 ### Lavoro di gruppo (30 minuti)
 
-Partendo dal codebook pilota della Lezione 11, adattate le categorie alla vostra RQ e al vostro angolo:
+Partendo dal codebook pilota della Lezione 11, adattate le categorie alla vostra RQ e al vostro angolo. Lavorate direttamente nel tab **`03_Codebook`** del Foglio Google (o nel template `templates/codebook_template.md`):
 
-1. **Definite** le categorie specifiche per il vostro codebook
+1. **Definite** le categorie specifiche per il vostro codebook (4–7 categorie)
 2. **Scrivete** una definizione operativa per ciascuna
-3. **Identificate** almeno un esempio positivo e un negativo dal dataset
+3. **Identificate** almeno un esempio positivo (con `video_id`) e uno negativo dal dataset TikTok
 4. **Annotate** i punti ambigui da risolvere
-5. **Discutete** la gerarchia: se un post rientra in due categorie, quale prevale?
+5. **Discutete** la gerarchia: se un video rientra in due categorie, quale prevale?
+6. *(Opzionale)* Usate **Gemini chat** per draftare una definizione difficile — poi rivedete tutto insieme
 :::
 
 ::: {.notes}
-Il docente passa tra i gruppi. Verificare che le categorie siano operazionalizzabili: una categoria come "manipolazione" è troppo generica; "meme satirico con informazione falsa verificabile" è operativa. Ogni gruppo deve avere almeno una bozza di codebook su cui lavorare stasera e domani mattina, perché domani è il Checkpoint 1.
+Il docente passa tra i gruppi. Verificare che le categorie siano operazionalizzabili: una categoria come "manipolazione" è troppo generica; "video con sound usato in modo deceptivo per un messaggio politico" è operativa. Ogni gruppo deve avere almeno una bozza di codebook su cui lavorare stasera e domani mattina, perché domani è il Checkpoint 1. Se un gruppo si blocca, suggerire di usare Gemini per draftare una prima versione di una definizione difficile — ma con la regola: *l'output di Gemini non si copia, si discute*.
 :::
 
 ## Istruzioni operative per il laboratorio {background-color="#C5612E"}
@@ -322,12 +418,14 @@ Il docente è disponibile per **consultazioni** durante il lavoro di gruppo.
 :::
 
 ::: {.column width="50%"}
-### Strumenti
+### Strumenti predisposti
 
-- **Foglio Google condiviso** per ogni gruppo (il docente lo predispone)
-- Il dataset è già caricato
-- Template per la codifica e il calcolo del Kappa forniti
-- Documento condiviso (Google Docs) per la stesura del saggio
+- **Foglio Google master** clonato per ogni gruppo (10 tab pre-costruiti)
+- Dataset TikTok già caricato in `01_Dataset_master`
+- Tab `06_Kappa` calcola κ automaticamente
+- Tab `08_Engagement` con pivot e grafici già pronti
+- **Google Doc** dal template `templates/paper_template.md`
+- **Gemini chat** ammesso come supporto (da dichiarare)
 :::
 :::
 
@@ -344,7 +442,7 @@ Spiegare la logistica: da domani, ogni lezione inizia con un breve momento colle
 | **3** | 17 | 12 maggio | Risultati principali presentati |
 | **4** | 22 | 21 maggio | Bozza completa consegnata (entro il 22/5) |
 | **Peer review** | 23 | 26 maggio | Revisione incrociata completata |
-| **Finale** | — | **3 giugno** | Saggio IMRAD definitivo (4.000–6.000 parole) |
+| **Finale** | — | **1 giugno** | Saggio IMRAD definitivo (4.000–6.000 parole) |
 
 ::: {.notes}
 I checkpoint non sono opzionali: servono a garantire che nessun gruppo arrivi alla fase di scrittura senza aver completato l'analisi. Il docente verifica ciascun checkpoint e fornisce feedback. Se un gruppo è in ritardo al Checkpoint 2, ha tempo per recuperare prima del Checkpoint 3. Ma se è in ritardo al Checkpoint 3, rischia di non completare la stesura in tempo.

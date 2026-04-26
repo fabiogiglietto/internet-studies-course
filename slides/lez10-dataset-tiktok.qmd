@@ -1,0 +1,395 @@
+---
+title: "Il Dataset TikTok: Esplorazione Guidata"
+subtitle: "Internet Studies — Lezione 10"
+author: "Fabio Giglietto"
+institute: "DISCUI · Università degli Studi di Urbino Carlo Bo"
+date: "23 Aprile 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, ../_extensions/uniurb/discui.scss]
+    logo: ../assets/logo-uniurb-white.svg
+    footer: "Internet Studies · A.A. 2025/2026"
+    slide-number: c/t
+    transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.08
+    center: false
+    hash: true
+    controls: true
+    progress: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-width: 10
+  fig-height: 6
+  fig-dpi: 150
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+lang: it
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+## Oggi lavoriamo con i dati
+
+::: {.highlight-box}
+Questa lezione è **hands-on**: lavorerete direttamente sul **Foglio Google master** del corso, già predisposto con il dataset TikTok.
+
+Il docente proietta i passaggi, voi seguite sul vostro dispositivo.
+:::
+
+**Prerequisiti:**
+
+- Laptop o tablet con accesso a Google Sheets
+- Chi non ha un dispositivo lavora in **coppia**
+- Buone cuffie utili (per ascoltare l'audio dei video)
+
+::: {.notes}
+Verificare che tutti abbiano accesso al Foglio Google master condiviso. Condividere il link se non è già stato distribuito. Dare 2-3 minuti perché tutti aprano il foglio. Per chi lavora in coppia, assicurarsi che entrambi possano vedere lo schermo. Le cuffie sono utili perché molti video TikTok hanno audio rilevante (musica, voce, sound).
+:::
+
+## Obiettivi di apprendimento
+
+::: {.highlight-box}
+Al termine della lezione, sarete in grado di:
+
+1. **Orientarvi** nella struttura a 10 tab del Foglio Google master e nei campi del dataset TikTok
+2. **Usare filtri e ordinamenti** per esplorare il tab `01_Dataset_master` e aprire i video tramite `watch_url`
+3. **Leggere** le tabelle pivot e i grafici già pre-costruiti, formulando domande esplorative descrittive
+:::
+
+::: {.notes}
+Oggi è una lezione di familiarizzazione. Non si chiede di costruire formule o tabelle pivot — quello è già fatto nel Foglio. Si chiede di sapere dove guardare. Alla fine ogni studente deve sapere: dove sta il dataset, come si vede un video, dove sta il codebook (vuoto, lo riempiranno i gruppi), dove stanno i grafici che già esistono.
+:::
+
+## Roadmap della lezione
+
+- **Tour del Foglio:** i 10 tab e cosa contengono (15 min)
+- **Il tab `01_Dataset_master`:** campi del dataset TikTok (15 min)
+- **Vedere i video:** uso del `watch_url` (10 min)
+- **Esplorazione guidata:** filtri e lettura dei pivot pre-costruiti (20 min)
+- **Esplorazione autonoma a coppie:** una domanda a scelta (30 min)
+- **Condivisione e chiusura** (10 min)
+
+::: {.notes}
+La lezione è divisa in due parti: una guidata (il docente mostra, gli studenti seguono) e una autonoma (le coppie esplorano liberamente). La condivisione finale serve a mostrare che lo stesso dataset può essere interrogato in molti modi — e che le domande descrittive sono il punto di partenza per l'analisi qualitativa del laboratorio.
+:::
+
+## Tour del Foglio Google master {background-color="#C5612E"}
+
+## I 10 tab del Foglio
+
+Ogni gruppo riceverà una **copia** di questo Foglio. Oggi esploriamo il master:
+
+::: {style="font-size: 0.78em"}
+| # | Tab | A cosa serve |
+|---|-----|-------------|
+| 1 | `00_README` | Mappa del Foglio, ruoli, legenda colori |
+| 2 | `01_Dataset_master` | Dataset TikTok completo (sola lettura) |
+| 3 | `02_Campione_gruppo` | Campione di 120 post per il vostro gruppo |
+| 4 | `03_Codebook` | Le vostre categorie di codifica (lo riempirete voi) |
+| 5 | `04_Codifica_coderN` | Un tab per ciascun membro del gruppo |
+| 6 | `05_Sottocampione_affidabilità` | 30 post codificati da tutti |
+| 7 | `06_Kappa` | κ di Cohen calcolato automaticamente |
+| 8 | `07_Codifica_finale` | Codifiche consolidate (auto) |
+| 9 | `08_Engagement` | Tabelle pivot e grafici (auto) |
+| 10 | `09_Log_decisioni` | Log delle decisioni sui casi ambigui |
+:::
+
+::: {.notes}
+Aprire il `00_README` proiettato e mostrare come è strutturato. Spiegare il codice colore: grigio chiaro = sola lettura, bianco = editabile, arancione = intestazione. Sottolineare: oggi tocchiamo solo `01_Dataset_master` e `08_Engagement`. Gli altri tab li attiveremo nelle prossime lezioni.
+:::
+
+## Il tab `01_Dataset_master` {background-color="#C5612E"}
+
+## Cosa c'è nel dataset
+
+Il dataset è stato raccolto via **TikTok Research API**. Ogni riga = un video TikTok.
+
+::: {style="font-size: 0.78em"}
+| Campo | Tipo | Descrizione |
+|-------|------|-------------|
+| `video_id` | Testo | Identificativo univoco del video |
+| `create_time` | Data | Quando il video è stato pubblicato |
+| `username` | Testo | Account che ha pubblicato |
+| `video_description` | Testo | Caption del video |
+| `voice_to_text` | Testo | Trascrizione audio (può essere vuota) |
+| `hashtag_names` | Lista | Hashtag separati da virgola |
+| `view_count` | Numerica | Visualizzazioni |
+| `like_count` | Numerica | Like |
+| `comment_count` | Numerica | Numero di commenti (NON il testo) |
+| `share_count` | Numerica | Condivisioni |
+| `video_duration` | Numerica | Durata del video in secondi |
+| `watch_url` | URL | Link cliccabile per vedere il video su TikTok |
+:::
+
+::: {.notes}
+Fermarsi su ciascun campo. Mostrare l'header riga 1 del tab `01_Dataset_master`. Sottolineare i due campi più importanti: `video_description` (caption) e `voice_to_text` (trascrizione audio quando disponibile — non c'è sempre). Il `watch_url` è essenziale: per capire un video TikTok bisogna **vederlo**, il testo non basta.
+:::
+
+## Cosa NON c'è nel dataset
+
+::: {.callout-warning}
+## Limiti dell'API (da ricordare per il Methods)
+
+- **Testo dei singoli commenti:** abbiamo solo `comment_count` (il numero), non i commenti.
+- **Impressioni FYP:** abbiamo solo `view_count` (visualizzazioni), non quante volte il video è stato mostrato senza essere riprodotto.
+- **Dati socio-demografici** dell'utenza che interagisce: nessuno.
+- **Duet/stitch:** il dataset registra le interazioni solo come metriche aggregate.
+:::
+
+::: {.notes}
+Questi limiti sono importanti perché vincolano le RQ. Ad esempio: nessun gruppo potrà fare analisi del sentiment dei commenti — i commenti come testo non li abbiamo. Nessun gruppo potrà studiare la composizione dell'audience — questi dati non ci sono. Questi vincoli vanno dichiarati esplicitamente nella sezione Methods del saggio (anche per dimostrare consapevolezza metodologica).
+:::
+
+## Quanti video abbiamo?
+
+::: {.orange-box}
+### Step 1: contare i video
+
+Selezionate il tab `01_Dataset_master`. Guardate in basso a sinistra: **Google Sheets vi dice quante righe ci sono**.
+
+Oppure: cliccate su una cella della colonna `video_id`, poi guardate la barra di stato in basso a destra → vedrete **conteggio**.
+:::
+
+**Quanti video abbiamo nel dataset?** → ______
+
+::: {.notes}
+Nessuna formula da scrivere — Google Sheets già conta. Il conteggio è anche nel `00_README` come campo di riferimento. Comunicare il numero atteso (es. 800–1200 video, dipende dal corpus che il docente ha caricato).
+:::
+
+## Vedere un video
+
+Per capire un video TikTok, **bisogna vederlo**. Il testo della caption non basta.
+
+::: {.orange-box}
+### Step 2: aprire un video
+
+1. Andate su una riga qualsiasi del tab `01_Dataset_master`
+2. Trovate la colonna `watch_url`
+3. **Cliccate sull'URL** → si apre il video su TikTok in una nuova scheda del browser
+4. Tornate sul Foglio per leggere caption, hashtag e metriche
+:::
+
+**Provate adesso:** aprite 2–3 video diversi. Cosa vedete? Caption, audio, durata, stile?
+
+::: {.notes}
+Dare 5 minuti. Far girare gli studenti tra video diversi. Se l'aula ha cuffie, incoraggiare l'uso. Se molti studenti non ce le hanno, suggerire di silenziare e leggere `voice_to_text` quando disponibile. Far notare: il video aggiunge informazione che il testo non cattura (montaggio, sound, espressioni facciali, sovrimpressioni).
+:::
+
+## Esplorazione guidata {background-color="#C5612E"}
+
+## Filtrare per account o periodo
+
+::: {.orange-box}
+### Step 3: usare i filtri
+
+1. La riga delle intestazioni nel tab `01_Dataset_master` ha già **i filtri attivi** (icona a forma di imbuto)
+2. Cliccate sulla freccia nella colonna `username`
+3. Selezionate **un solo account** per vedere solo i suoi video
+4. Per rimuovere il filtro: cliccate di nuovo e scegliete "Cancella filtro"
+:::
+
+**Provate:** filtrate per il vostro account preferito. Quanti video ha?
+
+::: {.notes}
+I filtri sono già pre-attivati: gli studenti devono solo cliccare. Non si scrivono formule. Il filtro per `create_time` permette di vedere video di un periodo specifico. Il filtro per `view_count > X` permette di vedere solo i video più visti. Tutto via interfaccia, niente formule.
+:::
+
+## Ordinare per visualizzazioni
+
+::: {.orange-box}
+### Step 4: ordinare
+
+1. Cliccate sulla freccia della colonna `view_count` (filtri attivi)
+2. Scegliete **"Ordina dalla Z alla A"** (o numerico decrescente)
+3. Le prime righe sono ora i video **più visti** del dataset
+4. Aprite i 3 video più visti — che tipo di contenuto sono?
+:::
+
+**Domanda:** i video più visti hanno qualcosa in comune?
+
+::: {.notes}
+Questo passaggio prepara il discorso degli outlier nella distribuzione di engagement: pochi video con milioni di views, molti con poche centinaia. Aprire i top-3 video con la classe e fare osservazioni qualitative: trend? Sound popolare? Account verificato? Tema politico? Questo è già in piccolo quello che farete in modo sistematico durante la codifica.
+:::
+
+## Leggere i pivot pre-costruiti
+
+::: {.orange-box}
+### Step 5: il tab `08_Engagement`
+
+Aprite il tab **`08_Engagement`**. Tutto è già calcolato:
+
+- **Tabella riassuntiva:** mediana di views/likes/comments/shares per categoria *(vuota oggi — si popolerà quando codifichiamo)*
+- **Grafici a barre** già pre-costruiti
+- **Box plot** per ciascuna metrica
+:::
+
+::: {.callout-tip}
+**Niente formule da scrivere.** Quando il vostro gruppo avrà codificato i video, queste tabelle e grafici si aggiorneranno automaticamente.
+:::
+
+::: {.notes}
+Spiegare il principio: gli studenti **non costruiscono** pivot table o grafici. Il docente li ha già costruiti nel master. I tab `07_Codifica_finale` e `08_Engagement` si aggiornano automaticamente quando i `04_Codifica_coderN` vengono compilati. Mostrare un esempio dimostrativo (se il docente ha caricato finte codifiche test) per far vedere che i grafici esistono e funzionano.
+:::
+
+## Perché la mediana, non la media
+
+::: {.columns}
+::: {.column width="50%"}
+### La media è sensibile agli outlier
+
+Se 9 video hanno 100 views e 1 video ne ha 1.000.000:
+
+**Media = 100.090** views
+
+Non rappresenta il video "tipico".
+:::
+
+::: {.column width="50%"}
+### La mediana è robusta
+
+Lo stesso dataset:
+
+**Mediana = 100** views
+
+Rappresenta il video nel **mezzo** della distribuzione.
+:::
+:::
+
+::: {.highlight-box}
+Nel saggio IMRAD riportate **sempre la mediana** per le metriche di engagement TikTok. Le distribuzioni sono fortemente asimmetriche.
+:::
+
+::: {.notes}
+Concetto fondamentale per il saggio. Su TikTok le distribuzioni di views, like e shares sono ancora più asimmetriche che su Facebook: pochi video diventano virali (milioni di views), la stragrande maggioranza ha poche centinaia. La media verrebbe gonfiata dai viral; la mediana dà una stima realistica. Tutti i grafici e le tabelle del tab `08_Engagement` usano la mediana per default.
+:::
+
+## Esplorazione autonoma {background-color="#C5612E"}
+
+## Lavorate a coppie
+
+::: {.orange-box}
+### Esplorazione autonoma (30 minuti)
+
+Ogni coppia sceglie una **domanda esplorativa** e prova a rispondervi usando filtri, ordinamenti e — quando utile — `watch_url` per vedere i video.
+
+**Domande suggerite:**
+
+- Quale account ha pubblicato più video nel dataset?
+- I video più lunghi di 30 secondi hanno più views di quelli brevi?
+- C'è un account con pochi video ma views eccezionali?
+- Quali hashtag ricorrono di più nei video più visti?
+- Ci sono periodi (giorni, settimane) con picchi di pubblicazione?
+:::
+
+::: {.notes}
+Le coppie possono scegliere una domanda dalla lista o formularne una propria. Niente formule: solo filtri, ordinamenti, e apertura di alcuni video. Passare tra le coppie per aiutare. Incoraggiare a guardare almeno 3-4 video reali (non solo numeri) per "sentire" il dataset.
+:::
+
+## Suggerimenti tecnici
+
+| Obiettivo | Strumento | Come |
+|-----------|-----------|------|
+| Filtrare per account o data | Filtri pre-attivi | Click sulla freccia, seleziona valori |
+| Trovare i video più visti | Ordinamento | Ordina per `view_count` decrescente |
+| Vedere un video | Click sul `watch_url` | Si apre TikTok nel browser |
+| Cercare un hashtag | Filtra `hashtag_names` "Contiene…" | Es. "Contiene #italia" |
+| Contare quanti post per X | Selezione + barra di stato | Filtra → guarda il conteggio in basso |
+
+::: {.notes}
+Questa slide resta proiettata durante il lavoro autonomo come riferimento rapido. Tutto via interfaccia, nessuna formula. Se qualcuno vuole davvero scrivere una formula, suggerire di non farlo: oggi non serve, e il foglio è strutturato per non richiederlo.
+:::
+
+## Condivisione in plenaria {background-color="#C5612E"}
+
+## Cosa avete trovato?
+
+::: {.highlight-box}
+**3–4 coppie** condividono lo schermo e mostrano il loro risultato.
+
+Per ogni presentazione:
+
+- **Quale domanda** vi siete posti?
+- **Cosa avete trovato** nei dati e nei video?
+- **Cosa vi ha sorpreso?**
+:::
+
+::: {.notes}
+Selezionare coppie con domande diverse. Per ogni presentazione (3-5 minuti), il docente aggiunge un commento di collegamento: "Questa è una domanda descrittiva — il laboratorio aggiungerà la dimensione qualitativa. Sapere che i video con sound X hanno più views non ci dice perché. La codifica del contenuto ci permetterà di distinguere tra usi del sound (es. ironico vs. politico vs. promozionale) e vedere se le differenze di engagement dipendono dal tipo di uso, non solo dal sound."
+:::
+
+## Dalla descrizione alla classificazione
+
+::: {.columns}
+::: {.column width="50%"}
+### Oggi: domande descrittive
+
+- Quanti video ci sono?
+- Quale account ha più views?
+- Qual è la distribuzione temporale?
+
+Queste domande trattano tutti i video **allo stesso modo**.
+:::
+
+::: {.column width="50%"}
+### Il laboratorio: codifica del contenuto
+
+- Che **tipo** di video è questo?
+- Usa una tattica di manipolazione [@marwick2017]?
+- È partecipazione genuina [@jenkins2008] o strumentalizzata?
+
+La codifica aggiunge una **dimensione qualitativa** ai dati.
+:::
+:::
+
+::: {.highlight-box}
+Martedì prossimo (Lezione 11): **analisi del contenuto, codebook e formazione dei gruppi**.
+:::
+
+::: {.notes}
+Collegamento chiave: le statistiche descrittive che leggerete nel tab `08_Engagement` sono utili ma incomplete. Sapere che l'account X ha più views non ci dice perché. Sapere che i video di durata media hanno più engagement non ci dice di che tipo di video si tratta. La codifica del contenuto (che inizieremo a sviluppare nella Lezione 11) aggiunge questa dimensione: classificando ciascun video per tipo di tattica (RQ1) o tipo di partecipazione (RQ2), possiamo poi confrontare l'engagement tra categorie.
+:::
+
+## In sintesi
+
+Oggi avete imparato a:
+
+- **Orientarvi** nel Foglio Google master a 10 tab
+- Leggere il dataset TikTok nel tab `01_Dataset_master`
+- **Vedere** i video tramite `watch_url`
+- Usare **filtri** e **ordinamenti** per esplorare
+- **Leggere** le tabelle pivot e i grafici pre-costruiti del tab `08_Engagement`
+
+::: {.notes}
+Queste competenze vi serviranno per tutto il Blocco 2. Ricordare: i pivot e i grafici sono tutti pre-costruiti — non li ricostruirete, li userete. Il vostro lavoro analitico vero (codifica, decisioni sui casi ambigui, scrittura) inizia martedì.
+:::
+
+## Prossimi passi
+
+**Nessuna lettura assegnata.**
+
+**Prossima lezione:** Martedì 28 aprile, 9:00–11:00, Aula C1
+
+*Analisi del contenuto, sviluppo del codebook e formazione dei gruppi*
+
+::: {.callout-tip}
+## Pensateci in anticipo
+Martedì formeremo i **gruppi** (max 6 persone) e ogni gruppo sceglierà una **RQ** (1 o 2). Se avete già delle preferenze su con chi lavorare o quale RQ scegliere, iniziate a parlarne tra di voi.
+:::
+
+::: {.notes}
+Anticipare: martedì è una lezione cruciale — si sviluppa il codebook con una codifica pilota collettiva, si introduce l'affidabilità inter-codificatore e si formano i gruppi. I gruppi che si formeranno martedì lavoreranno insieme per il resto del corso. Invitare gli studenti a pensarci in anticipo.
+:::
+
+## Grazie! {background-color="#C5612E"}
+
+**Prossima lezione:** Codebook e formazione gruppi — Mar 28 aprile
+
+📧 fabio.giglietto@uniurb.it
+
+🌐 blended.uniurb.it

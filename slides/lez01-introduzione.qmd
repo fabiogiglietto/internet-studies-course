@@ -152,7 +152,7 @@ Questa è la slide chiave dell'apertura: mostra che le piattaforme non sono "buo
 | **A.A.** | 2025/2026 — II semestre |
 | **Durata** | 48 ore (24 lezioni × 2 ore) |
 | **Inizio – Fine** | 31 marzo – 27 maggio 2026 |
-| **Consegna finale** | 3 giugno 2026 |
+| **Consegna finale** | 1 giugno 2026 |
 
 ::: {.notes}
 Informazioni di base. Sottolineare che il corso è intensivo: 24 lezioni in 8 settimane, con tre incontri settimanali. La frequenza regolare è essenziale.
@@ -192,12 +192,12 @@ Lezioni frontali + esercitazioni sui concetti chiave degli Internet Studies:
 ### Blocco 2 — Laboratorio
 **Lezioni 13–24** (30 apr – 27 mag)
 
-Lavoro di gruppo su un dataset dalla **Meta Content Library**:
+Lavoro di gruppo su un dataset **TikTok** raccolto via Research API:
 
 - Analisi del contenuto
-- Codifica manuale
+- Codifica manuale (Gemini come supporto)
 - Analisi dell'engagement
-- Stesura saggio **IMRAD**
+- Stesura saggio **IMRAD esteso** (Abstract + IMRAD + Conclusioni + Dichiarazione IA + Appendici)
 :::
 :::
 
@@ -249,7 +249,7 @@ Sottolineare che non ci sono fonti esterne da cercare: il quadro teorico del sag
 - Gli studenti non frequentanti sosterranno l'esame studiando i **testi indicati** nel [programma](https://www.uniurb.it/insegnamenti-e-programmi/268626)
 
 ::: {.notes}
-Spiegare il sistema di valutazione nel dettaglio. Il progetto di gruppo è il cuore del corso: gli studenti analizzeranno contenuti da pagine Facebook usando la Meta Content Library. Valutazione collettiva per il gruppo, con possibilità di modulazione individuale tramite peer evaluation. L'esame orale verifica che ciascuno abbia compreso i testi, anche quelli non direttamente usati nel proprio saggio. Per i non frequentanti: studio dei testi in programma (sezione non frequentanti sul sito di Ateneo).
+Spiegare il sistema di valutazione nel dettaglio. Il progetto di gruppo è il cuore del corso: gli studenti analizzeranno video TikTok raccolti dal docente via Research API. Valutazione collettiva per il gruppo, con possibilità di modulazione individuale tramite peer evaluation. L'esame orale verifica che ciascuno abbia compreso i testi, anche quelli non direttamente usati nel proprio saggio. Per i non frequentanti: studio dei testi in programma (sezione non frequentanti sul sito di Ateneo).
 :::
 
 ## Rilevazione delle presenze
@@ -291,7 +291,7 @@ Dettagli sulla policy delle assenze. Il calcolo: 3 punti totali per partecipazio
 
 **Non consentito:** generare intere sezioni del saggio, sostituire la lettura dei testi, produrre la codifica del contenuto.
 
-**Obbligo di trasparenza:** dichiarare ogni uso di IA nella sezione Methods.
+**Obbligo di trasparenza:** dichiarare ogni uso di IA in una sezione dedicata del saggio (**Dichiarazione d'uso dell'IA generativa**), indicando strumento, scopo e modo di verifica.
 
 ::: {.notes}
 Questa policy è pragmatica: l'IA generativa è uno strumento reale che gli studenti useranno. Meglio regolamentare che proibire. Il punto chiave è la trasparenza e la responsabilità: l'IA può commettere errori e la responsabilità del contenuto finale resta degli studenti.

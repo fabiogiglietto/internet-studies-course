@@ -64,60 +64,54 @@ Il Checkpoint 1 (fine lezione) richiede: campione estratto + codebook adattato, 
 ## Quanto campionare?
 
 ::: {.orange-box}
-### Regola pratica
-- Almeno **100–150 post** per un'analisi del contenuto di gruppo
-- Di cui **20–30 codificati da tutti** i membri per calcolare l'affidabilità inter-codificatore
+### La regola del corso (già implementata nel Foglio)
+- **120 video TikTok** per gruppo
+- Di cui **30 codificati da tutti** i membri per calcolare l'affidabilità inter-codificatore (κ di Cohen)
 :::
 
-Il campione deve essere **rappresentativo** del dataset — non scelto a caso in senso colloquiale, ma estratto con un metodo sistematico.
+Il campione è **già pre-popolato** nel tab `02_Campione_gruppo` del vostro Foglio Google. Estratto con campionamento casuale dal dataset master tramite formula `RANDBETWEEN`.
 
 ::: {.notes}
-100-150 post è un numero gestibile per un gruppo di 4-6 persone in 3 settimane. Il sottoinsieme comune (20-30 post) serve per calcolare il Kappa di Cohen: tutti i codificatori devono codificare gli stessi post indipendentemente. Il resto viene diviso tra i membri.
+120 video è un numero gestibile per un gruppo di 4-6 persone in 3 settimane. Il sotto-campione comune (30 video) serve per calcolare il κ di Cohen: tutti i codificatori devono codificare gli stessi video indipendentemente. Il resto viene diviso tra i membri. Oggi non si scrive `RAND` — il campione esiste già nel Foglio. Si **verifica** che sia accettabile, eventualmente si discute con il docente se serve un campionamento stratificato diverso.
 :::
 
-## Due strategie di campionamento
+## Due strategie di campionamento (concettuali)
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Casuale semplice
 
-Ogni post ha la **stessa probabilità** di essere selezionato.
+Ogni video ha la **stessa probabilità** di essere selezionato.
 
-**In Google Sheets:**
+**Nel vostro Foglio:**
 
-1. Aggiungete una colonna "Casuale"
-2. Formula: `=CASUALE()` o `=RAND()`
-3. Ordinate per quella colonna
-4. Selezionate le prime N righe
+Il tab `02_Campione_gruppo` è già pre-popolato con un campione casuale di 120 video del dataset master.
 :::
 
 ::: {.column width="50%"}
 ### Stratificato
 
-Si campiona **proporzionalmente** da ciascun sottoinsieme (pagina, periodo, tipo).
+Si campiona **proporzionalmente** da ciascun sottoinsieme (account, periodo, durata).
 
-**In Google Sheets:**
+**Nel vostro Foglio:**
 
-1. Filtrate per pagina/periodo
-2. Applicate `=CASUALE()` al sottoinsieme
-3. Selezionate le prime N righe da ciascuno
-4. Unite i sottocampioni
+Se il vostro angolo richiede una stratificazione specifica (es. solo video di un periodo), chiedete al docente: estrarrà un nuovo campione stratificato.
 :::
 :::
 
 ::: {.notes}
-Il campionamento casuale semplice è il più semplice ma può produrre campioni sbilanciati (es. una pagina molto attiva domina il campione). Il campionamento stratificato garantisce rappresentatività: se il dataset ha 5 pagine, il campione include post da tutte e 5. Consigliare ai gruppi di usare il campionamento stratificato per pagina — a meno che il loro angolo specifico non giustifichi un altro approccio.
+Il campionamento casuale semplice è il più semplice ma può produrre campioni sbilanciati (es. un account molto attivo domina il campione). Il campionamento stratificato garantisce rappresentatività su una variabile chiave. Per la maggior parte dei gruppi va bene il casuale semplice già pre-popolato. Se un gruppo ha un angolo che richiede stratificazione (es. focus solo su un hashtag, o confronto pre/post-evento), il docente prepara un campione ad hoc oggi stesso. Una volta approvato il campione (Checkpoint 1), il docente lo "congela" (Copia → Incolla speciale → solo valori) per evitare che `RANDBETWEEN` lo ricalcoli ogni volta.
 :::
 
 ## Pianificare la codifica
 
-| Elemento | Cosa decidere |
-|----------|--------------|
-| **Campione totale** | Quanti post? (100–150) |
-| **Sottoinsieme comune** | Quali 20–30 post codificano tutti? |
-| **Suddivisione** | Chi codifica quali post? |
-| **Ordine** | Prima il sottoinsieme comune, poi i post individuali |
-| **Gestione ambiguità** | Annotare i casi dubbi, non forzare |
+| Elemento | Cosa è già pronto / Cosa decidere |
+|----------|----------------------------------|
+| **Campione totale** | 120 video, già nel tab `02_Campione_gruppo` |
+| **Sotto-campione comune** | 30 video, già nel tab `05_Sottocampione_affidabilità` |
+| **Suddivisione** | **Da decidere oggi:** chi è coder1, coder2, ...? Si rinominano i tab `04_Codifica_coderN` con i nomi reali |
+| **Ordine** | Prima il sotto-campione comune (per κ), poi i video individuali |
+| **Gestione ambiguità** | Annotare nel tab `09_Log_decisioni` (data, video_id, caso, decisione, motivazione) |
 
 ::: {.notes}
 L'ordine è importante: prima tutti codificano il sottoinsieme comune (per il Kappa), poi ciascuno codifica i propri post assegnati. Se il Kappa è basso, il gruppo rivede il codebook e ricodifica il sottoinsieme — quindi è meglio farlo subito.
@@ -128,10 +122,11 @@ L'ordine è importante: prima tutti codificano il sottoinsieme comune (per il Ka
 ::: {.highlight-box}
 **Ogni gruppo (80 minuti):**
 
-1. **Finalizzare** il codebook — categorie, definizioni, esempi, regole per i casi ambigui
-2. **Estrarre** il campione dal dataset nel foglio Google condiviso
-3. **Suddividere** i post da codificare tra i membri
-4. **Identificare** il sottoinsieme comune per il test di affidabilità
+1. **Finalizzare** il codebook nel tab `03_Codebook` — categorie, definizioni, esempi (con `video_id`), regole per i casi ambigui (eventualmente Gemini per drafting iniziale)
+2. **Verificare** il campione di 120 video nel tab `02_Campione_gruppo`; se necessario chiedere al docente una stratificazione diversa
+3. **Assegnare** ciascun video del campione a un coder (popolare la colonna `coder_assegnato`)
+4. **Verificare** la presenza del sotto-campione comune di 30 video nel tab `05_Sottocampione_affidabilità`
+5. **Rinominare** i tab `04_Codifica_coderN` con i nomi reali dei membri
 :::
 
 Il docente passa tra i gruppi per verificare e rispondere ai dubbi.

@@ -36,42 +36,38 @@ csl: ../apa.csl
 
 ## Momento collettivo: analizzare l'engagement {background-color="#C5612E"}
 
-## Unire codifica qualitativa e dati quantitativi
+## Tutto è già pronto: i tab `07` e `08`
 
 ::: {.orange-box}
-### CERCA.VERT / VLOOKUP
+### Cosa accade automaticamente
 
-Per aggiungere le categorie codificate al foglio con le metriche di engagement:
-
-`=CERCA.VERT(A2; Codifica!A:D; 4; FALSO)`
-
-- **A2** = ID del post nel foglio dati
-- **Codifica!A:D** = intervallo nel foglio di codifica (da ID a categoria)
-- **4** = numero della colonna con la categoria
-- **FALSO** = corrispondenza esatta
+- **Tab `07_Codifica_finale`:** consolida le codifiche di tutti i coder dai tab `04_Codifica_coderN` e fa il `VLOOKUP` con le metriche di engagement dal `01_Dataset_master`. Niente da scrivere.
+- **Tab `08_Engagement`:** legge da `07_Codifica_finale` e mostra:
+  - Tabella riassuntiva con **mediana** e IQR di views/likes/comments/shares per categoria
+  - **Grafici a barre** della mediana per ciascuna metrica
+  - **Box plot** delle distribuzioni per categoria
 :::
 
 ::: {.notes}
-Momento collettivo (25 min). Proiettare il passaggio step by step. Il CERCA.VERT collega i due fogli: il foglio dati (con le metriche di engagement) e il foglio di codifica (con le categorie assegnate). Il risultato: un foglio unico dove ogni post ha sia le metriche sia la categoria.
+Momento collettivo (25 min). Proiettare il tab `08_Engagement` di un gruppo che ha completato la codifica. Mostrare come i grafici si aggiornano automaticamente quando si aggiungono nuove codifiche. Sottolineare: nessuna formula da scrivere, nessuna pivot table da costruire. Tutto è già rilegato ai dati.
 :::
 
-## Confrontare l'engagement tra categorie
+## Le 4 metriche TikTok
 
-Con i dati unificati, usate le **tabelle pivot**:
-
-| Cosa calcolare | Come |
-|---------------|------|
-| **Engagement mediano per categoria** | Tabella pivot: Righe = categoria, Valori = MEDIANA di reazioni/commenti/condivisioni |
-| **Distribuzione per categoria** | Tabella pivot: conteggio per categoria |
-| **Grafico a barre** | Selezionate la tabella pivot → Inserisci → Grafico |
+| Metrica | Cosa misura | Tipica distribuzione |
+|---------|------------|---------------------|
+| `view_count` | Visualizzazioni | Estremamente asimmetrica (pochi viral) |
+| `like_count` | Like | Asimmetrica, correlata con views |
+| `comment_count` | Commenti | Più rara, indica engagement attivo |
+| `share_count` | Condivisioni esterne | Indica replicabilità del contenuto |
 
 ::: {.callout-tip}
 ## Ricordate
-Usate la **mediana**, non la media. Le distribuzioni di engagement sono asimmetriche — la media è distorta dagli outlier.
+**Mediana, non media.** Le distribuzioni TikTok sono ancora più asimmetriche di quelle di altre piattaforme: pochissimi video virali "tirano" la media verso l'alto, la mediana descrive il video tipico.
 :::
 
 ::: {.notes}
-Dimostrazione dal vivo: creare una tabella pivot con le categorie nelle righe e la mediana delle reazioni nei valori. Poi trasformarla in un grafico a barre. Mostrare anche la media come confronto — far notare quanto è più alta a causa degli outlier. Questi grafici e tabelle andranno direttamente nella sezione Results del saggio.
+Le 4 metriche raccontano cose diverse. Views = visibilità (quante volte il video è stato riprodotto). Like = approvazione passiva (un tap). Comments = engagement attivo (richiede sforzo). Shares = replicabilità (il contenuto esce da TikTok). Categorie diverse possono avere pattern molto diversi: un video meme può avere alti views ma pochi commenti; un video politico può avere pochi views ma molti commenti polarizzati. La sezione Results del saggio deve raccontare questi pattern, non solo riportare i numeri.
 :::
 
 ## Lavoro di gruppo: analisi {background-color="#C5612E"}
@@ -79,15 +75,16 @@ Dimostrazione dal vivo: creare una tabella pivot con le categorie nelle righe e 
 ::: {.highlight-box}
 **Oggi (75 minuti):**
 
-1. **Unire** la codifica al dataset originale con CERCA.VERT
-2. **Calcolare** le statistiche descrittive per categoria con tabelle pivot
-3. **Produrre** le prime tabelle e grafici
+1. Verificare che le codifiche siano fluite correttamente in `07_Codifica_finale`
+2. **Leggere** le tabelle e i grafici del tab `08_Engagement`
+3. Identificare i **pattern principali** (quali categorie hanno più views? Più comments? Più shares?)
+4. **Copiare** i grafici scelti per il saggio: tasto destro sul grafico → Copia → Incolla nel Google Doc come immagine PNG
 
 **Ultimi 20 minuti — condivisione rapida:** ogni gruppo mostra il grafico o la tabella più interessante.
 :::
 
 ::: {.notes}
-Il lavoro oggi è tecnico: collegare i fogli, creare tabelle pivot, produrre grafici. Passare tra i gruppi per aiutare con problemi tecnici (CERCA.VERT che non trova corrispondenze, tabelle pivot mal configurate). Il momento di condivisione finale è importante: ogni gruppo vede cosa stanno trovando gli altri.
+Il lavoro oggi è di **lettura analitica**, non di costruzione tecnica. Passare tra i gruppi per aiutare a interpretare i grafici (cosa dice questa box plot? Perché la mediana è bassa ma l'outlier alto?). Per copiare i grafici nel Google Doc: tasto destro sul grafico nel Foglio → "Copia grafico" → nel Doc → Incolla → scegliere "Incolla scollegato" per evitare che eventuali modifiche al Foglio cambino il grafico già nel saggio.
 :::
 
 ## Prossimi passi

@@ -53,7 +53,7 @@ L'ultima lezione del corso. Due momenti: prima il lavoro pratico (integrare il f
 - Ultima sessione di lavoro in aula
 - Concentrate le energie sulle **criticità** segnalate dai revisori
 
-**Ricordate:** consegna definitiva entro **mercoledì 3 giugno, ore 23:59**.
+**Ricordate:** consegna definitiva entro **lunedì 1 giugno, ore 23:59**.
 :::
 
 ::: {.notes}
@@ -99,7 +99,7 @@ Domande aperte alla classe (15 minuti). Raccogliere 4-5 risposte. L'obiettivo è
 
 | Cosa | Quando |
 |------|--------|
-| **Consegna saggio definitivo** | Mercoledì **3 giugno**, ore **23:59** |
+| **Consegna saggio definitivo** | Lunedì **1 giugno**, ore **23:59** |
 | **Modulo peer evaluation** | Da consegnare insieme al saggio (individuale, anonimo) |
 | **Formato** | PDF, su Moodle |
 | **Lunghezza** | 4.000–6.000 parole |
@@ -136,7 +136,7 @@ Mostrare l'arco completo del corso. Dalla prima lezione (Boyd e le affordance) a
 
 **Buon lavoro per la consegna finale!**
 
-Consegna: **3 giugno 2026**
+Consegna: **1 giugno 2026**
 
 📧 fabio.giglietto@uniurb.it
 

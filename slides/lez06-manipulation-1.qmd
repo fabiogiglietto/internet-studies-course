@@ -420,7 +420,7 @@ Discussione guidata (~10 minuti). Risposte di riferimento da costruire con la cl
 - **Affordance:** **replicabilità** (facile da condividere) e **persistenza** (resta visibile) [@boyd2018].
 - **Perché funziona:** il formato satirico abbassa le difese critiche; la diffusione interpersonale è più persuasiva della propaganda esplicita.
 
-Evidenziare che nella realtà le tattiche si sovrappongono: un caso può combinare più tattiche, e la distinzione tra azione spontanea e coordinata è spesso impossibile senza accesso ai dati interni delle piattaforme. Anticipazione della sfida del Blocco 2 sul dataset MCL.
+Evidenziare che nella realtà le tattiche si sovrappongono: un caso può combinare più tattiche, e la distinzione tra azione spontanea e coordinata è spesso impossibile senza accesso ai dati interni delle piattaforme. Anticipazione della sfida del Blocco 2 sul dataset TikTok.
 :::
 
 ## In sintesi

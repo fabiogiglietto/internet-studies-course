@@ -6,7 +6,7 @@ Generate lecture slides for **"Internet Studies"**, A.Y. 2025/2026, taught by Pr
 
 Slides are **Quarto reveal.js** format (HTML output) using the DISCUI department orange theme.
 
-**CRITICAL: All slide content (titles, body text, speaker notes, captions) MUST be in Italian.** English technical terms (networked publics, participatory culture, attention economy, collective action, media manipulation, slacktivism, culture jamming, brigading, astroturfing, meme warfare) are kept in English and italicized on first use. Tool and platform names (Facebook, Google Sheets, Meta Content Library) remain in English.
+**CRITICAL: All slide content (titles, body text, speaker notes, captions) MUST be in Italian.** English technical terms (networked publics, participatory culture, attention economy, collective action, media manipulation, slacktivism, culture jamming, brigading, astroturfing, meme warfare) are kept in English and italicized on first use. Tool and platform names (TikTok, Facebook, Google Sheets, Google Docs, Gemini, TikTok Research API, Meta Content Library) remain in English.
 
 ---
 
@@ -16,7 +16,7 @@ Slides are **Quarto reveal.js** format (HTML output) using the DISCUI department
 - **Schedule:** Tue 9:00–11:00 (C1), Wed 11:00–13:00 (D3), Thu 11:00–13:00 (C2)
 - **Structure:** Block 1 — Foundations (lectures 1–12, Mar 31 – Apr 29); Block 2 — Research Lab (lectures 13–24, Apr 30 – May 27)
 - **Holidays:** Apr 3–8 (Easter break)
-- **Final submission:** Jun 3, 2026
+- **Final submission:** Jun 1, 2026
 
 ---
 
@@ -68,7 +68,7 @@ All lectures require slides. The full plan is in `internet_studies_struttura_cor
 | 7 | `lez07-manipulation-2.qmd` | Media Manipulation e Disinformazione (II) | Apr 16 | Thu |
 | 8 | `lez08-sintesi.qmd` | Sintesi: Hackerare l'Economia dell'Attenzione | Apr 21 | Tue |
 | 9 | `lez09-ricerca-piattaforme.qmd` | Fare Ricerca con i Dati delle Piattaforme | Apr 22 | Wed |
-| 10 | `lez10-dataset-mcl.qmd` | Il Dataset MCL: Esplorazione Guidata | Apr 23 | Thu |
+| 10 | `lez10-dataset-tiktok.qmd` | Il Dataset TikTok: Esplorazione Guidata | Apr 23 | Thu |
 | 11 | `lez11-analisi-contenuto.qmd` | Analisi del Contenuto, Codebook e Formazione Gruppi | Apr 28 | Tue |
 | 12 | `lez12-imrad-gruppi.qmd` | Il Formato IMRAD, le RQ e Avvio Codebook di Gruppo | Apr 29 | Wed |
 
@@ -353,7 +353,7 @@ The first session (`lez01-introduzione.qmd`) includes an expanded administrative
 3. **Struttura delle 8 settimane** — weekly focus overview table
 4. **Modalità di valutazione per frequentanti** — enrollment deadline, ¾ attendance threshold (18/24 lectures), group project 75%, participation 10%, oral exam 15%. Include details: oral exam is individual (~10 min, all 5 texts + project discussion), participation maps proportionally from attendance beyond 18/24
 5. **Modalità per non frequentanti** — expanded reading list (full texts + Lewis 2018), individual essay (3,000–4,000 words), longer oral exam (~20 min)
-6. **Policy sull'uso dell'IA generativa** — AI tools permitted as non-substitutive support (brainstorming, revision, analysis help); NOT for generating essay sections, replacing readings, or producing content coding; mandatory disclosure in Methods section; students bear full responsibility for content
+6. **Policy sull'uso dell'IA generativa** — AI tools permitted as non-substitutive support (brainstorming, revision, analysis help); NOT for generating essay sections, replacing readings, or producing content coding; mandatory disclosure in dedicated "Dichiarazione d'uso dell'IA generativa" section of the paper (not in Methods); students bear full responsibility for content
 7. **Rilevazione delle presenze** — attendance code + geolocation requirement. Attendance codes are in a [Google Sheet](https://docs.google.com/spreadsheets/d/1QZz9VSa32M2thXyAfg1bF42OXtOg9AA8CMkw3xMNiW0/edit?gid=0#gid=0)
 8. **Policy per giustificare le assenze** — justified absences policy, posting deadline on blended forum
 9. **Consegne in ritardo** — –1 point per day late, hard cutoff at 7 days
@@ -472,16 +472,26 @@ There is also a previous year's slide set for reference: `Internet_Studies_2025-
 The group project is central in Block 2 (lectures 13–24). Slides must guide students through:
 
 ### Project Overview
-Students work in groups of **max 6** to produce a research paper (IMRAD format, 4,000–6,000 words) analyzing content from Italian Facebook pages. The project uses a **pre-curated dataset** from the Meta Content Library, provided by the instructor. All groups work on the **same dataset**. Each group chooses one of two guided research questions, develops a classification scheme (codebook), applies it via manual content analysis, validates through inter-coder reliability, and analyzes whether content categories predict engagement patterns.
+Students work in groups of **max 6** to produce a research paper (IMRAD format, 4,000–6,000 words) analyzing **TikTok video posts** collected via the **TikTok Research API**. The instructor provides a single pre-curated dataset for the whole class, loaded into a heavily pre-built **Google Sheet master** (10 tabs, formulas + κ + pivots already wired). Each group clones the master, chooses one of two guided RQs, develops a codebook, codes manually (with **Gemini chat** as helper, never as classifier), validates via Cohen's κ, and analyzes whether content categories predict engagement.
+
+**Key supporting artifacts** (in `templates/`):
+- `templates/paper_template.md` — full IMRAD skeleton (Frontespizio, Abstract, Intro, Methods×4, Results×3, Discussion, Conclusioni, Dichiarazione IA, Bibliografia, Appendix A, Appendix B).
+- `templates/codebook_template.md` — codebook skeleton.
+- `templates/google_sheet_structure.md` — full spec of the 10-tab Google Sheet master.
 
 ### Data Available to Students
-- **CSV with post metadata + engagement metrics** (reactions, comments count, shares) — shared Google Sheet
-- **Multimedia content** (images/video) — shared folder
-- Students do NOT have access to Meta Content Library directly
+- **TikTok dataset in Google Sheet** (`01_Dataset_master`, read-only): `video_id`, `create_time`, `username`, `video_description`, `voice_to_text`, `hashtag_names`, `view_count`, `like_count`, `comment_count`, `share_count`, `video_duration`, `watch_url`.
+- **Video access**: students click `watch_url` to open the video on TikTok in browser. Videos are NOT downloaded.
+- **Not available** (limits to declare in Methods): individual comment text (only counts), FYP impressions (only `view_count`), socio-demographics, duet/stitch text.
+- Students do NOT have direct API access.
 
 ### Research Questions (Choose One)
-- **RQ1 — Media manipulation tactics:** Which tactics from Marwick & Lewis (2017) are recognizable in the visual content? How do they distribute and what engagement patterns do they generate? Theoretical framework connects to Boyd (2018) affordances and Boyd (2017) attention economy.
-- **RQ2 — Genuine vs. instrumentalized participation:** To what extent does content show genuine participatory culture (Jenkins, 2008) vs. strategically instrumentalized participation (Marwick & Lewis, 2017)? The key theoretical point is that manipulation is not top-down — it exploits the same bottom-up dynamics Jenkins describes as emancipatory. Boyd's (2018) affordances enable both uses; Shirky's (2009) lowered coordination costs apply to both.
+- **RQ1 — Media manipulation tactics on TikTok:** Which tactics from Marwick & Lewis (2017) are recognizable in TikTok videos? How do they distribute and what engagement patterns do they generate? Codebook adapts the Marwick & Lewis taxonomy to TikTok-native affordances (sound-as-meme, hashtag challenge, duet/stitch, FYP). Framework connects to Boyd (2018) affordances and Boyd (2017) attention economy.
+- **RQ2 — Genuine vs. instrumentalized participation on TikTok:** To what extent do TikTok videos show genuine participatory culture (Jenkins, 2008) vs. strategically instrumentalized participation (Marwick & Lewis, 2017)? Key theoretical point: manipulation is not top-down — it exploits the same bottom-up dynamics Jenkins describes as emancipatory (organic trend participation vs. coordinated trend participation; user remix vs. orchestrated remix). Boyd's (2018) affordances enable both uses; Shirky's (2009) lowered coordination costs apply to both.
+
+### Tool Use Policy
+- **Google Sheet master:** all formulas, pivots, charts, and Cohen's κ are pre-built. Students enter codes via dropdowns. Slides should reference tabs by name (`01_Dataset_master`, `02_Campione_gruppo`, `03_Codebook`, `04_Codifica_coderN`, `05_Sottocampione_affidabilità`, `06_Kappa`, `07_Codifica_finale`, `08_Engagement`, `09_Log_decisioni`).
+- **Gemini chat:** allowed for codebook drafting, ambiguous-case discussion, prose review. NOT allowed for: replacing human coders, writing whole sections, replacing readings. Every use must be declared in the paper's "Dichiarazione d'uso dell'IA generativa" section.
 
 ### Assessment (Attending Students)
 - **Group project:** 75% — evaluated with the analytic rubric (see course plan for full grading grid). All group members receive the same base grade, potentially modulated by peer evaluation.
@@ -501,13 +511,21 @@ Between Lectures 7 and 8, each student submits a brief analysis (800–1,200 wor
 | 3 | 17 | May 12 | Main results presented to instructor |
 | 4 | 22 | May 21 | Draft submitted (by May 22) |
 | Peer review | 23 | May 26 | Cross-review completed |
-| Final | — | Jun 3 | Definitive IMRAD paper |
+| Final | — | Jun 1 | Definitive IMRAD paper |
 
 ### IMRAD Paper Structure
-- **Introduction** (~800–1,200 words): topic, relevance, theoretical framework from the 5 course texts, RQ
-- **Methods** (~600–1,000 words): dataset, sampling, codebook, procedure, tools
-- **Results** (~1,000–1,500 words): findings with tables and charts
-- **Discussion** (~800–1,200 words): interpretation, link to theory, limitations
+Reference template: `templates/paper_template.md`. Sections (4,000–6,000 words excluding Bibliografia and Appendices):
+- **Frontespizio** — title, group, RQ chosen, date.
+- **Abstract** (150–200 parole) + 3–5 keywords.
+- **Introduction** (~800–1,200 parole) — funnel: TikTok phenomenon → relevance → 5 course texts → RQ.
+- **Methods** (~800–1,200 parole) — 4 subsections: *Dataset*, *Codebook*, *Procedura*, *Affidabilità (κ)*.
+- **Results** (~1,000–1,500 parole) — 3 subsections: *Distribuzione*, *Affidabilità*, *Engagement per categoria* (median + IQR).
+- **Discussion** (~800–1,200 parole) — 5 elements: synthesis → 5 texts → methodological reflection → limits → implications.
+- **Conclusioni** (1–2 paragrafi) — direct answer to RQ.
+- **Dichiarazione d'uso dell'IA generativa** — mandatory.
+- **Bibliografia** — APA 7.
+- **Appendice A** — codebook completo.
+- **Appendice B** — log decisioni di codifica (estratto).
 
 ---
 

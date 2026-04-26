@@ -407,7 +407,7 @@ Da domani inizia la **preparazione al laboratorio**:
 | Lezione | Data | Tema |
 |---------|------|------|
 | **9** | Mer 22 apr | Fare ricerca con i dati delle piattaforme |
-| **10** | Gio 23 apr | Il dataset MCL: esplorazione guidata |
+| **10** | Gio 23 apr | Il dataset TikTok: esplorazione guidata |
 | **11** | Mar 28 apr | Analisi del contenuto e codebook + formazione gruppi |
 | **12** | Mer 29 apr | Il formato IMRAD e avvio del codebook di gruppo |
 
@@ -471,7 +471,7 @@ Chiusura. Questa lezione segna il passaggio dalla teoria alla pratica. Da domani
 *Fare ricerca con i dati delle piattaforme*
 
 ::: {.notes}
-Anticipare: domani parleremo di come si accede ai dati delle piattaforme (dalle API aperte alla Meta Content Library), di etica della ricerca digitale, e dei due approcci che useremo nel laboratorio (analisi del contenuto qualitativa e analisi descrittiva quantitativa dell'engagement).
+Anticipare: domani parleremo di come si accede ai dati delle piattaforme (dalle API aperte alle Research API attuali, con focus sulla TikTok Research API che useremo nel laboratorio), di etica della ricerca digitale, e dei due approcci del laboratorio (analisi del contenuto qualitativa + analisi descrittiva quantitativa dell'engagement).
 :::
 
 ## Grazie! {background-color="#C5612E"}
