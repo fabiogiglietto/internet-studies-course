@@ -18,19 +18,22 @@ Thumbs.db
 # Dataset and student project data (large files, copyrighted content)
 data/
 
-# Raw TikTok Research API responses + curated cluster lists + master CSV.
-# All in-repo data is generated; canonical copies live in the course Drive folder.
+# Public Github repo policy: SLIDES ONLY. Everything else (lab data,
+# Apps Script templates, R pipeline, reports, methodology snippets,
+# per-account data) lives only in the course Drive folder, linked
+# from the Moodle space. Don't push it to a public repo.
+
+# Lab artefacts (kept locally, not pushed)
+apps_script/
+reports/
+templates/
 data-raw/
+
+# Lab pipeline R scripts (only scripts/pdf_to_md.py stays public)
+scripts/*.R
+scripts/_*.sh
 
 # Local environment (TikTok API credentials etc.)
 .Renviron
 .env
-
-# Probe + setup scripts that hit the live API or rotate credentials —
-# kept locally for reproducibility, not committed to keep the repo clean.
-scripts/_probe_*.R
-scripts/_probes.sh
-scripts/_overnight_run.sh
-scripts/_solovyov_pull.R
-scripts/_write_report.R
 
