@@ -179,19 +179,17 @@ Il passaggio dal ludico al politico è completo. Le competenze acquisite in anni
 
 ## Fase 5? L'IA generativa (2022–oggi)
 
-Boyd scriveva nel 2017. Da allora, un nuovo strumento ha **amplificato** ulteriormente la manipolazione dell'attenzione:
-
-<!-- PROIETTARE: timeline dell'IA generativa: 30 nov 2022 (lancio ChatGPT) → 5 dic 2022 (NYT, Guardian) → feb 2023 (100M utenti) → deepfake Biden, Bezos su TikTok → Midjourney, Sora. -->
+Boyd scriveva nel 2017. Da allora un nuovo strumento ha **amplificato** la manipolazione dell'attenzione:
 
 | Data | Evento |
 |------|--------|
 | 30 nov 2022 | Lancio di **ChatGPT** |
-| Feb 2023 | **100 milioni** di utenti in 2 mesi (record assoluto) |
-| 2023–2025 | Deepfake audio/video: falsi discorsi di politici, voice cloning, video sintetici |
-| 2024–2025 | Generazione di **immagini e video** indistinguibili dalla realtà |
+| Feb 2023 | **100 milioni** di utenti in 2 mesi |
+| 2023–2025 | Deepfake audio/video, voice cloning |
+| 2024–2025 | Immagini e video sintetici indistinguibili dal reale |
 
 ::: {.highlight-box}
-Se nel 2006 servivano attori e sceneggiatori per creare lonelygirl15, oggi un singolo individuo con un laptop può generare **contenuti sintetici indistinguibili** dal reale. La "democratizzazione della manipolazione" (Boyd) ha fatto un salto di scala.
+Nel 2006 servivano attori e sceneggiatori per *lonelygirl15*; oggi basta un laptop. La "democratizzazione della manipolazione" ha fatto un **salto di scala**.
 :::
 
 ::: {.notes}
@@ -269,7 +267,7 @@ Il gaslighting informativo funziona perché l'ecosistema mediale contemporaneo �
 Questo diagramma è l'arco storico che Boyd traccia. È una progressione, non un salto: ogni fase costruisce sulle competenze della precedente. I memer di 4chan imparano a far circolare contenuti; i troll dei media imparano a manipolare l'attenzione; Anonymous e GamerGate mostrano che le stesse tecniche possono causare danni reali; la fase politica mostra che possono essere usate per acquisire potere. La chiave: a ogni passaggio, il gioco diventa più serio, ma le competenze di base restano le stesse — progettare informazione perché si diffonda, giocare con gli algoritmi, sfruttare le vulnerabilità dei media.
 :::
 
-## Il filo rosso dei cinque testi
+## Il filo rosso dei cinque testi {.smaller}
 
 Boyd (2017) è la **chiave di volta** che collega i quattro autori precedenti:
 
@@ -285,21 +283,17 @@ Boyd (2017) è la **chiave di volta** che collega i quattro autori precedenti:
 Questa tabella sintetizza il quadro teorico del corso. È la stessa tabella che gli studenti dovranno usare come struttura per l'Introduction del loro saggio IMRAD. Ogni testo offre una lente diversa: Boyd 2018 descrive l'ambiente, Jenkins le pratiche, Shirky il motore economico, Marwick & Lewis la patologia, Boyd 2017 la storia. Insieme, raccontano una trasformazione: le proprietà delle piattaforme abilitano pratiche partecipative che, grazie al crollo dei costi di coordinamento, scalano a livello di massa — e possono essere piegate alla manipolazione.
 :::
 
-## Un caso, cinque lenti
+## Un caso, cinque lenti {.smaller}
 
-Proviamo a leggere un **singolo caso** con tutti e cinque i testi:
-
-::: {.highlight-box}
-**Caso:** una campagna di disinformazione virale su Facebook durante le elezioni italiane — meme satirici con dati falsi condivisi da reti di pagine coordinate.
-:::
+**Caso:** una campagna di disinformazione virale su Facebook durante le elezioni italiane — meme satirici con dati falsi diffusi da reti di pagine coordinate.
 
 | Testo | Cosa ci dice del caso |
 |-------|----------------------|
-| **Boyd (2018)** | La **replicabilità** rende i meme facili da condividere; la **ricercabilità** li fa apparire nelle ricerche |
+| **Boyd (2018)** | **Replicabilità** + **ricercabilità** rendono i meme facili da diffondere |
 | **Jenkins (2008)** | Il formato meme è **espressività mediale** — stessa forma della partecipazione genuina |
-| **Shirky (2009)** | La coordinazione tra pagine costa quasi **zero** — sotto il pavimento di Coase |
-| **Marwick & Lewis (2017)** | Tattiche riconoscibili: ***meme warfare*** + ***astroturfing*** (pagine coordinate) |
-| **Boyd (2017)** | Evoluzione storica: dal trolling per i *lulz* alla **manipolazione elettorale** |
+| **Shirky (2009)** | La coordinazione tra pagine costa quasi **zero** (sotto il pavimento di Coase) |
+| **Marwick & Lewis (2017)** | Tattiche riconoscibili: ***meme warfare*** + ***astroturfing*** |
+| **Boyd (2017)** | Dal trolling per i *lulz* alla **manipolazione elettorale** |
 
 ::: {.notes}
 Questo esercizio mostra come i cinque testi funzionino come lenti complementari sullo stesso fenomeno. Ogni testo illumina un aspetto diverso: Boyd 2018 le proprietà strutturali, Jenkins la forma culturale, Shirky il meccanismo economico, Marwick & Lewis la tattica, Boyd 2017 la traiettoria storica. Nel saggio IMRAD, gli studenti dovranno fare esattamente questo: usare i testi per interpretare i propri risultati. La mappa concettuale che costruiranno tra poco è la versione visiva di questa tabella.
@@ -327,40 +321,17 @@ Questo esercizio mostra come i cinque testi funzionino come lenti complementari 
 Distribuire il materiale. Ogni colore corrisponde a un testo: es. arancione = Boyd 2018, verde = Jenkins, blu = Shirky, rosso = Marwick & Lewis, giallo = Boyd 2017. Dare 40 minuti per la costruzione della mappa e 20 minuti per le presentazioni (4-5 gruppi × 5 minuti ciascuno). Passare tra i gruppi per verificare che: (a) usino i concetti dei testi, non generici; (b) traccino connessioni tra testi diversi; (c) la mappa mostri una direzione/arco.
 :::
 
-## Concetti suggeriti per i post-it
+## Concetti suggeriti per i post-it {.smaller}
 
-::: {.columns}
-::: {.column width="50%"}
-### Boyd (2018) — arancione
-- Persistenza
-- Visibilità
-- Replicabilità
-- Ricercabilità
+**Boyd (2018) — arancione:** persistenza · visibilità · replicabilità · ricercabilità
 
-### Jenkins (2008) — verde
-- Cultura partecipativa
-- Intelligenza collettiva
-- Culture jamming vs. fan
-- Convergenza
-:::
+**Jenkins (2008) — verde:** cultura partecipativa · intelligenza collettiva · *culture jamming* vs. fan · convergenza
 
-::: {.column width="50%"}
-### Shirky (2009) — blu
-- Pavimento di Coase
-- Condivisione / Cooperazione / Azione collettiva
-- Crollo dei costi
+**Shirky (2009) — blu:** pavimento di Coase · condivisione / cooperazione / azione collettiva · crollo dei costi
 
-### Marwick & Lewis (2017) — rosso
-- Meme warfare / Brigading / Astroturfing
-- Mainstreaming
-- Trading up the chain
+**Marwick & Lewis (2017) — rosso:** *meme warfare* / *brigading* / *astroturfing* · *mainstreaming* · *trading up the chain*
 
-### Boyd (2017) — giallo
-- Economia dell'attenzione
-- Gaslighting
-- Democratizzazione della manipolazione
-:::
-:::
+**Boyd (2017) — giallo:** economia dell'attenzione · *gaslighting* · democratizzazione della manipolazione
 
 ::: {.notes}
 Questa slide è una guida, non un obbligo. I gruppi possono scegliere concetti diversi. L'importante è che i concetti siano specifici (non "manipolazione" ma "meme warfare") e che le connessioni siano argomentate (non "questo si collega a questo" ma "la replicabilità di Boyd rende possibile la meme warfare di Marwick & Lewis perché...").
@@ -400,9 +371,7 @@ Sottolineare che non tutti i testi avranno lo stesso peso nel saggio: dipende da
 
 ## Transizione: dalla teoria alla ricerca {background-color="#C5612E"}
 
-## Le prossime quattro lezioni
-
-Da domani inizia la **preparazione al laboratorio**:
+## Le prossime quattro lezioni {.smaller}
 
 | Lezione | Data | Tema |
 |---------|------|------|
@@ -412,7 +381,7 @@ Da domani inizia la **preparazione al laboratorio**:
 | **12** | Mer 29 apr | Il formato IMRAD e avvio del codebook di gruppo |
 
 ::: {.highlight-box}
-Nessuna nuova lettura da assegnare. I cinque testi del corso sono il vostro intero quadro teorico — da ora in poi li **applicate**, non ne leggete di nuovi.
+Nessuna nuova lettura. I cinque testi del corso sono il quadro teorico completo — da ora li **applicate**.
 :::
 
 ::: {.notes}
